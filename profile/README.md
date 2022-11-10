@@ -1,4 +1,4 @@
-# BYU `CS 260` **Web Programming**
+# BYU **Web Programming**  `cs260`
 
 <img src="https://github.com/webprogramming260/.github/blob/065f97641b19d6471b1acc91a8c2123d42805611/profile/webprogrammingcover.jpg" width="500">
 
