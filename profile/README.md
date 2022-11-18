@@ -4,6 +4,14 @@
 
 The account hosts all the repositories for the class assignments. You can view the example projects on the [course website](https://demo.cs260.click).
 
+# Technologies
+
+* [Console](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview)
+* [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+
 
 # Server Setup
 
