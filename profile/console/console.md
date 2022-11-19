@@ -34,30 +34,6 @@ drwxr-xr-x  4 lee  staff   128B Nov 19 08:48 profile
 drwxr-xr-x  4 lee  staff   128B Nov 19 08:47 react
 ```
 
-Experiment with the file system commands of the console. Open a console window and create a junk directory that you can experiement in with the command `mkdir junk` (make directory). Then execute the command `cd junk` to move into that directory. Here you can safely execute commands, as you will delete it when you are done. Try the following sequence of commands:
-
-```
-mkdir junk
-cd junk
-pwd
-ls
-ls -la
-ls ../
-touch test.txt
-ls -l
-cp test.txt other.txt
-ls
-rm test.txt
-ls
-mkdir subdir
-cd subdir
-pwd
-cd ../..
-ls
-rm -rf junk
-ls
-```
-
 ## Executing commands
 
 The other primary purpose of the console is to execute commands. You already did this in the previous section when you executed commands for working with the file system. However, console commands can perform any operation. Here are some basic commands that you show experiment with.
@@ -71,6 +47,8 @@ The other primary purpose of the console is to execute commands. You already did
 - **cp** - Copy files
 - **ls** - List files
 - **curl** - Command line client URL browser
+- **grep** - Regular expression search
+- **find** - Find files
 - **top** - View running processes with CPU and memory usage
 - **df** - View disk statistics
 - **cat** - Print out the contents of a file
@@ -81,9 +59,53 @@ The other primary purpose of the console is to execute commands. You already did
 - **sudo** - Execute a command as a super user (admin)
 - **ssh** - Create a secure shell on a remote computer
 - **scp** - Securely copy files to a remote computer
-- **history** - Show the history of commands.
+- **history** - Show the history of commands
+- **ping** - Check if a website is up
+- **tracert** - Trace the connections to a website
+- **dig** - Show the DNS information for a domain
+- **man** - Look up a command in the manual
+
+You can also chain the input and output of commands using special characters
+
+- `|` - The the output from the command on the left and _pipe_ it to the command on the right
+- `>` - Redirect output to a file. Appends if the file exists
+- `>>` - Redirect output to a file. Overwrites the file if it exists
+
+For example, you can list the files in a directory, pipe it into `grep` to search for files created in Nov, and then pipe then into `wc` to count the number of files found with a date of Nov.
+
+```
+ls -l | grep ' Nov ' | wc -l
+```
 
 There are also keystokes that have special meaning in the console.
 
 - `CTRL-R` - Use type ahead to find previous commands
 - `CTRL-C` - Kill the currently running command
+
+## Practice time
+
+Experiment with console commands. Open a console window and create a junk directory that you can play with by executing the command `mkdir junk` (make directory). Then execute the command `cd junk` to move your present working directory into that directory. Try the following sequence of commands:
+
+```
+mkdir junk
+cd junk
+pwd
+ls
+ls -la
+ls ../
+echo "hello world" > test.txt
+ls -l
+cat test.txt
+cp test.txt other.txt
+ls
+cat test.txt >> other.txt
+less other.txt # press `q` to exit less
+rm test.txt
+ls
+cd ..
+ls
+rm -rf junk
+ls
+```
+
+The better you get at working within the console the more efficent your programming will be.
