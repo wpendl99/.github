@@ -2,82 +2,114 @@
 
 The course covers a full stack of technologies. The instruction makes extensive use of [MDN Web Docs](https://developer.mozilla.org/) and we highly encourage you to spend many hours getting lost in their exceptional content.
 
-# Getting started essentials
+## Development essentials
 
 - History of the web
+- Asking questions
+- ☑ Discord
 - Pair programming
-- Terminology
-- [The Console](console/console.md)
+- Let's play Simon
+- Start up application
+- ☑ [The Console](developmentEssentials/console/console.md)
 - Editors - Visual Studio Code and VI
 - Git
 - GitHub
 - VS Code GitHub integration
+- ☑ Using GitHub to take notes
+- ☑ Start up deliverable - Specification
 
-# Web servers
+## Web servers
 
+- Technology stack
 - The internet
 - Web servers
-- Amazon Web Services - EC2
-- Caddy
+- ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
 - Domain names
 - DNS
 - Amazon Web Services - Route 53
+- ☑ Purchase a domain
 - Certificates
 - TLS (HTTPS)
-- Keeping notes
-- Technology stack
+- [Caddy](webServers/caddy/caddy.md)
+- ☑ Setup a website
 
-# HTML, CSS, JavaScript
+## HTML, CSS, JavaScript
 
-- CodePen
+- ☑ CodePen
 - VSCode LiveServer extension
 - HTML introduction
-- HTML structure elements
-- HTML input elements
-- HTML video, audio, svg
+  - HTML structure elements
+  - HTML input elements
+  - HTML video, audio, svg
+- ☑ HTML website
+- ☑ Simon HTML
 - CSS introduction
-- CSS Selectors
-- CSS Declarations
-- CSS Animation
+  - CSS Selectors
+  - CSS Declarations
+  - CSS Animation
+  - ☑ CSS
 - Responsive: viewport, grid, flex, media
+  - ☑ Grid
+  - ☑ Flex
+  - ☑ Media
 - CSS frameworks
+  - ☑ Bootstrap
+- ☑ Simon CSS
+- ☑ Start up deliverable - HTML, CSS
 - JavaScript introduction
-- JavaScript - log, types, expr, functions
-- JavaScript - Object, map, array
-- JavaScript - Arrow, classes
-- Promises
-- Async/await
-- Document object model (DOM)
+  - ☑ JavaScript - log, types, expr, functions
+  - ☑ JavaScript - Object, map, array
+  - ☑ JavaScript - Arrow, classes
+- Asynchronous programming
+  - ☑ Promises
+  - ☑ Async/await
+- ☑ Document object model (DOM)
 - JavaScript frameworks and utilities
 - Debugging JavaScript
+- ☑ Simon JavaScript
 - UI design
 - UI Testing
-- Web Services
+- ☑ Start up deliverable - JavaScript
+
+## Web Services
+
 - URL
 - Ports
 - HTTP
 - CORS and SOP
 - Fetch
+  - ☑ Simon fetch
 - Service design
-- Node.js - Node, NPM, NVM, NPX
+- ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
 - Express
+- [Service deamons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
+- ☑ Simon service
 - Storage services
 - Data services
+  - ☑ [MongoDB](webServices/mongoDb/mongoDb.md)
 - WebSocket
+  - ☑ Simon WebSocket
+- ☑ Start up deliverable - Service
 
-# Web frameworks, mobile applications, and security
+## Web frameworks, mobile applications, and security
 
-- [React](react/react.md)
-- Reactive
-- Toolchain and bundlers
-- React CLI - create-react-app
-- Routers
+- [React](webFrameworks/react/react.md)
+  - ☑ Components
+  - Reactive
+  - Toolchain and bundlers
+  - ☑ React CLI - create-react-app
+  - ☑ Router
+  - ☑ Simon React
 - Security
 - Authorization
+- ☑ Simon Login
 - Progressive web applications
+- ☑ Simon PWA
 - OWASP top 10
 - Gruyere
 - TypeScript
 - Performance monitoring
 - Search Engine Optimization
+- ☑ Start up deliverable - Final
+- Demo day
