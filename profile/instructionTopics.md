@@ -1,6 +1,6 @@
 # Instruction topics
 
-The course covers a full stack of technologies. The instruction makes extensive use of [MDN Web Docs](https://developer.mozilla.org/) and we highly encourage you to spend many hours getting lost in their exceptional content.
+The course covers a full stack of technologies. Topics marked with ☑ include assignments that you must complete for certification.
 
 ## Development essentials
 
@@ -17,10 +17,10 @@ The course covers a full stack of technologies. The instruction makes extensive 
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
 - ☑ Start up deliverable - Specification
+- Technology stack
 
 ## Web servers
 
-- Technology stack
 - The internet
 - Web servers
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
