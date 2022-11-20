@@ -82,7 +82,7 @@ There are also keystokes that have special meaning in the console.
 - `CTRL-R` - Use type ahead to find previous commands
 - `CTRL-C` - Kill the currently running command
 
-## Practice time
+## ☑ Assignment
 
 Experiment with console commands. Open a console window and create a junk directory that you can play with by executing the command `mkdir junk` (make directory). Then execute the command `cd junk` to move your present working directory into that directory. Try the following sequence of commands:
 
@@ -108,4 +108,4 @@ rm -rf junk
 ls
 ```
 
-The better you get at working within the console the more efficent your programming will be.
+The better you get at working within the console the more efficent your programming will be. When you are done experimenting submit a discription of something your found interesting.
