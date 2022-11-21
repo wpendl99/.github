@@ -17,4 +17,4 @@ fetch(url)
   });
 ```
 
-You can also run this code in the browser's debugger console. This will allows you to get typeahead help and clearly see any errors that your experiments generate.
+You can also run this code in the browser's debugger console. This will allows you to get type-ahead help and clearly see any errors that your experiments generate.
