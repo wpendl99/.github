@@ -98,7 +98,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
   - ☑ Components
   - Reactive
   - Toolchain and bundlers
-  - ☑ [React CLI](webFameworks/react/reactCli.md)
+  - ☑ [React CLI](webFrameworks/react/reactCli.md)
   - ☑ [Router](webFrameworks/react/router.md)
   - ☑ Simon React
 - Security
