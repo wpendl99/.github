@@ -77,7 +77,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - Ports
 - HTTP
 - CORS and SOP
-- Fetch
+- [Fetch](webServices/fetch/fetch.md)
   - ☑ Simon fetch
 - Service design
 - ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
