@@ -56,7 +56,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
   - ☑ Bootstrap
 - ☑ Simon CSS
 - ☑ Start up deliverable - HTML, CSS
-- JavaScript introduction
+- [JavaScript introduction](javascript/introduction.md)
   - ☑ log, types, expr, functions
   - ☑ Object, map, array
   - ☑ Arrow, classes
