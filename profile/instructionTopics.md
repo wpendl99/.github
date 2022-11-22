@@ -102,7 +102,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
   - Toolchain and bundlers
   - ☑ [React CLI](webFrameworks/react/reactCli.md)
   - ☑ [Router](webFrameworks/react/reactRouter.md)
-  - ☑ Simon React
+  - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
 - Security
 - Authorization
 - ☑ Simon Login
@@ -115,3 +115,17 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - Search Engine Optimization
 - ☑ Start up deliverable - Final
 - Demo day
+
+## Simon Applications
+
+The course long example project is broken up into multiple stages. The following links provide the code and a working example of the project at each stage.
+
+- Simon HTML [code](https://github.com/webprogramming260/simon-html#readme), [example](https://simon-html.cs260.com)
+- Simon CSS [code](https://github.com/webprogramming260/simon-css#readme), [example](https://simon-css.cs260.com)
+- Simon JavaScript [code](https://github.com/webprogramming260/simon-javascript#readme), [example](https://simon-javascript.cs260.com)
+- Simon Fetch [code](https://github.com/webprogramming260/simon-fetch#readme), [example](https://simon-fetch.cs260.com)
+- Simon DB [code](https://github.com/webprogramming260/simon-db#readme), [example](https://simon-db.cs260.com)
+- Simon Service [code](https://github.com/webprogramming260/simon-service#readme), [example](https://simon-service.cs260.com)
+- Simon React [code](https://github.com/webprogramming260/simon-react#readme), [example](https://simon-react.cs260.com)
+- Simon WebSocket [code](https://github.com/webprogramming260/simon-websocket#readme), [example](https://simon-websocket.cs260.com)
+- Simon Progressive Web Application [code](https://github.com/webprogramming260/simon-pwa#readme), [example](https://simon-pwa.cs260.com)
