@@ -60,8 +60,9 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
   - ☑ JavaScript - log, types, expr, functions
   - ☑ JavaScript - Object, map, array
   - ☑ JavaScript - Arrow, classes
+  - ☑ JavaScript - Exceptions
 - Asynchronous programming
-  - ☑ Promises
+  - ☑ [Promises](javascript/promises.md)
   - ☑ Async/await
 - ☑ Document object model (DOM)
 - JavaScript frameworks and utilities
@@ -96,10 +97,11 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 
 - [React](webFrameworks/react/react.md)
   - ☑ Components
+  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe.md)
   - Reactive
   - Toolchain and bundlers
   - ☑ [React CLI](webFrameworks/react/reactCli.md)
-  - ☑ [Router](webFrameworks/react/router.md)
+  - ☑ [Router](webFrameworks/react/reactRouter.md)
   - ☑ Simon React
 - Security
 - Authorization

@@ -30,7 +30,3 @@ To get hands on experience with React you can go through the following tutorials
 
 - [Official Introduction Tutorial](https://reactjs.org/tutorial/tutorial.html)
 - [Mozilla Introduction Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
-
-## ☑ Assignment
-
-Complete the [tic-tac-toe tutorial](https://reactjs.org/tutorial/tutorial.html). As you go through the tutorial create your own CodePen project. Do not copy and paste the code. Type the code in as you work through the tutorial. Experiment and provide alternative functionality. When you are done submit your codePen URL. [Here is an example](https://codepen.io/leesjensen/pen/MWXOzbQ) of an alternative solution.

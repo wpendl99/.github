@@ -28,6 +28,8 @@ Get started with the course [instruction](instructionTopics.md).
 
 The instruction makes extensive use of [MDN Web Docs](https://developer.mozilla.org/) and we highly encourage you to spend many hours getting lost in their exceptional content.
 
-The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit educational use only. No part of the Simon code program should be used outside of that definition.
+[React](https://reactjs.org) is used to demonstrate the power of web frameworks. Without the significant contributions of the React community we would not be able to stand on the sholders of giants.
 
-Much appreciation goes to [CodePen](codepen.io) for hosting the exercises and instruction examples.
+Much appreciation goes to [CodePen](codepen.io) for hosting many of the exercises and instruction examples.
+
+The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit educational use only. No part of the Simon code program should be used outside of that definition.
