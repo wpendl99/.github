@@ -85,7 +85,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - Service design
 - ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
 - Express
-- [Service deamons - PM2](webServices/pm2/pm2.md)
+- [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
 - ☑ Simon service
 - Storage services
@@ -105,7 +105,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
   - ☑ [Components](webFrameworks/react/components.md)
   - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe.md)
   - ☑ [Reactivity](webFrameworks/react/reactivity.md)
-  - Toolchain and bundlers
+  - [Toolchains](webFrameworks/toolChains.md)
   - ☑ [React CLI](webFrameworks/react/reactCli.md)
   - ☑ [Router](webFrameworks/react/reactRouter.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
