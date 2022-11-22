@@ -6,8 +6,9 @@ Web frameworks seek to make the job of writing web applications easier by provid
 
 There are lots of web frameworks to choose from and they evolve all the time. You can view the latest popularity poll at [StateOfJS](https://stateofjs.com).
 
-<img src="stateofjs-webframeworks.jpg"/>
-<figcaption align="right">StateOfJS web framework pool</figcaption>
+![web frameworks](stateofjs-webframeworks.jpg)
+
+- [ ] **Source**: *StateOfJS web framework poll*
 
 Each framework has advantages and disadvantages. Some are very perscriptive (opinionated) about how to do things, some have major institutional backing, others have a strong open source community. Other factors you want to consider include how easy it is to learn, how it impacts productivity, how performant it is, how long it takes to build, and how actively the framework is evolving.
 
