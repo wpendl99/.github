@@ -57,10 +57,12 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - ☑ Simon CSS
 - ☑ Start up deliverable - HTML, CSS
 - JavaScript introduction
-  - ☑ JavaScript - log, types, expr, functions
-  - ☑ JavaScript - Object, map, array
-  - ☑ JavaScript - Arrow, classes
-  - ☑ JavaScript - Exceptions
+  - ☑ log, types, expr, functions
+  - ☑ Object, map, array
+  - ☑ Arrow, classes
+  - ☑ Exceptions
+  - [Scope](javascript/scope.md)
+  - [Modules](javascript/modules.md)
 - Asynchronous programming
   - ☑ [Promises](javascript/promises.md)
   - ☑ Async/await
@@ -78,7 +80,7 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - Ports
 - HTTP
 - CORS and SOP
-- [Fetch](webServices/fetch/fetch.md)
+- ☑ [Fetch](webServices/fetch.md)
   - ☑ Simon fetch
 - Service design
 - ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
@@ -89,25 +91,27 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 - Storage services
 - Data services
   - ☑ [MongoDB](webServices/mongoDb/mongoDb.md)
+  - ☑ Simon DB
+- Authorization services
+  - ☑ Simon Login
 - WebSocket
   - ☑ Simon WebSocket
 - ☑ Start up deliverable - Service
 
 ## Web frameworks, mobile applications, and security
 
+- [Web frameworks](webFrameworks/webFrameworks.md)
 - [React](webFrameworks/react/react.md)
-  - ☑ Components
+  - ☑ [Components](webFrameworks/react/components.md)
   - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe.md)
-  - Reactive
+  - ☑ [Reactivity](webFrameworks/react/reactivity.md)
   - Toolchain and bundlers
   - ☑ [React CLI](webFrameworks/react/reactCli.md)
   - ☑ [Router](webFrameworks/react/reactRouter.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
 - Security
-- Authorization
-- ☑ Simon Login
 - Progressive web applications
-- ☑ Simon PWA
+  - ☑ Simon PWA
 - OWASP top 10
 - Gruyere
 - TypeScript
@@ -127,5 +131,6 @@ The course long example project is broken up into multiple stages. The following
 - Simon DB [code](https://github.com/webprogramming260/simon-db#readme), [example](https://simon-db.cs260.com)
 - Simon Service [code](https://github.com/webprogramming260/simon-service#readme), [example](https://simon-service.cs260.com)
 - Simon React [code](https://github.com/webprogramming260/simon-react#readme), [example](https://simon-react.cs260.com)
+- Simon Login [code](https://github.com/webprogramming260/simon-login#readme), [example](https://simon-login.cs260.com)
 - Simon WebSocket [code](https://github.com/webprogramming260/simon-websocket#readme), [example](https://simon-websocket.cs260.com)
 - Simon Progressive Web Application [code](https://github.com/webprogramming260/simon-pwa#readme), [example](https://simon-pwa.cs260.com)

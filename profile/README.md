@@ -2,7 +2,7 @@
 
 <img src="webprogrammingcover.jpg" width="500">
 
-Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, rebuilding a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](./instructionTopics.md) and [example projects](https://demo.cs260.click). Assignments, quizes, and tests are submitted through Canvas.
+Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](./instructionTopics.md) and [example projects](https://demo.cs260.click). Assignments, quizes, and tests are submitted through Canvas.
 
 # Technologies and Instruction
 

@@ -136,6 +136,6 @@ A component's properties and state are used by the React framework to determine 
 
 ## ☑ Assignment
 
-Experiment with the above example with this [CodePen](https://codepen.io/leesjensen/pen/eYKVYOR). Create a copy of the example and modify it to create your own component that has properties, state, and functions.
+Create a fork of this [CodePen](https://codepen.io/leesjensen/pen/eYKVYOR) and experiment.
 
-When you are done submit your CodePen URL along with discription of something your found interesting to the Canvas assignment.
+When you are done submit your CodePen URL, along with a discription of something your found interesting, to the Canvas assignment.
