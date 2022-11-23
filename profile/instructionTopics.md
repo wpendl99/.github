@@ -37,13 +37,13 @@ The course covers a full stack of technologies. Topics marked with ☑ include a
 
 - ☑ CodePen
 - VSCode LiveServer extension
-- HTML introduction
+- [HTML introduction](html/introduction.md)
   - HTML structure elements
   - HTML input elements
   - HTML video, audio, svg
 - ☑ HTML website
 - ☑ Simon HTML
-- CSS introduction
+- [CSS introduction](css/introduction.md)
   - CSS Selectors
   - CSS Declarations
   - CSS Animation
