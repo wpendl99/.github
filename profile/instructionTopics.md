@@ -63,7 +63,7 @@ The instruction contains the following icons to draw attention to important thin
   - ☑ Bootstrap
 - ☑ Simon CSS
 - ☑ Start up deliverable - HTML, CSS
-- [JavaScript introduction](javascript/introduction.md)
+- [JavaScript introduction](javascript/introduction/introduction.md)
   - ☑ log, types, expr, functions
   - ☑ Object, map, array
   - ☑ Arrow, classes
