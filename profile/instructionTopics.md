@@ -1,17 +1,17 @@
 # Instruction topics
 
-The course covers a full stack of technologies. Topics marked with ☑ include assignments that you must complete for certification.
+The course covers a full stack of technologies.
 
 The instruction contains the following icons to draw attention to important things.
 
-| Icon | Meaning                   |
-| ---- | ------------------------- |
-| ⚠    | Important concept to note |
-| ☑    | Graded assignment         |
+| Icon | Meaning                                              |
+| ---- | ---------------------------------------------------- |
+| ⚠    | Important concepts, or pitfalls, to note             |
+| ☑    | Assignments that you must complete for certification |
 
 ## Development essentials
 
-- History of the web
+- [History of the web](developmentEssentials/history/history.md)
 - Asking questions
 - ☑ Discord
 - Pair programming
@@ -23,6 +23,7 @@ The instruction contains the following icons to draw attention to important thin
 - GitHub
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
+- ☑ [CodePen](codepen.md)
 - ☑ Start up deliverable - Specification
 - Technology stack
 
@@ -40,9 +41,8 @@ The instruction contains the following icons to draw attention to important thin
 - [Caddy](webServers/caddy/caddy.md)
 - ☑ Setup a website
 
-## HTML, CSS, JavaScript
+## HTML, CSS, & JavaScript
 
-- ☑ CodePen
 - VSCode LiveServer extension
 - [HTML introduction](html/introduction.md)
   - HTML structure elements
@@ -105,7 +105,7 @@ The instruction contains the following icons to draw attention to important thin
   - ☑ Simon WebSocket
 - ☑ Start up deliverable - Service
 
-## Web frameworks, mobile applications, and security
+## Web frameworks, mobile applications, & security
 
 - [Web frameworks](webFrameworks/webFrameworks.md)
 - [React](webFrameworks/react/react.md)
