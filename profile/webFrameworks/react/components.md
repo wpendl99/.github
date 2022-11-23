@@ -130,6 +130,64 @@ class Demo extends React.Component {
 }
 ```
 
+## Function Components
+
+In addition to the class style components demonstrated above, React also supports function style components. The return value of the function is the equivalent of a class component's render function.
+
+```jsx
+const Hello = () => {
+  let name = 'world';
+
+  return <p>Hello {name}x</p>;
+};
+```
+
+Properties are supported as a parameter to the function.
+
+```jsx
+const Hello = (props) => {
+  let name = 'world';
+
+  return (
+    <p>
+      {props.prefix} {name}x
+    </p>
+  );
+};
+
+ReactDOM.render(<Hello prefix='Goodbye' />, document.getElementById('root'));
+```
+
+You can also store state with hook functions. The `React.useState` function returns a variable that contains the current state and a function to update the state. The following example sets the state to 'yes' when the paragraph text is clicked.
+
+```jsx
+const Hello = (props) => {
+  let name = 'world';
+  const [clicked, updateClicked] = React.useState('no');
+
+  const onClicked = (e) => {
+    console.log('c');
+    updateClicked('yes');
+  };
+
+  return (
+    <p onClick={(e) => onClicked(e)}>
+      {props.prefix} {name}, clicked: {clicked}
+    </p>
+  );
+};
+
+ReactDOM.render(<Hello prefix='Goodbye' />, document.getElementById('root'));
+```
+
+You should note that you can use JSX even without a function. A simple variable representing JSX will work anyplace you would otherwise provide a component.
+
+```jsx
+const hello = <div>Hello</div>;
+
+ReactDOM.render(hello, document.getElementById('root'));
+```
+
 ## Reactivity
 
 A component's properties and state are used by the React framework to determine the reactivity of the interface. Whenever a component's state or properties change the render function for the component and all of its dependent component render functions are called.
@@ -138,4 +196,4 @@ A component's properties and state are used by the React framework to determine 
 
 Create a fork of this [CodePen](https://codepen.io/leesjensen/pen/eYKVYOR) and experiment.
 
-When you are done submit your CodePen URL, along with a discription of something your found interesting, to the Canvas assignment.
+When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.

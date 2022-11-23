@@ -108,4 +108,4 @@ rm -rf junk
 ls
 ```
 
-The better you get at working within the console the more efficent your programming will be. When you are done experimenting, submit a discription of something your found interesting to the Canvas assignment.
+The better you get at working within the console the more efficient your programming will be. When you are done experimenting, submit a description of something your found interesting to the Canvas assignment.
