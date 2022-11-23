@@ -1,6 +1,6 @@
 # Reactivity
 
-Making the UI react to changes in user input or data is one of the architectual foundations of React. React enables reactivity with three major pieces of a React component: `props`, `state`, and `render`.
+Making the UI react to changes in user input or data is one of the architectural foundations of React. React enables reactivity with three major pieces of a React component: `props`, `state`, and `render`.
 
 When a component's JSX is rendered, React parses the JSX creates a list of any references to the component's `state` or `prop` objects. React then monitors those objects and if it detects that they have changed it will call the component's `render` function so that the impact of the change is visualized.
 
@@ -93,4 +93,4 @@ ReactDOM.render(<Survey />, document.getElementById('root'));
 
 Create a fork of this [codePen](https://codepen.io/leesjensen/pen/XWYZwJW) and experiment.
 
-When you are done submit your CodePen URL, along with a discription of something your found interesting, to the Canvas assignment.
+When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.

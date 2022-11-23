@@ -1,34 +1,34 @@
-# A brief history of web programming.
+# A brief history of web programming
 
 ## The Internet
 
-The essential first step to creating what we now call web programming was the formation of a global communications network that was reliable and publicly available. This was made possible when the United States Department of Defense create the ARPANET as a means of sharing information between universities doing defense related research.
+The essential first step to enabling what we now call web programming was the formation of a global communications network that was reliable and publicly available. This was made possible when the United States Department of Defense created the ARPANET as a means of sharing information between universities doing defense related research.
 
 <img src="arpanet1970s.jpg">
 
-\- ARPANET access points in the 1970s (**Source**: _Wikipedia_)
+— ARPANET access points in the 1970s (**Source**: _Wikipedia_)
 
-ARPANET was defined with the goal of withstanding a nuclear attack. This led to the implementation of a redundantly connected graph of connected nodes. Within that network, two computers would communicate by dynamically discovering a path to each other without the help of a single central authority.
+ARPANET was defined with the goal of withstanding a nuclear attack. This led to the implementation of a redundantly connected graph of connected nodes. Within that network, two computers communicate by dynamically discovering a path to each other without the help of a single central authority.
 
-In the 1980s the National Science Foundation continued the expansion of the network, and commercial enterprises began to make significant contributions. This eventually led to the Internet as we know it today with a massive explosion of consumer participation that began in the early 1990s.
+In the 1980s the National Science Foundation continued the expansion of the network, and commercial enterprises began to make significant contributions. This eventually led to the Internet as we know it today with a massive explosion of consumer participation that began in the early 1990s as the world went online. This was followed by another exponential increase in the 2000s as smart phones and appliances became common.
 
-The Internet Corporation for Assigned Names and Numbers (ICANN) serves as the maintaining body of the Internet and oversees both the Internet Protocol ([IP](https://en.wikipedia.org/wiki/Internet_Protocol)) address space as well as the Domain Name System ([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)). These two databases form the address book of the Internet. The technical protocols that specify how the physical network communicates are controlled by the Internet Engineering Task Force (IETF). When the United States government transitioned control of these governing bodies to a global community of non-profit stake holders in 2016, the Internet became a worldwide asset free from any specific political control.
+The management of the Internet is controlled by two major organizations. Internet Engineering Task Force (IETF) defines the technical standards that specify how the physical network communicates. The Internet Corporation for Assigned Names and Numbers (ICANN) oversees both the Internet Protocol ([IP](https://en.wikipedia.org/wiki/Internet_Protocol)) address space as well as the Domain Name System ([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)). These two databases form the address book of the Internet. When the United States government transitioned control of these governing bodies to a global community of non-profit stake holders in 2016, the Internet became a worldwide asset free from any specific political control.
 
 ## Hypertext Markup Language (HTML)
 
 <img src="timBernersLee.jpg" width=200 />
 
-\- Tim Berners-Lee (**Source**: _BBC_)
+— Tim Berners-Lee (**Source**: _BBC_)
 
 > I just had to take the hypertext idea and connect it to the TCP and DNS ideas and—ta-da!—the World Wide Web.
 >
-> \- Tim Berners-Lee, (**Source**: _Answers for Young People_)
+> — Tim Berners-Lee, (**Source**: _Answers for Young People_)
 
 Starting in 1980, Tim Berners-Lee was working at the research laboratory Cern. He was tasked with building a system that would allow researchers to share documents between remote academic institutions. Realizing that the ARPANET provided the necessary connectivity, he defined the protocols for document sharing that formed the underpinning of what would be termed the World Wide Web. Berners-Lee named the document format HyperText Markup Language ([HTML](https://en.wikipedia.org/wiki/HTML)) after the inspiration of the digital publishing industry's Standard Generalized Markup Language (SGML). One of the key innovations of HTML was the idea that documents could be interconnected with what he termed hyperlinks to allow immediate access to related documents. In 1990 he put all the pieces together and build the world's first web server on his desktop NeXT computer. You can visit a reproduction of the first web site at [info.cern.ch](http://info.cern.ch/).
 
 <img src="firstWebServer.jpg" />
 
-\- First web server (**Source**: _Cern_)
+— First web server (**Source**: _Cern_)
 
 Originally, HTML contained only 18 elements, or tags. The latest version of HTML has now grown to over 100. Since 1996 the HTML specification has been controlled by the [W3C](https://www.w3.org/). The following is an example of a simple HTML document.
 
@@ -39,16 +39,6 @@ Originally, HTML contained only 18 elements, or tags. The latest version of HTML
   </body>
 </html>
 ```
-
-### HTML Versions
-
-| Year | Version | Features                                  |
-| ---- | ------- | ----------------------------------------- |
-| 1990 | HTML1   | format tags                               |
-| 1995 | HTML2   | tables, internationalization              |
-| 1997 | HTML3   | MathML, CSS, frame tags                   |
-| 1999 | HTML4   | external CSS                              |
-| 2014 | HTML5   | email, password, media, and semantic tags |
 
 ## HTTP and URL
 
@@ -62,26 +52,17 @@ Host: info.cern.ch
 Accept: text/html
 ```
 
-### HTTP Versions
-
-| Year | Version | Features                                        |
-| ---- | ------- | ----------------------------------------------- |
-| 1990 | HTTP1   | get/post, header, status codes, content-type    |
-| 1997 | HTTP1.1 | put/patch/delete/options, persistent connection |
-| 2015 | HTTP2   | multiplex, server push, compression             |
-| 2022 | HTTP3   | QUIC for transport protocol, always encrypted   |
-
 ## JavaScript
 
 In 1995 Netscape (the build of the popular browser Navigator) decided to add the ability to script web pages. The initial implementation was led by Brendan Eich and given the name JavaScript. JavaScript turned the previously static web into an interactive experience where a web page could dynamically change based upon a user's interaction.
 
 <img src="brendanEich.jpg" width=200 />
 
-\- Brendan Eich (**Source**: _Wikipedia_)
+— Brendan Eich (**Source**: _Wikipedia_)
 
 > Always bet on JS
 >
-> \- Brendan Eich (**Source**: _brendaneich.github.io_)
+> — Brendan Eich (**Source**: _brendaneich.github.io_)
 
 In 1996 Netscape turned control of JavaScript over to ECMA International in an attempt to standardize the definition of the language. At that point JavaScript officially became know as ECMAScript, although it is still commonly referred to as JavaScript.
 
@@ -98,20 +79,6 @@ console.log(join('hello', ' ', 'world', '!'));
 
 The first decade of JavaScript was turbulent as each of the major browser vendors attempted to introduce new proprietary features in order to gain market share. Eventually in 2009 the major vendors agreed on the ECMAScript 5 standard and in 2015 ECMAScript 6 was released as the last major feature upgrade. Since then minor releases have taken the year of their release as their version number.
 
-### JavaScript Versions
-
-| Year | Version | Features                                                                                                                  |
-| ---- | ------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1997 | ES1     | types, functions                                                                                                          |
-| 1999 | ES3     | regex, exceptions, switch                                                                                                 |
-| 2009 | ES5     | json, array iteration                                                                                                     |
-| 2015 | ES6     | let/const, default params, classes, template literals, destructuring, generators, promises, modules, internationalization |
-| 2016 | ES2016  | array.includes                                                                                                            |
-| 2017 | ES2017  | async/await                                                                                                               |
-| 2018 | ES2018  | rest/spread, promise.finally                                                                                              |
-| 2019 | ES2019  | string.trim                                                                                                               |
-| 2020 | ES2020  | ?? operator                                                                                                               |
-
 ### JavaScript outside the browser
 
 In 2009 Ryan Dahl created Node.js as the first successful application for deploying JavaScript outside of a browser. This changed the mindset of JavaScript as purely a browser technology to one that is leveraged across an entire technology stack.
@@ -124,11 +91,11 @@ Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first prop
 
 <img src="hakonLie.jpg" width=200 />
 
-\- Håkon Wium Lie (**Source**: _Wikipedia_)
+— Håkon Wium Lie (**Source**: _Wikipedia_)
 
 > If we hadn’t developed CSS, we could have ended up with the web being a giant fax machine
 >
-> Håkon Wium Lie (**Source**: _Medium.com_)
+> — Håkon Wium Lie (**Source**: _Medium.com_)
 
 By 1996 CSS became a standard and all the major browsers began to implement the functionality. Unfortunately, for the first years of CSS the same proprietary wars that plagued HTML also affected CSS. Much of the work on version 2.1 was to remove error and make all the features of CSS compatible. Here is a simple example of CSS that defines the white spacing, color, and shadowing of paragraph text.
 
@@ -142,14 +109,3 @@ p {
 ```
 
 The ability of CSS to style a web page has increased significantly from its original implementation. With modern CSS a web programmer can animate the page, respond to user actions, and dynamically alter the entire layout of the page based on the size of a device and its orientation.
-
-### CSS Versions
-
-| Year      | Version | Features                                                                                   |
-| --------- | ------- | ------------------------------------------------------------------------------------------ |
-| 1996      | CSS1    | selectors, font, color, background, alignment, margin, border, padding                     |
-| 1998      | CSS2    | positioning, z-index, bidirectional text, shadows                                          |
-| 2011      | CSS2.1  | removed incompatible features                                                              |
-| 1999-2021 | CSS3    | enhancements for media, box, background, borders, color, template, multi-column, selectors |
-
-Beginning with CSS3 the specification was divided into modules so that they could be implemented at different levels of maturity. Whether these modules will culminate in a CSS4 specification has not yet been decided.

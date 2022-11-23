@@ -2,6 +2,13 @@
 
 The course covers a full stack of technologies. Topics marked with ☑ include assignments that you must complete for certification.
 
+The instruction contains the following icons to draw attention to important things.
+
+| Icon | Meaning                   |
+| ---- | ------------------------- |
+| ⚠    | Important concept to note |
+| ☑    | Graded assignment         |
+
 ## Development essentials
 
 - History of the web
