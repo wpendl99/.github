@@ -2,8 +2,6 @@
 
 The course covers a full stack of technologies.
 
-The instruction contains the following icons to draw attention to important things.
-
 | Icon | Meaning                                              |
 | ---- | ---------------------------------------------------- |
 | ⚠    | Important concepts, or pitfalls, to note             |
@@ -23,7 +21,7 @@ The instruction contains the following icons to draw attention to important thin
 - GitHub
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
-- ☑ [CodePen](codepen.md)
+- ☑ [CodePen](developmentEssentials/codePen/codepen.md)
 - ☑ Start up deliverable - Specification
 - Technology stack
 
