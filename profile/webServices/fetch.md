@@ -6,7 +6,7 @@ The ability to make HTTP requests from JavaScript is one of the main technologie
 
 Today, the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) is the current preferred to make HTTP requests. The `fetch` function is built into the browser's JavaScript runtime. This means you can call it anywhere from JavaScript code running in a browser.
 
-The basic usage of fetch takes a URL and returns a promise. The promise `then` function takes a callback function that is asynchronously called when the requested URL content is obtained. If the returned content is of type `applicaiton/json` you can use the `json` function on the response object to convert it to a JavaScript object.
+The basic usage of fetch takes a URL and returns a promise. The promise `then` function takes a callback function that is asynchronously called when the requested URL content is obtained. If the returned content is of type `application/json` you can use the `json` function on the response object to convert it to a JavaScript object.
 
 The following example makes a fetch request to get and display an inspirational quote. After reading the documentation for fetch, you can experiment with this code by pasting it in the browser's debug console window. This will allows you to get type-ahead help and clearly display any errors that your experiments generate. Try different URLs, HTTP verbs, and fetch options.
 

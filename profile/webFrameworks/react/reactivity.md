@@ -91,6 +91,6 @@ ReactDOM.render(<Survey />, document.getElementById('root'));
 
 ## ☑ Assignment
 
-Create a fork of this [codePen](https://codepen.io/leesjensen/pen/XWYZwJW) and experiment.
+Create a fork of this [codePen](https://codepen.io/leesjensen/pen/NWzYzXE) and experiment.
 
 When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.

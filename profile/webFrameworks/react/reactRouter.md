@@ -47,6 +47,6 @@ root.render(
 
 ## ☑ Assignment
 
-Create a fork of this [codePen](https://codepen.io/leesjensen/pen/KKeZzBM) and experiment.
+Create a fork of this [codePen](https://codepen.io/leesjensen/pen/poKLKaX) and experiment.
 
 When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.
