@@ -68,7 +68,7 @@ In 1996 Netscape turned control of JavaScript over to ECMA International in an a
 
 Here is an example of a simple JavaScript program.
 
-```javascript
+```js
 const join = (...a) => {
   return a.reduce((accumulator, currentValue) => accumulator + currentValue);
 };

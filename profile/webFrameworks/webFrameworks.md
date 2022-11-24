@@ -94,7 +94,7 @@ Angular component defines what JavaScript, HTML, and CSS are combined together. 
 
 **JS**
 
-```javascript
+```js
 @Component({
   selector: 'app-hello-world',
   templateUrl: './hello-world.component.html',

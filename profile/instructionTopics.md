@@ -39,7 +39,7 @@ The course covers a full stack of technologies.
 - [Caddy](webServers/caddy/caddy.md)
 - ☑ Setup a website
 
-## HTML, CSS, & JavaScript
+## HTML, CSS, and JavaScript
 
 - VSCode LiveServer extension
 - [HTML introduction](html/introduction.md)
@@ -62,12 +62,18 @@ The course covers a full stack of technologies.
 - ☑ Simon CSS
 - ☑ Start up deliverable - HTML, CSS
 - [JavaScript introduction](javascript/introduction/introduction.md)
-  - ☑ log, types, expr, functions
-  - ☑ Object, map, array
+  - [JavaScript Console](javascript/console.md)
+  - [Types and constructs](javascript/typeConstruct.md)
+  - ☑ [Function](javascript/function.md)
+  - ☑ [Object, map, and array](javascript/objectMapArray.md)
   - ☑ Arrow, classes
+  - ☑ Regular expressions
+  - ☑ Rest and spread
+  - ☑ Destructuring
   - ☑ Exceptions
   - [Scope](javascript/scope.md)
   - [Modules](javascript/modules.md)
+  - Adding JavaScript to HTML
 - Asynchronous programming
   - ☑ [Promises](javascript/promises.md)
   - ☑ Async/await
@@ -103,7 +109,7 @@ The course covers a full stack of technologies.
   - ☑ Simon WebSocket
 - ☑ Start up deliverable - Service
 
-## Web frameworks, mobile applications, & security
+## Web frameworks, mobile applications, and security
 
 - [Web frameworks](webFrameworks/webFrameworks.md)
 - [React](webFrameworks/react/react.md)

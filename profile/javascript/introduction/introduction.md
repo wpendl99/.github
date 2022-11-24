@@ -2,7 +2,9 @@
 
 <img src="esLogo.png" width=100/>
 
-JavaScript is a loosely typed language based upon concepts found in C, Java, and Scheme. It is by far the most used programming language in the world. It runs on every web browser, is commonly used as a web server language, and for many serverless functions. In this instruction we will cover the basic parts of the language necessary to create a reasonable website. There are many features of the language that will not be discussed and you should take time to dig into the corners of the language as time allows. The more effectively you understand JavaScript the better web programmer you will be.
+JavaScript is a weakly typed language based upon concepts found in C, Java, and Scheme. It is by far the most used programming language in the world. It runs on every web browser, is commonly used as a web server language, and for many serverless functions. In this instruction we will cover the basic parts of the language necessary to create a reasonable website. There are many features of the language that will not be discussed and you should take time to dig into the corners of the language as time allows. The more effectively you understand JavaScript the better web programmer you will be.
+
+Typically JavaScript is executed using an interpreter at runtime instead of compiling it into a machine specific binary at build time. This has the advantage of making JavaScript very portable, but also allows for many errors, such as a reference to an undefined variable, to stop the execution of the JavaScript at runtime.
 
 ## JavaScript Versions
 
@@ -20,30 +22,42 @@ The following table describes the version history of JavaScript. You don't need 
 | 2019 | ES2019  | string.trim                                                                                                               |
 | 2020 | ES2020  | ?? operator                                                                                                               |
 
-# Getting Started
+## Getting Started
 
 Let's start with a basic example. The following JavaScript will concatenate three strings together and then throw away the result. Not very useful, but JavaScript doesn't complain much.
 
-```javascript
+```js
 'Hello' + ' ' + 'world';
 ```
 
 Only slightly more complex is to call a function with the result of our concatenated string. In this case we call the JavaScript runtime's built in function `console.log` to output the string to the debugger console.
 
-```javascript
+```js
 console.log('Hello' + ' ' + 'world');
 // OUTPUT: Hello world
 ```
 
 You can also write your own functions.
 
-```javascript
+```js
 function join(a, b) {
   return a + ' ' + b;
 }
 
 console.log(join('Hello', 'world'));
 // OUTPUT: Hello world
+```
+
+## Comments
+
+You can comment out JavaScript with either line or block comments.
+
+```js
+// Line comment
+
+/*
+Block comment
+*/
 ```
 
 ## Playgrounds
@@ -54,7 +68,7 @@ Before we go any further we need a way for you to write and run JavaScript yours
    ![Browser Debugger](codePenJavaScriptDebugger.png)
 1. Use your browser's debugger. For example, if you open Chrome and press `F12` the debugger will display. Select the `Console` menu option. This will display a JavaScript interpreter where you can write and execute your code.
    ![Browser Debugger](browserDebugger.png)
-1. Install and use `Node.js`. Node.js is a JavaScript execution application. This will let you run JavaScript outside of a browser. There are three ways to do this.
+1. Install and use `Node.js`. Node.js is a JavaScript execution application. This will let you run JavaScript outside of a browser. There are three ways you can use Node to run your JavaScript.
    1. Run in interpreter mode. To do this you run `node.js` from the console and type in your JavaScript into the interpreter.
       ```sh
       ➜  node
@@ -72,5 +86,5 @@ Before we go any further we need a way for you to write and run JavaScript yours
       ➜  node junk.js
       Hello world
       ```
-   1. Open your JavaScript file in Visual Studio Code and execute your code by pressing `F5` and selecting `node.js` as the debugger.
+   1. Open your JavaScript file in Visual Studio Code and execute your code by pressing `F5` and selecting `node.js` as the debugger. You can set breakpoints in the editor window, inspect variables, and view the console output.
       ![Browser Debugger](vscodeJavaScriptDebugger.png)

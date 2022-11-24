@@ -16,9 +16,11 @@ const list = (
 
 Babel will convert that into valid JavaScript:
 
-```Javascript
-const header = React.createElement("ol", null,
-  React.createElement("li", null, "Item 1")
+```js
+const header = React.createElement(
+  'ol',
+  null,
+  React.createElement('li', null, 'Item 1')
 );
 ```
 

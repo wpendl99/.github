@@ -10,7 +10,7 @@ The basic usage of fetch takes a URL and returns a promise. The promise `then` f
 
 The following example makes a fetch request to get and display an inspirational quote. After reading the documentation for fetch, you can experiment with this code by pasting it in the browser's debug console window. This will allows you to get type-ahead help and clearly display any errors that your experiments generate. Try different URLs, HTTP verbs, and fetch options.
 
-```javascript
+```js
 const url = 'https://api.quotable.io/random';
 fetch(url)
   .then((x) => x.json())

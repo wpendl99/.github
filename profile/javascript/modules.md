@@ -1,6 +1,6 @@
 ## JavaScript modules
 
-**Optional reading** - [MDN JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+**Optional reading**: [MDN JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 JavaScript modules allow for the partitioning and sharing of code. Initially JavaScript had no support for modules. Node.js introduced the concept in order to support complex server side execution of JavaScript. However, with the introduction ES6 modules have become standard and [browser support](https://caniuse.com/es6-module-dynamic-import) is almost universal.
 
