@@ -22,7 +22,7 @@ The following table describes the version history of JavaScript. You don't need 
 | 2019 | ES2019  | string.trim                                                                                                               |
 | 2020 | ES2020  | ?? operator                                                                                                               |
 
-## Getting Started
+## Getting started
 
 Let's start with a basic example. The following JavaScript will concatenate three strings together and then throw away the result. Not very useful, but JavaScript doesn't complain much.
 
@@ -59,6 +59,10 @@ You can comment out JavaScript with either line or block comments.
 Block comment
 */
 ```
+
+## Code delimiters
+
+While not technically required in most cases, it is considered good form to end JavaScript statements with a semicolon (`;`). Code blocks, and their resulting scope, are defined with curly braces (`{`, `}`).
 
 ## Playgrounds
 

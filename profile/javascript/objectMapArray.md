@@ -1,5 +1,31 @@
 # JavaScript object, map, and array
 
+## Object
+
+`new` keyword.
+
+## Object
+
+A JavaScript object represents a collection of name value pairs referred to as properties. Then name must be of type String or Symbol, but the value can be of any type.
+
+You can declare a variable of object type with the `object-literal` syntax. This provides the initial composition of the object. Once declared you can add properties to the object by simply referencing the new property name in an assignment. Any type of variable can be assigned to a property. This includes a sub object, array, or function.
+
+```js
+const obj = {
+  a: 3,
+  b: 'fish',
+};
+
+obj.c = [1, 2, 3];
+
+console.log(obj);
+// OUTPUT: {a: 3, b: 'fish', c: [1,2,3]}
+```
+
+The ability to dynamically modify an object is incredibly useful when manipulating data with an indeterminate structure.
+
+Note the different uses of the term object. Object can refer to a class of variable types (Object, Function, Date, ...), or it can refer to the actual Object type (i.e. new Object()), or it can refer to an actual variable of type Object. This overloaded usage can be a bit confusing.
+
 ## ☑ Assignment
 
 Create a CodePen that uses loops and `if` expressions compute the equality and strict equality of values found in this array and store the results in an array of arrays.

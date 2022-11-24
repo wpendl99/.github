@@ -12,7 +12,7 @@ var x = 1;
 const y = 2;
 ```
 
-⚠ Originally JavaScript used the keyword `var` to define variables or to leave out the declaration entirely. These uses have been deprecated because they cause hard to detect errors in code. Always declare your variables either with `let` or `const`.
+⚠ Originally JavaScript used the keyword `var` to define variables, or allowed you to leave the keyword out entirely. This has been deprecated because they cause hard to detect errors in code related to the scope of the variable. You should avoid `var` and always declare your variables either with `let` or `const`.
 
 ## Type
 
@@ -32,16 +32,20 @@ Of these types Boolean, Number, and String are the types commonly thought of whe
 
 In addition to the above primitives JavaScript defines several object types. Some of the more commonly used objects include the following.
 
-| Type       | Use                                                                                         | Example                  |
-| ---------- | ------------------------------------------------------------------------------------------- | ------------------------ |
-| `Object`   | A set collection of properties represented by name value pairs. Values can be of any type . | `{a:3, b:'fish'}`        |
-| `Function` | An object that has the ability to be called.                                                | `function a() {}`        |
-| `Date`     | Calendar dates and times.                                                                   | `new Date('1995-12-17')` |
-| `Array`    | An ordered sequence of any type.                                                            | `[3, 'fish']`            |
-| `Map`      | A collection of key value pairs that support efficient lookups.                             | `new Map()`              |
-| `JSON`     | A lightweight data-interchange format used to share information across programs.            | `{"a":3, "b":"fish"}`    |
+| Type       | Use                                                                                    | Example                  |
+| ---------- | -------------------------------------------------------------------------------------- | ------------------------ |
+| `Object`   | A collection of properties represented by name value pairs. Values can be of any type. | `{a:3, b:'fish'}`        |
+| `Function` | An object that has the ability to be called.                                           | `function a() {}`        |
+| `Date`     | Calendar dates and times.                                                              | `new Date('1995-12-17')` |
+| `Array`    | An ordered sequence of any type.                                                       | `[3, 'fish']`            |
+| `Map`      | A collection of key value pairs that support efficient lookups.                        | `new Map()`              |
+| `JSON`     | A lightweight data-interchange format used to share information across programs.       | `{"a":3, "b":"fish"}`    |
 
-## Type Conversions
+## Common operators
+
+When dealing with number variable, JavaScript supports standard mathematical operators like `+` (add), `-` (subtract), `*` (multiply), `/` (divide), and `===` (equality). For string variables, JavaScript support `+` (concatenation) and `===` (equality).
+
+## Type conversions
 
 JavaScript is a weakly typed language. That means that a variable always has a type, but the variable can change type when it is assigned a new value, or that types can be automatically converted based upon the context that they are used in. Sometime the results of automatic conversions can be unexpected from programmers who are use to strongly type languages. Consider the following examples.
 
@@ -72,7 +76,7 @@ null == undefined;
 // OUTPUT: true
 ```
 
-⚠ This is because in JavaScript uses [complex rules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#strict_equality_using) for defining equality that depend upon the conversion of a type to a boolean value. You will sometimes hear this referred to as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and truthy values. To remove this confusion JavaScript introduced the strict equality (===) and inequality (!==) operators. The strict operators skip the type conversion when computing equality. This results in the following.
+⚠ Unexpected results happen in JavaScript because it uses [complex rules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#strict_equality_using) for defining equality that depend upon the conversion of a type to a boolean value. You will sometimes hear this referred to as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and truthy evaluations. To remove this confusion, JavaScript introduced the strict equality (===) and inequality (!==) operators. The strict operators skip the type conversion when computing equality. This results in the following.
 
 ```js
 1 === '1';
@@ -83,13 +87,11 @@ null === undefined;
 // OUTPUT: false
 ```
 
-Because strict equality is considered more intuitive, it is almost always preferred.
+Because strict equality is considered more intuitive, it is almost always preferred and should be used in your code.
 
-## Constructs
+## Conditionals
 
-JavaScript support all of common programming language constructs. This includes `if`, `else`, `if else`, `for`, `for in`, `for of`, `while`, `do while`, and `switch`. Here are some examples.
-
-### if, else, if else
+JavaScript support many common programming language conditional constructs. This includes `if`, `else`, and `if else`. Here are some examples.
 
 ```js
 if (a === 1) {
@@ -101,6 +103,12 @@ if (a === 1) {
 }
 ```
 
+You can also use the ternary operator. This provides a compact `if else` representation.
+
+```js
+a === 1 ? console.log(1) : console.log(2);
+```
+
 You can use boolean operations in the expression to create complex predicates. Common boolean operators include `&&` (and), `||` (or), and `!` (not).
 
 ```js
@@ -109,7 +117,13 @@ if (true && (!false || true)) {
 }
 ```
 
+### Loops
+
+JavaScript support many common programming language looping constructs. This includes `for`, `for in`, `for of`, `while`, `do while`, and `switch`. Here are some examples.
+
 ### for
+
+Note the introduction of the standard increment operation (`i++`) for adding one to a number.
 
 ```js
 for (let i = 0; i < 2; i++) {
@@ -166,7 +180,7 @@ for (const name in arr) {
 
 ### for of
 
-The `for of` statement iterates over an an iterable's (Array, Map, Set, ...) property values.
+The `for of` statement iterates over an iterable's (Array, Map, Set, ...) property values.
 
 ```js
 const arr = ['a', 'b'];
@@ -179,7 +193,7 @@ for (const val of arr) {
 
 ### Break and continue
 
-All of the looping constructs allow for either a `break` or `continue` statement to abort or advance the loop.
+All of the looping constructs demonstrated above allow for either a `break` or `continue` statement to abort or advance the loop.
 
 ```js
 let i = 0;
@@ -194,3 +208,9 @@ while (true) {
 }
 // OUTPUT: 0 1
 ```
+
+## ☑ Assignment
+
+Create a CodePen that uses conditional and loop statements.
+
+When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.

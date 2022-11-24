@@ -2,6 +2,8 @@
 
 Understanding JavaScript scope is essential.
 
+this
+
 let vs var
 
 bind

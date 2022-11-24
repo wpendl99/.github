@@ -1,6 +1,6 @@
 # Instruction topics
 
-The course covers a full stack of technologies.
+The course covers a full stack of technologies including HTML, CSS, JavaScript, HTTP, DNS, web servers, client side web frameworks, database services, security, and progressive web applications. The instruction topics given below include assignments and projects to help you explore the concepts and demonstrate your mastery.
 
 | Icon | Meaning                                              |
 | ---- | ---------------------------------------------------- |
@@ -63,8 +63,8 @@ The course covers a full stack of technologies.
 - ☑ Start up deliverable - HTML, CSS
 - [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console.md)
-  - [Types and constructs](javascript/typeConstruct.md)
-  - ☑ [Function](javascript/function.md)
+  - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct.md)
+  - ☑ [Functions](javascript/functions.md)
   - ☑ [Object, map, and array](javascript/objectMapArray.md)
   - ☑ Arrow, classes
   - ☑ Regular expressions
