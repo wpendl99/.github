@@ -64,8 +64,10 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console.md)
   - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct.md)
+  - [String](javascript/string.md)
   - ☑ [Functions](javascript/functions.md)
-  - ☑ [Object, map, and array](javascript/objectMapArray.md)
+  - ☑ [Object](javascript/object.md)
+  - ☑ [Array](javascript/array.md)
   - ☑ Arrow, classes
   - ☑ Regular expressions
   - ☑ Rest and spread

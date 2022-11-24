@@ -124,6 +124,27 @@ labeler('fish');
 // OUTPUT: string=fish
 ```
 
+## Function parameters
+
+When a function is called the caller may choose what parameters to provide. If a parameter is not provided then the value of the parameter is `undefined` when the function executes.
+
+In addition to explicitly passing the value of a parameter to a function, the function can define a default value. This is done by assigning a value to the parameter in the function declaration.
+
+```js
+function labeler(value, title = 'title') {
+  console.log(`${title}=${value}`);
+}
+
+labeler();
+// OUTPUT: title=undefined
+
+labeler('fish');
+// OUTPUT: title=fish
+
+labeler('fish', 'animal');
+// OUTPUT: animal=fish
+```
+
 ## ☑ Assignment
 
 Create a CodePen that uses functions in all the different flavors including: standard definitions, anonymous, parameters, return values, and inner functions.
