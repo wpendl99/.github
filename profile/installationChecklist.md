@@ -11,3 +11,8 @@
     git config --global user.email "your email"
     git config --global user.name "your user name"
     # On commit git asked me for credentials. Supplied gitHub user name and personal access token (PAS). To get PAS click on User Profile Pic/Settings/Developer settings/Personal access tokens
+* Installed VS Code extensions
+    * Live Server
+    * Prettier
+    * ESLint
+    * Code Spell Checker
