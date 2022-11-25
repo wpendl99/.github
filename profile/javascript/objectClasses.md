@@ -165,4 +165,4 @@ console.log(e.print());
 
 Create a CodePen that uses objects and classes.
 
-When you are done submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.
+When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.

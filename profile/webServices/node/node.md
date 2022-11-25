@@ -20,7 +20,7 @@ nvm install --lts
 
 Install Node.js in your development environment.
 
-When you are done copy the output of the following commands and submit it, along with a description of something your found interesting, to the Canvas assignment.
+When you are done copy the output of the following commands and submit it, along with a description of something you found interesting, to the Canvas assignment.
 
 ```sh
 node -v

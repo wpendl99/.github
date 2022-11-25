@@ -17,4 +17,4 @@ In addition to using CodePen to complete assignments it is a great place to find
 
 ## ☑ Assignment
 
-Find an interesting pen that someone else has created. Fork the pen and make a minor change. Save the pen. Submit your CodePen URL, along with a description of something your found interesting, to the Canvas assignment.
+Find an interesting pen that someone else has created. Fork the pen and make a minor change. Save the pen. Submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
