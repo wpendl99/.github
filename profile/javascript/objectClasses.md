@@ -1,4 +1,4 @@
-# JavaScript object
+# JavaScript object and classes
 
 **Suggested reading**: [MDN Classes in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
 
@@ -35,7 +35,7 @@ const obj = {
 
 ## Object functions
 
-The Object class has several interesting static functions associated with it. Here are some of the interesting ones.
+Object has several interesting static functions associated with it. Here are some of the interesting ones.
 
 | Function | Meaning                             |
 | -------- | ----------------------------------- |

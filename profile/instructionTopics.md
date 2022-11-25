@@ -67,8 +67,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - [String](javascript/string.md)
   - ☑ [Functions](javascript/functions.md)
   - ☑ [Array](javascript/array.md)
-  - ☑ [Object](javascript/object.md)
-  - ☑ Arrow, classes
+  - ☑ [Object and Classes](javascript/objectClasses.md)
+  - ☑ Arrow
   - ☑ Regular expressions
   - ☑ Rest and spread
   - ☑ Destructuring

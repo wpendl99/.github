@@ -1,5 +1,7 @@
 # JavaScript string
 
+**Suggested reading**: [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 Strings are a primitive type in JavaScript. A string variable is specified by surround a sequence of characters with single quotes (`'`), double quotes (`"`), or backticks (\`). The meaning of single or double quotes are equivalent, but the backtick defines a string literal that may contain JavaScript that is evaluated in place and concatenated into the string. A string literal replace specifier is declared with a dollar sign followed by a curly brace pair. Anything inside the curly braces are evaluated as JavaScript. The use of backticks can also be used to create multiline strings without having to explicitly escape the newline characters using `\n`.
 
 ```js
@@ -13,7 +15,13 @@ console.log(`string ${l + (1 + 1)} text`);
 
 ## Unicode support
 
-JavaScript supports Unicode by defining a string as a 16-bit unsigned integers that represents UTF-16 strings. Unicode support allows JavaScript to represent most languages spoken on the planet. This includes those that are read from right to left. However, are several important steps you must take in order to make your web application fully internationalized. This includes handling of currency, time, dates, iconography, units or measure, keyboard layouts, and respecting local customs. Read this [article on the W3C website](https://www.w3.org/standards/webdesign/i18n) to learn more about internationalization
+JavaScript supports Unicode by defining a string as a 16-bit unsigned integers that represents UTF-16 strings. Unicode support allows JavaScript to represent most languages spoken on the planet. This includes those that are read from right to left.
+
+> حجر
+>
+> أقول لهذا الحجر: أنا أنت. فيقول: لستَ مرناً الى هذا الحدّ. أقول: قلبي مثلك؟ فيقول:
+
+However, are several important steps you must take in order to make your web application fully internationalized. This includes handling of currency, time, dates, iconography, units or measure, keyboard layouts, and respecting local customs. Read this [article on the W3C website](https://www.w3.org/standards/webdesign/i18n) to learn more about internationalization
 
 ## String functions
 
