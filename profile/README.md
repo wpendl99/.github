@@ -22,7 +22,7 @@ The course covers a full stack of technologies.
 - [Security](https://developer.mozilla.org/en-US/docs/Web/Security)
 - [Progressive Web Applications](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
-Get started with the course [instruction](instructionTopics.md).
+Get started with the course [instruction](https://github.com/webprogramming260/.github/blob/2b4c5b2e475279b723a7a86c03abe118124a595b/profile/instructionTopics.md).
 
 # Acknowledgements
 
