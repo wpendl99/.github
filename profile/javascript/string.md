@@ -11,7 +11,9 @@ console.log(`string ${l + (1 + 1)} text`);
 // OUTPUT: string literal2 text
 ```
 
-JavaScript supports Unicode by defining a string as a 16-bit unsigned integers that represents UTF-16 strings.
+## Unicode support
+
+JavaScript supports Unicode by defining a string as a 16-bit unsigned integers that represents UTF-16 strings. Unicode support allows JavaScript to represent most languages spoken on the planet. This includes those that are read from right to left. However, are several important steps you must take in order to make your web application fully internationalized. This includes handling of currency, time, dates, iconography, units or measure, keyboard layouts, and respecting local customs. Read this [article on the W3C website](https://www.w3.org/standards/webdesign/i18n) to learn more about internationalization
 
 ## String functions
 
