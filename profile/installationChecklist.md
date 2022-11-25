@@ -1,2 +1,2 @@
 * [Visual Studio Code](https://code.visualstudio.com/download)
-* Command Line Developer Tools
+* XCode Command Line Developer Tools
