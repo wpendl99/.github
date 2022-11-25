@@ -2,11 +2,17 @@
 
 We need to install Node.js in your production environment since that is used to run your services. However, we should just do this as part of the class AMI.
 
+The following console commands install Node Version Manager (NVM).
+
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 . ~/.nvm/nvm.sh
+```
 
+With NVM installed you can now use it to install different versions of Node.js. We will install the latest long term supported version represented by `lts`.
+
+```sh
 nvm install --lts
 ```
 

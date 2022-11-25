@@ -16,3 +16,11 @@
     * Prettier
     * ESLint
     * Code Spell Checker
+* Installed NVM, Node, NPM by installing NVM first and then the LTS version of Node.
+    ```sh
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+    . ~/.nvm/nvm.sh
+
+    nvm install --lts
+    ```
