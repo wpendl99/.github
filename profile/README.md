@@ -2,7 +2,7 @@
 
 ![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg)
 
-Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](profile/instructionTopics.md) and [example projects](https://demo.cs260.click). Assignments, quizes, and tests are submitted through Canvas.
+Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) and [example projects](https://demo.cs260.click). Assignments, quizes, and tests are submitted through Canvas.
 
 # Technologies and Instruction
 
@@ -22,7 +22,7 @@ The course covers a full stack of technologies.
 - [Security](https://developer.mozilla.org/en-US/docs/Web/Security)
 - [Progressive Web Applications](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
-Get started with the course [instruction]([profile/instructionTopics.md](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme)).
+Get started with the course [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme).
 
 # Acknowledgements
 
