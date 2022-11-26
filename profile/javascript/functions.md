@@ -1,6 +1,6 @@
 # Functions
 
-**Optional reading**: [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+**Suggested reading**: [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
 Functions are a common construct in any programming language. Functions act as small program that modularize some specific operation. This allows for the function to be invoked from multiple places and called recursively. In JavaScript functions are first class objects. That means that they can be assigned a name, passed as a parameter, returned as a result, and referenced from an object or array just like any other variable.
 

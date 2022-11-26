@@ -1,6 +1,6 @@
 # JavaScript type and construct
 
-**Optional reading**: [MDN - Data types and structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+**Suggested reading**: [MDN - Data types and structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ## Declaring variables
 

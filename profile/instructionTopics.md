@@ -71,7 +71,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [Object and classes](javascript/objectClasses.md)
   - ☑ [Regular expressions](javascript/regularExpressions.md)
   - ☑ [Rest and spread](javascript/restSpread.md)
-  - ☑ Destructuring
+  - ☑ [Destructuring](javascript/destructuring.md)
   - ☑ Exceptions
   - [Scope](javascript/scope.md)
   - [Modules](javascript/modules.md)

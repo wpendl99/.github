@@ -2,7 +2,7 @@
 
 <img src="esLogo.png" width=100/>
 
-**Optional reading**: [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+**Suggested reading**: [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 JavaScript is a weakly typed language based upon concepts found in C, Java, and Scheme. It is by far the most used programming language in the world. It runs on every web browser, is commonly used as a web server language, and for many serverless functions. In this instruction we will cover the basic parts of the language necessary to create a reasonable website. There are many features of the language that will not be discussed and you should take time to dig into the corners of the language as time allows. The more effectively you understand JavaScript the better web programmer you will be.
 
