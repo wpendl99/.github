@@ -72,11 +72,10 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [Regular expressions](javascript/regularExpressions.md)
   - ☑ [Rest and spread](javascript/restSpread.md)
   - ☑ [Destructuring](javascript/destructuring.md)
-  - ☑ Exceptions
+  - ☑ [Exceptions](javascript/exceptions.md)
   - [Scope](javascript/scope.md)
   - [Modules](javascript/modules.md)
-  - Adding JavaScript to HTML
-- Asynchronous programming
+  - [Adding JavaScript to HTML](javascript/addingToHtml.md)
   - ☑ [Promises](javascript/promises.md)
   - ☑ Async/await
 - ☑ Document object model (DOM)
