@@ -1,6 +1,6 @@
 # The Console
 
-**Required reading**: [MDN - Command line crash course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
+**Required reading**: [MDN Command line crash course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 
 Also know as the command line, shell, or terminal, the console is an essential web development tool. The console provides access to the file system and allows for the execution of command line applications.
 

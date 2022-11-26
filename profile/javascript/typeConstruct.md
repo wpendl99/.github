@@ -1,13 +1,13 @@
 # JavaScript type and construct
 
-**Suggested reading**: [MDN - Data types and structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+**Suggested reading**: [MDN Data types and structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ## Declaring variables
 
 Variables are declared using either the `let` or `const` keyword. `let` allows you to change the value of the variable while `const` will cause an error if you attempt to change it.
 
 ```js
-var x = 1;
+let x = 1;
 
 const y = 2;
 ```
