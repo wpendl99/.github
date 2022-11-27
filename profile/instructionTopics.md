@@ -78,7 +78,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ Document object model (DOM)
   - [Adding JavaScript to HTML](javascript/addingToHtml.md)
   - ☑ [Promises](javascript/promises.md)
-  - ☑ Async/await
+  - ☑ [Async/await](javascript/async/await.md)
 - JavaScript frameworks and utilities
 - Debugging JavaScript
 - ☑ Simon JavaScript
