@@ -134,7 +134,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 ## Simon Applications
 
-The course long example project is broken up into multiple stages. The following links provide the code and a working example of the project at each stage.
+The course example project is broken up into multiple stages. The following links provide the code and a working example of the project at each stage.
 
 - Simon HTML [code](https://github.com/webprogramming260/simon-html#readme), [example](https://simon-html.cs260.com)
 - Simon CSS [code](https://github.com/webprogramming260/simon-css#readme), [example](https://simon-css.cs260.com)

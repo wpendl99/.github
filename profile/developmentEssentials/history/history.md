@@ -87,7 +87,7 @@ Other important milestones in the history of JavaScript include the 2013 standar
 
 ## Cascading Style Sheets (CSS)
 
-Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first proposed in 1994 by Håkon Wium Lie, a contemporary of Berners-Lee at CERN, in order to give HTML documents visual styling independent of the contents structure. Before the introduction of CSS, HTML was going down the path of hard coding the visual appearance of the content as part of the HTML tag definition. This resulting a single visual style for the entire web.
+Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first proposed in 1994 by Håkon Wium Lie, a contemporary of Berners-Lee at CERN, in order to give HTML documents visual styling independent of the contents structure. Before the introduction of CSS, HTML was going down the path of hard coding the visual appearance of the content as part of the HTML tag definition. This resulting a single visual style for the entire web that was completely defined by the browser.
 
 <img src="hakonLie.jpg" width=200 />
 

@@ -69,6 +69,6 @@ console.log(cow());
 
 ## ☑ Assignment
 
-This [CodePen](https://codepen.io/leesjensen/pen/KKeevVg) uses async/await to order pizzas. Take some time to experiment with it. Then copy the codePen you created for promises and transform it to use async/await.
+This [CodePen](https://codepen.io/leesjensen/pen/KKeevVg) uses async/await to order pizzas. Create a fork of the pen and take some time to experiment with it. Then copy the codePen you created for promises and transform it to use async/await.
 
 When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.

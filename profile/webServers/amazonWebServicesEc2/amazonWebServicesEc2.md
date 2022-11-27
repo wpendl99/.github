@@ -1,5 +1,7 @@
 # Server Setup
 
+!!TODO!!
+
 ## AWS Server
 
 1. Get an account

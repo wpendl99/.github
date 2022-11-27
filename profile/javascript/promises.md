@@ -108,6 +108,6 @@ You should be aware that Promises are the standard way to do asynchronous proces
 
 ## ☑ Assignment
 
-This [CodePen](https://codepen.io/leesjensen/pen/RwJJKwj) uses promises to order pizzas. Take some time to experiment with it, and then create your own example of using promises.
+This [CodePen](https://codepen.io/leesjensen/pen/RwJJKwj) uses promises to order pizzas. Create a fork of the pen and take some time to experiment with it. Then create your own example of using promises.
 
 When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
