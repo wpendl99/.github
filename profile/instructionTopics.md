@@ -75,7 +75,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [Exceptions](javascript/exceptions.md)
   - [Scope](javascript/scope.md)
   - [Modules](javascript/modules.md)
-  - ☑ Document object model (DOM)
+  - ☑ [Document object model (DOM)](javascript/dom/dom.md)
   - [Adding JavaScript to HTML](javascript/addingToHtml.md)
   - ☑ [Promises](javascript/promises.md)
   - ☑ [Async/await](javascript/async/await.md)
