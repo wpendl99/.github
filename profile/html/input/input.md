@@ -64,9 +64,6 @@ The input element represents many different input types. You set the type of inp
 
 In order to create an input you specify the desired `type` attribute along with any other attribute associated with the input. Here is an example of a checked radio button and its associated label.
 
-<label for="checkbox1">Check me</label>
-<input type="checkbox" name="varCheckbox" value="checkbox1" checked />
-
 ```html
 <label for="checkbox1">Check me</label>
 <input type="checkbox" name="varCheckbox" value="checkbox1" checked />
@@ -74,12 +71,12 @@ In order to create an input you specify the desired `type` attribute along with 
 
 Most input elements share some common attributes. These include the following.
 
-| Attribute | Meaning                                                                              |
-| --------- | ------------------------------------------------------------------------------------ |
-| name      | The name of the input. This is submitted as the name of the input if used in a form. |
-| disabled  | Disables the ability for the user to interact with the input.                        |
-| value     | The initial value of the input                                                       |
-| required  | Signifies that a value is required in order to be valid                              |
+| Attribute | Meaning                                                                             |
+| --------- | ----------------------------------------------------------------------------------- |
+| name      | The name of the input. This is submitted as the name of the input if used in a form |
+| disabled  | Disables the ability for the user to interact with the input                        |
+| value     | The initial value of the input                                                      |
+| required  | Signifies that a value is required in order to be valid                             |
 
 The following shows what the inputs look like when rendered. Don't worry about how clunky they look right out of the box. We will fix that when we start styling things with CSS.
 
