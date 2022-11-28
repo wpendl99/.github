@@ -4,6 +4,11 @@
 
 <img src="cssLogo.png" width=100/>
 
+**Suggested reading**
+
+- [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [W3C CSS specification](https://www.w3.org/Style/CSS/) - This official specification is only for reference
+
 ```css
 p {
   margin: 0;

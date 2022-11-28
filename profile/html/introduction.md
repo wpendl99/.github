@@ -1,5 +1,10 @@
 # Hypertext Markup Language
 
+**Suggested reading**:
+
+- [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [W3C specification](https://html.spec.whatwg.org/multipage/) - This official specification is only for reference
+
 !!TODO!!
 
 <img src="htmlLogo.png" width=100/>

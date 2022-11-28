@@ -1,6 +1,9 @@
 # Document Object Model
 
-**Suggested reading**: [MDN Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+**Suggested reading**:
+
+- [MDN Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+- [W3C DOM specification](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) - This official specification is only for reference
 
 The Document Object Model (DOM) is an object representation of a web page that the browser uses to render the display. With the introduction of JavaScript the DOM was exposed so that the JavaScript could manipulate the elements displayed to the user.
 

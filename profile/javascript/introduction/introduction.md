@@ -2,9 +2,12 @@
 
 <img src="esLogo.png" width=100/>
 
-**Suggested reading**: [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+**Suggested reading**:
 
-JavaScript is a weakly typed language based upon concepts found in C, Java, and Scheme. It is by far the most used programming language in the world. It runs on every web browser, is commonly used as a web server language, and for many serverless functions. In this instruction we will cover the basic parts of the language necessary to create a reasonable website. There are many features of the language that will not be discussed and you should take time to dig into the corners of the language as time allows. The more effectively you understand JavaScript the better web programmer you will be.
+- [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [ECMA specification](https://tc39.es/ecma262/) - This official specification is only for reference
+
+Formally known as ECMAScript, JavaScript is a weakly typed language based upon concepts found in C, Java, and Scheme. It is by far the most used programming language in the world. It runs on every web browser, is commonly used as a web server language, and for many serverless functions. In this instruction we will cover the basic parts of the language necessary to create a reasonable website. There are many features of the language that will not be discussed and you should take time to dig into the corners of the language as time allows. The more effectively you understand JavaScript the better web programmer you will be.
 
 Typically JavaScript is executed using an interpreter at runtime instead of compiling it into a machine specific binary at build time. This has the advantage of making JavaScript very portable, but also allows for many errors, such as a reference to an undefined variable, to stop the execution of the JavaScript at runtime.
 
