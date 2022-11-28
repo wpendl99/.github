@@ -47,7 +47,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [HTML input elements](html/input/input.md)
   - ☑ [HTML media](html/media/media.md)
 - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
-- ☑ Simon HTML
+- ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
 - [CSS introduction](css/introduction.md)
   - CSS Selectors
   - CSS Declarations
