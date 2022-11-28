@@ -2,7 +2,7 @@
 
 ![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg)
 
-Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) and [example projects](https://demo.cs260.click). Assignments, quizes, and tests are submitted through Canvas.
+Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) and [example projects](https://demo.cs260.click). Assignments, quizzes, and tests are submitted through Canvas.
 
 # Technologies and Instruction
 
@@ -28,7 +28,7 @@ Get started with the course [instruction](https://github.com/webprogramming260/.
 
 The instruction makes extensive use of [MDN Web Docs](https://developer.mozilla.org/) and we highly encourage you to spend many hours getting lost in their exceptional content.
 
-[React](https://reactjs.org) is used to demonstrate the power of web frameworks. Without the significant contributions of the React community we would not be able to stand on the sholders of giants.
+[React](https://reactjs.org) is used to demonstrate the power of web frameworks. Without the significant contributions of the React community we would not be able to stand on the shoulders of giants.
 
 Much appreciation goes to [CodePen](codepen.io) for hosting many of the exercises and instruction examples.
 

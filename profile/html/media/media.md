@@ -40,7 +40,7 @@ To include an audio file in your content you use the `audio` element and specify
 <audio controls src="testAudio.mp3"></audio>
 ```
 
-![HTML Audio](htmlAudio.mp3)
+![Html Audio](htmlAudioImg.jpg)
 
 ### Video
 
@@ -56,4 +56,62 @@ To include a video in your content you use the `video` element and specify the `
 </video>
 ```
 
-![HTML Video]("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+![HTML video](htmlVideoImg.jpg)
+
+## Internal media
+
+The internal media elements `svg` and `canvas` allow you to actually create images directly within your HTML.
+
+### Scalable Vector Graphics (SVG)
+
+SVG is an extremely powerful and widely support way to render graphics inline in your HTML. An example SVG graphic that draws a black border and a red circle looks like this:
+
+```html
+<svg
+  viewBox="0 0 300 200"
+  xmlns="http://www.w3.org/2000/svg"
+  stroke="red"
+  fill="red"
+  style="border: 1px solid #000000"
+>
+  <circle cx="150" cy="100" r="50" />
+</svg>
+```
+
+When combined with JavaScript and CSS you can produce some amazing visualizations. Checkout this [CodePen]https://codepen.io/leesjensen/pen/mdKjMLY) for an example.
+
+Consult the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/SVG) if you are interested in learning more about SVG.
+
+### Canvas
+
+The `canvas` element was introduced to HTML in order to facilitate 2D drawing and animation. The HTML for the canvas element is fairly simple, but actually drawing on the canvas requires JavaScript support. Here again, is our simple red dot example.
+
+```html
+<canvas
+  id="canvasDemo"
+  width="300"
+  height="200"
+  style="border: 1px solid #000000"
+></canvas>
+<script>
+  const ctx = document.getElementById('canvasDemo').getContext('2d');
+  ctx.beginPath();
+  ctx.arc(150, 100, 50, 0, 2 * Math.PI);
+  ctx.fillStyle = 'red';
+  ctx.strokeStyle = 'red';
+  ctx.fill();
+  ctx.stroke();
+</script>
+```
+
+If you would like to see some examples of complex canvas renderings check out these examples on CodePen.
+
+- [Neon Hexagon](https://codepen.io/leesjensen/pen/QWxBMrE)
+- [Particles](https://codepen.io/leesjensen/pen/vYraJRP)
+- [Ribbons 2](https://codepen.io/leesjensen/pen/wvXxqja)
+
+## ☑ Assignment
+
+This [CodePen](https://codepen.io/leesjensen/pen/OJEwgBa) demonstrates the different media elements. Fork the pen and experiment.
+
+When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
