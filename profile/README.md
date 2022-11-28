@@ -1,4 +1,4 @@
-# ![byu](byuLogo.png)BYU **Web Programming** `cs260`
+# BYU **Web Programming** `cs260`
 
 ![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg)
 
