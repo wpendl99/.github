@@ -20,13 +20,13 @@ The browser provides a global variable name `document` that points to the root e
 </html>
 ```
 
-For everything in the HTML and CSS there is a node in the DOM. This includes tags, attributes, text, comments, and whitespace. All of these nodes form a big tree, with the document node at the top.
+For everything in an HTML document there is a node in the DOM. This includes elements, attributes, text, comments, and whitespace. All of these nodes form a big tree, with the document node at the top.
 
 <img src="dom.jpg"/>
 
 ## Accessing the DOM
 
-Every element in the DOM implements the [DOM Element base class](https://developer.mozilla.org/en-US/docs/Web/API/Element) and has properties for iterating child elements, and its parent (parentNode). From your JavaScript code, you can start with the `document` variable and walk through the every element in the tree.
+Every element in an HTML document implements the DOM Element interface, which is derived off from the DOM Node interface. The [DOM Element Interface](https://developer.mozilla.org/en-US/docs/Web/API/Element) and has properties for iterating child elements, parent element, and attributes. From your JavaScript code, you can start with the `document` variable and walk through the every element in the tree.
 
 ```js
 function displayElement(el) {
@@ -39,7 +39,7 @@ function displayElement(el) {
 displayElement(document);
 ```
 
-You can also use CSS selectors to look for specific elements. The `textContent` property contains all of the element's text. You can also access the element's HTML content with the `innerHTML` property.
+You can provide a CSS selector to the `querySelectorAll` function in order to select specific elements from the document. The `textContent` property contains all of the element's text. You can even access a textual representation of an element's HTML content with the `innerHTML` property.
 
 ```js
 const listElements = document.querySelectorAll('p');
