@@ -39,9 +39,17 @@ We can continue adding structure to the page with additional elements. Each of t
 
 Every HTML element also has attributes. Attributes describe how a specific details about the element. For example, the `id` attribute gives a unique ID to the element so that you can distinguish it from other elements. The `class` attribute is another common element attribute that designates the element as being classified into a named group of elements. Attributes are written inside the element tag with a name followed by an optional value. You can use either single quotes (`'`) or double quotes (`"`) to delimit attribute values.
 
+## Hyperlinks
+
+One of the core features that made the web so successful was the ability to create hyperlinks that take you from one location to another another with a simple click. A hyperlink in HTML is represented with an anchor (`a`) element that has an attribute containing the address of the hyperlink reference (`href`). A hyperlink to BYU's home page looks like this:
+
+```html
+<a href="https://byu.edu">Go to the Y</a>
+```
+
 ## Complete example
 
-HTML also defines a header (`<!DOCTYPE html>`) that tells the browser the type and version of the document. You should always include this at the top of the file. We can now add the header, some attributes, and more content to our document for a full example.
+HTML defines a header (`<!DOCTYPE html>`) that tells the browser the type and version of the document. You should always include this at the top of the file. We can now add the header, some attributes, and more content to our document for a full example.
 
 ```html
 <!DOCTYPE html>

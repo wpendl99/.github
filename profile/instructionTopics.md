@@ -37,7 +37,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - Certificates
 - TLS (HTTPS)
 - [Caddy](webServers/caddy/caddy.md)
-- ☑ Setup a website
+- ☑ Setup a server
 
 ## HTML, CSS, and JavaScript
 
@@ -46,7 +46,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [HTML structure elements](html/structure/structure.md)
   - ☑ [HTML input elements](html/input/input.md)
   - ☑ [HTML media](html/media/media.md)
-- ☑ HTML website
+- ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
 - ☑ Simon HTML
 - [CSS introduction](css/introduction.md)
   - CSS Selectors
