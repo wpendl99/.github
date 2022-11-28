@@ -42,9 +42,9 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 ## HTML, CSS, and JavaScript
 
 - VSCode LiveServer extension
-- [HTML introduction](html/introduction.md)
-  - HTML structure elements
-  - HTML input elements
+- ☑ [HTML introduction](html/introduction/introduction.md)
+  - ☑ [HTML structure elements](structure/structure.md)
+  - ☑ [HTML input elements](input/input.md)
   - HTML video, audio, svg
 - ☑ HTML website
 - ☑ Simon HTML
