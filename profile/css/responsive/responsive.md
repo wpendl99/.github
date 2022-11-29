@@ -28,7 +28,7 @@ We can use the `@media` selector to tell us which side of the screen (technicall
 }
 ```
 
-Here is the result demonstrated by using the browsers debugger and switching into phone and then responsive mode. You can also view the [CodePen](https://codepen.io/leesjensen/pen/rNKZOva).
+Here is the result demonstrated by using the browser's debugger and switching into phone and then responsive mode. You can also view the [CodePen](https://codepen.io/leesjensen/pen/rNKZOva) and play with it yourself.
 
 ![CSS Media orientation](cssMediaOrientation.gif)
 
@@ -43,6 +43,8 @@ You can also use media queries to make entire pieces of your application disappe
 ```
 
 ![CSS Media orientation](cssMediaDisappear.gif)
+
+Here is the [CodePen](https://codepen.io/leesjensen/pen/NWzLGmJ) for this example.
 
 ## Grid amd Flexbox
 
