@@ -51,7 +51,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
 - [CSS introduction](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
-  - Declarations
+  - [Declarations](css/declarations/declarations.md)
   - Fonts
   - Animation
   - ☑ CSS

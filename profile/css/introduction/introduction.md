@@ -97,6 +97,34 @@ CSS defines everything as boxes. When you apply styles you are applying them to 
 
 ![CSS box model](cssBoxModel.jpg)
 
+By default, the width and height of an element is defined by the width and height of the content box. You can change the `box-sizing` CSS property from the default value of `content-box` to `border-box` in order to redefine the width and height to also include the padding and the border. This often makes it easier to style elements when their visual size matches their actual size.
+
+## Units
+
+You can use a variety of units when defining the size of CSS property. For example, a the width of an element can be defined using absolute units such as the number of pixels (`px`) or inches (`in`), or you by using relative units such as a percentage of the parent element (`50%`), or a multiplier of the size of the letter m (`1.5rem`) as defined by the root element. You can read about the many different [units on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units), but here is a list of the most commonly used units. All of the units are prefixed with a number when used as a property value.
+
+```css
+p {
+  width: 25%;
+  height: 30vh;
+}
+```
+
+| Unit | Description                                                      |
+| ---- | ---------------------------------------------------------------- |
+| px   | The number of pixels                                             |
+| pt   | The number of points (1/72 of an inch)                           |
+| in   | The number of inches                                             |
+| cm   | The number of centimeters                                        |
+| %    | A percentage of the parent element                               |
+| em   | A multiplier of the width of the letter `m` in the parent's font |
+| rem  | A multiplier of the width of the letter `m` in the root's font   |
+| ex   | A multiplier of the height of the element's font                 |
+| vw   | A percentage of the viewport's width                             |
+| vh   | A percentage of the viewport's height                            |
+| vmin | A percentage of the viewport's smaller dimension                 |
+| vmax | A percentage of the viewport's larger dimension                  |
+
 ## CSS Versions
 
 As with HTML, CSS has evolved significantly over the years. The following version table gives you an idea of when certain features were added and therefore how stable the support for them are.
