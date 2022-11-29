@@ -5,7 +5,7 @@
 **Suggested reading**
 
 - [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [W3C CSS specification](https://www.w3.org/Style/CSS/) - This official specification reference purposes
+- [W3C CSS specification](https://www.w3.org/Style/CSS/) - The official specification is for reference purposes
 
 Cascading Style Sheets (CSS) converts the structure and content of HTML into a vibrant, responsive, experience. The initial objective of CSS was to allow HTML the author, reader, and browser to cascade style definitions in order to determine how a page was rendered. Håkon Lie (the principle author) had no idea how far from that original vision CSS would eventual stray. In modern web applications CSS does style the web page, but conformity across browsers and users in paramount to the success of application. A user may select a browser setting to control basic things like the base font size for readability reasons, but that is about where the user's control ends. Instead CSS focus is more on the authors design and adapting it to the device that the page is rendered on, rather than anything the browser or user defines.
 
