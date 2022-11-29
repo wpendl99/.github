@@ -104,7 +104,7 @@ p.summary {
 
 ## ID selector
 
-Our final selector uses the ID of an element. All IDs should be unique within an HTML document and so this select targets a specific element. To use the ID selector you prefix the ID with the hash symbol (`#`). We would like to showcase our physics department by putting a think purple border along with the some whitespace padding on the left side of the physics section.
+ID selectors reference the ID of an element. All IDs should be unique within an HTML document and so this select targets a specific element. To use the ID selector you prefix the ID with the hash symbol (`#`). We would like to showcase our physics department by putting a think purple border along with the some whitespace padding on the left side of the physics section.
 
 ```css
 #physics {
@@ -113,7 +113,19 @@ Our final selector uses the ID of an element. All IDs should be unique within an
 }
 ```
 
-## Pseudo selectors
+## Attribute selector
+
+Attribute selectors allow you to select elements based upon their attributes. You can specify an attribute selector that only requires the presence of an attribute (`p[class]`), or also require a matching attribute value (`p[class="summary"]`). Attribute selectors also support wildcards such as the ability to select attribute values containing specific text (`p[class*="mar"]).
+
+```css
+p[class='summary'] {
+  color: red;
+}
+```
+
+For a full description of attribute selections refer to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
+
+## Pseudo selector
 
 CSS also defines a significant list of pseudo selectors which select based on positional relationships, mouse interactions, hyperlink visitation states, and attributes. We will give just one example. Suppose we what our purple highlight bar to appear only when the mouse hovers over the text. To accomplish this we can change our ID selector to select whenever a section is hovered over.
 
