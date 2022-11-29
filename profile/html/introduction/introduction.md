@@ -15,15 +15,17 @@ Here is an example of a simple HTML document.
 Hello world
 ```
 
+The first thing you noticed is that this looks like a simple text document. That is because text is a valid HTML. In order to provide structure to our text we need to introduce the concept of `elements` and their associated `tags`.
+
 ## Elements and tags
 
-The first thing you noticed is that this looks like a simple text document. That is because text is a valid HTML. You can start adding structure to your HTML by introducing `elements`, represented by enclosing `tags`, around the text. A simple structural element would be represented with the paragraph tag (`p`). This designates that the text is a structural paragraph of text. When we talk about tags we are referring to a delimited textual name that we use to designate the start and end of an HTML element. Tags are delimited with the less than (`<`) and greater than (`>`) symbols. A closing tag will also have a backslash (`/`) before its name.
+HTML `elements` are represented with enclosing `tags` around the other elements and text that they contain. For example, the paragraph element, and its associated tag (`p`), designate that the text is a structural paragraph of text. When we talk about tags we are referring to a delimited textual name that we use to designate the start and end of an HTML element as it appears in an HTML document. Tags are delimited with the less than (`<`) and greater than (`>`) symbols. A closing tag will also have a backslash (`/`) before its name.
 
 ```html
 <p>Hello world</p>
 ```
 
-We can continue adding structure to the page with additional elements. Each of these elements contain other elements and create the structure of our web page. The `html` element represents the top level page structure. The `body` element represents the content structure, as opposed to things like metadata about the page and the page title. The `main` element is the main content structure, as opposed to things like headers, footers, asides, and navigation content. These additions result in the following HTML page. However, when we `render` the HTML in a browser it would look exactly the same as our original simple text example.
+We can continue adding structure to the page with additional elements. Each of these elements contain other elements and create the structure of our web page. The `html` element represents the top level page structure. The `body` element represents the content structure, as opposed to things like metadata about the page and the page title. The `main` element is the main content structure, as opposed to things like headers, footers, asides, and navigation content. These additions result in the following HTML page.
 
 ```html
 <html>
@@ -34,6 +36,8 @@ We can continue adding structure to the page with additional elements. Each of t
   </body>
 </html>
 ```
+
+However, when we `render` the HTML in a browser it would look exactly the same as our original simple text example. The reason for that is that HTML is almost completely about structure. The visual appears of the web page won't really change until we start styling the page with CSS.
 
 ## Attributes
 
