@@ -78,3 +78,25 @@ After saving the Caddy file restart Caddy
 ```
 sudo service caddy restart
 ```
+
+## Hosting SPA
+
+[Source](https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas)
+
+If your SPA is coupled with an API or other server-side-only endpoints, you will want to use handle blocks to treat them exclusively:
+
+```
+example.com {
+	encode gzip
+
+	handle /api/* {
+		reverse_proxy backend:8000
+	}
+
+	handle {
+		root * /path/to/site
+		try_files {path} /index.html
+		file_server
+	}
+}
+```
