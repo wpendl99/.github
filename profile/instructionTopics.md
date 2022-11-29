@@ -54,7 +54,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - [Declarations](css/declarations.md)
   - [Fonts](css/fonts.md)
   - [Animation](css/animation/animation.md)
-  - ☑ CSS
+  - ☑ [CSS practice](css/practice.md)
 - Responsive: viewport, grid, flex, media
   - ☑ Grid
   - ☑ Flex
