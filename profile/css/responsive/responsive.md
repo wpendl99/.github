@@ -6,6 +6,14 @@ Modern web applications are expected to run well on a large variety of computing
 
 Much of HTML and CSS is already fluid due to the fact that it responds to the browser window being resized, but the following features help to completely reconfigure the application when the situation requires it.
 
+## Viewport meta tag
+
+When smart mobile devices started gaining popularity they started to be used to look at websites. However, the websites were optimized desktop displays and not little tiny screens. To solve this mobile browsers automatically started scaling the website so that it looked better on a small screen. Unfortunately, as web applications started being responsive the browsers scaling got in the way. The solution is to include a meta tag in the `head` element of all your HTML pages. This tells the browser to keep the scale 1 to 1.
+
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+```
+
 ## Media queries
 
 One of the main CSS features that help us create responsive applications is the `@media` selector. This selector dynamically detects the size and orientation of the device and applies the appropriate CSS rules to represent the structure of the HTML in a way that accommodates the change.
@@ -36,8 +44,6 @@ You can also use media queries to make entire pieces of your application disappe
 
 ![CSS Media orientation](cssMediaDisappear.gif)
 
-## Grid
+## Grid amd Flexbox
 
-## Flexbox
-
-## Viewport metadata
+The final two responsive technologies are Grid and Flexbox. These are both CSS display modes that automatically respond to screen sizes to position and resize their child elements. We will discuss each of these in detail in the following instruction.
