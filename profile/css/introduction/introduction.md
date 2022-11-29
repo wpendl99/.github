@@ -91,6 +91,12 @@ In this case the rules cascade down from the highest nodes in the DOM tree to th
 
 ![CSS cascade](cssCascading.jpg)
 
+## The box model
+
+CSS defines everything as boxes. When you apply styles you are applying them to a region of the display that is rectangular box. Within an element's box there are several internal boxes. The innermost box holds the elements content. This is where things like the text or image of an element is displayed. Next comes the padding. The padding will inherit things like background color. After padding is the border, which had have properties like color, thickness and line style. The final box is the margin. The margin is considered external to the actual styling of the box and therefore only represents whitespace. It is important to understand each of these boxes so that you can achieve the desired visual result by applying the proper CSS declaration.
+
+![CSS box model](cssBoxModel.jpg)
+
 ## CSS Versions
 
 As with HTML, CSS has evolved significantly over the years. The following version table gives you an idea of when certain features were added and therefore how stable the support for them are.
