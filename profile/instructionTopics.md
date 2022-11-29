@@ -43,15 +43,17 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 - VSCode LiveServer extension
 - ☑ [HTML introduction](html/introduction/introduction.md)
-  - ☑ [HTML structure elements](html/structure/structure.md)
-  - ☑ [HTML input elements](html/input/input.md)
-  - ☑ [HTML media](html/media/media.md)
+  - ☑ [Structure](html/structure/structure.md)
+  - ☑ [Input](html/input/input.md)
+  - ☑ [Media](html/media/media.md)
 - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
-- [CSS introduction](css/introduction.md)
-  - CSS Selectors
-  - CSS Declarations
-  - CSS Animation
+- [CSS introduction](css/introduction/introduction.md)
+  - The box model
+  - [Selectors](css/selectors/selectors.md)
+  - Declarations
+  - Fonts
+  - Animation
   - ☑ CSS
 - Responsive: viewport, grid, flex, media
   - ☑ Grid
