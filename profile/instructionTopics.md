@@ -24,6 +24,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [CodePen](developmentEssentials/codePen/codepen.md)
 - ☑ Start up deliverable - Specification
 - Technology stack
+- Development and production environments
 
 ## Web servers
 
@@ -84,7 +85,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - Debugging JavaScript
 - ☑ Simon JavaScript
 - UI design
-- UI Testing
+- UI testing
 - ☑ Start up deliverable - JavaScript
 
 ## Web Services
