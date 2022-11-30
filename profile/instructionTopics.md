@@ -58,9 +58,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Responsive design](css/responsive/responsive.md)
   - [Grid](css/grid/grid.md)
   - ☑ [Flex](css/flexbox/flexbox.md)
-- CSS frameworks
-  - ☑ Bootstrap
-- ☑ Simon CSS
+- ☑ CSS frameworks
+- ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
 - ☑ Start up deliverable - HTML, CSS
 - [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console.md)
