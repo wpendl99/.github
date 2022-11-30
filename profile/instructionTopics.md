@@ -57,7 +57,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [CSS practice](css/practice.md)
 - [Responsive design](css/responsive/responsive.md)
   - ☑ [Grid](css/grid/grid.md)
-  - ☑ Flex
+  - ☑ [Flex](css/flexbox/flexbox.md)
 - CSS frameworks
   - ☑ Bootstrap
 - ☑ Simon CSS
