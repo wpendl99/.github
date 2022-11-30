@@ -52,6 +52,31 @@ Host: info.cern.ch
 Accept: text/html
 ```
 
+## Cascading Style Sheets (CSS)
+
+Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first proposed in 1994 by Håkon Wium Lie, a contemporary of Berners-Lee at CERN, in order to give HTML documents visual styling independent of the contents structure. Before the introduction of CSS, HTML was going down the path of hard coding the visual appearance of the content as part of the HTML tag definition. This resulting a single visual style for the entire web that was completely defined by the browser.
+
+<img src="hakonLie.jpg" width=200 />
+
+— Håkon Wium Lie (**Source**: _Wikipedia_)
+
+> If we hadn’t developed CSS, we could have ended up with the web being a giant fax machine
+>
+> — Håkon Wium Lie (**Source**: _Medium.com_)
+
+By 1996 CSS became a standard and all the major browsers began to implement the functionality. Unfortunately, for the first years of CSS the same proprietary wars that plagued HTML also affected CSS. Much of the work on version 2.1 was to remove error and make all the features of CSS compatible. Here is a simple example of CSS that defines the white spacing, color, and shadowing of paragraph text.
+
+```css
+p {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+```
+
+The ability of CSS to style a web page has increased significantly from its original implementation. With modern CSS a web programmer can animate the page, respond to user actions, and dynamically alter the entire layout of the page based on the size of a device and its orientation.
+
 ## JavaScript
 
 In 1995 Netscape (the maker of the popular browser Navigator) decided to add the ability to script web pages. The initial implementation was led by Brendan Eich and given the name JavaScript. JavaScript turned the previously static web into an interactive experience where a web page could dynamically change based upon a user's interaction.
@@ -85,27 +110,8 @@ In 2009 Ryan Dahl created Node.js as the first successful application for deploy
 
 Other important milestones in the history of JavaScript include the 2013 standardization of the common object notation JSON, a type version named TypeScript in 2012, and the introduction of numerous transpilers for converting other languages into compatible ECMAScript.
 
-## Cascading Style Sheets (CSS)
+## What's next?
 
-Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first proposed in 1994 by Håkon Wium Lie, a contemporary of Berners-Lee at CERN, in order to give HTML documents visual styling independent of the contents structure. Before the introduction of CSS, HTML was going down the path of hard coding the visual appearance of the content as part of the HTML tag definition. This resulting a single visual style for the entire web that was completely defined by the browser.
+Looking forward there are many exciting opportunities, as well as problems to solve. This includes addressing topics like application complexity, device diversity, internationalization, security, privacy, data ownership, environmental impact, global authorization identity, performance, and accessibility.
 
-<img src="hakonLie.jpg" width=200 />
-
-— Håkon Wium Lie (**Source**: _Wikipedia_)
-
-> If we hadn’t developed CSS, we could have ended up with the web being a giant fax machine
->
-> — Håkon Wium Lie (**Source**: _Medium.com_)
-
-By 1996 CSS became a standard and all the major browsers began to implement the functionality. Unfortunately, for the first years of CSS the same proprietary wars that plagued HTML also affected CSS. Much of the work on version 2.1 was to remove error and make all the features of CSS compatible. Here is a simple example of CSS that defines the white spacing, color, and shadowing of paragraph text.
-
-```css
-p {
-  margin: 0;
-  padding: 20px 0;
-  color: #00539f;
-  text-shadow: 3px 3px 1px black;
-}
-```
-
-The ability of CSS to style a web page has increased significantly from its original implementation. With modern CSS a web programmer can animate the page, respond to user actions, and dynamically alter the entire layout of the page based on the size of a device and its orientation.
+The only thing certain is that you have an opportunity to be a big part of it.
