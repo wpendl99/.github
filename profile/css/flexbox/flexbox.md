@@ -105,4 +105,12 @@ To handle making our header and footer disappear when the screen is to short to 
 }
 ```
 
+Here is what the finished product looks like.
+
 ![CSS flex](cssFlex.gif)
+
+You can experiment with the source on [CodePen](https://codepen.io/leesjensen/pen/MWOVYpZ).
+
+## ☑ Assignment
+
+Now it is your turn to build a fully responsive application. You can use Grid and/or Flexbox along with media queries to build something that stretches you. After you are done experimenting, take some time to sketch out your design. Once you are done coding, your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
