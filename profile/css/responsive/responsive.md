@@ -46,6 +46,6 @@ You can also use media queries to make entire pieces of your application disappe
 
 Here is the [CodePen](https://codepen.io/leesjensen/pen/NWzLGmJ) for this example.
 
-## Grid amd Flexbox
+## Grid and Flexbox
 
 The final two responsive technologies are Grid and Flexbox. These are both CSS display modes that automatically respond to screen sizes to position and resize their child elements. We will discuss each of these in detail in the following instruction.

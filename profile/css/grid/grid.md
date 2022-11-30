@@ -2,7 +2,7 @@
 
 **Recommend reading**: [MDN Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 
-The `grid` display layout is useful when you want to display a group of child elements in a responsive grid. We start with a container element and a bunch of children that we way layed out in a grid.
+The `grid` display layout is useful when you want to display a group of child elements in a responsive grid. We start with a container element and a bunch of children that we have laid out in a grid.
 
 ```html
 <div class="container">
