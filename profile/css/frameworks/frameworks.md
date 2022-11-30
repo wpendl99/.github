@@ -79,4 +79,4 @@ This [CodePen](https://codepen.io/leesjensen/pen/JjZavjW) demonstrates the use o
 
 ## ☑ Assignment
 
-Now that we have experience with Bootstrap we can build a simple home page that demonstrates using Bootstrap components. Fork this [CodePen](https://codepen.io/leesjensen/pen/wvXEmVQ) and experiment with what it provides. Remove the components it demonstrates and replace it with some other Bootstrap components. When you are done upload the URL of your CodePen with a description of what you found interesting to the Canvas assignment.
+Now that you have experience with Bootstrap you can build a simple home page using Bootstrap components. Fork this [CodePen](https://codepen.io/leesjensen/pen/wvXEmVQ) and experiment with it. Remove the components it demonstrates and replace it with some other Bootstrap components. When you are done upload the URL of your CodePen with a description of what you found interesting to the Canvas assignment.
