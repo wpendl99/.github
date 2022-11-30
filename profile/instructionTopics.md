@@ -79,9 +79,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - [Adding JavaScript to HTML](javascript/addingToHtml.md)
   - ☑ [Promises](javascript/promises.md)
   - ☑ [Async/await](javascript/async/await.md)
-- JavaScript frameworks and utilities
 - Debugging JavaScript
-- ☑ Simon JavaScript
+- ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - UI design
 - UI testing
 - ☑ Start up deliverable - JavaScript
