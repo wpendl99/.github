@@ -26,6 +26,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ Start up deliverable - Specification
 - Technology stack
 - Development and production environments
+- Continuous delivery and deployment
 
 ## Web servers
 
