@@ -93,17 +93,17 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - HTTP
 - CORS and SOP
 - ☑ [Fetch](webServices/fetch.md)
-  - ☑ Simon fetch
+  - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
 - Service design
 - ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
 - Express
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
-- ☑ Simon service
+- ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
 - Storage services
 - Data services
   - ☑ [MongoDB](webServices/mongoDb/mongoDb.md)
-  - ☑ Simon DB
+  - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
 - Authorization services
   - ☑ Simon Login
 - WebSocket
