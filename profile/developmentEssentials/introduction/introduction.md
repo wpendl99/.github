@@ -19,7 +19,7 @@ The key to learning how to be an exceptional web programmer rests in you ability
 
 ## Making mistakes
 
-Making mistakes is a key component for learning. Recognizing and embracing the power of making mistakes will help you learn faster, and at a deeper level. Just decide that you are going to make mistakes and that is fine, even preferable. Many of the most important discoveries of all time were a result of making and understanding mistakes. With that said, you should acquire a framework where you can make mistake while minimizing their ability to slow your progress. Tools such as code repositories that keep a history of your changes, taking notes of key discoveries and progress, working with peers so that you can discover mistakes quickly, and automated, reproducible, processes are all key to safely making mistakes.
+Making mistakes is a key component for learning. Recognizing and embracing the power of making mistakes will help you learn faster, and at a deeper level. Just decide that you are going to make mistakes and that is fine, even preferable. Many of the most important discoveries of all time were a result of making and understanding mistakes. No one learns to walk without falling down. With that said, you should acquire a framework where you can make mistakes while minimizing their ability to slow your progress. Things such as version repositories, notebooks, simulations, working with peers, automation, and reproducibility are all useful for safely making mistakes.
 
 Whenever you approach something new, approach it with the attitude that you will learn by making mistakes.
 
