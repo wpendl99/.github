@@ -44,3 +44,8 @@
 - Installed Homebrew
 - Used `brew install ffmpeg`
 - Changed VS Code setting to format on file save.
+- Added git aliases
+  ```sh
+  git config --global alias.s=status
+  git config --global alias.l=log --all --graph --decorate --oneline --pretty=format:'%C(bold red)%d%Creset %cr %C(bold yellow)%h%Creset - %C(green)%an%Creset %s'
+  ```
