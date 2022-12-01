@@ -9,10 +9,10 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 ## Development essentials
 
-- [Introduction](developmentEssentials/introduction.md)
+- [Introduction](developmentEssentials/introduction/introduction.md)
 - [History of the web](developmentEssentials/history/history.md)
 - [Asking questions](developmentEssentials/askingQuestions.md)
-- ☑ Discord
+- ☑ [Discord](developmentEssentials/discord.md)
 - Pair programming
 - Let's play Simon
 - Start up application

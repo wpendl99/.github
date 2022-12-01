@@ -30,3 +30,12 @@
 
     nvm install --lts
     ```
+* Created keyboard shortcuts for moving windows
+    1. Open System Preferences > Keyboard > Shortcuts 
+    1. Select "App Shortcuts"
+    1. Press the "+" button to create a new shortcut. 
+    1. You'll need to make two of these, one for left and one for right. 
+    1. For Application select "All Applications" 
+    1. For Menu Title, you'll need the exact wording used in the menu. 
+        * Move Window to Left Side of Screen 
+        * Move Window to Right Side of Screen 
