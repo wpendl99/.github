@@ -4,13 +4,19 @@
 * Created .zshrc and added alias
     ```sh
     alias c=code
-    alias ll='ls -la'
+    alias ll='ls -lh'
     ```
 * Configured git
     ```sh
     git config --global user.email "your email"
     git config --global user.name "your user name"
-    # On commit git asked me for credentials. Supplied gitHub user name and personal access token (PAS). To get PAS click on User Profile Pic/Settings/Developer settings/Personal access tokens
+    ```
+    On commit git asked me for credentials. Supplied gitHub user name and personal access token (PAS). To get PAS click on User Profile Pic/Settings/Developer settings/Personal access tokens
+* Cloned course documentation repository
+    ```sh
+    cd ~/byu/source
+    git clone https://github.com/webprogramming260/.github.git webprogramming260
+    ```
 * Installed VS Code extensions
     * Live Server
     * Prettier
