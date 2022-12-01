@@ -13,9 +13,9 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [History of the web](developmentEssentials/history/history.md)
 - [Asking questions](developmentEssentials/askingQuestions.md)
 - ☑ [Discord](developmentEssentials/discord/discord.md)
-- Pair programming
 - Let's play Simon
 - Start up application
+- [Pair programming](developmentEssentials/pairProgramming.md)
 - ☑ [The Console](developmentEssentials/console/console.md)
 - Editors - Visual Studio Code and VI
 - Git
