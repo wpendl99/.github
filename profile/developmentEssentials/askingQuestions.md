@@ -26,9 +26,9 @@ Learning how to ask questions might be the most important thing you learn. The b
 1. Give thanks even if you didn't find the help you were hoping for.
 
 Here is a good template to follow when asking a question:
-    
-> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, bu then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that Sally already tried that without success as discussed here on `I`. Any help is greatly appreciated. 
+
+> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, bu then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that Sally already tried that without success as discussed here on `I`. Any help is greatly appreciated.
 
 ## Pay it forward
 
-Always remember how it felt to receive help. Actively look for opportunities to help others in a kind respectful way. After all, that is the Gospel of Jesus Christ is at its core. We are a team. We are better together.
+Always remember how it felt to receive help. Actively look for opportunities to help others in a kind respectful way. After all, that is the Gospel of Jesus Christ at its core. We are a team. We are better together.
