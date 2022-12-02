@@ -114,4 +114,4 @@ Other important milestones in the history of JavaScript include the 2013 standar
 
 Looking forward there are many exciting opportunities, as well as problems to solve. This includes addressing topics like application complexity, device diversity, internationalization, security, privacy, data ownership, environmental impact, global authorization identity, performance, and accessibility.
 
-The only thing certain is that you have an opportunity to be a big part of it.
+The only thing certain is that you have an opportunity to be a big part of it. The most important thing you can learn from these early pioneers, is that with web programming a single person can change the world. I hope to see your face on this history page one day.
