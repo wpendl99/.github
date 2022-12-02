@@ -28,6 +28,8 @@ To install the Live Server extension, open up VSCode and follow these three simp
 
 ![LiveServer install](essentialsLiveServerInstall.png)
 
+Congratulations! You have join the 28 million users already enjoying this extension.
+
 ### GitLens
 
 The basic support that VSCode offers for working with `git` is sufficient for most tasks, but if you really want to unleash the power of git, consider installing the `GitLens` extension. It makes reviewing the commit history, stashing, merging, and comparing so much easier. With over 18 million users, you might enjoy joining the party.
