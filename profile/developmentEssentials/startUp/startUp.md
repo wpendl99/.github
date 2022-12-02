@@ -29,3 +29,5 @@ Some ideas for possible projects include:
 Your first milestone will be to submit a simple design of your project.
 
 At the end of class we will conduct a demo day for the best projects. Those selected for the demo day will be awarded additional credit for the exceptional work. The top presenters will be given the coveted Ghirardelli award.
+
+![Ghiradelli](ghirardelli.png)
