@@ -2,7 +2,17 @@
 
 **Required reading**: [Stack Overflow - How to ask a good question](https://stackoverflow.com/help/how-to-ask)
 
-## Where to ask questions
+## Contact information
+
+!! TODO !! - Add office, phone number, discord link, TA schedule link.
+
+| Who        | How                 | Where                        | When                            |
+| ---------- | ------------------- | ---------------------------- | ------------------------------- |
+| TA         | Online or in person | `Discord`, `TA Office`       | `TA Schedule`                   |
+| Instructor | Online or in person | `Discord`, `Class`, `Office` | `Office Hours`, `Class Times`   |
+| Peers      | Online or in person | `Discord`, `Class`           | Depends on how friendly you are |
+
+## Who to ask questions
 
 You have a lot of resources to help you find answers. Here is the order that you should use them.
 
