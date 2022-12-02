@@ -47,7 +47,7 @@ You can now make changes to the files in the repository and commit those changes
 
 ![GitHub pull](essentialsGitHubPull.jpg)
 
-The following demonstrates console commands for making a change to the README.md file, commiting it, and then pushing it up to GitHub. Of course you can also do this using the Git interface of VSCode.
+The following demonstrates console commands for making a change to the README.md file, committing it, and then pushing it up to GitHub. Of course you can also do this using the Git interface of VSCode.
 
 ```sh
 ➜  printf "\nChange from my development environment!\n" >> README.md
@@ -61,7 +61,7 @@ If you then look at the repository on GitHub with your browser, you will see tha
 
 ![GitHub edit](essentialsGitHubEdit.jpg)
 
-Now that there is a commit that GitHub has that you do not have in your development environment. If we run the `fetch` Git command you can get the latest information about the server you cloned the repository from without actually chaning your local repository. We then run the `status` Git command to see that we are missing a commit. You can pull it down using the `pull` Git command. You can also use the Git functionality in VSCode to view the status and sync up your repository.
+Now that there is a commit that GitHub has that you do not have in your development environment. If we run the `fetch` Git command you can get the latest information about the server you cloned the repository from without actually changing your local repository. We then run the `status` Git command to see that we are missing a commit. You can pull it down using the `pull` Git command. You can also use the Git functionality in VSCode to view the status and sync up your repository.
 
 ```sh
 ➜  git fetch
@@ -162,8 +162,8 @@ Do the following steps to set up your `Start up project repository` and clone it
 1. In VSCode pull down and review the changes.
 1. Make another change to the README.md file on GitHub and commit the change.
 1. Before you pull the changes to your development environment, change the same line in README.md file and commit the change.
-1. Attempt to pull the GitHub changes to your development environment. Note and resolve the merge confict. Commit the merged changes. Push the merge commit.
-1. On GitHub observer the resovled merge.
+1. Attempt to pull the GitHub changes to your development environment. Note and resolve the merge conflict. Commit the merged changes. Push the merge commit.
+1. On GitHub observe the resolved merge.
 1. Make your first notes in your README.md file about what you learned from this assignment. Commit and push your notes to GitHub.
 
 When you are done, provide the URL of your GitHub start up repository, along with a description of something you found interesting, to the Canvas assignment.
