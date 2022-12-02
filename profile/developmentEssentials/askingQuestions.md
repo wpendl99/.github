@@ -4,7 +4,7 @@
 
 ## Contact information
 
-!! TODO !! - Add office, phone number, discord link, TA schedule link.
+!!TODO!! - Add office, phone number, discord link, TA schedule link.
 
 | Who        | How                 | Where                        | When                            |
 | ---------- | ------------------- | ---------------------------- | ------------------------------- |

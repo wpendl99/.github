@@ -18,8 +18,6 @@ The management of the Internet is controlled by two major organizations. Interne
 
 <img src="timBernersLee.jpg" width=200 />
 
-— Tim Berners-Lee (**Source**: _BBC_)
-
 > I just had to take the hypertext idea and connect it to the TCP and DNS ideas and—ta-da!—the World Wide Web.
 >
 > — Tim Berners-Lee, (**Source**: _Answers for Young People_)
@@ -58,8 +56,6 @@ Cascading Style Sheets ([CSS](https://en.wikipedia.org/wiki/CSS)) was first prop
 
 <img src="hakonLie.jpg" width=200 />
 
-— Håkon Wium Lie (**Source**: _Wikipedia_)
-
 > If we hadn’t developed CSS, we could have ended up with the web being a giant fax machine
 >
 > — Håkon Wium Lie (**Source**: _Medium.com_)
@@ -82,8 +78,6 @@ The ability of CSS to style a web page has increased significantly from its orig
 In 1995 Netscape (the maker of the popular browser Navigator) decided to add the ability to script web pages. The initial implementation was led by Brendan Eich and given the name JavaScript. JavaScript turned the previously static web into an interactive experience where a web page could dynamically change based upon a user's interaction.
 
 <img src="brendanEich.jpg" width=200 />
-
-— Brendan Eich (**Source**: _Wikipedia_)
 
 > Always bet on JS
 >

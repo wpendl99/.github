@@ -19,7 +19,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [The Console](developmentEssentials/console/console.md)
 - [Editors](developmentEssentials/editors/editors.md)
 - [Git](developmentEssentials/git/git.md)
-- GitHub
+- [GitHub](developmentEssentials/gitHub/gitHub.md)
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
 - ☑ [CodePen](developmentEssentials/codePen/codepen.md)
@@ -96,7 +96,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [Fetch](webServices/fetch.md)
   - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
 - Service design
-- ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md)
+- ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md) !!TODO!!
 - Express
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing

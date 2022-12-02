@@ -1,5 +1,11 @@
 # Node.js
 
+![Ryan Dahl](webServicesRyanDahl.jpg)
+
+> You can never understand everything. But, you should push yourself to understand the system
+>
+> — Ryan Dahl
+
 We need to install Node.js in your production environment since that is used to run your services. However, we should just do this as part of the class AMI.
 
 The following console commands install Node Version Manager (NVM).

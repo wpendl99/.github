@@ -6,9 +6,7 @@ Incredibly [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the c
 
 ![Linus Torvalds](linusTorvalds.jpg)
 
-— Linus Torvalds (**Source**: _Wikipedia_)
-
-> I'd argue that everybody wants to do something that matters
+> Talk is cheap. Show me the code.
 >
 > — Linus Torvalds
 
