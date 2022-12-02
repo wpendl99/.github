@@ -14,7 +14,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Asking questions](developmentEssentials/askingQuestions.md)
 - ☑ [Discord](developmentEssentials/discord/discord.md)
 - [Let's play Simon](developmentEssentials/simon/simon.md)
-- [Start up application](developmentEssentials/startUp.md)
+- [Start up application](developmentEssentials/startUp/startUp.md)
 - [Pair programming](developmentEssentials/pairProgramming.md)
 - ☑ [The Console](developmentEssentials/console/console.md)
 - [Editors](developmentEssentials/editors/editors.md)

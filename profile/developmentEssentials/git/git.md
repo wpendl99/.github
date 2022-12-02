@@ -178,4 +178,4 @@ Here we see VSCode, with the GitLens extension installed, looking at the directo
 
 ![VSCode Git](essentialsVSCodeGit.gif)
 
-Underneath the covers, the GitLens extension is just running Git commands just like we did on the command line, but using a visual tool makes working with version much easier. Take some time and play with adding files, modifying them, committing, and diffing. You want to get to the point where this is second nature so that you can easily experiment and make mistakes, knowing that with Git you can always easily recover.
+Underneath the covers, the GitLens extension is running Git commands just like we did on the command line, but using a visual tool makes working with version much easier. Take some time and play with adding files, modifying them, committing, and diffing. You want to get to the point where this is second nature so that you can easily experiment and make mistakes, knowing that with Git you can always easily recover.
