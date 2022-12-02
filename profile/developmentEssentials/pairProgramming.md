@@ -13,3 +13,5 @@ It is important to understand that pair programming is not simply working togeth
 If done correctly the pairs will learn from each other and produce a much better result. If you want to try pair programming (and I highly encourage you to do) then introduce yourself to others in the class and see if they are interested. You can also use the `pair-programming` channel on Discord to reach out and find a partner.
 
 Once you find a partner read the [MartinFolwer.com article](https://martinfowler.com/articles/on-pair-programming.html) together so that you both have the same understanding and expectations.
+
+⚠ Note: when you turn in an assignment that you build together as a pair, make sure you include all parties in your application footer. Your GitHub commit history should also represent commits from everyone associated with the creation of the assignment. That means you may need to change who is logged in if you are sharing a computer when you do your commits.

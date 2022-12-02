@@ -17,8 +17,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Start up application](developmentEssentials/startUp.md)
 - [Pair programming](developmentEssentials/pairProgramming.md)
 - ☑ [The Console](developmentEssentials/console/console.md)
-- Editors - Visual Studio Code and VI
-- Git
+- [Editors](developmentEssentials/editors/editors.md)
+- [Git](developmentEssentials/git.md) !!TODO!!
 - GitHub
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
@@ -31,14 +31,14 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 - The internet
 - Web servers
-- ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
+- ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md) !!TODO!!
 - Domain names
 - DNS
 - Amazon Web Services - Route 53
 - ☑ Purchase a domain
 - Certificates
 - TLS (HTTPS)
-- [Caddy](webServers/caddy/caddy.md)
+- [Caddy](webServers/caddy/caddy.md) !!TODO!!
 - ☑ Setup a server
 
 ## HTML, CSS, and JavaScript
