@@ -23,7 +23,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Git](essentials/git/git.md)
 - ☑ [GitHub](essentials/gitHub/gitHub.md)
 - ☑ [CodePen](essentials/codePen/codepen.md)
-- ☑ Start up deliverable - Specification
+- ☑ [Start up deliverable](essentials/startUpSpec/startUpSpec.md) - Specification
 
 ## Web servers
 
