@@ -10,7 +10,7 @@ Immediately start thinking about what you would like to build. What you do for y
 
 Grab a class peer and join forces using pair programming techniques. Your creative energy will help motivate each other when the nights get long.
 
-You can change your project as the class progresses, but for each milestone submission must includes all the functionality defined by the previous milestones. For that reason it is suggested that you carefully consider your project from the beginning, as the longer you go, the more expensive it will be to repeat your previous work.
+You can change your project as the class progresses, but each milestone submission must includes all the functionality defined by the previous milestones. For that reason, it is suggested that you carefully consider your project from the beginning, as the longer you go, the more expensive it will be to repeat your previous work.
 
 Some ideas for possible projects include:
 
