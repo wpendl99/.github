@@ -1,5 +1,7 @@
 # Caddy
 
+![Caddy](caddyLogoS.png)
+
 !!TODO!! - this will need modification if we use an AMI to setup Caddy.
 
 Caddy is a web server that listens for incoming HTTP requests. Caddy then either serves up the requested static files or routes the request to another web server. This ability to route requests is called a `reverse proxy` and allows us to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).

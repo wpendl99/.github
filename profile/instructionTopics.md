@@ -2,31 +2,28 @@
 
 The course covers a full stack of technologies including HTML, CSS, JavaScript, HTTP, DNS, web servers, client side web frameworks, database services, security, and progressive web applications. The instruction topics given below include assignments and projects to help you explore the concepts and demonstrate your mastery.
 
-| Icon | Meaning                                              |
-| ---- | ---------------------------------------------------- |
-| ⚠    | Important concepts, or pitfalls, to note             |
-| ☑    | Assignments that you must complete for certification |
+| Icon | Meaning                                                      |
+| ---- | ------------------------------------------------------------ |
+| ⚠    | Important concepts, or pitfalls, to note                     |
+| ☑    | Assignments that you must complete for mastery certification |
 
 ## Development essentials
 
-- [Introduction](developmentEssentials/introduction/introduction.md)
-- [History of the web](developmentEssentials/history/history.md)
-- [Asking questions](developmentEssentials/askingQuestions.md)
-- ☑ [Discord](developmentEssentials/discord/discord.md)
-- [Let's play Simon](developmentEssentials/simon/simon.md)
-- [Start up application](developmentEssentials/startUp/startUp.md)
-- [Pair programming](developmentEssentials/pairProgramming.md)
-- ☑ [The Console](developmentEssentials/console/console.md)
-- [Editors](developmentEssentials/editors/editors.md)
-- [Git](developmentEssentials/git/git.md)
-- [GitHub](developmentEssentials/gitHub/gitHub.md)
-- VS Code GitHub integration
-- ☑ Using GitHub to take notes
-- ☑ [CodePen](developmentEssentials/codePen/codepen.md)
+- [Introduction](essentials/introduction/introduction.md)
+- [History of the web](essentials/history/history.md)
+- [Asking questions](essentials/askingQuestions.md)
+- ☑ [Discord](essentials/discord/discord.md)
+- [Let's play Simon](essentials/simon/simon.md)
+- [Start up application](essentials/startUp/startUp.md)
+- [Pair programming](essentials/pairProgramming.md)
+- [Technology stack](essentials/techStack/techStack.md)
+- [Development and production environments](essentials/devAndProd.md)
+- ☑ [The Console](essentials/console/console.md)
+- [Editors](essentials/editors/editors.md)
+- [Git](essentials/git/git.md)
+- ☑ [GitHub](essentials/gitHub/gitHub.md)
+- ☑ [CodePen](essentials/codePen/codepen.md)
 - ☑ Start up deliverable - Specification
-- Technology stack
-- Development and production environments
-- Continuous delivery and deployment
 
 ## Web servers
 
