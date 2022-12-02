@@ -27,7 +27,7 @@ Learning how to ask questions might be the most important thing you learn. The b
 
 Here is a good template to follow when asking a question:
 
-> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, bu then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that Sally already tried that without success as discussed here on `I`. Any help is greatly appreciated.
+> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, but then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that Sally already tried that without success as discussed here on `I`. Any help is greatly appreciated.
 
 ## Pay it forward
 
