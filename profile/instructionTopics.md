@@ -18,7 +18,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Pair programming](developmentEssentials/pairProgramming.md)
 - ☑ [The Console](developmentEssentials/console/console.md)
 - [Editors](developmentEssentials/editors/editors.md)
-- [Git](developmentEssentials/git.md) !!TODO!!
+- [Git](developmentEssentials/git/git.md)
 - GitHub
 - VS Code GitHub integration
 - ☑ Using GitHub to take notes
