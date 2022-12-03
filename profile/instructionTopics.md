@@ -23,11 +23,11 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Git](essentials/git/git.md)
 - ☑ [GitHub](essentials/gitHub/gitHub.md)
 - ☑ [CodePen](essentials/codePen/codepen.md)
-- ☑ [Start up deliverable](essentials/startUpSpec/startUpSpec.md) - Specification
+- ☑ [Start up - Specification](essentials/startUpSpec/startUpSpec.md)
 
 ## Web servers
 
-- The internet
+- [The internet](webServers/internet.md)
 - Web servers
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md) !!TODO!!
 - Domain names
