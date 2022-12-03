@@ -28,7 +28,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 ## Web servers
 
 - [The internet](webServers/internet.md)
-- Web servers
+- [Web servers](webServers/webServers/webServers.md)
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md) !!TODO!!
 - Domain names
 - DNS
