@@ -114,3 +114,5 @@ You can experiment with the source on [CodePen](https://codepen.io/leesjensen/pe
 ## ☑ Assignment
 
 Now it is your turn to build a fully responsive application. You can use Grid and/or Flexbox along with media queries to build something that stretches you. After you are done experimenting, take some time to sketch out your design. Once you are done coding, your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
+
+Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
