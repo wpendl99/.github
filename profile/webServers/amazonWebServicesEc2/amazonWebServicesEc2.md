@@ -30,15 +30,18 @@ Once you have an AWS account it is time to create your web server.
 
 ⚠ Note that the AWS interface changes all of the time and so the images given below may not match what you see. However, the concepts they represent should all be there in some shape or form.
 
+1. Open the AWS console in your browser and log in.
 1. Navigate to the EC2 service.
 1. Select the option to `Launch instance`.
 1. Give your instance a meaningful name. Perhaps use a convention such as [owner]-[purpose]-[version].
    ![AWS Instance name](webServerAWSName.jpg)
-1. Select Ubuntu for the operating system. !!TODO!! specify the course AMI to skip Caddy install.
+1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0d80afaa642dbf468`) into the search box and press enter.
    ![AWS Instance name](webServerAWSAmi.jpg)
+   This should display the information about the class AMI. If the AMI ID matches, select it.
+   ![AWS class AMI](webServerAWS260Ami.jpg)
 1. Select t3.nano for the instance type. You can always change this later if you need more power.
    ![AWS Instance name](webServerAWSType.jpg)
-1. Create a new key pair. Make sure you save the key pair to your development environment. You will need this every time you secure shell (ssh) into this server (production environment). Note that you don't have to create a new key pair every time you launch an instance. You can use one that you created previously so that all of the servers you create can be accessed with the same key file.
+1. Create a new key pair. Make sure you save the key pair to your development environment. This needs to be safe a place that is not publically accessible and that you won't accidentally commit to a GitHub repo. You will need this every time you secure shell (ssh) into this server (production environment). Note that you don't have to create a new key pair every time you launch an instance. You can use one that you created previously so that all of the servers you create can be accessed with the same key file.
    ![AWS Instance name](webServerAWSkeyPair.jpg)
 1. For your security group allow SSH, HTTP, and HTTPS traffic from anywhere. Make sure auto-assign public IP address is enabled.
 
@@ -46,7 +49,17 @@ Once you have an AWS account it is time to create your web server.
 
 1. Select the option to `Launch instance`.
 
-It will take a few minutes for the instance to start up but once it is marked as `running`. Look at the properties for the instance and note the public IP address. Go to your console window and use SSH to shell into your new web server. You will need to supply the public IP address and the location of your key pair file that you created/used when you launched your instance.
+It will take a few minutes for the instance to start up, but once it is marked as `running` it is good to go. Look at the properties for the instance and note the public IP address.
+
+Open your browser and paste the public IP address for your server in the location bar. You should see the following.
+
+![Web Server](webServerAWSBrowserResult.png)
+
+If that is what you see then congratulations. You are now running your very own web server that the whole world can see! Time to celebrate with cookies.
+
+## SSH into your server
+
+New let's shell into your server and see what is under the hood. Go to your console window and use SSH to shell into the server. You will need to supply the public IP address (copied from the EC2 instance details) and the location of your key pair file that you created/used when you launched your instance. _Hopefully you saved that off to a safe location in your development environment, otherwise you will need to terminate your instance and create a new one, with a new key._
 
 ```sh
 ➜  ssh -i [key pair file] ubuntu@[ip address]
@@ -66,10 +79,42 @@ lrwxrwxrwx 1 ubuntu ubuntu   16 Nov 17 03:42 public_html -> /usr/share/caddy
 drwxrwxr-x 6 ubuntu ubuntu 4096 Nov 30 22:42 services
 ```
 
-The `Caddyfile` is your configuration file for your web service gateway. The `public_html` directory contains all of the static files that your are serving up directly through Caddy when using it as a web service. The `services` directory is the place where you are going to install all of your web services once you build them.
+The `Caddyfile` is your configuration file for your web service gateway. The `public_html` directory contains all of the static files that your are serving up directly through Caddy when using it as a web service. We will cover Caddy configuration in later instruction. The `services` directory is the place where you are going to install all of your web services once you build them.
 
-1. Assign an elastic IP Address so you can shutdown your server without loosing the IP address
+Once you are done poking around on your server you can exit by running the `exit` command. That is everything. You don't need to touch anything on your server. Remember that should always do using an automatic continuous integration process.
 
-## Connecting to the server
+## Keeping the same public IP address
 
-SSH into your server and take a screen shot of the console.
+You can stop your server at any time. Don't confuse this with terminating your server which completely destroys it. Stopping your server just powers down the device. This is nice because you don't have to pay for it while it is stopped. However, every time you stop and start your server you we be assigned a new public IP address. It is important to keep the same public IP address so that you, and other, can always browse to the same place, and more importantly so that when you create your domain name you can assign it to an address that never changes.
+
+You have two choices in order to keep the same public IP address.
+
+1. Never stop your server.
+2. Assign an elastic IP address to your server so that it keeps the same address even if you stop it.
+
+Your first elastic IP address is free. However, the catch is that it is only free while the server instance it is assigned to is running. While your server is not running you are charged $0.005/hr. This is the same cost for running a t3.nano server instance. So you don't save any money unless you start running a more powerful instance, and are stopping your instance when you, or the TAs, don't need it.
+
+We would suggest that do both. Keep your server running and associate an elastic IP. That way if you do need to reboot it for some reason, you will still keep the same IP address and it doesn't cost you anything different either way.
+
+Here is how you assign an elastic IP address to your server instance.
+
+1. Open the AWS console in your browser and log in.
+1. Navigate to the EC2 service.
+1. From the menu on the left select `Network & Security|Elastic IPs`.
+1. Press the `Allocate Elastic IP address` button.
+1. Press the `Allocate` button.
+1. Select the newly displayed allocated address and press the `Actions` button.
+1. Select the `Associate Elastic IP address` option.
+   ![Elastic IP create](webServerAWSElasticIPCreate.jpg)
+1. Click on the `Instance` box and select your server instance.
+1. Press `Associate`.
+
+Note that your elastic IP address is allocated until your release it, not until you terminate your instance. So release it when you no longer need it. Otherwise you will get a nasty $3 bill every month.
+
+Also note that your server IP address has changed to the newly allocated one. This is the one you will use from now on.
+
+## ☑ Assignment
+
+When your server is running and the default class web page is accessible from a browser, submit your web servers public IP address, along with a description of something you found interesting, to the Canvas assignment.
+
+Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
