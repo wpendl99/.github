@@ -1,5 +1,7 @@
 # PM2
 
+**Suggested reading** - [PM2 Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)
+
 !!TODO!! finish this
 
 When you run a program from the console the program will automatically terminate when you close the console or if the computer restarts. In order to keep programs running after a shutdown you need to register it as a `deamon`. The term deamon comes from the idea of something working in the background that is always there.
@@ -15,6 +17,7 @@ In order to set up PM2 to start up on reboot run
 
 ```sh
 sudo pm2 startup
+sudo pm2 save
 ```
 
 Useful commands for PM2 include
@@ -25,5 +28,8 @@ Useful commands for PM2 include
 - **pm2 stop simon-server** - Stop a process
 - **pm2 restart simon-server** - Restart a process
 - **pm2 delete simon-server** - Delete a process from being hosted
+- **pm2 delete all** - Delete all processes
 - **pm2 save** - Save the current processes across reboot
-- **pm2 reload all** - Reload all of the processes
+- **pm2 restart all** - Reload all of the processes
+- **pm2 update** - Reload pm2
+- **pm2 start env.js --watch --ignore-watch="node_modules"** - Automatically reload service when index.js changes
