@@ -8,15 +8,15 @@ We are going to use Amazon Web Services (AWS) for your work with this instructio
 
 There is no cost to create an account with AWS, you only pay for what you use, and in many cases they will give you a significant starting credit and [some services are free](https://aws.amazon.com/free) for a short period of time or monthly usage. The services we are going to use include the following:
 
-| Service        | Purpose                              | Estimated Cost (subject to change)                                |
-| -------------- | ------------------------------------ | ----------------------------------------------------------------- |
-| EC2            | Server                               | t3.nano $0.0052 an hour, ($3.50/month)                            |
-| EC2 Elastic IP | Keep your IP address between reboots | First one is free if you keep it associated with a running server |
-| Route53        | Domain name                          | $3 a for `click` tld. More for others                             |
-| Route53        | DNS records                          | $0.50 a month for each root domain                                |
-|                |                                      | Estimated total: $15 for the course                               |
+| Service        | Purpose                              | Estimated Cost (subject to change)                                                         |
+| -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------ |
+| EC2            | Server                               | t3.nano $0.0052 an hour, ($3.50/month)                                                     |
+| EC2 Elastic IP | Keep your IP address between reboots | First one is free if you keep it associated with a running server                          |
+| Route53        | Domain name                          | $3/year for `click` tld. More for others                                                   |
+| Route53        | DNS records                          | $0.50 a month for each root domain                                                         |
+|                |                                      | Estimated total: `$15` for the course. Much cheaper than a book you will never read again. |
 
-As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for 12 months, of a Linux t2.micro or t3.micro server instance.
+As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t2.micro or t3.micro server instance.
 
 ## AWS Credit Grants and AWS Educate Starter Account
 
@@ -34,15 +34,25 @@ Once you have an AWS account it is time to create your web server.
 1. Navigate to the EC2 service.
 1. Select the option to `Launch instance`.
 1. Give your instance a meaningful name. Perhaps use a convention such as [owner]-[purpose]-[version].
+
    ![AWS Instance name](webServerAWSName.jpg)
+
 1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0d80afaa642dbf468`) into the search box and press enter.
+
    ![AWS Instance name](webServerAWSAmi.jpg)
+
    This should display the information about the class AMI. If the AMI ID matches, select it.
+
    ![AWS class AMI](webServerAWS260Ami.jpg)
+
 1. Select t3.nano for the instance type. You can always change this later if you need more power.
+
    ![AWS Instance name](webServerAWSType.jpg)
+
 1. Create a new key pair. Make sure you save the key pair to your development environment. This needs to be safe a place that is not publically accessible and that you won't accidentally commit to a GitHub repo. You will need this every time you secure shell (ssh) into this server (production environment). Note that you don't have to create a new key pair every time you launch an instance. You can use one that you created previously so that all of the servers you create can be accessed with the same key file.
+
    ![AWS Instance name](webServerAWSkeyPair.jpg)
+
 1. For your security group allow SSH, HTTP, and HTTPS traffic from anywhere. Make sure auto-assign public IP address is enabled.
 
    ![AWS Instance name](webServerAWSNetwork.jpg)
