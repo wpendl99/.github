@@ -35,7 +35,6 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - TLS (HTTPS)
 - Certificates
 - [Caddy](webServers/caddy/caddy.md) !!TODO!!
-- ☑ Setup a server
 
 ## HTML, CSS, and JavaScript
 
@@ -78,8 +77,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [Async/await](javascript/async/await.md)
 - Debugging JavaScript
 - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
-- UI design
-- UI testing
+- ☑ UI design
+- ☑ UI testing
 - ☑ Start up deliverable - JavaScript
 
 ## Web Services
@@ -91,7 +90,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [Fetch](webServices/fetch.md)
   - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
 - Service design
-- ☑ [Node.js - Node, NPM, NVM, NPX](webServices/node/node.md) !!TODO!!
+- ☑ [Node.js](webServices/node/node.md) !!TODO!!
 - Express
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
