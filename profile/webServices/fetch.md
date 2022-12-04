@@ -24,3 +24,5 @@ fetch(url)
 Create a fork of this [CodePen](https://codepen.io/leesjensen/pen/ExRoqPz) and experiment.
 
 When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
+
+Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
