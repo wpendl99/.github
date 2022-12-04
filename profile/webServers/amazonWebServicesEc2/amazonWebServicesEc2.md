@@ -115,7 +115,9 @@ Here is how you assign an elastic IP address to your server instance.
 1. Press the `Allocate` button.
 1. Select the newly displayed allocated address and press the `Actions` button.
 1. Select the `Associate Elastic IP address` option.
+
    ![Elastic IP create](webServerAWSElasticIPCreate.jpg)
+
 1. Click on the `Instance` box and select your server instance.
 1. Press `Associate`.
 
