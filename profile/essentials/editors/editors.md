@@ -28,7 +28,7 @@ To install the Live Server extension, open up VSCode and follow these three simp
 
 ![LiveServer install](essentialsLiveServerInstall.png)
 
-Congratulations! You have join the 28 million users already enjoying this extension.
+Congratulations! You have join the 28 million users already enjoying this extension. You can test it by opening VS Code, creating a new file named index.html and pasting `<h1>hello<h1>` into the file. Then save the file and press the `Go Live` button. This will launch your browser and display the HTML from the file. If you make changes to your file and save it, the browser will automatically be updated to display your changes.
 
 ### GitLens
 
