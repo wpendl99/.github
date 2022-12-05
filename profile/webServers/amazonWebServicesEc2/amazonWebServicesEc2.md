@@ -49,7 +49,7 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSType.jpg)
 
-1. Create a new key pair. Make sure you save the key pair to your development environment. This needs to be safe a place that is not publically accessible and that you won't accidentally commit to a GitHub repo. You will need this every time you secure shell (ssh) into this server (production environment). Note that you don't have to create a new key pair every time you launch an instance. You can use one that you created previously so that all of the servers you create can be accessed with the same key file.
+1. Create a new key pair. Make sure you save the key pair to your development environment. This needs to be safe a place that is not publicly accessible and that you won't accidentally commit to a GitHub repo. You will need this every time you secure shell (ssh) into this server (production environment). Note that you don't have to create a new key pair every time you launch an instance. You can use one that you created previously so that all of the servers you create can be accessed with the same key file.
 
    ![AWS Instance name](webServerAWSkeyPair.jpg)
 
