@@ -38,7 +38,6 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 ## HTML, CSS, and JavaScript
 
-- VSCode LiveServer extension
 - ☑ [HTML introduction](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
@@ -54,9 +53,10 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Responsive design](css/responsive/responsive.md)
   - [Grid](css/grid/grid.md)
   - ☑ [Flex](css/flexbox/flexbox.md)
+- Debugging CSS
 - ☑ [CSS frameworks](css/frameworks/frameworks.md)
 - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
-- ☑ Start up deliverable - HTML, CSS
+- ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss.md)
 - [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console.md)
   - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct.md)
