@@ -37,7 +37,7 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSName.jpg)
 
-1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0d80afaa642dbf468`) into the search box and press enter.
+1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0badcce4ae7d504a1`) into the search box and press enter.
 
    ![AWS Instance name](webServerAWSAmi.jpg)
 
