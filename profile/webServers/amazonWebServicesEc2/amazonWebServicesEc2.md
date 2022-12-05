@@ -131,7 +131,7 @@ Also note that your server IP address has changed to the newly allocated one. Th
 
 1. Create your AWS account.
 1. Create an EC2 instance using the class AMI.
-1. Test that you can see the default class web page from a browser.
+1. Test that you can see the default class web page from a browser using the server's public IP address.
 
 Submit a URL using your web server's public IP address, along with a description of something you found interesting, to the Canvas assignment.
 
