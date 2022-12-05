@@ -2,7 +2,7 @@
 
 <img src="essentialsGitHubLogo.png" width="75px"/>
 
-**Required reading**:
+📖 **Required reading**:
 
 - [GitHub create a repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
 - [GitHub cloning a repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)

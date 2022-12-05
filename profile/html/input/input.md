@@ -1,6 +1,6 @@
 # HTML input elements
 
-**Suggested reading**: [MDN Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+📖 **Suggested reading**: [MDN Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 From the very early days of HTML it contained elements for accepting the input of user data. These elements include the following:
 

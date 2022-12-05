@@ -2,7 +2,7 @@
 
 <img src="esLogo.png" width=100/>
 
-**Suggested reading**:
+📖 **Suggested reading**:
 
 - [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ECMA specification](https://tc39.es/ecma262/) - This official specification is only for reference

@@ -6,6 +6,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 | ---- | ------------------------------------------------------------ |
 | ⚠    | Important concepts, or pitfalls, to note                     |
 | ☑    | Assignments that you must complete for mastery certification |
+| 📖   | Required or suggesting reading                               |
 
 ## Development essentials
 

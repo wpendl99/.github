@@ -1,6 +1,6 @@
 # JavaScript exceptions
 
-**Suggested reading**: [MDN try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+📖 **Suggested reading**: [MDN try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 JavaStript supports exception handling using the `try catch` and `throw` syntax. An exception can be triggered at any time that your code throws an exception using the `throw` keyword, or whenever an exceptional case happens in the JavaScript runtime. For example, when an undefined variable is used.
 

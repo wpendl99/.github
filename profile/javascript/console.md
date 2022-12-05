@@ -1,6 +1,6 @@
 # JavaScript console
 
-**Suggested reading**: [MDN JavaScript Console](https://developer.mozilla.org/en-US/docs/Web/API/console)
+📖 **Suggested reading**: [MDN JavaScript Console](https://developer.mozilla.org/en-US/docs/Web/API/console)
 
 The JavaScript console object provides interaction with the JavaScript runtime's debugger console. This usage of console should not be confused with your operating system's console (AKA terminal or command line). The console object provides functionality for outputting the value of text and objects, running timers, and counting iterations. These are useful debugging tools when you can actually execute your code in an interactive debugger (such as VS Code).
 

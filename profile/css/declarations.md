@@ -1,6 +1,6 @@
 # CSS Declarations
 
-**Suggested reading**: [MDN reference section on properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+📖 **Suggested reading**: [MDN reference section on properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 CSS rule declarations specify a property and value to assign when the rule selector matches one or more elements. There are legions of possible properties defined for modifying the style of an HTML document. For our purposes we will discuss just a few of the more commonly used ones so that you can get a feel for wide variety of functionality they represent.
 
@@ -39,7 +39,7 @@ This [CodePen](https://codepen.io/leesjensen/pen/rNKrgKQ) demonstrates the use o
 
 ## Units
 
-**Suggested reading**: [MDN Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+📖 **Suggested reading**: [MDN Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 You can use a variety of units when defining the size of CSS property. For example, a the width of an element can be defined using absolute units such as the number of pixels (`px`) or inches (`in`), or you by using relative units such as a percentage of the parent element (`50%`), or a multiplier of the size of the letter m (`1.5rem`) as defined by the root element.
 
@@ -69,7 +69,7 @@ Here is a list of the most commonly used units. All of the units are prefixed wi
 
 ## Color
 
-**Suggested reading**: [MDN Applying color](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color)
+📖 **Suggested reading**: [MDN Applying color](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color)
 
 CSS defines multiple ways to describe color, ranging from representations familiar to programmers and ones familiar to layout designers and artists.
 

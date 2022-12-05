@@ -1,6 +1,6 @@
 # JavaScript string
 
-**Suggested reading**: [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+📖 **Suggested reading**: [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 Strings are a primitive type in JavaScript. A string variable is specified by surround a sequence of characters with single quotes (`'`), double quotes (`"`), or backticks (\`). The meaning of single or double quotes are equivalent, but the backtick defines a string literal that may contain JavaScript that is evaluated in place and concatenated into the string. A string literal replace specifier is declared with a dollar sign followed by a curly brace pair. Anything inside the curly braces are evaluated as JavaScript. The use of backticks can also be used to create multiline strings without having to explicitly escape the newline characters using `\n`.
 

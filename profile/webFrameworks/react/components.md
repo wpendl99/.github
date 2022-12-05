@@ -1,6 +1,6 @@
 # Components
 
-**Required reading**: [Reactjs.org - Components and Props](https://reactjs.org/docs/components-and-props.html)
+📖 **Required reading**: [Reactjs.org - Components and Props](https://reactjs.org/docs/components-and-props.html)
 
 React components allow you to modularize the functionality of your application. This is useful to logical pieces and for enabling code reuse.
 

@@ -14,7 +14,7 @@ A new rising contender in the CSS framework space is [Tailwind CSS](https://tail
 
 ## Bootstrap
 
-**Required reading**: [Getting started with Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+📖 **Required reading**: [Getting started with Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 The reigning champion for CSS frameworks is [Bootstrap](https://getbootstrap.com/). Bootstrap has been an active an vibrant community for over a decade and contains many lessons from real world applications. The major downside of Bootstrap is its own success. Because it is so popular, Bootstrap defines the de facto look and feel of websites. This is great for user experience continuity, but it makes it difficult for a website to grab the attention of new users.
 

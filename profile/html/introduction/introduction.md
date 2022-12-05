@@ -1,6 +1,6 @@
 # Hypertext Markup Language
 
-**Suggested reading**:
+📖 **Suggested reading**:
 
 - [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [W3C specification](https://html.spec.whatwg.org/multipage/) - This official specification is only for reference

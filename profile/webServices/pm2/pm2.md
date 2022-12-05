@@ -1,6 +1,6 @@
 # PM2
 
-**Suggested reading** - [PM2 Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)
+📖 **Suggested reading** - [PM2 Quick Start](https://pm2.keymetrics.io/docs/usage/quick-start/)
 
 !!TODO!! finish this
 
