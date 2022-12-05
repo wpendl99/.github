@@ -1,104 +1,36 @@
 # Caddy
 
-![Caddy](caddyLogoS.png)
+![Caddy](caddyLogo.png)
 
-!!TODO!! - this will need modification if we use an AMI to setup Caddy.
+Caddy is a web server that listens for incoming HTTP requests. Caddy then either serves up the requested static files or routes the request to another web server. This ability to route requests is called a `gateway`, or `reverse proxy`, and allows you to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).
 
-Caddy is a web server that listens for incoming HTTP requests. Caddy then either serves up the requested static files or routes the request to another web server. This ability to route requests is called a `reverse proxy` and allows us to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).
+For this course, we use Caddy for the following reasons.
 
-## Install
+- Caddy handles all of the creation and rotation of web certificates. This allows us to easily support HTTPS.
+- Caddy serves up all of your static HTML, CSS, and JavaScript files. All early project work will be hosted as static files.
+- Caddy acts as a gateway for requests for your project subdomains to web services that are hosting your Simon and Start up projects using node.js as an internal web server.
 
-In order to install Caddy,
+![Caddy](webServersCaddy.jpg)
 
-1. Use ssh to get a console window on your server
-1. Install Caddy using teh following commands.
+Caddy is preinstalled and configured on your server and so you do not need to do anything specifically with it other than configure your root domain name.
 
-   ```
-   sudo apt update -y && apt upgrade -y
+## Important Caddy files
 
-   sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+As part of the installation of Caddy we created two links in the Ubuntu user's home directory that point to the key Caddy configuration files. There links were created in the home directory so that you do not have to hunt around your server looking for these files.
 
-   sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+- **Configuration file**: `~/Caddyfile`
 
-   sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+  Contains the definitions for routing HTTP requests that Caddy receives. This is used to determine the location where static HTML files are loaded from, and also to proxy requests into the services you will create later. Except for when you configure the domain name of your server, you should never have to modify this file manually. However, it is good to know how it works incase things go wrong. You can read about this in the [Caddy Server documentation](https://caddyserver.com/docs/caddyfile).
 
-   sudo apt update
+- **HTML files**: `~/public_html`
 
-   sudo apt install caddy
-   ```
+  This is the directory of files that Caddy servers up when requests are made to the root or your web server. This is configured in the Caddyfile discussed above. If you actually look at the Caddyfile you will see that the static file server is mapped to `/usr/share/caddy`. That is the location that the file link in the Ubuntu user's home directory, `~/public_html`, is pointing to.
 
-[Tutorial on installing Caddy](https://www.hostnextra.com/kb/how-to-install-caddy-on-ubuntu-20-04/)
-
-## Important Caddy file locations
-
-In your ssh console window to your server view the contents of the following locaitons so you can be familiar with how Caddy installed.
-
-- **Caddy HTML files**: /usr/share/caddy
-- **Caddy program**: /usr/bin/caddy
-- **Caddy website configuration file**: /etc/caddy/`Caddyfile`
-
-## Make it easy to know where your files are
-
-We want to make it easy to get to the files we need to configure Caddy and so we are going to create some linux symbolic links in our user directory so that we can easily find them.
-
-In your ssh console window to your server make sure you are in your home directory (`cd ~`) and then create a link to the `Caddyfile`.
-
-```
-ln -s /etc/caddy/Caddyfile Caddyfile
-```
-
-Give your user rights to the directory that Caddy uses to host HTML files and then create a link in your user directory for easy access.
-
-```
-sudo chown ubuntu /usr/share/caddy /usr/share/caddy/index.html
-
-ln -s /usr/share/caddy public_html
-```
-
-## Modify the Caddyfile
-
-The `Caddyfile` contains all of the information for controlling how Caddy hosts information.
-
-We want to change the hostname in the `Caddyfile` so that Caddy will generate a certificate and handle HTTPS requests. You must have a DNS record pointing to your server before this change is made otherwise Caddy cannot verify that you own the server.
-
-```
-sudo vi ~/Caddyfile
-```
-
-Replace `:80` with your domain name.
-
-```
-:80 {
+  ```
+  :80 {
         root * /usr/share/caddy
-
         file_server
-}
-```
+  }
+  ```
 
-After saving the Caddy file restart Caddy
-
-```
-sudo service caddy restart
-```
-
-## Hosting SPA
-
-[Source](https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas)
-
-If your SPA is coupled with an API or other server-side-only endpoints, you will want to use handle blocks to treat them exclusively:
-
-```
-example.com {
-	encode gzip
-
-	handle /api/* {
-		reverse_proxy backend:8000
-	}
-
-	handle {
-		root * /path/to/site
-		try_files {path} /index.html
-		file_server
-	}
-}
-```
+  Therefore, according to this configuration, whenever Caddy receives an HTTP request for any domain name on port 80 it will use the path of the request to find a corresponding file in this directory. For example, a request for `http://yourdomainname/index.html` will look for a file named `index.html` in the `public_html` directory.
