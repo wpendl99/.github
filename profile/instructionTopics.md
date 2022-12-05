@@ -92,6 +92,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - Service design
 - ☑ [Node.js](webServices/node/node.md) !!TODO!!
 - Express
+- Debugging Node.js
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
 - ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
@@ -103,7 +104,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ Simon Login
 - WebSocket
   - ☑ Simon WebSocket
-- ☑ Start up deliverable - Service
+- ☑ [Start up deliverable - Service](webServices/startUpService.md)
 
 ## Web frameworks, mobile applications, and security
 

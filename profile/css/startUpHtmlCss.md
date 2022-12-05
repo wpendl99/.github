@@ -1,8 +1,8 @@
 # Start up deliverable - HTML and CSS
 
-Now that you have learned the basics of it is time to create the initial version of your application. The main things you should focus on in this deliverable include creating the right HTML structure, and the correct styling with CSS. The application doesn't have to do anything. This will happen when you add JavaScript in the next deliverable.
+Now that you have learned the basics of HTML and CSS, is time to create the initial version of your startup application. The main things you should focus on in this deliverable include creating the right HTML structure, and the correct styling with CSS. The application doesn't have to do anything. This will happen when you add JavaScript in the next deliverable.
 
-You must use your start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML and CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all partners.
+You must use your start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML and CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS.
 
@@ -14,7 +14,7 @@ Once you have developed your application to where you want it, you need to relea
 
 Doing this will make this deliverable of your start up available from `https://startup-html.yourdomainname`.
 
-### Update your websites home page
+### Update your website's home page
 
 You should also update your website's home page with a link to your project so that you can access everything you have done for this class from the home page. This will make a great portfolio of all your work in this class. You can easily do this by modifying the index.html file that is part of the website-html repository that you created in the earlier instruction and deploying it using the script found in that repository. Make sure you run this script from a console where your working directory is the website-html repository and not your start up repository.
 
