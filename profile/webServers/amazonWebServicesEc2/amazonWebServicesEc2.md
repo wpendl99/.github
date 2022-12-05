@@ -8,13 +8,13 @@ We are going to use Amazon Web Services (AWS) for your work with this instructio
 
 There is no cost to create an account with AWS, you only pay for what you use, and in many cases they will give you a significant starting credit and [some services are free](https://aws.amazon.com/free) for a short period of time or monthly usage. The services we are going to use include the following:
 
-| Service        | Purpose                              | Estimated Cost (subject to change)                                                         |
-| -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------ |
-| EC2            | Server                               | t3.nano $0.0052 an hour, ($3.50/month)                                                     |
-| EC2 Elastic IP | Keep your IP address between reboots | First one is free if you keep it associated with a running server                          |
-| Route53        | Domain name                          | $3/year for `click` tld. More for others                                                   |
-| Route53        | DNS records                          | $0.50 a month for each root domain                                                         |
-|                |                                      | Estimated total: `$15` for the course. Much cheaper than a book you will never read again. |
+| Service        | Purpose                              | Estimated Cost (subject to change)                                   |
+| -------------- | ------------------------------------ | -------------------------------------------------------------------- |
+| EC2            | Server                               | t3.nano $0.0052 an hour, ($3.50/month)                               |
+| EC2 Elastic IP | Keep your IP address between reboots | First one is free if you keep it associated with a running server    |
+| Route 53       | Domain name                          | $3/year for `click` tld. More for others                             |
+| Route 53       | DNS records                          | $0.50 a month for each root domain                                   |
+|                |                                      | Estimated total: `$15` for the course. Much cheaper than a textbook. |
 
 As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t2.micro or t3.micro server instance.
 
@@ -53,7 +53,9 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSkeyPair.jpg)
 
-1. For your security group allow SSH, HTTP, and HTTPS traffic from anywhere. Make sure auto-assign public IP address is enabled.
+1. For the network settings, make sure `auto-assign public IP` address is enabled. For the `Firewall (security group)`, if this is the first server that you are creating then select the option to `Create security group`. Allow SSH, HTTP, and HTTPS traffic from anywhere. If you have created a server before then you already have a security group that you can use and should not clutter up your account with additional ones. In that case use the option to `Select existing security group` and select the name of the exiting security group.
+
+   A security group represents the rules for allowing access to your servers. Security group rules specify both the port that is accessible on your server, and the source IP address that requests are allowed from. For example, you could allow only port 443 (the secure HTTPS port) from your development environment's IP address. However, doing so would mean that your web application would not be available from any other computer. You can learn more about security groups from the [AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html).
 
    ![AWS Instance name](webServerAWSNetwork.jpg)
 
@@ -127,6 +129,10 @@ Also note that your server IP address has changed to the newly allocated one. Th
 
 ## ☑ Assignment
 
-When your server is running and the default class web page is accessible from a browser, submit your web servers public IP address, along with a description of something you found interesting, to the Canvas assignment.
+1. Create your AWS account.
+1. Create an EC2 instance using the class AMI.
+1. Test that you can see the default class web page from a browser.
+
+Submit a URL using your web server's public IP address, along with a description of something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.

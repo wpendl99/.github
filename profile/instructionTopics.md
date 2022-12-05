@@ -32,7 +32,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - [Web servers](webServers/webServers/webServers.md)
 - [Domain names](webServers/domainNames.md)
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
-- ☑ Amazon Web Services - Route 53
+- ☑ [Amazon Web Services - Route 53](webServers/amazonWebServicesRoute53/amazonWebServicesRoute53.md)
 - TLS (HTTPS)
 - Certificates
 - [Caddy](webServers/caddy/caddy.md) !!TODO!!

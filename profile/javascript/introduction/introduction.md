@@ -74,10 +74,15 @@ While not technically required in most cases, it is considered good form to end 
 Before we go any further we need a way for you to write and run JavaScript yourself. There are lots of ways to do this, but a few methods are commonly used. The following list, in increasing complexity, describes each method.
 
 1. Use an online sandbox like [CodePen](https://codepen.io). With CodePen you can write whatever JavaScript you would like and immediately see the results. Make sure you display the CodePen's Console window if your JavaScript is using the log function.
+
    ![Browser Debugger](codePenJavaScriptDebugger.png)
+
 1. Use your browser's debugger. For example, if you open Chrome and press `F12` the debugger will display. Select the `Console` menu option. This will display a JavaScript interpreter where you can write and execute your code.
+
    ![Browser Debugger](browserDebugger.png)
+
 1. Install and use `Node.js`. Node.js is a JavaScript execution application. This will let you run JavaScript outside of a browser. There are three ways you can use Node to run your JavaScript.
+
    1. Run in interpreter mode. To do this you run `node.js` from the console and type in your JavaScript into the interpreter.
       ```sh
       ➜  node
@@ -96,4 +101,5 @@ Before we go any further we need a way for you to write and run JavaScript yours
       Hello world
       ```
    1. Open your JavaScript file in Visual Studio Code and execute your code by pressing `F5` and selecting `node.js` as the debugger. You can set breakpoints in the editor window, inspect variables, and view the console output.
+
       ![Browser Debugger](vscodeJavaScriptDebugger.png)
