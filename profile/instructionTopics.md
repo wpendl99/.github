@@ -79,7 +79,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - ☑ UI design
 - ☑ UI testing
-- ☑ Start up deliverable - JavaScript
+- ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript.md)
 
 ## Web Services
 

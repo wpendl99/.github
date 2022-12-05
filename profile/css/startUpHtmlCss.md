@@ -6,7 +6,7 @@ You must use your start up GitHub repository that you created in the earlier ins
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. You can copy the `deploy.sh` script from the Simon CSS project and use it with a different `-s` parameter.
+Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deploy.sh` script from the Simon CSS project to your start up repository and use it with a different `-s` parameter.
 
 ```sh
 ./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup-html
@@ -36,7 +36,7 @@ You should also update your website's home page with a link to your project so t
 
 - 30% - Properly structured HTML.
 - 30% - Properly styled CSS.
-- 20% - Your start up application is hosted on your web server and is accessible using your domain name using HTTPS.
+- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using HTML and CSS.
 
