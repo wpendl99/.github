@@ -1,0 +1,30 @@
+# URL
+
+📖 **Suggested reading**: [MDN What is a URL](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
+
+The Uniform Resource Locator (URL) represents the location of a web resource. Looking at the different parts of a URL is a good way to understand what it represents. Here is an example URL.
+
+```js
+https://byu.edu:443/cs/260/student?filter=accepted#summary
+```
+
+The URL syntax uses the following convention. Notice the delimiting punctuation between the parts of the URL. Most parts of the URL are optional. The only ones that are required are the scheme, and the domain name.
+
+```
+<scheme>://<domain name>:<port><path>?<parameters>#<anchor>
+```
+
+| Part        | Example                              | Meaning                                                                                                                                                                                                                                                                             |
+| ----------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scheme      | https                                | The protocol required to ask for the resource. For web applications, this is usually HTTPS. But it could be any internet protocol such as FTP or MAILTO.                                                                                                                            |
+| Domain name | byu.edu                              | The domain name that owns the resource represented by the URL.                                                                                                                                                                                                                      |
+| Port        | 3000                                 | By default the port is 80 if the scheme is HTTP, or 443 if the scheme is HTTPS. The port specifies the numbered port to connect to the domain with. Lower number ports are reserved for common internet protocols, higher number ports can be used for any purpose.                 |
+| Path        | /school/byu/user/8014                | A path for the resource on the domain. The resource does not have to physically be located on the file system with this path. It can be a logical path represented by function parameters, database table, or object schema.                                                        |
+| Parameters  | filter=names&highlight=intro,summary | The parameters represent a list of key value pairs. Usually it provides additional qualifiers on the resource represented by the path. This might be a filter on the returned resource or how to highlight the resource. The parameters are also sometimes called the query string. |
+| Anchor      | summary                              | The anchor usually represents an sub-location of the resource. This commonly represents a request for the browser to automatically scroll the resource to the resources, sub-location. The anchor is also sometimes called the hash, or fragment.                                   |
+
+Technically you can also provide a user name and password before the domain name. This was used historically to authenticate access, but for security reasons this is deprecated. However, you will still see this convention for URLs that represent database connection strings.
+
+## URL, URN, and URI
+
+You will sometimes hear the use of URN or URI when talking about web resources. A Uniform Resource Name (URN) is a unique resource name that does not specify location information. For example, `urn:isbn:10,0765350386`. A Uniform Resource Identifier (URI) is a general resource identifier that could refer to either a URL and URN. With web programming you are almost always talking about URLs and therefore should not use the more general URI.

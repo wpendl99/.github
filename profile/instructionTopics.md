@@ -79,7 +79,7 @@ It is expected that you will start at the top of the list and work your way down
 
 ## Web Services
 
-- URL
+- [URL](webServices/url.md)
 - Ports
 - HTTP
 - CORS and SOP
@@ -123,6 +123,8 @@ It is expected that you will start at the top of the list and work your way down
 - Performance monitoring
 - Search Engine Optimization
 - Demo day
+
+## Legend
 
 | Icon | Meaning                                                      |
 | ---- | ------------------------------------------------------------ |
