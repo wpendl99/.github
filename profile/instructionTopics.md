@@ -81,7 +81,7 @@ It is expected that you will start at the top of the list and work your way down
 
 - [URL](webServices/url.md)
 - [Ports](webServices/ports.md)
-- HTTP
+- [HTTP](webServices/http.md)
 - CORS and SOP
 - ☑ [Fetch](webServices/fetch.md)
   - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)

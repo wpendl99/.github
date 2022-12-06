@@ -147,6 +147,9 @@ Most of the time you don't want to reverse back to an earlier commit you just wa
 
 ```sh
 ➜  git diff HEAD~1 HEAD
+```
+
+```diff
 diff --git a/hello.txt b/hello.txt
 index 3b18e51..eeee2af 100644
 --- a/hello.txt
