@@ -33,7 +33,7 @@ In this example we are asking to `GET` a resource found at the path `/hypertext/
 
 The response to the above requests looks like this.
 
-```http
+```yaml
 HTTP/1.1 200 OK
 Date: Tue, 06 Dec 2022 21:54:42 GMT
 Server: Apache
@@ -89,24 +89,25 @@ It is important that you use the standard HTTP status codes in your HTTP respons
 
 Within those ranges here are some of the more common codes. See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) for a full description of status codes.
 
-|Code|Text|Meaning|
-|100|Continue|The service is working on the request|
-|200|Success|The requested resource was found and returned as appropriate.|
-|201|Created|The request was successful and a new resource was created.|
-|204|No Content|The request was successful but no resource is returned.|
-|304|Not Modified|The cached version of the resource is still valid.|
-|307|Permanent redirect| You should always use the response location header for future requests.|
-|308|Temporary redirect| The original request may resolve without a redirect in the future.|
-|400|Bad request|The request was malformed or invalid.|
-|401|Unauthorized|The request did not provide a valid authentication token.|
-|403|Forbidden|The provided authentication token is not authorized for the resource. |
-|404|Not found| An unknown resource was requested.|
-|408|Request timeout|The request takes too long.|
-|409|Conflict|The updated resource represent an older version than the current resource.|
-|418|[I'm a teapot](https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol)|The service refuses to brew coffee in a teapot.|
-|429|Too many requests|The client is making too many requests in to short of a time period.|
-|500|Internal server error|The server failed to properly process the request.|
-|503|Service unavailable|The service is temporarily down. The client should try again with an exponential back off.|
+| Code | Text                                                                                 | Meaning                                                                                    |
+| ---- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| 100  | Continue                                                                             | The service is working on the request                                                      |
+| 200  | Success                                                                              | The requested resource was found and returned as appropriate.                              |
+| 201  | Created                                                                              | The request was successful and a new resource was created.                                 |
+| 204  | No Content                                                                           | The request was successful but no resource is returned.                                    |
+| 304  | Not Modified                                                                         | The cached version of the resource is still valid.                                         |
+| 307  | Permanent redirect                                                                   | You should always use the response location header for future requests.                    |
+| 308  | Temporary redirect                                                                   | The original request may resolve without a redirect in the future.                         |
+| 400  | Bad request                                                                          | The request was malformed or invalid.                                                      |
+| 401  | Unauthorized                                                                         | The request did not provide a valid authentication token.                                  |
+| 403  | Forbidden                                                                            | The provided authentication token is not authorized for the resource.                      |
+| 404  | Not found                                                                            | An unknown resource was requested.                                                         |
+| 408  | Request timeout                                                                      | The request takes too long.                                                                |
+| 409  | Conflict                                                                             | The updated resource represent an older version than the current resource.                 |
+| 418  | [I'm a teapot](https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol) | The service refuses to brew coffee in a teapot.                                            |
+| 429  | Too many requests                                                                    | The client is making too many requests in to short of a time period.                       |
+| 500  | Internal server error                                                                | The server failed to properly process the request.                                         |
+| 503  | Service unavailable                                                                  | The service is temporarily down. The client should try again with an exponential back off. |
 
 ## Headers
 
