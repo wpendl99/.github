@@ -20,11 +20,11 @@ The market now has lots of alternatives when considering which automated browser
 
 For the purposes of this instruction, we could pick any of the top contenders. However, we are going to pick a newcomer, [Playwright](https://playwright.dev/). Playwright has some major advantages. It is backed by Microsoft, it integrates really well with VS Code, and it runs as a Node.js process. It is also considered one of the least flaky of the testing frameworks.
 
-Here is an image of Playwright running some simple tests in VS Code. You can see the listing of tests on the left, the JavaScript based tests in the editor window, and some simple console output displaying the results on the bottom. When a test fails the editor window displays a clear description of what went wrong. You can even debug the tests as they execute just like you would any other Node.js based JavaScript execution.
+Here is an image of Playwright running some simple tests in VS Code. You can see the listing of tests on the left and the JavaScript based tests in the editor window. When a test fails the editor window displays a clear description of what went wrong. You can even debug the tests as they execute just like you would any other Node.js based JavaScript execution.
 
 ![Playwright](javaScriptPlaywright.png)
 
-As a example, consider the following simplified HTML file with self contained JavaScript.
+As a example, consider the following simplified HTML file containing a button that changes the paragraph text using self contained JavaScript.
 
 ```HTML
   <body>
@@ -58,10 +58,22 @@ test('testWelcomeButton', async ({ page }) => {
   await changeBtn.click();
 
   // Expect that the change happened correctly
-  await expect(hello).toHaveText('I feel welcomed');
+  await expect(hello).toHaveText('I feel not welcomed');
 });
 ```
 
-This is just a simple test of the incredibly powerful functionality of Playwright. You are encouraged to explore its functionality and even add some tests to your projects. Once you have gained some competency with Playwright you will find that you can write your code faster and feel more confident when changing things around.
+This test makes sure you can successfully navigate to the desired page, that the page contains the desired elements, that you can press the button and the text changes as expected.
 
-## Testing fleets of devices - Browser Stack
+This is just a simple example of the powerful functionality of Playwright. You are encouraged to explore its functionality and even add some tests to your projects. Once you have gained some competency with Playwright you will find that you can write your code faster and feel more confident when changing things around.
+
+## Testing various devices - Browser Stack
+
+With the ability to run automated UI tests, we now turn our attention to testing on the multitude of various devices. There are several services out there that help with this. One of these is [BrowserStack](https://www.browserstack.com/). BrowserStack lets you pick from a long list of physical devices that you can run interactively, or driving automated tests with Selenium. The image below only shows a partial list of iPhone devices. BrowserStack also has devices for Android, Mac, and Windows.
+
+![BrowserStack devices](javaScriptBrowserStackDevices.png)
+
+When you launch a device it connects the browser interface to a physical device hosted in a data center. You can then use the device to reproduce user reported problems, or validate that your implementation works on that specific device. The following image shows the use of BrowserStack to experiment with an iPhone 14.
+
+![BrowserStack iPhone](javaScriptBrowserStackIPhone.png)
+
+BrowserStack offers free trials if you would like to see how your start up application works on a specific device.
