@@ -2,11 +2,7 @@
 
 The course covers a full stack of technologies including HTML, CSS, JavaScript, HTTP, DNS, web servers, client side web frameworks, database services, security, and progressive web applications. The instruction topics given below include assignments and projects to help you explore the concepts and demonstrate your mastery.
 
-| Icon | Meaning                                                      |
-| ---- | ------------------------------------------------------------ |
-| ⚠    | Important concepts, or pitfalls, to note                     |
-| ☑    | Assignments that you must complete for mastery certification |
-| 📖   | Required or suggesting reading                               |
+It is expected that you will start at the top of the list and work your way down. However, work through the instruction in the way that is best for you. Just make sure that you complete every assignment (marked with the ☑ icon) and submit the result in Canvas so that you can received credit for what you have mastered.
 
 ## Development essentials
 
@@ -127,3 +123,9 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - Performance monitoring
 - Search Engine Optimization
 - Demo day
+
+| Icon | Meaning                                                      |
+| ---- | ------------------------------------------------------------ |
+| ⚠    | Important concepts, or pitfalls, to note                     |
+| ☑    | Assignments that you must complete for mastery certification |
+| 📖   | Required or suggesting reading                               |
