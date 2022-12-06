@@ -1,28 +1,30 @@
 # BYU **Web Programming** `cs260`
 
-![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg)
+![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg?raw=true)
 
 Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) and [example projects](https://demo.cs260.click). Assignments, quizzes, and tests are submitted through Canvas.
 
 # Technologies and Instruction
 
-The course covers a full stack of technologies.
+The course covers a full stack of web programming technologies and topics.
 
-- [Console](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview)
-- [Domain Names](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
-- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [URL](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
-- [Web Servers](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server) demonstrated with [AWS](https://aws.amazon.com//) and [CaddyServer](https://caddyserver.com/)
-- [Web Services](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
-- [Web Frameworks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Introduction) focusing on [React](react/react.md)
-- [TLS](https://developer.mozilla.org/en-US/docs/Web/Security/Transport_Layer_Security) and web certificates
-- Data Services demonstrated with [MongoDB](https://www.mongodb.com/)
-- [Security](https://developer.mozilla.org/en-US/docs/Web/Security)
-- [Progressive Web Applications](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+- Command console
+- HTML
+- CSS
+- JavaScript
+- Responsive design
+- Domain Names and DNS
+- HTTP, HTTPS, and web certificates
+- Web Servers demonstrated with AWS
+- Web Services
+- Web Frameworks focusing on React
+- Data Services demonstrated with MongoDB
+- Progressive Web Applications
+- Security
+- UI Testing
+- Web design
 
-Get started with the course [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme).
+⚠ Get started by visiting the course [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) topics.
 
 # Acknowledgements
 
@@ -30,6 +32,8 @@ The instruction makes extensive use of [MDN Web Docs](https://developer.mozilla.
 
 [React](https://reactjs.org) is used to demonstrate the power of web frameworks. Without the significant contributions of the React community we would not be able to stand on the shoulders of giants.
 
-Much appreciation goes to [CodePen](codepen.io) for hosting many of the exercises and instruction examples.
+Much appreciation goes to [CodePen](https://codepen.io) for hosting many of the exercises and instruction examples.
 
-The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit educational use only. No part of the Simon code program should be used outside of that definition.
+[Amazon Web Services](https://aws.amazon.com) made it possible to experiment with DNS, create web servers, and host the project content
+
+The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Hasbro. Our use of the name and the game is for non-profit educational use only. No part of the Simon code program should be used outside of that definition.

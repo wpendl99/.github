@@ -1,6 +1,6 @@
 # Introduction to web programming
 
-![Web programming](../webprogrammingcover.jpg)
+![Web programming](../../webprogrammingcover.jpg)
 
 Web programming skills are among the most valuable ones that you can learn within the field of computer science. With web programming you can construct applications that are accessible on phones, tablets, desktops, kiosks, car dashboards, and even refrigerators. You can provide data and services to the entire planet. Every business and industry needs what web programming provides. Taking the time to acquire these skills, no matter what career you eventually pursue, will open doors to you that otherwise would be inaccessible.
 
@@ -16,6 +16,10 @@ The key to learning how to be an exceptional web programmer rests in you ability
 1. **`Art`** - Making a visually attractive web application requires artistic skills. However, there is just as much art in making them usable, efficient, and maintainable. Knowing how to organize and sculpt your code is incredibly artistic. Well designed systems are often referred to as beautiful or elegant, and a reflection of the creativity of their authors.
 1. **`Social`** - Web applications are rarely created and used by one person. Usually you build an application for a large group of customers, and they almost always are created by a team of contributors with different backgrounds and roles. The ability for that team to work together and interact with customers is essential. These are social skills. The more skilled you are at talking, writing, reading, presenting, expressing body language, projecting a good appearance, and most importantly, listening, the more successful you will be.
 1. **`Discovery`** - Having a mind that is always questioning will make all the difference. Simply doing the job is not enough. Wanting to know why the job is useful, searching for alternative directions, digging into the inner workings of a black box, and questioning accepted facts are all where advances come from. Cultivating a love for life long learning will take you from adequate to exceptional.
+
+A [2022 interview](https://appleinsider.com/articles/22/10/03/if-you-want-to-work-for-apple-you-need-these-four-traits) with the CEO of Apple, Tim Cook, echoed the value of these four abilities.
+
+> When hiring we look for the ability to collaborate, creativity, curiosity, and expertise
 
 ## Making mistakes
 
