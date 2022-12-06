@@ -78,7 +78,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 - Debugging JavaScript
 - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - ☑ UI design
-- ☑ UI testing
+- ☑ [UI testing](javascript/uiTesting/uiTesting.md)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript.md)
 
 ## Web Services
@@ -106,7 +106,7 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ Simon WebSocket
 - ☑ [Start up deliverable - Service](webServices/startUpService.md)
 
-## Web frameworks, mobile applications, and security
+## Web frameworks, mobile, and security
 
 - [Web frameworks](webFrameworks/webFrameworks.md)
 - [React](webFrameworks/react/react.md)
@@ -117,13 +117,13 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
   - ☑ [React CLI](webFrameworks/react/reactCli.md)
   - ☑ [Router](webFrameworks/react/reactRouter.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
-- Security
 - Progressive web applications
   - ☑ Simon PWA
-- OWASP top 10
-- Gruyere
+- Security
+  - OWASP top 10
+  - Gruyere
+- ☑ Start up deliverable - Final
 - TypeScript
 - Performance monitoring
 - Search Engine Optimization
-- ☑ Start up deliverable - Final
 - Demo day
