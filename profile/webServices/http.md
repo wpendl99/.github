@@ -81,11 +81,11 @@ There are several verbs that describe what the HTTP request is asking for. The l
 
 It is important that you use the standard HTTP status codes in your HTTP responses so that the client of a request can know how to interpret the response. That means you need to be familiar with the common status codes. The codes are partitioned into five blocks.
 
-1xx - Informational.
-2xx - Success.
-3xx - Redirect to some other location or that the previously delivered resource is a valid cached version.
-4xx - Client errors. The request is invalid.
-5xx - Server errors. The response is invalid due to an error on the server.
+- 1xx - Informational.
+- 2xx - Success.
+- 3xx - Redirect to some other location or that the previously delivered resource is a valid cached version.
+- 4xx - Client errors. The request is invalid.
+- 5xx - Server errors. The response is invalid due to an error on the server.
 
 Within those ranges here are some of the more common codes. See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) for a full description of status codes.
 
