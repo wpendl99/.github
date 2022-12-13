@@ -56,4 +56,4 @@ access-control-allow-origin: https://cs260.click
 I’ll tell you something about German sausages, they’re the wurst
 ```
 
-This all means that you just need to test the services you want to use before you include them in your application. Either make sure they are responding with the wildcard allowed origin or your calling origin. If they do not they you will not be able to use them.
+This all means that you need to test the services you want to use before you include them in your application. Either make sure they are responding with the wildcard allowed origin or your calling origin. If they do not they you will not be able to use them.

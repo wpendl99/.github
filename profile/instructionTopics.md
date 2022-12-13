@@ -85,7 +85,7 @@ It is expected that you will start at the top of the list and work your way down
 - [SOP and CORS](webServices/cors/cors.md)
 - ☑ [Fetch](webServices/fetch.md)
   - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
-- Service design
+- [Service design](webServices/design/design.md)
 - ☑ [Node.js](webServices/node/node.md) !!TODO!!
 - Express
 - Debugging Node.js
