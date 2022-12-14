@@ -208,9 +208,8 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 
 // Routing middleware
-app.get('/store/:storeName', (req, res, next) => {
+app.get('/store/:storeName', (req, res) => {
   res.send({ name: req.params.storeName });
-  next();
 });
 
 app.put('/st*/:storeName', (req, res) =>
