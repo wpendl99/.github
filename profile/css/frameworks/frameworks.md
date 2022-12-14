@@ -54,10 +54,10 @@ If you are going to use Bootstrap interactive components that require JavaScript
 </body>
 ```
 
-Later on when we introduce the idea of bundling your application you will want to use the Node Package Manager (NPM) to download Bootstrap and include it in your source code so that you don't have to rely on someone elses server to provide you with a vital piece of your application. To include Bootstrap in your application using NPM you would run the following from your console.
+Later on when we introduce the idea of bundling your application you will want to use the Node Package Manager (NPM) to download Bootstrap and include it in your source code so that you don't have to rely on someone else's server to provide you with a vital piece of your application. To include Bootstrap in your application using NPM you would run the following from your console.
 
 ```sh
-npm i bootstrap@5.2.3
+npm install bootstrap@5.2.3
 ```
 
 ⚠ Note that those links are version specific (version 5 in this case). You will want to get the latest version links when you begin building your application.

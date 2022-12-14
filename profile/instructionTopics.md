@@ -86,7 +86,7 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Fetch](webServices/fetch.md)
   - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
 - [Service design](webServices/design/design.md)
-- ☑ [Node.js](webServices/node/node.md) !!TODO!!
+- ☑ [Node.js](webServices/node/node.md)
 - Express
 - Debugging Node.js
 - [Service daemons - PM2](webServices/pm2/pm2.md)
