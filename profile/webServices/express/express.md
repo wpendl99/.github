@@ -2,7 +2,7 @@
 
 ![Express icon](expressIcon.png)
 
-**Suggested reading**: [MDN Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+📖 **Suggested reading**: [MDN Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 
 In the previous instruction you saw how to use Node.js to create a simple web server. This works great for little projects where you are trying to quickly serve up some web content, but to build a production ready application you need a framework with a bit more functionality for easily implementing a full web service. This is where the Node package `Express` come in. Express provides support for:
 
@@ -82,7 +82,7 @@ Notice that in these examples the `next` parameter was omitted. Since we are not
 
 ## Using middleware
 
-**Suggested reading**: [Express Middleware](https://expressjs.com/en/resources/middleware.html)
+📖 **Suggested reading**: [Express Middleware](https://expressjs.com/en/resources/middleware.html)
 
 The standard [Mediator/Middleware](https://www.patterns.dev/posts/mediator-pattern/) design pattern has two pieces: A mediator and middleware. Middleware represents componentized pieces of functionality. The mediator loads the middleware components and determines their order of execution. When a request comes to the mediator it then passes the request around to the middleware components. With this pattern, Express is the mediator, and middleware functions are the middleware components.
 

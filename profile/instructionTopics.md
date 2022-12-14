@@ -2,7 +2,7 @@
 
 The course covers a full stack of technologies including HTML, CSS, JavaScript, HTTP, DNS, web servers, client side web frameworks, database services, security, and progressive web applications. The instruction topics given below include assignments and projects to help you explore the concepts and demonstrate your mastery.
 
-It is expected that you will start at the top of the list and work your way down. However, work through the instruction in the way that is best for you. Just make sure that you complete every assignment (marked with the ☑ icon) and submit the result in Canvas so that you can received credit for what you have mastered.
+It is expected that you will start at the top of the list and work your way down. However, work through the instruction in the way that is best for you. Just make sure that you complete every assignment (marked with the ☑ icon) and submit the result in Canvas so that you can receive credit for what you have mastered.
 
 ## Development essentials
 
@@ -88,7 +88,7 @@ It is expected that you will start at the top of the list and work your way down
 - [Service design](webServices/design/design.md)
 - ☑ [Node.js](webServices/node/node.md)
 - ☑ [Express](webServices/express/express.md)
-- Debugging Node.js
+- [Debugging Node.js](webServices/debuggingNode/debuggingNode.md)
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
 - ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)

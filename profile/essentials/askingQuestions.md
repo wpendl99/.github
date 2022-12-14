@@ -4,13 +4,17 @@
 
 ## Contact information
 
-!!TODO!! - Add office, phone number, discord link, TA schedule link.
+!!TODO!! - Add office, discord link, TA schedule link.
 
-| Who        | How                 | Where                        | When                            |
-| ---------- | ------------------- | ---------------------------- | ------------------------------- |
-| TA         | Online or in person | `Discord`, `TA Office`       | `TA Schedule`                   |
-| Instructor | Online or in person | `Discord`, `Class`, `Office` | `Office Hours`, `Class Times`   |
-| Peers      | Online or in person | `Discord`, `Class`           | Depends on how friendly you are |
+- Use this [invitation link](https://discord.gg/VnuQ6HGS) to join class Discord server
+- TA schedule
+- Office hours and location
+
+| Who        | How                 | Where                  | When                            |
+| ---------- | ------------------- | ---------------------- | ------------------------------- |
+| TA         | Online or in person | Discord, TA Office     | TA Schedule                     |
+| Instructor | Online or in person | Discord, Class, Office | Office Hours, Class Times       |
+| Peers      | Online or in person | Discord, Class         | Depends on how friendly you are |
 
 ## Who to ask questions
 
@@ -37,7 +41,7 @@ Learning how to ask questions might be the most important thing you learn. The b
 
 Here is a good template to follow when asking a question:
 
-> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, but then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that Sally already tried that without success as discussed here on `I`. Any help is greatly appreciated.
+> When working on assignment `A`, I was successfully able to do `1`, `2`, and `3`, but then I did `B`, as instructed by `C`, and got the result `D`, with an error of `E`. I was expecting `F`. I thought maybe `G` or `H` might be the problem, but I saw that `J` already tried that without success as discussed here on `K`. Any help is greatly appreciated.
 
 ## Pay it forward
 
