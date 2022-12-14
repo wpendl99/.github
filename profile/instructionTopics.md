@@ -92,7 +92,7 @@ It is expected that you will start at the top of the list and work your way down
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - Endpoint testing
 - ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
-- Storage services
+- [Storage services](webServices/storageServices.md)
 - Data services
   - ☑ [MongoDB](webServices/mongoDb/mongoDb.md)!!TODO!!
   - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
