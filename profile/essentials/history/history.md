@@ -1,5 +1,7 @@
 # A brief history of web programming
 
+Having a basic knowledge of the history of web programming helps you to understand why we have the assortment of technologies that you will be working with. There has been three distinct phases that make up this history: 1) the formation of the internet that support the communication of web applications, 2) the creation of HTML and HTTP that made it possible to shared hyperlinked documents, and 3) the creation of CSS and JavaScript that enabled interactive web applications.
+
 ## The Internet
 
 The essential first step to enabling what we now call web programming was the formation of a global communications network that was reliable and publicly available. This was made possible when the United States Department of Defense created the ARPANET as a means of sharing information between universities doing defense related research.
@@ -40,11 +42,13 @@ Originally, HTML contained only 18 elements, or tags. The latest version of HTML
 
 ## HTTP and URL
 
-While HTML is the content language of the web the other major contributions of Berners-Lee included the definition of the HyperText Transfer Protocol ([HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) and the Uniform Resource Locator ([URL](https://en.wikipedia.org/wiki/URL)). These two definitions specify how web documents are addressed and transmitted across the Internet. The following gives an example of a URL and HTTP package.
+While HTML is the content language of the web the other major contributions of Berners-Lee included the definition of the HyperText Transfer Protocol ([HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)) and the Uniform Resource Locator ([URL](https://en.wikipedia.org/wiki/URL)). These two definitions specify how web documents are addressed and transmitted across the Internet. The following gives an example of a URL and HTTP request.
 
 ```http
 http://info.cern.ch/hypertext/WWW/Helping.html
+```
 
+```http
 GET /hypertext/WWW/Helping.html HTTP/1.1
 Host: info.cern.ch
 Accept: text/html
@@ -106,6 +110,6 @@ Other important milestones in the history of JavaScript include the 2013 standar
 
 ## What's next?
 
-Looking forward there are many exciting opportunities, as well as problems to solve. This includes addressing topics like application complexity, device diversity, internationalization, security, privacy, data ownership, environmental impact, global authorization identity, performance, and accessibility.
+Looking forward, there are many exciting opportunities, as well as problems to solve. This includes addressing topics like application complexity, device diversity, internationalization, security, privacy, data ownership, environmental impact, global authorization identity, performance, and accessibility.
 
-The only thing certain is that you have an opportunity to be a big part of it. The most important thing you can learn from these early pioneers, is that with web programming a single person can change the world. I hope to see your face on this history page one day.
+The only thing certain is that you have an opportunity to be a big part of it. One important lesson you can learn from these early pioneers, is that with web programming, a single person can change the world. I hope to see your face on this history page one day.
