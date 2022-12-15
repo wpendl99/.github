@@ -28,10 +28,11 @@ For the projects in this course that require data services, we will use `MongoDB
     _id: '62300f5316f7f58839c811de',
     name: 'Lovely Loft',
     summary: 'A charming loft in Paris',
-    bedrooms: 1,
+    beds: 1,
     last_review: {
       $date: '2022-03-15T04:06:17.766Z',
     },
+    price: 3000,
   },
   {
     _id: '623010b97f1fed0a2df311f8',
@@ -39,6 +40,7 @@ For the projects in this course that require data services, we will use `MongoDB
     summary: 'Modern home with infinite views from the infinity pool',
     property_type: 'House',
     beds: 5,
+    price: 250,
   },
 ];
 ```
@@ -126,13 +128,13 @@ If you do not supply any parameters to the `find` function then it will return a
 ];
 ```
 
-You can provide a query and options to the `find` function. In the example below we query for a `property_type` of Condo that has less than two bedrooms. We also specify the options to sort by the descending number of beds, and limit our results to the first 10 documents.
+You can provide a query and options to the `find` function. In the example below we query for a `property_type` of Condo that has less than two bedrooms. We also specify the options to sort by the descending price, and limit our results to the first 10 documents.
 
 ```js
 const query = { property_type: 'Condo', beds: { $lt: 2 } };
 
 const options = {
-  sort: { beds: -1 },
+  sort: { price: -1 },
   limit: 10,
 };
 
@@ -147,7 +149,7 @@ There is a lot more functionality that MongoDB provides, but this is enough to g
 
 ## Keeping your keys out of your code
 
-You need to protect your credentials for connecting to your Mongo database. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can read them from a secure location when your application executes. One common way to do that is to read them from environment variables.
+You need to protect your credentials for connecting to your Mongo database. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can read them from a location outside of your code when the application executes. One common way to do that is to read them from environment variables. The JavaScript `process.env` object provides access the environment.
 
 ```Javascript
 const userName = process.env.MONGOUSER;
@@ -159,7 +161,7 @@ if (!userName) {
 }
 ```
 
-This will require you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file
+This will require you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file.
 
 ```
 sudo vi /etc/environment
@@ -177,7 +179,7 @@ For your development environment add the same export commands to your shell's pr
 
 ## Managed services
 
-Historically each application development team would have developers that managed the data service. That team would acquisition hardware, install the database, manage the memory and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to databases that are hosted and managed by an external provider. This relieves the development team from much of the day to day maintenance and allows the team to focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
+Historically each application development team would have developers that managed the data service. Those developers would acquisition hardware, install the database software, monitor the memory, cpu, and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to databases that are hosted and managed by an external provider. This relieves the development team from much of the day to day maintenance. This allows the team to focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
 
 ### MongoDB Atlas
 
