@@ -8,7 +8,7 @@ Here is a list of some of the popular data services that are available.
 
 | Service       | Specialty             |
 | ------------- | --------------------- |
-| SQL           | Relational queries    |
+| MySQL         | Relational queries    |
 | Redis         | Memory cached objects |
 | ElasticSearch | Ranked free text      |
 | MongoDB       | JSON objects          |
@@ -17,6 +17,8 @@ Here is a list of some of the popular data services that are available.
 | InfluxDB      | Time series data      |
 
 ## MongoDB
+
+![MongoDB logo](webServicesMongoLogo.png)
 
 For the projects in this course that require data services, we will use `MongoDB`. Mongo increases developer productivity by using JSON objects as its core data model. This makes it easy to have an application that uses JSON from the top to the bottom of the technology stack. A mongo database is made up of one or more collections that each contain JSON documents. You can think of a collection as a large array of JavaScript objects, each with a unique ID. The following is a sample of a collection of houses that are for rent.
 
@@ -97,16 +99,15 @@ const house = {
   property_type: 'Condo',
   beds: 1,
 };
-collection.insertOne(house);
+await collection.insertOne(house);
 ```
 
-To query for documents you use the `find` function on the collection object. Note that the find function is asynchronous and so we use the `than` function on the returned promise to wait for the results before we write them out to the console.
+To query for documents you use the `find` function on the collection object. Note that the find function is asynchronous and so we use the `await` keyword to wait for the promise to resolve before we write them out to the console.
 
 ```js
 const cursor = collection.find();
-cursor.toArray().then((rentals) => {
-  console.log(rentals);
-});
+const rentals = await cursor.toArray();
+rentals.forEach((i) => console.log(i));
 ```
 
 If you do not supply any parameters to the `find` function then it will return all documents in the collection. In this case we only get back the single document that we previously inserted. Notice that the automatically generated ID is returned with the document.
@@ -136,20 +137,13 @@ const options = {
 };
 
 const cursor = collection.find(query, options);
-cursor.toArray().then((rentals) => {
-  console.log(rentals);
-});
+const rentals = await cursor.toArray();
+rentals.forEach((i) => console.log(i));
 ```
 
 The query matches our document and we get the same result as before.
 
 There is a lot more functionality that MongoDB provides, but this is enough to get you started. If you are interested you can find lots of tutorials on their [website](https://www.mongodb.com/docs/).
-
-## Managed services
-
-Historically each application team would have a team of developers that managed the data service. That team would acquisition hardware, install the database, manage the memory and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to databases that are hosted and managed by an external provider. This relieves the development team from much of the day to day maintenance and allows the team to focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
-
-[Mongo Atlas](https://www.mongodb.com/atlas/database)
 
 ## Keeping your keys out of your code
 
@@ -179,10 +173,84 @@ export MONGOPASSWORD=<yourmongodbpassword>
 export MONGOHOSTNAME=<yourmongodbhostname>
 ```
 
-For your development environment add the variables to your shell's profile file.
+For your development environment add the same export commands to your shell's profile file. Depending on what console you are using the location for your shell profile will be different. For example, on a Mac you typically are using Zsh and you will add the export commands to the `.zprofile` file found in your user directory.
+
+## Managed services
+
+Historically each application development team would have developers that managed the data service. That team would acquisition hardware, install the database, manage the memory and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to databases that are hosted and managed by an external provider. This relieves the development team from much of the day to day maintenance and allows the team to focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
+
+### MongoDB Atlas
+
+All of the major cloud providers offer multiple data services. For this class we will use the data service provided by MongoDB called [Atlas](https://www.mongodb.com/atlas/database). No credit card or payment is required to setup and use Atlas, as long as you stick to the shared cluster environment.
+
+[![Mongo sign up](webServicesMongoSignUp.jpg)](https://www.mongodb.com/atlas/database)
+
+This [video tutorial](https://www.youtube.com/watch?v=daIH4o75KE8) will step you through the process of creating your account and setting up your database. Note that some of the Atlas website interface may be slightly different, but the basic concepts should all be there is some shape or form. The main steps you need to take are:
+
+1. Create your account.
+1. Create a database cluster.
+1. Create your root database user credentials. Remember this for later use.
+1. Set network access to your database to be available from anywhere.
+1. Copy the connection string and use the information in your code.
+1. Save the connection and credential information in your production and development environments as instructed above.
+
+With that all done, you should be good to use Atlas from both your development and production environments. You can test that things are working correctly with the following example.
+
+```js
+const { MongoClient } = require('mongodb');
+
+// Read the credentials from environment variables so that you do not accidentally check in your credentials
+const userName = process.env.MONGOUSER;
+const password = process.env.MONGOPASSWORD;
+const hostname = process.env.MONGOHOSTNAME;
+
+async function main() {
+  // Connect to the database cluster
+  const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+  const client = new MongoClient(url);
+  const collection = client.db('rental').collection('house');
+
+  // Insert a document
+  const house = {
+    name: 'Beachfront views',
+    summary: 'From your bedroom to the beach, no shoes required',
+    property_type: 'Condo',
+    beds: 1,
+  };
+  await collection.insertOne(house);
+
+  // Query the documents
+  const query = { property_type: 'Condo', beds: { $lt: 2 } };
+  const options = {
+    sort: { score: -1 },
+    limit: 10,
+  };
+
+  const cursor = collection.find(query, options);
+  const rentals = await cursor.toArray();
+  rentals.forEach((i) => console.log(i));
+}
+
+main().catch(console.error);
+```
+
+1. Create a directory called `mongoTest`
+1. Save the above content to a file named `main.js`
+1. Run `npm init`
+1. Run `npm install mongodb`
+1. Run `node main.js`. This should output something like the following if everything is working correctly.
+   ```js
+   {
+   _id: new ObjectId("639b51b74ef1e953b884ca5b"),
+   name: 'Beachfront views',
+   summary: 'From your bedroom to the beach, no shoes required',
+   property_type: 'Condo',
+   beds: 1
+   }
+   ```
 
 # ☑ Assignment
 
 Set up your MongoDB Atlas database service.
 
-When you are done submit your MongoDB connection string (without the password), along with a description of something you found interesting, to the Canvas assignment.
+When you are done submit the hostname of your Atlas database cluster, along with a description of something you found interesting, to the Canvas assignment.
