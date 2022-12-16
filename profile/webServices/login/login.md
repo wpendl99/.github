@@ -1,6 +1,6 @@
 # Account creation and login
 
-The first step towards supporting authentication in your web application is providing the user a way to uniquely identify themselves. This usually requires two service endpoints. One to initially `create` an authentication credential, and a second to authenticate, or `login`, on future visits. Additionally, web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this endpoint to demonstrate that authentication is actually working correctly.
+The first step towards supporting authentication in your web application is providing a way for users to uniquely identify themselves. This usually requires two service endpoints. One to initially `create` an authentication credential, and a second to authenticate, or `login`, on future visits. Once a user is authenticated we can use to to control access to other endpoints. For example, web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this endpoint to demonstrate that authentication is actually working correctly.
 
 ## Endpoint design
 
@@ -96,13 +96,13 @@ app.listen(port, function () {
 });
 ```
 
-Follow along by doing these steps.
+Follow along by doing the following steps, and then adding in the code form the sections that follow. There is a copy of the final version of the example at the end of this instruction. If you get lost, or things are working as expected then refer to the final version.
 
-1. Create a directory called `authTest`
-1. Save the above content to a file named `main.js`
-1. Run `npm init -y`
-1. Run `npm install express cookie-parser mongodb uuid bcrypt`
-1. Run `node main.js` or press `F5` in VS Code.
+1. Create a directory called `authTest` that we will work in.
+1. Save the above content to a file named `main.js` to get started with a working web service.
+1. Run `npm init -y` to initial the project to work with node.js.
+1. Run `npm install express cookie-parser mongodb uuid bcrypt` to install all of the packages we are going to use.
+1. Run `node main.js` or press `F5` in VS Code to start up the web service.
 1. You can now open a console window and use curl to try out one of the endpoints.
 
    ```sh
@@ -400,3 +400,9 @@ With everything implemented we can use curl to try everything out. First start u
 
 {"email":"지안@id.com"}
 ```
+
+# ☑ Assignment
+
+Get a web service running in your development environment by running the code above. You do not need to implement anything new. You should just use this as an opportunity to learn how basic authentication works so that you can implement it with your Simon and Start Up projects.
+
+When you have it working, run the curl commands from the `testing it out` section and copy the results, along with a description of something you found interesting, to the Canvas assignment.
