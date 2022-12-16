@@ -16,7 +16,9 @@ WebSocket connections are still only between two parties. So if you want to faci
 
 ## Creating a WebSocket conversation
 
-JavaScript running on a browser can initiate a websocket connection with the browser's WebSocket API. First you create a WebSocket object by specifying the port you want to communicate on. You can then send messages with the `send` function, and register a callback using the `onmessage` function to receive messages.
+JavaScript running on a browser can initiate a websocket connection with the browser's WebSocket API. First you create a WebSocket object by specifying the port you want to communicate on.
+
+You can then send messages with the `send` function, and register a callback using the `onmessage` function to receive messages.
 
 ```js
 const socket = new WebSocket('ws://localhost:9900');
@@ -28,7 +30,9 @@ socket.onmessage = (event) => {
 socket.send('I am listening');
 ```
 
-The server uses the `ws` package to create a webSocketServer that is listening on the same port the browser is using. When a connection is detected it calls the servers `on connection` callback. The server can then send messages with the `send` function, and register a callback using the `on message` function to receive messages.
+The server uses the `ws` package to create a WebSocketServer that is listening on the same port the browser is using. By specifying a port when you create the WebSocketServer you are telling the server to listen for HTTP connections on that port and to automatically upgrade them to a WebSocket connection if the request has a `connection: Upgrade` header.
+
+When a connection is detected it calls the server's `on connection` callback. The server can then send messages with the `send` function, and register a callback using the `on message` function to receive messages.
 
 ```js
 const { WebSocketServer } = require('ws');
