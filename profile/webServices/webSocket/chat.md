@@ -8,7 +8,7 @@ In this example we will create an HTML page that uses WebSockets and displays th
 
 ## Chat client
 
-The HTML for the client needs an input for the user's name, an input for creating messages, and an element to display the messages that are sent and received.
+The HTML for the client provides an input for the user's name, an input for creating messages, and an element to display the messages that are sent and received.
 
 ```html
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ The HTML for the client needs an input for the user's name, an input for creatin
 </html>
 ```
 
-The JavaScript for the application needs to interact with DOM for creating and displaying messages, and manage the WebSockets to connect, send, and receive messages.
+The JavaScript for the application provides the interaction with the DOM for creating and displaying messages, and manages the WebSockets to connect, send, and receive messages.
 
 ### DOM interaction
 
@@ -132,7 +132,7 @@ The chat server runs the web service, serves up the client code, manages the Web
 
 ### Web service
 
-The web service is established using a simple Express application. Note that we server up our client HTML, CSS, and JavaScript files using the `static` middleware.
+The web service is established using a simple Express application. Note that we serve up our client HTML, CSS, and JavaScript files using the `static` middleware.
 
 ```js
 const { WebSocketServer } = require('ws');
@@ -229,13 +229,13 @@ Any connection that did not response will remain in the not alive state and get 
 
 # ☑ Assignment
 
-You can find the complete example described above this [GitHub repository](https://github.com/webprogramming260/websocket-chat).
+You can find the complete example described above in this [GitHub repository](https://github.com/webprogramming260/websocket-chat).
 
 1. Clone the repository.
 1. Run `npm install` from a console window in the example directory.
 1. Open up the code in VS Code and review what it is doing.
 1. Run and debug the example by pressing `F5`. You may need to select node.js as the debugger the first time you run.
-1. Open a couple browser windows to http://localhost:8080 and start using the chat interface to send messages between the windows.
+1. Open multiple browser windows and point them to http://localhost:8080 and start chatting.
 1. Use the browser's debugger to view the WebSocket communication.
 
 When you are done submit a description of something you found interesting to the Canvas assignment.
