@@ -1,6 +1,8 @@
 # Account creation and login
 
-The first step towards supporting authentication in your web application is providing the user a way to uniquely identify themselves. This usually requires two service endpoints. One to initially create an authentication credential, and a second to authenticate on future visits. Web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this to demonstrate that authentication is actually working correctly.
+The first step towards supporting authentication in your web application is providing the user a way to uniquely identify themselves. This usually requires two service endpoints. One to initially `create` an authentication credential, and a second to authenticate, or `login`, on future visits. Additionally, web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this endpoint to demonstrate that authentication is actually working correctly.
+
+## Endpoint design
 
 Using HTTP we can map out the design of our each of our endpoints.
 
