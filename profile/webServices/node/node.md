@@ -83,12 +83,12 @@ hello
 
 While you could write all of the JavaScript for everything you need, it is always helpful to use preexisting packages of JavaScript for handling common tasks. To load a package using Node.js you must take two steps. First install the package locally on your machine using the Node Package Manager (NPM), and then include a `require` statement in your code that references the package name. NPM is automatically installed when you installed Node.js.
 
-NPM knows how to access a massive repository of preexisting packages. You can search for packages on the [NPM website](https://www.npmjs.com/). However, before you start using NPM to install packages you need to initialize you code to use NPM. This is done by creating a directory that will contain your JavaScript and then running `npm init`. This will step you through a series of questions about the project you are creating. You can press the return key for each of questions to just accept the default.
+NPM knows how to access a massive repository of preexisting packages. You can search for packages on the [NPM website](https://www.npmjs.com/). However, before you start using NPM to install packages you need to initialize you code to use NPM. This is done by creating a directory that will contain your JavaScript and then running `npm init`. This will step you through a series of questions about the project you are creating. You can press the return key for each of questions to just accept the default. If you are always going to accept the defaults you can use `npm init -y` and skip the Q&A.
 
 ```sh
 ➜  mkdir npmtest
 ➜  cd npmtest
-➜  npm init
+➜  npm init -y
 ```
 
 If you list the files in directory you will notice that it has created a file named `package.json`. This file contains three main things: 1) Metadata about your project such as its name and the default entry JavaScript file, 2) commands that you can run to do things like run, test, or distribute your code, and 3) packages that this project depends upon. With NPM initialized to work with your project, you can now use it to install a node package. As a simple example, we will install a package that knows how to tell jokes. This package is called `give-me-a-joke`. You can search for it on the [NPM website](https://www.npmjs.com/), see how often it is installed, examine the source code, and learn about who created it. You install the package using `npm install`.
@@ -135,7 +135,7 @@ The following example first initializes the use of NPM and installs the package 
 ```sh
 ➜ mkdir webservicetest
 ➜ cd webservicetest
-➜ npm init
+➜ npm init -y
 ➜ npm install http
 ```
 

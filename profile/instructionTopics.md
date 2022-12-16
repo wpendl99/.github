@@ -95,7 +95,8 @@ It is expected that you will start at the top of the list and work your way down
 - [Storage services](webServices/storageServices.md)
 - ☑ [Data services](webServices/dataServices/dataServices.md)
   - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
-- Authorization services
+- [Authorization services](webServices/authorizationServices/authorizationServices.md)
+  - ☑ [Account creation and login](webServices/login/login.md)
   - ☑ Simon Login
 - WebSocket
   - ☑ Simon WebSocket

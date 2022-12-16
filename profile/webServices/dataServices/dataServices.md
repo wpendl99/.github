@@ -238,7 +238,7 @@ main().catch(console.error);
 
 1. Create a directory called `mongoTest`
 1. Save the above content to a file named `main.js`
-1. Run `npm init`
+1. Run `npm init -y`
 1. Run `npm install mongodb`
 1. Run `node main.js`. This should output something like the following if everything is working correctly.
    ```js

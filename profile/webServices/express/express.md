@@ -249,7 +249,7 @@ Create a web service using Express using the following steps.
 1. Initialize the directory for use with NPM.
 
    ```sh
-   npm init
+   npm init -y
    ```
 
 1. Install the `express` and `cookie-parser` packages.
