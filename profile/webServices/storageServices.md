@@ -8,7 +8,11 @@ It might be tempting to store files directly on your server. This is usually a b
 1. You should consider your servers as being ephemeral, or temporary. They can be thrown away and replaced by a copy at any time. If you start storing files on the server, then your server has state that cannot be easily replaced.
 1. You need backup copies of your application and user files. If you only have one copy of your files on your server, then they will disappears when your server disappears. And you must always assume that your server will disappear.
 
-Instead you want to use a storage service that is specifically designed to support production storage and delivery of files. There are many such solutions out there, but one of the most popular ones is [AWS S3](https://aws.amazon.com/s3/). S3 provides the following advantages:
+Instead you want to use a storage service that is specifically designed to support production storage and delivery of files.
+
+## AWS S3
+
+There are many such solutions out there, but one of the most popular ones is [AWS S3](https://aws.amazon.com/s3/). S3 provides the following advantages:
 
 1. It has unlimited capacity
 1. You only pay for the storage that you use
@@ -20,7 +24,7 @@ Instead you want to use a storage service that is specifically designed to suppo
 1. You can make your files publicly available directly from S3
 1. You can keep your files private and only accessible to your application
 
-If you want to use S3 as the storage service for your application then you need to use the AWS SDK. You can find detailed information about using AWS S3 with Node.js on the [AWS website](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-nodejs.html). Generally, the steps you need to take include:
+In this course we will not be using an storage services for the Simon project. If however, you want to use S3 as the storage service for your Start Up application then you need to learn how to use the AWS SDK. You can find detailed information about using AWS S3 with Node.js on the [AWS website](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-nodejs.html). Generally, the steps you need to take include:
 
 1. Creating a S3 bucket to store your data in.
 1. Getting credentials so that your application can access the bucket.
