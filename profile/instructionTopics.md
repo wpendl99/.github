@@ -98,7 +98,9 @@ It is expected that you will start at the top of the list and work your way down
 - [Authorization services](webServices/authorizationServices/authorizationServices.md)
   - ☑ [Account creation and login](webServices/login/login.md)
   - ☑ Simon Login
-- WebSocket
+- [WebSocket](webServices/webSocket/webSocket.md)
+  - [Debugging WebSocket](webServices/webSocket/debugging.md)
+  - WebSocket chat
   - ☑ Simon WebSocket
 - ☑ [Start up deliverable - Service](webServices/startUpService.md)
 
