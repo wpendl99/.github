@@ -100,7 +100,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ Simon Login
 - [WebSocket](webServices/webSocket/webSocket.md)
   - [Debugging WebSocket](webServices/webSocket/debugging.md)
-  - WebSocket chat
+  - ☑ [WebSocket chat](webServices/webSocket/chat.md)
   - ☑ Simon WebSocket
 - ☑ [Start up deliverable - Service](webServices/startUpService.md)
 
