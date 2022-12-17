@@ -4,6 +4,7 @@
 
 https://www.youtube.com/watch?v=ppwagkhrZJs
 
+- Notification - https://developer.mozilla.org/en-US/docs/Web/API/notification
 - Shortcuts - in the manifest you can specify access shortcuts for your app
 - Contacts - Only on chrome android
   - https://developer.chrome.com/articles/contact-picker/
