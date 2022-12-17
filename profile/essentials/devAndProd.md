@@ -8,7 +8,7 @@ For our work, you will use and manage both your `development` (your personal com
 
 The advantage of using an automated deployment process is that it is reproducible. You don't accidentally delete a file, or misconfigure something with an accidental keystroke. Also, having a automated script encourages you to iterate quickly because it is so much easier to deploy your code. You can add a small feature, deploy it out to production, and get feedback within minutes from your users.
 
-Our deployment scripts change with each new technology that we have to deploy. Initially, they just copy up a directory of HTML files, but soon they include the ability modify the configuration of your web server, run transpiler tools, and bundle your code in to a deployable package. You always run the deployment script from your development environment and provide it with the credentials necessary to access your production environment. This will make more sense as we gradually build up our technologies but we can discuss our simon-service deployment script as an example of what they will do. You can view the [entire file here](https://github.com/webprogramming260/simon-service/blob/main/deploy.sh), but we will take things in parts. It isn't critical that you understand everything in the deployment script, but the more you do understand the easier it will be for you to track down and fix problems when they arise.
+Our deployment scripts change with each new technology that we have to deploy. Initially, they just copy up a directory of HTML files, but soon they include the ability modify the configuration of your web server, run transpiler tools, and bundle your code in to a deployable package. You always run the deployment script from your development environment and provide it with the credentials necessary to access your production environment. This will make more sense as we gradually build up our technologies but we can discuss our simon-service deployment script as an example of what they will do. You can view the [entire file here](https://github.com/webprogramming260/simon-service/blob/main/deployService.sh), but we will take things in parts. It isn't critical that you understand everything in the deployment script, but the more you do understand the easier it will be for you to track down and fix problems when they arise.
 
 The first part of the script simply parses the command line parameters so that we can pass in the production environment's security key (or PEM key), the hostname of your domain, the name of the service you are deploying, and the HTTP port that you want the service to be available from.
 
@@ -25,7 +25,7 @@ done
 
 if [[ -z "$key" || -z "$hostname" || -z "$service" || -z "$port" ]]; then
     printf "\nMissing required parameter.\n"
-    printf "  syntax: deploy.sh -k <pem key file> -h <hostname> -s <service> -p <port>\n\n"
+    printf "  syntax: deployService.sh -k <pem key file> -h <hostname> -s <service> -p <port>\n\n"
     exit 1
 fi
 

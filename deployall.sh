@@ -16,15 +16,15 @@ fi
 
 printf "\n-------------------------------\nDeploying all services to with $key\n-------------------------------\n"
 
-cd ../simon-html && ./deploy.sh -k ${key} -h ${hostname} -s simon-html
-cd ../simon-css && ./deploy.sh -k ${key} -h ${hostname} -s simon-css
-cd ../simon-javascript && ./deploy.sh -k ${key} -h ${hostname} -s simon-javascript
-cd ../simon-fetch && ./deploy.sh -k ${key} -h ${hostname} -s simon-fetch
-cd ../simon-service && ./deploy.sh -k ${key} -h ${hostname} -s simon-service -p 3001
-cd ../simon-db && ./deploy.sh -k ${key} -h ${hostname} -s simon-db -p 3002
-cd ../simon-react && ./deploy.sh -k ${key} -h ${hostname} -s simon-react -p 3003
+cd ../simon-html && ./deployFiles.sh -k ${key} -h ${hostname} -s simon-html
+cd ../simon-css && ./deployFiles.sh -k ${key} -h ${hostname} -s simon-css
+cd ../simon-javascript && ./deployFiles.sh -k ${key} -h ${hostname} -s simon-javascript
+cd ../simon-fetch && ./deployFiles.sh -k ${key} -h ${hostname} -s simon-fetch
+cd ../simon-service && ./deployService.sh -k ${key} -h ${hostname} -s simon-service -p 3001
+cd ../simon-db && ./deployService.sh -k ${key} -h ${hostname} -s simon-db -p 3002
+cd ../simon-react && ./deployReact.sh -k ${key} -h ${hostname} -s simon-react -p 3003
 
 # Deploy the lastest to simon.{hostname} on port 3000
-cd ../simon-react && ./deploy.sh -k ${key} -h ${hostname} -s simon -p 3000
+cd ../simon-react && ./deployReact.sh -k ${key} -h ${hostname} -s simon -p 3000
 
 echo cd ../webprogramming260

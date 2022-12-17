@@ -12,6 +12,6 @@ As web programming becomes more and more complex it became necessary to abstract
 - **Testing** - Automated tests at multiple levels to ensure correct functionality.
 - **Deployment** - Automated packaging and delivery of code from the development environment to the production environment.
 
-The toolchain that we use for our React project consists of [GitHub](https://github.com/) the code repository, [Babel](https://babeljs.io/docs/en/) for transpiling, [WebPack](https://webpack.js.org/) for polyfill, bundling, and minifying, and finally a simple bash script (deploy.sh) for deployment.
+The toolchain that we use for our React project consists of [GitHub](https://github.com/) the code repository, [Babel](https://babeljs.io/docs/en/) for transpiling, [WebPack](https://webpack.js.org/) for polyfill, bundling, and minifying, and finally a simple bash script (deployReact.sh) for deployment.
 
 You don't have to fully understand what each of these pieces in the chain are accomplishing, but the more you know about them the more you can optimize your development efforts.

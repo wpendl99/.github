@@ -6,16 +6,16 @@ You must use your start up GitHub repository that you created in the earlier ins
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS and JavaScript. You can also debug your service JavaScript running on Node.js using the built in VS Code debugger.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deploy.sh` script from the [Simon Service project](https://github.com/webprogramming260/simon-javascript/blob/main/deploy.sh) and use `startup` for the service (`-s`) and 4000 for the port (`-p`) parameter.
+Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployService.sh` script from the [Simon Service project](https://github.com/webprogramming260/simon-service/blob/main/deployService.sh) and use `startup` for the service (`-s`) and 4000 for the port (`-p`) parameter.
 
 ```sh
-./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup -p 4000
+./deployService.sh -k <yourpemkey> -h <yourdomain> -s startup -p 4000
 ```
 
 For example,
 
 ```sh
-./deploy.sh -k ~/keys/production.pem -h yourdomain.click -s startup -p 4000
+./deployService.sh -k ~/keys/production.pem -h yourdomain.click -s startup -p 4000
 ```
 
 Doing this will make this deliverable of your start up available from `https://startup.yourdomainname`.
