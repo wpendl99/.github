@@ -20,7 +20,7 @@ It is expected that you will start at the top of the list and work your way down
 - [Git](essentials/git/git.md)
 - ☑ [GitHub](essentials/gitHub/gitHub.md)
 - ☑ [CodePen](essentials/codePen/codepen.md)
-- ☑ [Start up - Specification](essentials/startUpSpec/startUpSpec.md)
+- ☑ [Start up deliverable - Specification](essentials/startUpSpec/startUpSpec.md)
 
 ## Web servers
 

@@ -9,10 +9,16 @@ Remember to use the `Live Server VS Code extension` to see what your code looks 
 Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deploy.sh` script from the Simon CSS project to your start up repository and use it with a different `-s` parameter.
 
 ```sh
-./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup-html
+./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup
 ```
 
-Doing this will make this deliverable of your start up available from `https://startup-html.yourdomainname`.
+For example,
+
+```sh
+./deploy.sh -k ~/keys/production.pem -h yourdomain.click -s startup
+```
+
+Doing this will make this deliverable of your start up available from `https://startup.yourdomainname`.
 
 ### Update your website's home page
 

@@ -9,10 +9,16 @@ Remember to use the `Live Server VS Code extension` to see what your code looks 
 Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deploy.sh` script from the Simon JavaScript project and use it with a different `-s` parameter.
 
 ```sh
-./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup-javascript
+./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup
 ```
 
-Doing this will make this deliverable of your start up available from `https://startup-javascript.yourdomainname`.
+For example,
+
+```sh
+./deploy.sh -k ~/keys/production.pem -h yourdomain.click -s startup
+```
+
+Doing this will make this deliverable of your start up available from `https://startup.yourdomainname`.
 
 ### Update your website's home page
 
