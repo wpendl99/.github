@@ -59,6 +59,10 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSNetwork.jpg)
 
+1. In the `Advanced details` chance the `Credit specification` to `Unlimited`. This allows your `T class` server to keep using CPU even though it has exceeded its limit. You do incur a minimal charge for when this happens, but the alternative is to always spend more for an larger instance, or to have your server lock up. For the minimal use that your server will see, you should not exceed your limit, but it is nice to not have your server die if you do.
+
+   ![Web Server](webServerAWSUnlimited.jpg)
+
 1. Select the option to `Launch instance`.
 
 It will take a few minutes for the instance to start up, but once it is marked as `running` it is good to go. Look at the properties for the instance and note the public IP address.
