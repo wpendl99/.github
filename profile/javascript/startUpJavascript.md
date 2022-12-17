@@ -6,7 +6,7 @@ You must use your start up GitHub repository that you created in the earlier ins
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS and JavaScript.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deploy.sh` script from the Simon JavaScript project and use it with a different `-s` parameter.
+Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deploy.sh` script from the [Simon JavaScript project](https://github.com/webprogramming260/simon-javascript/blob/main/deploy.sh) and use `startup` for the service (`-s`)
 
 ```sh
 ./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup

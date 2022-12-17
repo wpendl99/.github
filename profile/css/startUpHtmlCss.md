@@ -6,7 +6,7 @@ You must use your start up GitHub repository that you created in the earlier ins
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deploy.sh` script from the Simon CSS project to your start up repository and use it with a different `-s` parameter.
+Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deploy.sh` script from the [Simon CSS project](https://github.com/webprogramming260/simon-css/blob/main/deploy.sh) to your start up repository and use `startup` for the service (`-s`)
 
 ```sh
 ./deploy.sh -k <yourpemkey> -h <yourdomain> -s startup
