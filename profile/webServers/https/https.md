@@ -120,4 +120,4 @@ Secure your web server communication by configuring Caddy to request a certifica
 
 Submit a URL for web server's hostname, along with a description of something you found interesting, to the Canvas assignment.
 
-Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
+Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.

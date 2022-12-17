@@ -8,13 +8,33 @@ Today, the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_AP
 
 The basic usage of fetch takes a URL and returns a promise. The promise `then` function takes a callback function that is asynchronously called when the requested URL content is obtained. If the returned content is of type `application/json` you can use the `json` function on the response object to convert it to a JavaScript object.
 
-The following example makes a fetch request to get and display an inspirational quote. After reading the documentation for fetch, you can experiment with this code by pasting it in the browser's debug console window. This will allows you to get type-ahead help and clearly display any errors that your experiments generate. Try different URLs, HTTP verbs, and fetch options.
+The following example makes a fetch request to get and display an inspirational quote.
 
 ```js
 fetch('https://api.quotable.io/random')
-  .then((x) => x.json())
-  .then((response) => {
-    document.activeElement.textContent = response.content;
+  .then((response) => response.json())
+  .then((jsonResponse) => {
+    console.log(jsonResponse);
+  });
+```
+
+To do a POST request you provide options for describing the HTTP method and headers.
+
+```js
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((jsonResponse) => {
+    console.log(jsonResponse);
   });
 ```
 
@@ -22,6 +42,14 @@ fetch('https://api.quotable.io/random')
 
 Create a fork of this [CodePen](https://codepen.io/leesjensen/pen/ExRoqPz) and experiment.
 
+Replace the quotable service call with a different one. Here are some suggestions.
+
+- **Quote** - https://api.quotable.io/random
+- **Random user** - https://randomuser.me/api/
+- **Jokes** - https://api.chucknorris.io/jokes/random
+- **GitHub user** - https://api.github.com/users/octocat
+- **Photos** - https://picsum.photos/id/0/info
+
 When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
 
-Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
+Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.

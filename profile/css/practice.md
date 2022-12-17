@@ -8,4 +8,4 @@ If you are looking for inspiration then here is one of my [favorite animations](
 
 When you are done upload the URL of your CodePen with a description of what you found interesting to the Canvas assignment.
 
-Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
+Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.

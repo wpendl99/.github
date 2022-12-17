@@ -12,7 +12,7 @@ You must use your start up GitHub repository that you created in the earlier ins
 
 ## ☑ Assignment
 
-Upload your elevator pitch, rough sketch images, and the URL for your GitHub startup repository to the Canvas assignment.
+Upload your elevator pitch, rough sketch images, and the URL for your GitHub start up repository to the Canvas assignment.
 
 ## Grading Rubric
 

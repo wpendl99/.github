@@ -135,4 +135,4 @@ Also note that your server IP address has changed to the newly allocated one. Th
 
 Submit a URL using your web server's public IP address, along with a description of something you found interesting, to the Canvas assignment.
 
-Don't forget to update your GitHub startup repository README.md with all of the things you learned and want to remember.
+Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.
