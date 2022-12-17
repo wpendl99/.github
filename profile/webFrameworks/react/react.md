@@ -1,6 +1,6 @@
 # React
 
-<img src="reactLogo.png" width="200" />
+<img src="reactLogo.png" width="75" />
 
 React, and its associated projects, provide a powerful web programming framework. The name React comes from its focus on making reactive web page components that automatically update based on user interactions or changes in the underlying data.
 

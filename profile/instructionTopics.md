@@ -124,6 +124,7 @@ It is expected that you will start at the top of the list and work your way down
 - TypeScript
 - Performance monitoring
 - Search Engine Optimization
+- [Device features](webFrameworks/device/device.md)
 - Demo day
 
 ## Legend

@@ -8,7 +8,7 @@ The following example contains two components. A parent Survey component and a c
 
 The Question component also has a state named `answer`. The value of answer is displayed as part of the Question's content. The user can interact with this state through HTML radio input elements. When one of the inputs is changed the Question's `onChange` function is called and the answer state is updated to reflect the user's choice. This automatically causes the display of the answer to be updated.
 
-Notice in the example that there is two ways to define state. The function `React.useState` is used for function style components, and the class property `state` and function `updateState` are used for class style components. Since Survey is a function component and Question is a class component, examples of both are demonstrated.
+Notice in the example that there are two ways to define state. The function `React.useState` is used for function style components, and the class property `state` and function `updateState` are used for class style components. Since Survey is a function component and Question is a class component, examples of both are demonstrated.
 
 ```jsx
 // The Survey component is a React function component and
@@ -58,10 +58,7 @@ class Question extends React.Component {
     return (
       <div>
         <span>Do you like this</span>
-        {/* Color rerendered whenever the property changes */}
-        <span style={{ color: this.props.color }}> color</span>?
-        <label>
-          {/* Arrow function notation is used so the 'this' pointer is correct */}
+        <span style={{ color: this.props.color }}> color</span>?<label>
           <input
             type='radio'
             name='answer'
@@ -79,7 +76,6 @@ class Question extends React.Component {
           />
           No
         </label>
-        {/* Answer rerendered whenever the state changes */}
         <p>Your answer: {this.state.answer}</p>
       </div>
     );
