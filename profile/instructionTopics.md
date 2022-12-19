@@ -34,13 +34,13 @@ It is expected that you will start at the top of the list and work your way down
 
 ## HTML, CSS, and JavaScript
 
-- ☑ [HTML introduction](html/introduction/introduction.md)
+- ☑ [HTML](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
   - ☑ [Media](html/media/media.md)
 - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
-- [CSS introduction](css/introduction/introduction.md)
+- [CSS](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
   - [Declarations](css/declarations.md)
   - [Fonts](css/fonts.md)
@@ -49,11 +49,11 @@ It is expected that you will start at the top of the list and work your way down
 - [Responsive design](css/responsive/responsive.md)
   - [Grid](css/grid/grid.md)
   - ☑ [Flex](css/flexbox/flexbox.md)
-- Debugging CSS
+- [Debugging CSS](css/debuggingCss/debuggingCss.md)
 - ☑ [CSS frameworks](css/frameworks/frameworks.md)
 - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
 - ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss.md)
-- [JavaScript introduction](javascript/introduction/introduction.md)
+- [JavaScript](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console.md)
   - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct.md)
   - [String](javascript/string.md)
