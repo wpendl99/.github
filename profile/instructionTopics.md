@@ -71,7 +71,7 @@ It is expected that you will start at the top of the list and work your way down
   - [Adding JavaScript to HTML](javascript/addingToHtml.md)
   - ☑ [Promises](javascript/promises.md)
   - ☑ [Async/await](javascript/async/await.md)
-- Debugging JavaScript
+- [Debugging JavaScript](javascript/debuggingJavascript/debuggingJavascript.md)
 - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - ☑ UI design
 - ☑ [UI testing](javascript/uiTesting/uiTesting.md)

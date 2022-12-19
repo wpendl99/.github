@@ -32,6 +32,7 @@
   nvm install --lts
   ```
 
+- Install flycut from the App Store
 - Created keyboard shortcuts for moving windows
   1. Open System Preferences > Keyboard > Shortcuts
   1. Select "App Shortcuts"
