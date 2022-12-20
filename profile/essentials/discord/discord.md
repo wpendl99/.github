@@ -34,7 +34,7 @@ Our server contains the following channels for asking and answering questions.
 
 You should discuss in the channel that is most appropriate for your discussion. Do not ask questions in multiple channels. Only use `general` if it really is not specific to another channel.
 
-⚠ Make sure you review the instruction on [asking questions](../askingQuestions.md) before you start asking questions.
+⚠ Make sure you review the instruction on [asking questions](../askingQuestions/askingQuestions.md) before you start asking questions.
 
 ### Online TAs
 
