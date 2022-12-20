@@ -73,8 +73,8 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Async/await](javascript/async/await.md)
 - [Debugging JavaScript](javascript/debuggingJavascript/debuggingJavascript.md)
 - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
-- ☑ UI design
 - ☑ [UI testing](javascript/uiTesting/uiTesting.md)
+- ☑ [UI design](uidesign/uidesign.md)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript.md)
 
 ## Web Services
