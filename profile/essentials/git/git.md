@@ -6,7 +6,7 @@ Incredibly [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the c
 
 ![Linus Torvalds](linusTorvalds.jpg)
 
-> Talk is cheap. Show me the code.
+> “Talk is cheap. Show me the code.”
 >
 > — Linus Torvalds
 

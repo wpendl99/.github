@@ -6,7 +6,7 @@ In 2009 Ryan Dahl created `Node.js` as the first successful application for depl
 
 ![Ryan Dahl](webServicesRyanDahl.jpg)
 
-> You can never understand everything. But, you should push yourself to understand the system
+> “You can never understand everything. But, you should push yourself to understand the system”
 >
 > — Ryan Dahl
 

@@ -15,7 +15,7 @@ Express was created by TJ Holowaychuk and is currently maintained by the [Open.j
 
 ![TJ Holowaychuk](webServicesHolowaychuk.jpg)
 
-> People tell you to not reinvent things, but I think you should … it will teach you things
+> “People tell you to not reinvent things, but I think you should … it will teach you things”
 >
 > — TJ Holowaychuk
 
