@@ -8,7 +8,11 @@
 - [GitHub cloning a repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 - [GitHub personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
+{% note %}
+
 When we introduced `Git`, we said that Got provides two things, 1) Version tracking in a repository, and 2) the ability to clone a copy of the repository to a different location. You can clone repositories with Git commands, but the management of cloning and storing repositories is much easier when you use a cloud based service such as `GitHub`.
+
+{% endnote %}
 
 GitHub was launched in 2008 by a small group of developers that wanted to make code collaboration easy. GitHub was acquired by Microsoft in 2018 for $7.5 billion. Since its beginning as a simple web application for cloning and storing Git repositories, GitHub has added functionality for hosting websites, supporting community pull requests, tracking issues, hosting codespaces, running continuous deployment processes, managing projects, and even AI driven code generation.
 
@@ -47,7 +51,7 @@ You can now make changes to the files in the repository and commit those changes
 
 ![GitHub pull](essentialsGitHubPull.jpg)
 
-The following demonstrates console commands for making a change to the README.md file, committing it, and then pushing it up to GitHub. Of course you can also do this using the Git interface of VSCode.
+The following demonstrates console commands for making a change to the README.md file, committing it, and then pushing it up to GitHub. Of course you can also do this using the Git interface of VS Code.
 
 ```sh
 ➜  printf "\nChange from my development environment!\n" >> README.md
@@ -61,7 +65,7 @@ If you then look at the repository on GitHub with your browser, you will see tha
 
 ![GitHub edit](essentialsGitHubEdit.jpg)
 
-Now that there is a commit that GitHub has that you do not have in your development environment. If we run the `fetch` Git command you can get the latest information about the server you cloned the repository from without actually changing your local repository. We then run the `status` Git command to see that we are missing a commit. You can pull it down using the `pull` Git command. You can also use the Git functionality in VSCode to view the status and sync up your repository.
+Now that there is a commit that GitHub has that you do not have in your development environment. If we run the `fetch` Git command you can get the latest information about the server you cloned the repository from without actually changing your local repository. We then run the `status` Git command to see that we are missing a commit. You can pull it down using the `pull` Git command. You can also use the Git functionality in VS Code to view the status and sync up your repository.
 
 ```sh
 ➜  git fetch
@@ -99,7 +103,7 @@ CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-We now need to resolve the merge conflict that it says has happened with our `README.md` file. If you are using VSCode with the GitLens extension installed it will visually walk you through this process. However, so you can understand what is going on, we will do this using the console. The first step is to open up `README.md` in an editor. You will see that git has injected lines that highlight where the conflict is. Both your local change and the change made on GitHub are included.
+We now need to resolve the merge conflict that it says has happened with our `README.md` file. If you are using VS Code with the GitLens extension installed it will visually walk you through this process. However, so you can understand what is going on, we will do this using the console. The first step is to open up `README.md` in an editor. You will see that git has injected lines that highlight where the conflict is. Both your local change and the change made on GitHub are included.
 
 ```md
 An example start up project
@@ -156,10 +160,10 @@ Do the following steps to set up your `Start up project repository` and clone it
 1. Create a GitHub account if you do not already have one.
 1. Create a repository for your start up project. Your project must be public. Select the option for a default README.md file. This is where you will also keep all of your notes for things that you learn and want to remember.
 1. Clone the repository to your development environment using `git clone`.
-1. Open up the repository directory in VSCode and modify the README.md file.
-1. Use the Git functionality of VSCode to commit your changes and push them to GitHub.
+1. Open up the repository directory in VS Code and modify the README.md file.
+1. Use the Git functionality of VS Code to commit your changes and push them to GitHub.
 1. In GitHub modify your README.md file and commit the changes.
-1. In VSCode pull down and review the changes.
+1. In VS Code pull down and review the changes.
 1. Make another change to the README.md file on GitHub and commit the change.
 1. Before you pull the changes to your development environment, change the same line in README.md file and commit the change.
 1. Attempt to pull the GitHub changes to your development environment. Note and resolve the merge conflict. Commit the merged changes. Push the merge commit.

@@ -19,13 +19,13 @@ Before we can talk about Git you need to make sure it is installed in your devel
 git version 2.32.0 (Apple Git-132)
 ```
 
-If you do not see that then you need to follow these [instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git.
+If you do not see something like that, then you need to follow these [instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git.
 
 ## What is Git?
 
-Git provides two valuable functions. First, it allows you to track versions of a file. Second, it allows you to clone all of those versions to a different location, usually to a different computer. We are going to focus on tracking versions in this instruction and cover cloning repositories when we talk about GitHub.
+Git provides two valuable functions. First, it allows you to track versions of a file. Second, it allows you to clone all of those versions to a different location, usually to a different computer. We are going to focus on tracking versions in this instruction and cover cloning repositories when we talk later about GitHub.
 
-You can track file versions of any files in a directory by initializing Git for that directory. You can do this right now by creating a new directory using your Console and initializing it as a Git repository.
+You can track file versions of any files in a directory by initializing Git for that directory. You can do this right now by creating a new directory in a console window and initializing it as a Git repository.
 
 ```sh
 ➜  mkdir playingWithGit
@@ -33,7 +33,7 @@ You can track file versions of any files in a directory by initializing Git for 
 ➜  git init
 ```
 
-If you do list all files in the directory you will see that you now have a hidden directory named `.git`.
+If you list all files in the directory you will see that you now have a hidden directory named `.git`.
 
 ```sh
 ➜  ls -la
@@ -43,11 +43,12 @@ drwxr-xr-x+ 54 lee  staff  1728 Dec  1 23:00 ..
 drwxr-xr-x   9 lee  staff   288 Dec  1 22:59 .git
 ```
 
-The `.git` directory is where all of the versions of your file get stored. Now create a file that we will use to see how versioning works. After you use `echo` to create a file, use `git status` to tell you what git is doing.
+The `.git` directory is where all of the versions get stored. Now use the `echo` command to create a file so that we can see how versioning works. After creating the new file, use `git status` to tell you what git is doing.
 
 ```sh
 ➜ echo hello world > hello.txt
 ➜ git status
+
 On branch master
 No commits yet
 Untracked files:
@@ -57,11 +58,12 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Git is telling you that it detects a new file named `hello.txt`, but it isn't currently tracking version for that file. To begin tracking versions you need to add it. Usually you track all files in my repository directory and so you can tell it to track everything that it doesn't know about with `git add .`. Follow this with another call to `git status`.
+Git status tells you that it detects a new file named `hello.txt`, but it isn't currently tracking versions for that file. To begin tracking versions you need to add it. Usually you track all files in a repository directory and so you can tell Git to track everything that it doesn't know about with `git add .`. Follow this with another call to `git status`.
 
 ```sh
 ➜  git add .
 ➜  git status
+
 On branch master
 No commits yet
 Changes to be committed:
@@ -69,7 +71,7 @@ Changes to be committed:
 	new file:   hello.txt
 ```
 
-Now Git tells us that it has `staged` the file `hello.txt` and it is ready to be committed as a version in the repository. We commit a version with the commit command. We always want to have a meaningful comment about the version we are committing and so we use the `-m` parameter to provide a message that will live with the version. Follow this with another call to `git status`.
+Now Git tells us that it has `staged` the file `hello.txt` and it is ready to be committed as a version in the repository. We commit a version with the `commit` command. We always want to have a meaningful comment about the version we are committing and so we use the `-m` parameter to provide a message that will live with the version. Follow this with another call to `git status`.
 
 ```sh
 ➜  git commit -m "initial draft"
@@ -82,7 +84,7 @@ On branch master
 nothing to commit, working tree clean
 ```
 
-Congratulations! You have just committed your first file to a Git repository. It is important to note that we are only working with a single file here. A commit can represent multiple files that were all added for staging to the commit. Also, note that the point of the stage (add) step, so that you can commit some files while still leaving other modified file out of the commit.
+Congratulations! You have just committed your first file to a Git repository. It is important to note that we were only working with a single file in this example. However, a commit can represent multiple files. You just need to add them all before you execute the commit. Also, note that the point of the stage (add) step, is so that you can commit some files while still leaving other modified file out of the commit.
 
 Let's make an edit to our file and commit it again. This time we will tell Git that we want to add all the tracked modified files to our commit by including the `-a` parameter along with our message parameter.
 
@@ -90,14 +92,16 @@ Let's make an edit to our file and commit it again. This time we will tell Git t
 ➜  echo goodbye world > hello.txt
 
 ➜  git commit -am "changed greeting to reflect the present mood"
+
 [master e65f983] changed greeting to reflect the present mood
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-Now that we have a couple versions in our repository we can view them with the `git log` command.
+Now that we have a couple versions in our repository we can view the versions with the `git log` command.
 
 ```sh
 ➜  git log
+
 commit e65f9833ca8ee366d0d9c1676a91b1a977dab441 (HEAD -> master)
 Author: Lee
 Date:   Thu Dec 1 23:32:22 2022 -0700
@@ -111,7 +115,7 @@ Date:   Thu Dec 1 23:29:11 2022 -0700
     initial draft
 ```
 
-You see both commits with the associated comments.
+This shows both commits with the associated comments.
 
 ## Commit SHA
 
@@ -119,6 +123,7 @@ Every commit has a unique identifier that is generated by hashing the file along
 
 ```sh
 ➜  git checkout d43b07b8890f
+
 Note: switching to 'd43b07b8890f'.
 HEAD is now at d43b07b initial draft
 
@@ -126,7 +131,7 @@ HEAD is now at d43b07b initial draft
 hello world
 ```
 
-The above output omits a big message saying that you are no longer looking at the latest version, but the important thing is that you can see that we are now looking at our old version. To get back to the top of the version chain by using the `checkout` command and referencing the branch name, which is by default `master`.
+The above output omits a big message saying that you are no longer looking at the latest version, but the important thing is that you can see that we are now looking at our old version. To get back to the top of the version chain, use the `checkout` command and reference the branch name, which is by default `master`.
 
 ```sh
 ➜  git checkout master
@@ -139,14 +144,14 @@ goodbye world
 
 Now we are back to our latest version.
 
-Because a commit is a full snapshot of what you committed from your directory at the time of the commit, what we actually did when the checkout command was revert all of the files in the commit. Since we only have one file, it looks like we are only flipping that file around, but basically you can think of it as a time machine for the entire directory.
+A commit is a full snapshot of what was staged from your directory at the time of the commit. That means all of the files contained in the commit were reverted when you executed the checkout command. Since we only had one file in our commit, it looks like we are only flipping that file around, but basically you can think of it as a time machine for the entire directory.
 
 ## Diff
 
-Most of the time you don't want to reverse back to an earlier commit you just want to compare the differences between commits. We can do that with the `diff` command. You can specify two SHAs that you would like to compare, or you can use the HEAD variable which points to the top of the commit change. To refer to earlier commits you just add `~` and the numerical distance from head that you want to reference. In this case we will compare HEAD and HEAD~1.
+Most of the time you don't want to reverse back to an earlier commit. Instead you just want to compare the differences between commits. We can do that with the `diff` command. You can specify two SHAs that you would like to compare, or you can use the HEAD variable which points to the top of the commit change. To refer to earlier commits you just add `~` and the numerical distance from head that you want to reference. In this case we will compare HEAD and HEAD~1.
 
 ```sh
-➜  git diff HEAD~1 HEAD
+➜  git diff HEAD HEAD~1
 ```
 
 ```diff
@@ -163,11 +168,9 @@ You can see that we made a change to `hello.txt` by removing `hello world` and a
 
 ## Commit often
 
-You will be required to have at least 4 commits for each assignment that you submit in order to get full credit. Commonly, this will be an initial commit that contains empty project files, followed by commits at each functional milestone, and then final commit for the working project. Committing your code often is an important practice for you to develop. It protects your from losing your work, allows access from anywhere, makes it so you can quickly share changes, reduces conflicts with your peers, and enables you to efficiently explore different possibilities. This also helps proves the originality of your work.
+You will be required to have at least 4 commits for each project that you submit in order to get full credit. Commonly, this will be an initial commit that contains empty project files, followed by commits at each functional milestone, and then a final commit for the working project. Committing your code often is an important practice for you to develop. It protects you from losing your work, allows access from anywhere, makes it so you can quickly share changes, reduces conflicts with your peers, and enables you to efficiently explore different possibilities. This also enables others to review the progression of your development efforts in order to prove the originality of your work.
 
-Remember to make meaningful commit messages that describe the **what** and **why** of the changes made.
-
-Here is a [good post](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) on how make meaningful commit messages.
+Remember to make meaningful commit messages that describe the **what** and **why** of the changes made. Here is a [good post](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) on how make meaningful commit messages.
 
 ## VS Code and Git
 
@@ -175,8 +178,8 @@ Knowing how to use Git from the console is a very valuable skill. Git offers a w
 
 However, by using a tool like VS Code you can hide all of the complexity of the command line and use a visual interface instead.
 
-Here we see VSCode, with the GitLens extension installed, looking at the directory we have been working in. On the left you see all the commits we have previously created. We can edit our `hello.txt` file and VSCode will automatically detect the change and set it up for us to commit. VSCode will even put a marking on the left side of the edited text to show us what line we have changed. We can click on the staged file, in the commit area, and see the differences before we commit. Since they look good, we add a comment, and press commit. The new commit immediately shows up in our list of commits. We can use the visual diff again to click through all of the previous versions.
+Here we see VS Code, with the GitLens extension installed, looking at the directory we have been working in. On the left you see all the commits we have previously created. We can edit our `hello.txt` file and VS Code will automatically detect the change and set it up for us to commit. VS Code will even put a marking on the left side of the edited text to show us what line we have changed. We can click on the staged file, in the commit area, and see the differences before we commit. Since they look good, we add a comment, and press commit. The new commit immediately shows up in our list of commits. We can use the visual diff again to click through all of the previous versions.
 
-![VSCode Git](essentialsVSCodeGit.gif)
+![VS Code Git](essentialsVSCodeGit.gif)
 
-Underneath the covers, the GitLens extension is running Git commands just like we did on the command line, but using a visual tool makes working with version much easier. Take some time and play with adding files, modifying them, committing, and diffing. You want to get to the point where this is second nature so that you can easily experiment and make mistakes, knowing that with Git you can always easily recover.
+Underneath the covers, the GitLens extension is running Git commands just like we did on the command line, but using a visual tool makes working with versions much easier. Take some time and play with adding files, modifying them, committing, and diffing. You want to get to the point where this is second nature so that you can easily experiment and make mistakes, knowing that with Git, you can always easily recover.

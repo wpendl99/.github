@@ -102,4 +102,4 @@ Before we go any further we need a way for you to write and run JavaScript yours
       ```
    1. Open your JavaScript file in Visual Studio Code and execute your code by pressing `F5` and selecting `node.js` as the debugger. You can set breakpoints in the editor window, inspect variables, and view the console output.
 
-      ![Browser Debugger](vscodeJavaScriptDebugger.png)
+      ![Browser Debugger](VS CodeJavaScriptDebugger.png)
