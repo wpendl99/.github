@@ -133,22 +133,17 @@ Change from GitHub
 Conflict change made in development environment
 =======
 Conflict change made in GitHub
-
 >>>>>>> b9f4c53c91eff509993d7291e60148f903827de0
 ```
 
-We resolve the conflict by modifying the file to remove the conflict information and keep the changes we want. When we are done editing our file contains what we want from both changes.
+We resolve the conflict by modifying the file to remove the textual conflict delimiters and modifying the file to keep the changes we want. When we are done editing, our file contains what we want from both commits.
 
 ```md
 # startup-example
 
 An example start up project
 
-Change from my development environment!
-
-Change from GitHub
-
-Conflict change made in GitHub and development environment
+Change from my development environment and from GitHub
 ```
 
 Now that the conflict is resolved we commit our resolution and push up the result.
@@ -158,31 +153,31 @@ Now that the conflict is resolved we commit our resolution and push up the resul
 ➜  git push
 ```
 
-If we go look at the file again on GitHub you will see the additional commit in the history and the result of our merge in the file content.
+If you go look at the file again on GitHub you will see the additional commit in the history and the result of our merge in the file content.
 
 ## Keeping notes
 
-Keeping notes of what you have learned and things that you want to remember is an essential step for accelerating your web programming skills. GitHub supports the inclusion of a file with the special name `README.md` in the root of your repository. This file is uses `Markdown` syntax. If you have not used Markdown before, then take some time to [learn how to use it](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For this course you will use your start up project repository's README.md file and your website's README.md to keep notes.
+Keeping notes of what you have learned and things that you want to remember is an essential step for accelerating your web programming skills. GitHub supports the inclusion of a file with the special name `README.md` in the root of your repository. This file uses `Markdown` syntax. If you have not used Markdown before, then take some time to [learn how to use it](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For this course you will use your start up application's README.md file and your website's README.md to keep notes.
 
 ## Pull requests
 
-GitHub allows you to create a fork of any repository on GitHub. You just push the `fork` button from the repository's GitHub page. This will copy the repository to your GitHub account. You can then make modifications to the repository and push the changes as a pull request. This notifies the original repository's owner that a request is being made to enhance the original repository. The owner can review your changes and if appropriate commit the changes into the original. This is how open source communities manage development from a volunteer group of global developers.
+GitHub allows you to create a fork of any repository on GitHub. You just push the `fork` button from the repository's GitHub page. This will copy the repository to your GitHub account. This is similar to cloning a repository to your development environment, but it clones to GitHub instead. You can then make modifications to the repository and push the changes as a pull request. This notifies the original repository's owner that a request is being made to enhance the original repository. The owner can review your changes and if appropriate commit the changes into the original. This is how open source communities manage development from a volunteer group of global developers.
 
-In this class if you notice something that needs to be enhanced with the instruction, fork the repo, and make a pull request. This will give you experience with this practice and improve the instruction for others at the same time. Plus your name will be include as a contributor. How cool is that!
+In this class, if you notice something in the instruction that needs to be enhanced, feel free to fork the repo, and make a pull request. This will give you experience with this practice and improve the instruction for others at the same time. Plus your name will be include as a contributor. How cool is that!
 
 # ☑ Assignment
 
-Do the following steps to set up your `Start up project repository` and clone it to your development environment.
+Do the following steps to set up your `Start up application repository` in GitHub and clone it to your development environment.
 
 1. Create a GitHub account if you do not already have one.
-1. Create a repository for your start up project. Your project must be public. Select the option for a default README.md file. This is where you will also keep all of your notes for things that you learn and want to remember.
-1. Clone the repository to your development environment using `git clone`.
+1. Create a repository, named `startup`, for your start up project. Your project must be public. Select the option for a default README.md file. This is where you will also keep all of your notes for things that you learn and want to remember.
+1. Clone the repository to your development environment, by getting the repository's URL, and using `git clone`.
 1. Open up the repository directory in VS Code and modify the README.md file.
 1. Use the Git functionality of VS Code to commit your changes and push them to GitHub.
 1. In GitHub modify your README.md file and commit the changes.
 1. In VS Code pull down and review the changes.
 1. Make another change to the README.md file on GitHub and commit the change.
-1. Before you pull the changes to your development environment, change the same line in README.md file and commit the change.
+1. Before you pull the changes to your development environment, change the same line in the README.md file and commit the change.
 1. Attempt to pull the GitHub changes to your development environment. Note and resolve the merge conflict. Commit the merged changes. Push the merge commit.
 1. On GitHub observe the resolved merge.
 1. Make your first notes in your README.md file about what you learned from this assignment. Commit and push your notes to GitHub.

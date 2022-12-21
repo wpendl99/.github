@@ -5,7 +5,7 @@
 - [MDN How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 - [YouTube The Internet in 5 Minutes](https://youtu.be/7_LPdttKXPc)
 
-The internet globally connects independent networks and computing devices using the TCP/IP model. At the top of the TCP/IP protocol is the application layer. It provide user functionality, such as the web (HTTP), mail (SMTP), files (FTP), remote shell (SSH), and chat (IRC). Underneath that is the transport layer which breaks the application layer's information into small chunks and sends the data. The actual connection is made using the internet layer. This finds the device you want to talk to and keeps the connection alive. Finally, at the bottom of the model is the link layer which deals with the physical connections and hardware.
+The internet globally connects independent networks and computing devices using the TCP/IP model. Understanding the basics of how the internet works provides you with a mental model for effectively creating web applications. At the top of the TCP/IP protocol is the application layer. It represents user functionality, such as the web (HTTP), mail (SMTP), files (FTP), remote shell (SSH), and chat (IRC). Underneath that is the transport layer which breaks the application layer's information into small chunks and sends the data. The actual connection is made using the internet layer. This finds the device you want to talk to and keeps the connection alive. Finally, at the bottom of the model is the link layer which deals with the physical connections and hardware.
 
 ### [TCP/IP](https://en.wikipedia.org/wiki/Internet_protocol_suite) layers
 
@@ -18,7 +18,7 @@ The internet globally connects independent networks and computing devices using 
 
 ## Connections
 
-When one device what to talk to another it must have an IP address. For example, `128.187.16.184` for BYU's address. Usually a human user will know a symbolic name, called a domain name, instead of an IP Address. A DNS lookup will convert the domain name into an IP address. You can see this using the `dig` console utility.
+When one device what to talk to another it must have an IP address. For example, `128.187.16.184` is BYU's address. Usually, human users prefer a symbolic name over an IP address. The symbolic name is called a domain name. Domain names are converted to IP address by doing a lookup in the Domain Name System (DNS). You can look up the IP address for any domain name using the `dig` console utility.
 
 ```sh
 ➜  dig byu.edu
@@ -26,9 +26,9 @@ When one device what to talk to another it must have an IP address. For example,
 byu.edu.		5755	IN	A	128.187.16.184
 ```
 
-With the address in hand your device will now talk to the devices it is connected to asking for directions to the device. Eventually, after many hops the destination is discovered and the connection established. With the connection the transport and application layers start exchanging data.
+With the IP address you connect to the device it represents by first asking for a connection route to the device. A connection route consists of many hops across the network until the destination is dynamically discovered and the connection established. With the connection the transport and application layers start exchanging data.
 
-You can determine the hops in a connection using the traceroute console command. In the following example we trace the route between a home computer and BYU. In the result you see the first address `192.168.1.1`. This is the address of the network router requesting device is connected to. From there it goes through a couple devices that do not identify themselves and then hits the Google Fiber gateway. Google Fiber is the internet service provider, or ISP, for the requesting device. Then we jump through a few more unidentified devices before finally arriving at BYU (`128.187.16.184`).
+You can determine the hops in a connection using the `traceroute` console utility. In the following example, we trace the route between a home computer and BYU. In the result you see the first address `192.168.1.1`. This is the address of the network router the home computer is connected to. From there it goes through a couple devices that do not identify themselves and then hits the Google Fiber gateway. Google Fiber is the internet service provider, or ISP, for the requesting device. Then we jump through a few more unidentified devices before finally arriving at BYU (`128.187.16.184`).
 
 **Traceroute**
 
@@ -48,4 +48,4 @@ traceroute to byu.edu (128.187.16.184), 64 hops max, 52 byte packets
 
 ```
 
-If I run traceroute again I might see a slightly different route since every connection through the internet. The ability to discover a route makes the internet resilient for connection devices failing or disappearing from the network.
+If I run traceroute again I might see a slightly different route since every connection through the internet is dynamically calculated. The ability to discover a route makes the internet resilient when network devices fail or disappear from the network.

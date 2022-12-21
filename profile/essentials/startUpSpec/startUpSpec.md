@@ -8,14 +8,18 @@ Then sketch out what the application looks like. You can use a tool like [NinjaM
 
 ![Ninja Mocks](essentialsNinjaMocks.png)
 
-You must use your start up GitHub repository that you created in the earlier instruction. Update the README.md file with your elevator pitch and things that you learn as you work on your start up. Make sure you push your changes to the file so that it can be reviewed.
+Here is an [example design](https://github.com/webprogramming260/startup-example/blob/main/README.md).
 
 ## ☑ Assignment
 
-Upload your elevator pitch, rough sketch images, and the URL for your GitHub start up repository to the Canvas assignment.
+Update the README.md file for your start up GitHub repository that you created in the earlier instruction to include your elevator pitch. Include the pitch paragraph, key features, and images.
+
+Make sure you push your changes to the file so that it can be reviewed.
+
+Submit the URL for your GitHub start up repository to the Canvas assignment.
 
 ## Grading Rubric
 
+- 10% - Notes in your start up Git repository README.md that include your elevator pitch and key features
 - 45% - A concise, compelling, elevator pitch
 - 45% - One or more rough sketches of your application
-- 10% - Notes in your start up Git repository README.md that include your elevator pitch and your future plans
