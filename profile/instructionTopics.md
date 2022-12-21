@@ -7,6 +7,7 @@ It is expected that you will start at the top of the list and work your way down
 ## Development essentials
 
 - [Introduction](essentials/introduction/introduction.md)
+- [Demonstration](essentials/demo/demo.md)
 - [History of the web](essentials/history/history.md)
 - [Asking questions](essentials/askingQuestions/askingQuestions.md)
 - ☑ [Discord](essentials/discord/discord.md)
@@ -29,10 +30,12 @@ It is expected that you will start at the top of the list and work your way down
 - [Domain names](webServers/domainNames/domainNames.md)
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
 - ☑ [Amazon Web Services - Route 53](webServers/amazonWebServicesRoute53/amazonWebServicesRoute53.md)
-- ☑ [HTTPS, TLS, and certificates](webServers/https/https.md)
 - [Caddy](webServers/caddy/caddy.md)
+- ☑ [HTTPS, TLS, and certificates](webServers/https/https.md)
 
 ## HTML, CSS, and JavaScript
+
+!!TODO!! Continue review here.
 
 - ☑ [HTML](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)

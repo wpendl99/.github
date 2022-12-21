@@ -2,13 +2,13 @@
 
 ![Caddy](caddyLogo.png)
 
-Caddy is a web server that listens for incoming HTTP requests. Caddy then either serves up the requested static files or routes the request to another web server. This ability to route requests is called a `gateway`, or `reverse proxy`, and allows you to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).
+Caddy is a web service that listens for incoming HTTP requests. Caddy then either serves up the requested static files or routes the request to another web service. This ability to route requests is called a `gateway`, or `reverse proxy`, and allows you to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).
 
 For this course, we use Caddy for the following reasons.
 
 - Caddy handles all of the creation and rotation of web certificates. This allows us to easily support HTTPS.
-- Caddy serves up all of your static HTML, CSS, and JavaScript files. All early project work will be hosted as static files.
-- Caddy acts as a gateway for requests for your project subdomains to web services that are hosting your Simon and Start up projects using node.js as an internal web server.
+- Caddy serves up all of your static HTML, CSS, and JavaScript files. All of your early application work will be hosted as static files.
+- Caddy acts as a gateway for subdomain requests to your Simon and start up application services. For example, when a request is made to `simon.yourdomain` Caddy will proxy the request to the Simon application running with node.js as an internal web service.
 
 ![Caddy](webServersCaddy.jpg)
 
@@ -20,7 +20,7 @@ As part of the installation of Caddy we created two links in the Ubuntu user's h
 
 - **Configuration file**: `~/Caddyfile`
 
-  Contains the definitions for routing HTTP requests that Caddy receives. This is used to determine the location where static HTML files are loaded from, and also to proxy requests into the services you will create later. Except for when you configure the domain name of your server, you should never have to modify this file manually. However, it is good to know how it works incase things go wrong. You can read about this in the [Caddy Server documentation](https://caddyserver.com/docs/caddyfile).
+  Contains the definitions for routing HTTP requests that Caddy receives. This is used to determine the location where static HTML files are loaded from, and also to proxy requests into the services you will create later. Except for when you configure the domain name of your server, you should never have to modify this file manually. However, it is good to know how it works in case things go wrong. You can read about this in the [Caddy Server documentation](https://caddyserver.com/docs/caddyfile).
 
 - **HTML files**: `~/public_html`
 
