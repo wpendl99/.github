@@ -1,16 +1,16 @@
 # HTML media elements
 
-The HTML elements that represent media include `img`, `audio`, `video`, `svg`, and `canvas`. The `img`, `audio`, `video` elements are all simple references to an external file, but `svg` and `canvas` both contain the code for render a visual image that can even be animated.
+The HTML elements that represent media include `img`, `audio`, `video`, `svg`, and `canvas`. The `img`, `audio`, and `video` elements are all simple references to an external file, but `svg` and `canvas` both contain the code for render a visual image that can even be animated.
 
 ## External media
 
 The media tags that reference external media all take a URL as an attribute. The path represented by the URL can either be a relative path or full path. A full path includes the protocol, domain name, and path to the file.
 
 ```html
-https://images.pexels.com:443/photos/164170/pexels-photo-164170.jpeg
+https://images.pexels.com/photos/164170/pexels-photo-164170.jpeg
 ```
 
-A relative path references a file that is served from the same location as the HTML page rendering the element. You want to make the path as relative as possible so that you can move your code around without having to actually adjust all of the external page references. For example, if your HTML page is located in a directory with a subdirectory named `images` that contains a file named `photo.jpg` you would use a relative path as follows.
+A relative path references a file that is served from the same location as the HTML page rendering the element. You want to make the path is as relative as possible so that you can move your code around without having to actually adjust all of the external page references. For example, if your HTML page is located in a directory with a subdirectory named `images` that contains a file named `photo.jpg` you would use a relative path as follows.
 
 ```html
 images/photo.jpg
@@ -24,7 +24,7 @@ In order to support accessibility, you should also include an `alt` attribute th
 ```html
 <img
   alt="mountain landscape"
-  src="https://images.pexels.com:443/photos/164170/pexels-photo-164170.jpeg"
+  src="https://images.pexels.com/photos/164170/pexels-photo-164170.jpeg"
 />
 ```
 
@@ -32,7 +32,7 @@ In order to support accessibility, you should also include an `alt` attribute th
 
 ### Audio
 
-To include an audio file in your content you use the `audio` element and specify the `src` attribute with the URL to the source image. You can include the `controls` attribute if you want the user to be able to control the audio playback. You can also include the `autoplay` attribute to start playing as soon as the audio file is loaded and the `loop` attribute to keep playing it over and over.
+To include an audio file in your content you use the `audio` element and specify the `src` attribute with the URL to the source image. You can include the `controls` attribute if you want the user to be able to control the audio playback. If you do not display the controls then there is no visual representation of the audio in the rendered page. The `autoplay` attribute starts the audio playing as soon as the audio file is loaded, and the `loop` attribute keeps it playing over and over.
 
 ⚠ Note that automatically playing audio is strongly discouraged unless you provide a way for the user to opt-in to that behavior.
 
@@ -64,7 +64,7 @@ The internal media elements `svg` and `canvas` allow you to actually create imag
 
 ### Scalable Vector Graphics (SVG)
 
-SVG is an extremely powerful and widely support way to render graphics inline in your HTML. An example SVG graphic that draws a black border and a red circle looks like this:
+SVG is an extremely powerful and widely supported way to render graphics inline in your HTML. An example SVG graphic that draws a black border and a red circle looks like this:
 
 ```html
 <svg
@@ -78,7 +78,9 @@ SVG is an extremely powerful and widely support way to render graphics inline in
 </svg>
 ```
 
-When combined with JavaScript and CSS you can produce some amazing visualizations. Checkout this [CodePen]https://codepen.io/leesjensen/pen/mdKjMLY) for an example.
+![SVG demo](htmlSvg.jpg)
+
+When combined with JavaScript and CSS you can produce some amazing visualizations. Checkout this [CodePen](https://codepen.io/leesjensen/pen/mdKjMLY) for an example.
 
 Consult the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/SVG) if you are interested in learning more about SVG.
 

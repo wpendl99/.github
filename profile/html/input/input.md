@@ -19,7 +19,7 @@ From the very early days of HTML it contained elements for accepting the input o
 
 ## Form element
 
-The main purpose of the `form` element is to submit the values of the inputs it contains. Before JavaScript was introduced the `form` container element was essential because it was the only way for the browser to send the input data to a web server as part of a request process the input and generate a new web page displaying the result of the input. With JavaScript we have much more control over input data and what is done with it. For example, in a single page application the JavaScript will dynamically rebuild the HTML elements to reflect the results of the user interaction. With this ability the data may not even be sent to the server. This greatly reduces the necessity of the `form` element, but it is often still used simply as a container. Just remember that you are not required to have a form element to use input elements.
+The main purpose of the `form` element is to submit the values of the inputs it contains. Before JavaScript was introduced the `form` container element was essential because it was the only way for the browser to send the input data to a web server as part of a request to process the input and generate a new web page displaying the result of the input. With JavaScript we have much more control over input data and what is done with it. For example, in a single page application the JavaScript will dynamically rebuild the HTML elements to reflect the results of the user interaction. With this ability the data may not even be sent to the server. This greatly reduces the necessity of the `form` element, but it is often still used simply as a container. Just remember that you are not required to have a form element to use input elements.
 
 Here is an example of a simple form that submits the value of a `textarea` element.
 
@@ -41,7 +41,7 @@ ta-id=Some+text
 
 ## Input element
 
-The input element represents many different input types. You set the type of input with the `type` attribute. There are many different types to choose from. This includes different flavors of textual, numeric, date, and color inputs.
+The input element represents many different input types. You set the type of input with the `type` attribute. There are several different types to choose from. This includes different flavors of textual, numeric, date, and color inputs.
 
 | Type           | Meaning                           |
 | -------------- | --------------------------------- |
@@ -62,7 +62,7 @@ The input element represents many different input types. You set the type of inp
 | file           | Local file                        |
 | submit         | button to trigger form submission |
 
-In order to create an input you specify the desired `type` attribute along with any other attribute associated with the input. Here is an example of a checked radio button and its associated label.
+In order to create an input you specify the desired `type` attribute along with any other attribute associated with that specific input. Here is an example of a checked radio button and its associated label.
 
 ```html
 <label for="checkbox1">Check me</label>
@@ -84,7 +84,7 @@ The following shows what the inputs look like when rendered. Don't worry about h
 
 ## Validating input
 
-Several of the input elements have validation built into them. This means that they will not accept a value that is not for example, a number, in a defined numerical range, a URL, or an email address. You can also specify the `required` attribute on an input element to mark it as requiring a value before it can be submitted. The `pattern` attribute exists on `text`, `search`, `url`, `tel`, `email`, and `password` inputs. When present it provides regular express that must match for the input to be considered as valid.
+Several of the input elements have validation built into them. This means that they will not accept a value that is not for example, a number, a URL, outside of a range, or an email address. You can also specify the `required` attribute on an input element to mark it as requiring a value before it can be submitted. The `pattern` attribute exists on `text`, `search`, `url`, `tel`, `email`, and `password` inputs. When present, the pattern attribute provides a regular expression that must match for the input to be considered as valid.
 
 You should also have validation built into your JavaScript that checks input data to ensures everything is valid before it is submitted. All of the input elements support functions for determining their validation state. Additionally, there are CSS style selectors for visualizing the validity of the input. In order to have a good user experience, it is critical that you provide sufficient user feedback early in the input process. A good design will give feedback as, or before, the user begins to input. A poor design will keep the user guessing as to why the data is not being accepted, or even if it was accepted.
 

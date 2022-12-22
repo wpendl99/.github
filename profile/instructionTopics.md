@@ -38,7 +38,7 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [HTML](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
-  - ☑ [Media](html/media/media.md)
+- ☑ [Media](html/media/media.md)
 - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
 - [CSS](css/introduction/introduction.md)
