@@ -2,11 +2,11 @@
 
 Now that you have learned the basics of HTML and CSS, is time to create the initial version of your startup application. The main things you should focus on in this deliverable include creating the right HTML structure, and the correct styling with CSS. The application doesn't have to do anything. This will happen when you add JavaScript in the next deliverable.
 
-You must use your start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML and CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
+You must use the same start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML and CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deployFiles.sh` script from the [Simon CSS project](https://github.com/webprogramming260/simon-css/blob/main/deployFiles.sh) to your start up repository and use `startup` for the service (`-s`)
+Once you have developed your application to where you want it, you need to release it to your production environment. **Copy** the `deployFiles.sh` script from the [Simon CSS repository](https://github.com/webprogramming260/simon-css/blob/main/deployFiles.sh) to your start up repository and use `startup` for the service parameter (`-s`)
 
 ```sh
 ./deployFiles.sh -k <yourpemkey> -h <yourdomain> -s startup
@@ -42,7 +42,7 @@ You should also update your website's home page with a link to your project so t
 
 - 30% - Properly structured HTML.
 - 30% - Properly styled CSS.
-- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
+- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name over HTTPS.
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using HTML and CSS.
 

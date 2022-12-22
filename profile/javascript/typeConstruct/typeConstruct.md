@@ -12,7 +12,7 @@ let x = 1;
 const y = 2;
 ```
 
-⚠ Originally JavaScript used the keyword `var` to define variables, or allowed you to leave the keyword out entirely. This has been deprecated because they cause hard to detect errors in code related to the scope of the variable. You should avoid `var` and always declare your variables either with `let` or `const`.
+⚠ Originally JavaScript used the keyword `var` to define variables. This has been deprecated because they cause hard to detect errors in code related to the scope of the variable. You should avoid `var` and always declare your variables either with `let` or `const`.
 
 ## Type
 
@@ -28,9 +28,9 @@ JavaScript defines several primitives types.
 | `String`    | A textual sequence of characters.                          |
 | `Symbol`    | A unique value.                                            |
 
-Of these types Boolean, Number, and String are the types commonly thought of when creating variables. However, variables may commonly refer to the Null or Undefined primitive. Because JavaScript does not enforce the declaration of a variable before you use it, it is entirely possible for a variable to have the value of undefined.
+Of these types Boolean, Number, and String are the types commonly thought of when creating variables. However, variables may commonly refer to the Null or Undefined primitive. Because JavaScript does not enforce the declaration of a variable before you use it, it is entirely possible for a variable to have the type of undefined.
 
-In addition to the above primitives JavaScript defines several object types. Some of the more commonly used objects include the following.
+In addition to the above primitives, JavaScript defines several object types. Some of the more commonly used objects include the following.
 
 | Type       | Use                                                                                    | Example                  |
 | ---------- | -------------------------------------------------------------------------------------- | ------------------------ |
@@ -43,21 +43,18 @@ In addition to the above primitives JavaScript defines several object types. Som
 
 ## Common operators
 
-When dealing with number variable, JavaScript supports standard mathematical operators like `+` (add), `-` (subtract), `*` (multiply), `/` (divide), and `===` (equality). For string variables, JavaScript support `+` (concatenation) and `===` (equality).
+When dealing with a number variable, JavaScript supports standard mathematical operators like `+` (add), `-` (subtract), `*` (multiply), `/` (divide), and `===` (equality). For string variables, JavaScript support `+` (concatenation) and `===` (equality).
 
 ## Type conversions
 
-JavaScript is a weakly typed language. That means that a variable always has a type, but the variable can change type when it is assigned a new value, or that types can be automatically converted based upon the context that they are used in. Sometime the results of automatic conversions can be unexpected from programmers who are use to strongly type languages. Consider the following examples.
+JavaScript is a weakly typed language. That means that a variable always has a type, but the variable can change type when it is assigned a new value, or that types can be automatically converted based upon the context that they are used in. Sometime the results of automatic conversions can be unexpected from programmers who are use to strongly typed languages. Consider the following examples.
 
 ```js
 2 + '3';
 // OUTPUT: '23'
 2 * '3';
 // OUTPUT: 6
-{
-  x: 2;
-}
-+(3)[2] + [3]; // OUTPUT: 3
+[2] + [3];
 // OUTPUT: '23'
 true + null;
 // OUTPUT: 1
@@ -65,7 +62,7 @@ true + undefined;
 // OUTPUT: NaN
 ```
 
-This is especially true when dealing with equality where variables are converted to boolean type before [comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
+Getting unexpected results is especially common when dealing with the [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) operator.
 
 ```js
 1 == '1';
@@ -76,7 +73,7 @@ null == undefined;
 // OUTPUT: true
 ```
 
-⚠ Unexpected results happen in JavaScript because it uses [complex rules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#strict_equality_using) for defining equality that depend upon the conversion of a type to a boolean value. You will sometimes hear this referred to as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and truthy evaluations. To remove this confusion, JavaScript introduced the strict equality (===) and inequality (!==) operators. The strict operators skip the type conversion when computing equality. This results in the following.
+⚠ The unexpected results happen in JavaScript because it uses [complex rules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#strict_equality_using) for defining equality that depend upon the conversion of a type to a boolean value. You will sometimes hear this referred to as [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and truthy evaluations. To remove this confusion, JavaScript introduced the strict equality (===) and inequality (!==) operators. The strict operators skip the type conversion when computing equality. This results in the following.
 
 ```js
 1 === '1';
@@ -106,7 +103,7 @@ if (a === 1) {
 You can also use the ternary operator. This provides a compact `if else` representation.
 
 ```js
-a === 1 ? console.log(1) : console.log(2);
+a === 1 ? console.log(1) : console.log('not 1');
 ```
 
 You can use boolean operations in the expression to create complex predicates. Common boolean operators include `&&` (and), `||` (or), and `!` (not).
@@ -123,7 +120,7 @@ JavaScript support many common programming language looping constructs. This inc
 
 ### for
 
-Note the introduction of the standard increment operation (`i++`) for adding one to a number.
+Note the introduction of the common post increment operation (`i++`) for adding one to a number.
 
 ```js
 for (let i = 0; i < 2; i++) {

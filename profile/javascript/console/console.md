@@ -4,8 +4,6 @@
 
 The JavaScript console object provides interaction with the JavaScript runtime's debugger console. This usage of console should not be confused with your operating system's console (AKA terminal or command line). The console object provides functionality for outputting the value of text and objects, running timers, and counting iterations. These are useful debugging tools when you can actually execute your code in an interactive debugger (such as VS Code).
 
-We introduce the console object at this point in the instruction because it is commonly used in the coding examples that will follow.
-
 ## Log
 
 The basic usage of the console object is to output a log message.
@@ -35,7 +33,7 @@ If you are trying to see how long a piece of code is running you can wrap it wit
 
 ```js
 console.time('demo time');
-// Something that takes a long time.
+// ... some code that takes a long time.
 console.timeEnd('demo time');
 // OUTPUT: demo time: 9762.74 ms
 ```

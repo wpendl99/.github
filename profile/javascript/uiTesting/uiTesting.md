@@ -8,7 +8,7 @@ Fortunately this is a problem that many strong players have been working on for 
 
 ## Automating the browser - Playwright
 
-📖 **Suggested reading**: [Playwright and VS Code](https://playwright.dev/docs/getting-started-VS Code)
+📖 **Suggested reading**: [Playwright and VS Code](https://playwright.dev/docs/getting-started-VSCode)
 
 No one understands the difficulty of testing applications in the browsers better than the companies that build web browsers. They have to test every possible use of HTML, CSS, and JavaScript that they can thing of. There was no way manual testing was going to work and so early on they started putting hooks into their applications that allowed them to be driven from automated external processes. [Selenium](https://www.selenium.dev/) was introduced in 2004 as the first popular tool to automate the browser. However, Selenium is generally considered to be flaky and slow. Flakiness means that a test fails in unpredictably, unreproducible, ways. When you need thousands of tests to pass before you can deploy a new feature, even a little flakiness becomes a big problem. If those tests take hours to run then you have an even bigger problem.
 
