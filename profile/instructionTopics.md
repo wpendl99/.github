@@ -35,8 +35,6 @@ It is expected that you will start at the top of the list and work your way down
 
 ## HTML, CSS, and JavaScript
 
-!!TODO!! Continue review here.
-
 - ☑ [HTML](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
