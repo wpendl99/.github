@@ -42,15 +42,12 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
 - [CSS](css/introduction/introduction.md)
-
-  - !!TODO!!
-
   - [Selectors](css/selectors/selectors.md)
+  - !!TODO!!
   - [Declarations](css/declarations/declarations.md)
   - [Fonts](css/fonts/fonts.md)
   - [Animation](css/animation/animation.md)
   - ☑ [CSS practice](css/practice/practice.md)
-
 - [Responsive design](css/responsive/responsive.md)
   - [Grid](css/grid/grid.md)
   - ☑ [Flex](css/flexbox/flexbox.md)
