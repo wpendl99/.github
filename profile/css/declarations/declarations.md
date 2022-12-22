@@ -13,35 +13,35 @@ CSS rule declarations specify a property and value to assign when the rule selec
 | columns            | number                             | `3`                 | Number of textual columns                                                      |
 | column-rule        | color width style                  | `solid thin black`  | Sets the border used between columns using border shorthand                    |
 | color              | color                              | `rgb(128, 0, 0)`    | Sets the text color                                                            |
-| cursor             | type                               | `grab`              | Sets the cursor display over the element color                                 |
-| display            | type                               | `none`              | Defines how to display the element and layout its children                     |
+| cursor             | type                               | `grab`              | Sets the cursor to display when hovering over the element                      |
+| display            | type                               | `none`              | Defines how to display the element and its children                            |
 | filter             | filter-function                    | `grayscale(30%)`    | Applies a visual filter                                                        |
 | float              | direction                          | `right`             | Places the element to the left or right in the flow                            |
-| flex               |                                    |                     | Flex layout. This is describe in the responsive design section                 |
+| flex               |                                    |                     | Flex layout. Used for responsive design                                        |
 | font               | family size style                  | `Arial 1.2em bold`  | Defines the text font using shorthand                                          |
-| grid               |                                    |                     | Grid layout. This is describe in the responsive design section                 |
+| grid               |                                    |                     | Grid layout. Used for responsive design                                        |
 | height             | unit                               | `.25em`             | Sets the height of the box                                                     |
 | margin             | unit                               | `5px 5px 0 0`       | Sets the margin spacing                                                        |
 | max-[width/height] | unit                               | `20%`               | Restricts the width or height to no more than the unit                         |
 | min-[width/height] | unit                               | `10vh`              | Restricts the width or height to no less than the unit                         |
-| opacity            | number                             | `.9`                | Set how transparent the element is                                             |
-| overflow           | [visible/hidden/scroll/auto]       | `scroll`            | Defines what happens when the content is does not fix in its box               |
+| opacity            | number                             | `.9`                | Sets how opaque the element is                                                 |
+| overflow           | [visible/hidden/scroll/auto]       | `scroll`            | Defines what happens when the content does not fix in its box                  |
 | position           | [static/relative/absolute/sticky]  | `absolute`          | Defines how the element is positioned in the document                          |
 | padding            | unit                               | `1em 2em`           | Sets the padding spacing                                                       |
 | left               | unit                               | `10rem`             | The horizontal value of a positioned element                                   |
-| text-align         | [start/end/center/justify]         | `end`               | How the text is aligned in the element                                         |
+| text-align         | [start/end/center/justify]         | `end`               | Defines how the text is aligned in the element                                 |
 | top                | unit                               | `50px`              | The vertical value of a positioned element                                     |
 | transform          | transform-function                 | `rotate(0.5turn)`   | Applies a transformation to the element                                        |
-| width              |                                    |                     |                                                                                |
+| width              | unit                               | `25vmin`            | Sets the width of the box                                                      |
 | z-index            | number                             | `100`               | Controls the positioning of the element on the z axis                          |
 
-This [CodePen](https://codepen.io/leesjensen/pen/rNKrgKQ) demonstrates the use of each of the above declarations.
+This [CodePen](https://codepen.io/leesjensen/pen/rNKrgKQ) demonstrates the use of many of the above declarations.
 
 ## Units
 
 📖 **Suggested reading**: [MDN Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
 
-You can use a variety of units when defining the size of CSS property. For example, a the width of an element can be defined using absolute units such as the number of pixels (`px`) or inches (`in`), or you by using relative units such as a percentage of the parent element (`50%`), or a multiplier of the size of the letter m (`1.5rem`) as defined by the root element.
+You can use a variety of units when defining the size of a CSS property. For example, a the width of an element can be defined using absolute units such as the number of pixels (`px`) or inches (`in`). You can also use relative units such as a percentage of the parent element (`50%`), a percentage of a minimum viewport dimension (`25vmin`), or a multiplier of the size of the letter m (`1.5rem`) as defined by the root element.
 
 ```css
 p {

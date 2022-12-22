@@ -43,7 +43,6 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
 - [CSS](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
-  - !!TODO!!
   - [Declarations](css/declarations/declarations.md)
   - [Fonts](css/fonts/fonts.md)
   - [Animation](css/animation/animation.md)

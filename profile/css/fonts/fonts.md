@@ -8,11 +8,11 @@ The CSS `font-family` property defines what fonts should be used. The property v
 
 ## Font families
 
-There are four major families of fonts: `Serif`, `san-serif`, `fixed`, and `symbol`. A serif is a small stroke attached to the ends of the major strokes of a character. Serif fonts have the extra strokes, san-serif fonts do not. Fixed fonts characters all are the same width. This is useful for lining up text when doing things like coding or display tabular data. Symbol fonts represent non-language characters such as arrows or emojis.
+There are four major families of fonts: `Serif`, `san-serif`, `fixed`, and `symbol`. A serif is a small stroke attached to the ends of a character's major strokes. Serif fonts have the extra strokes, san-serif fonts do not. Fixed fonts characters all are the same size. This is useful for lining up text when doing things like coding or display tabular data. Symbol fonts represent non-language characters such as arrows or emojis.
 
 ## Importing fonts
 
-In addition to referencing standard fonts found on the user's computer you can specify a font that you include in the files provided by your application. That way your application is guaranteed to always look the same. In order to have the browser load a font you use the `@font-face` rule and provide the font name and source location.
+In addition to referencing standard fonts found on the user's computer you can specify a font that you provide with your application. That way your application is guaranteed to always look the same. In order to have the browser load a font you use the `@font-face` rule and provide the font name and source location.
 
 ```css
 @font-face {
@@ -25,7 +25,7 @@ p {
 }
 ```
 
-If you do not want to host font files from your server, then you can load them from a font provider. For example, Google provides a large selection of [open source fonts](https://fonts.google.com/) that you can use without paying any royalties. The easiest way to use Google fonts is to use a CSS import statement to reference the Google Font Service. This will automatically generate CSS for importing the font.
+If you do not want to host font files on your server, then you can load them from a font provider. For example, Google provides a large selection of [open source fonts](https://fonts.google.com/) that you can use without paying any royalties. The easiest way to use Google fonts is to use a CSS import statement to reference the Google Font Service. This will automatically generate the CSS for importing the font.
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Rubik Microbe&display=swap');
