@@ -1,11 +1,11 @@
 # Hypertext Markup Language
 
+<img src="htmlLogo.png" width=70/>
+
 📖 **Suggested reading**:
 
 - [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [W3C specification](https://html.spec.whatwg.org/multipage/) - This official specification is only for reference
-
-<img src="htmlLogo.png" width=100/>
 
 HyperText Markup Language (HTML) provides the foundational content structure that all web applications build on. HTML was originally designed to be a publishing format for web documents, or pages. From that original definition web programmers have morphed the `web page` concept into a `web application` where a page now represents either a `single page application` (SPA) or a large group of hyperlinked pages that form a `multi-page application` (MPA). By itself HTML is amazing, but to create a full web application we will need other technologies to style (CSS) our pages and make them interactive (JavaScript). For now, we will focus on creating the content structure with HTML.
 

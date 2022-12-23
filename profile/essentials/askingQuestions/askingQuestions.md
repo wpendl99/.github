@@ -4,10 +4,10 @@
 
 ## Contact information
 
-!!TODO!! - Add office, discord link, TA schedule link.
+!!TODO!! - Add office.
 
 - Use this [invitation link](https://discord.gg/VnuQ6HGS) to join class Discord server
-- TA schedule
+- Consult this [document](https://docs.google.com/spreadsheets/d/1g1AMtgvyfSwMgp85QcwHuy0mVR-nN3bIGI6XNEJWB1U/edit?usp=sharing) to view the TA schedule
 - Office hours and location
 
 | Who        | How                 | Where                  | When                            |
