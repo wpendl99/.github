@@ -2,14 +2,14 @@
 
 📖 **Suggested reading**: [MDN Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-Destructuring, not to be confused with destructing, is the process of pulling individual items out of an existing one, or removing structure. You can do this with either arrays or objects. This is helpful when you are only care about a few items in the original structure.
+Destructuring, not to be confused with destructing, is the process of pulling individual items out of an existing one, or removing structure. You can do this with either arrays or objects. This is helpful when you only care about a few items in the original structure.
 
 An example of destructuring arrays looks like the following.
 
 ```js
 const a = [1, 2, 4, 5];
 
-// destructure the first two items in a, into the new variables b and c
+// destructure the first two items from a, into the new variables b and c
 const [b, c] = a;
 
 console.log(b, c);
@@ -27,7 +27,7 @@ console.log(b, c, others);
 // OUTPUT: 1, 2, [4,5]
 ```
 
-This works in a similar manner for objects. Except with arrays it was the assignment of the associated value was assumed by the position in the two arrays. When object destructuring you can explicitly specify the properties you want to pull from the original object. If you don't supply the property name.
+This works in a similar manner for objects. Except with arrays, the assignment of the associated value was assumed by the positions in the two arrays. When object destructuring, you explicitly specify the properties you want to pull from the source object.
 
 ```js
 const o = { a: 1, b: 'animals', c: ['fish', 'cats'] };
@@ -38,7 +38,7 @@ console.log(a, c);
 // OUTPUT 1, ['fish', 'cats']
 ```
 
-You can also use different names for the resulting variables instead of just assuming the names of the properties.
+You can also map the names to new variables instead of just using the original property names.
 
 ```js
 const o = { a: 1, b: 'animals', c: ['fish', 'cats'] };

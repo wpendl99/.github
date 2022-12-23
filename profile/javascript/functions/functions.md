@@ -2,9 +2,9 @@
 
 📖 **Suggested reading**: [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
-Functions are a common construct in any programming language. Functions act as small program that modularize some specific operation. This allows for the function to be invoked from multiple places and called recursively. In JavaScript functions are first class objects. That means that they can be assigned a name, passed as a parameter, returned as a result, and referenced from an object or array just like any other variable.
+In JavaScript functions are first class objects. That means that they can be assigned a name, passed as a parameter, returned as a result, and referenced from an object or array just like any other variable.
 
-The basic syntax of a function begins with the `function` keyword followed by zero or more parameters and a body that may contain zero or more return statements. Note that there are no type declarations, as the type is always inferred by the assignment of the value to the parameter.
+The basic syntax of a function begins with the `function` keyword followed by zero or more parameters and a body that may contain zero or more return statements. The return statement my return a single value. Note that there are no type declarations, as the type is always inferred by the assignment of the value to the parameter.
 
 ```js
 function hello(who) {
@@ -19,12 +19,33 @@ A function without a return value usually exists to produce some side effect lik
 
 ```js
 function hello(who) {
-  who.helloCount++;
+  who.count++;
   console.log('hello ' + who.name);
 }
 
-hello('world');
+hello({ name: 'world', count: 0 });
 // OUTPUT: hello world
+```
+
+## Function parameters
+
+When a function is called, the caller may choose what parameters to provide. If a parameter is not provided then the value of the parameter is `undefined` when the function executes.
+
+In addition to explicitly passing the value of a parameter to a function, the function can define a default value. This is done by assigning a value to the parameter in the function declaration.
+
+```js
+function labeler(value, title = 'title') {
+  console.log(`${title}=${value}`);
+}
+
+labeler();
+// OUTPUT: title=undefined
+
+labeler('fish');
+// OUTPUT: title=fish
+
+labeler('fish', 'animal');
+// OUTPUT: animal=fish
 ```
 
 ## Anonymous functions
@@ -63,7 +84,7 @@ console.log(
 Here are examples of assigning functions to variables, as well as using functions as parameters and return values.
 
 ```js
-// Anonymous declaration of the function that is then assigned to a variable
+// Anonymous declaration of the function that is later assigned to a variable
 const add = function (a, b) {
   return a + b;
 };
@@ -124,29 +145,8 @@ labeler('fish');
 // OUTPUT: string=fish
 ```
 
-## Function parameters
-
-When a function is called the caller may choose what parameters to provide. If a parameter is not provided then the value of the parameter is `undefined` when the function executes.
-
-In addition to explicitly passing the value of a parameter to a function, the function can define a default value. This is done by assigning a value to the parameter in the function declaration.
-
-```js
-function labeler(value, title = 'title') {
-  console.log(`${title}=${value}`);
-}
-
-labeler();
-// OUTPUT: title=undefined
-
-labeler('fish');
-// OUTPUT: title=fish
-
-labeler('fish', 'animal');
-// OUTPUT: animal=fish
-```
-
 ## ☑ Assignment
 
-Create a CodePen that uses functions in all the different flavors including: standard definitions, anonymous, parameters, return values, and inner functions.
+Create a CodePen that uses all of the concepts related to functions. This includes writing standard, inner, and anonymous functions, as well as passing parameters and returning values.
 
 When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
