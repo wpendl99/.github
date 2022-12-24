@@ -80,9 +80,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript/startUpJavascript.md)
 
-## Web Services
-
-!!TODO!! -- Continue reviewing from here
+## Web services
 
 - [URL](webServices/url/url.md)
 - [Ports](webServices/ports/ports.md)
