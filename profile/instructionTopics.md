@@ -33,15 +33,15 @@ It is expected that you will start at the top of the list and work your way down
 - [Caddy](webServers/caddy/caddy.md)
 - ☑ [HTTPS, TLS, and certificates](webServers/https/https.md)
 
-## HTML, CSS, and JavaScript
+## HTML and CSS
 
-- ☑ [HTML](html/introduction/introduction.md)
+- ☑ [HTML introduction](html/introduction/introduction.md)
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
-- ☑ [Media](html/media/media.md)
-- ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
-- ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
-- [CSS](css/introduction/introduction.md)
+  - ☑ [Media](html/media/media.md)
+  - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
+  - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
+- [CSS introduction](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
   - [Declarations](css/declarations/declarations.md)
   - [Fonts](css/fonts/fonts.md)
@@ -54,7 +54,10 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [CSS frameworks](css/frameworks/frameworks.md)
   - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
 - ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss/startUpHtmlCss.md)
-- [JavaScript](javascript/introduction/introduction.md)
+
+## JavaScript
+
+- [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console/console.md)
   - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct/typeConstruct.md)
   - [String](javascript/string/string.md)
@@ -86,7 +89,6 @@ It is expected that you will start at the top of the list and work your way down
 - [HTTP](webServices/http/http.md)
 - [SOP and CORS](webServices/cors/cors.md)
 - ☑ [Fetch](webServices/fetch/fetch.md)
-  - ☑ [Simon fetch](https://github.com/webprogramming260/simon-fetch#readme)
 - [Service design](webServices/design/design.md)
 - ☑ [Node.js](webServices/node/node.md)
 - ☑ [Express](webServices/express/express.md)
