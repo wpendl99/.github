@@ -182,4 +182,4 @@ Do the following steps to set up your `Start up application repository` in GitHu
 1. On GitHub observe the resolved merge.
 1. Make your first notes in your README.md file about what you learned from this assignment. Commit and push your notes to GitHub.
 
-When you are done, provide the URL of your GitHub start up repository, along with a description of something you found interesting, to the Canvas assignment.
+When you are done, provide the URL of your GitHub start up repository, along with a comment about something you found interesting, to the Canvas assignment.

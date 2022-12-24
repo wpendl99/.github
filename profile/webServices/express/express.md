@@ -1,6 +1,8 @@
+!!!TODO!!! - review draft from here.
+
 # Express
 
-![Express icon](expressIcon.png)
+<img src="expressIcon.png" width="75px" />
 
 📖 **Suggested reading**: [MDN Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 

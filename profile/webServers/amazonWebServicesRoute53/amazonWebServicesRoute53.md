@@ -76,6 +76,6 @@ The start of authority (`SOA`) record provides contact information about the own
 1. Set up your DNS records using Route 53. Make sure you have a record representing your root domain name, and a wild card subdomain.
 1. Test that you can access your server using your domain name and any subdomain name.
 
-Submit a URL for web server's domain name, along with a description of something you found interesting, to the Canvas assignment.
+Submit a URL for web server's domain name, along with a comment about something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.

@@ -255,4 +255,4 @@ main().catch(console.error);
 
 Set up your MongoDB Atlas database service.
 
-When you are done submit the hostname of your Atlas database cluster, along with a description of something you found interesting, to the Canvas assignment.
+When you are done submit the hostname of your Atlas database cluster, along with a comment about something you found interesting, to the Canvas assignment.

@@ -196,4 +196,4 @@ A component's properties and state are used by the React framework to determine 
 
 Create a fork of this [CodePen](https://codepen.io/leesjensen/pen/Yzvaver) and experiment.
 
-When you are done submit your CodePen URL, along with a description of something you found interesting, to the Canvas assignment.
+When you are done submit your CodePen URL, along with a comment about something you found interesting, to the Canvas assignment.
