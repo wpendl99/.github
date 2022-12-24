@@ -53,6 +53,7 @@ It is expected that you will start at the top of the list and work your way down
   - [Debugging CSS](css/debuggingCss/debuggingCss.md)
   - ☑ [CSS frameworks](css/frameworks/frameworks.md)
   - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
+- ☑ [UI design](uidesign/uidesign.md)
 - ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss/startUpHtmlCss.md)
 
 ## JavaScript
@@ -77,7 +78,6 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Async/await](javascript/asyncAwait/asyncAwait.md)
   - [Debugging JavaScript](javascript/debuggingJavascript/debuggingJavascript.md)
   - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
-- ☑ [UI design](uidesign/uidesign.md)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript/startUpJavascript.md)
 
 ## Web Services
