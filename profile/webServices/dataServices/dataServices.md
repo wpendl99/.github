@@ -1,8 +1,8 @@
 # Data services
 
-Web applications commonly need to store application and user data persistently. Data can represent many things, but it is usually a representation of complex interrelated objects. This includes this like a user profiles, organizational structure, game play information, usage history, billing information, peer relationships, library catalogs, and so forth.
+Web applications commonly need to store application and user data persistently. The data can be many things, but it is usually a representation of complex interrelated objects. This includes this like a user profile, organizational structure, game play information, usage history, billing information, peer relationship, library catalog, and so forth.
 
-Historically SQL databases have served as the general purpose data service solution, but starting around 2010 specialty data services that better support document, graph, JSON, time, sequence, and key-value pair data began to take significant roles in applications from major web application companies. These data services are often called NoSQL solutions because they do not use the general purpose relational database paradigms popularized by SQL databases. However, they all have very different underlying data structures, strengths, and weaknesses. That means that you should not simply split all of the possible data services into two narrowly defined box, SQL and NoSQL, when you are considering the right data service for your application.
+Historically SQL databases have served as the general purpose data service solution, but starting around 2010 specialty data services that better support document, graph, JSON, time, sequence, and key-value pair data began to take significant roles in applications from major companies. These data services are often called NoSQL solutions because they do not use the general purpose relational database paradigms popularized by SQL databases. However, they all have very different underlying data structures, strengths, and weaknesses. That means that you should not simply split all of the possible data services into two narrowly defined boxes, SQL and NoSQL, when you are considering the right data service for your application.
 
 Here is a list of some of the popular data services that are available.
 
@@ -45,7 +45,7 @@ For the projects in this course that require data services, we will use `MongoDB
 ];
 ```
 
-Unlike relational databases that require a rigid table definition where each column must be strictly typed and defined beforehand, Mongo has no strict schema requirements. Each document in the collection usually follows a similar schema, but each document may have specialized fields that are present, and common fields that are missing. This allows the schema of a collection to morph organically as the data model of the application evolves. To add a new field to a Mongo collection you just start insert the field into the documents as desired. If the field is not present, or has a different type, in some documents then the document simply doesn't match the query criteria when the field is referenced.
+Unlike relational databases that require a rigid table definition where each column must be strictly typed and defined beforehand, Mongo has no strict schema requirements. Each document in the collection usually follows a similar schema, but each document may have specialized fields that are present, and common fields that are missing. This allows the schema of a collection to morph organically as the data model of the application evolves. To add a new field to a Mongo collection you just start insert the field into the documents as desired. If the field is not present, or has a different type in some documents, then the document simply doesn't match the query criteria when the field is referenced.
 
 The query syntax for Mongo also follow a JavaScript inspired flavor. Consider the following queries on the houses for rent collection that was shown above.
 
@@ -62,7 +62,7 @@ db.house.find({ status: 'available', beds: { $lt: 3 } });
 // find houses with either less than three beds or less than $1000 a night
 db.house.find({ $or: [(beds: { $lt: 3 }), (price: { $lt: 1000 })] });
 
-// find houses with text 'modern' or 'beach' in the summary
+// find houses with the text 'modern' or 'beach' in the summary
 db.house.find({ summary: /(modern|beach)/i });
 ```
 
@@ -128,7 +128,7 @@ If you do not supply any parameters to the `find` function then it will return a
 ];
 ```
 
-You can provide a query and options to the `find` function. In the example below we query for a `property_type` of Condo that has less than two bedrooms. We also specify the options to sort by the descending price, and limit our results to the first 10 documents.
+You can provide a query and options to the `find` function. In the example below we query for a `property_type` of Condo that has less than two bedrooms. We also specify the options to sort by descending price, and limit our results to the first 10 documents.
 
 ```js
 const query = { property_type: 'Condo', beds: { $lt: 2 } };
@@ -143,13 +143,13 @@ const rentals = await cursor.toArray();
 rentals.forEach((i) => console.log(i));
 ```
 
-The query matches our document and we get the same result as before.
+The query matches the document that we previously inserted and so we get the same result as before.
 
-There is a lot more functionality that MongoDB provides, but this is enough to get you started. If you are interested you can find lots of tutorials on their [website](https://www.mongodb.com/docs/).
+There is a lot more functionality that MongoDB provides, but this is enough to get you started. If you are interested you can explore the tutorials on their [website](https://www.mongodb.com/docs/).
 
 ## Keeping your keys out of your code
 
-You need to protect your credentials for connecting to your Mongo database. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can read them from a location outside of your code when the application executes. One common way to do that is to read them from environment variables. The JavaScript `process.env` object provides access the environment.
+You need to protect your credentials for connecting to your Mongo database. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can load your credentials when the application executes. One common way to do that, is to read them from environment variables. The JavaScript `process.env` object provides access to the environment.
 
 ```Javascript
 const userName = process.env.MONGOUSER;
@@ -161,7 +161,7 @@ if (!userName) {
 }
 ```
 
-This will require you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file.
+Following this pattern requires you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file.
 
 ```
 sudo vi /etc/environment
@@ -175,11 +175,11 @@ export MONGOPASSWORD=<yourmongodbpassword>
 export MONGOHOSTNAME=<yourmongodbhostname>
 ```
 
-For your development environment add the same export commands to your shell's profile file. Depending on what console you are using the location for your shell profile will be different. For example, on a Mac you typically are using Zsh and you will add the export commands to the `.zprofile` file found in your user directory.
+For your development environment add the same export commands to your shell's profile file. Depending on what console you are using the location of your shell profile will be different. For example, on a Mac you typically are using Zsh and you will add the export commands to the `.zprofile` file found in your user directory. Consult the documentation for the operating system you are using for how to create environment variables.
 
 ## Managed services
 
-Historically each application development team would have developers that managed the data service. Those developers would acquisition hardware, install the database software, monitor the memory, cpu, and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to databases that are hosted and managed by an external provider. This relieves the development team from much of the day to day maintenance. This allows the team to focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
+Historically each application development team would have developers that managed the data service. Those developers would acquisition hardware, install the database software, monitor the memory, cpu, and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to services that are hosted and managed by a 3rd party. This relieves the development team from much of the day to day maintenance. The team can instead focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
 
 ### MongoDB Atlas
 
@@ -191,7 +191,7 @@ This [video tutorial](https://www.youtube.com/watch?v=daIH4o75KE8) will step you
 
 1. Create your account.
 1. Create a database cluster.
-1. Create your root database user credentials. Remember this for later use.
+1. Create your root database user credentials. Remember these for later use.
 1. Set network access to your database to be available from anywhere.
 1. Copy the connection string and use the information in your code.
 1. Save the connection and credential information in your production and development environments as instructed above.
@@ -236,23 +236,28 @@ async function main() {
 main().catch(console.error);
 ```
 
+To execute the above example, do the following:
+
 1. Create a directory called `mongoTest`
 1. Save the above content to a file named `main.js`
 1. Run `npm init -y`
 1. Run `npm install mongodb`
-1. Run `node main.js`. This should output something like the following if everything is working correctly.
-   ```js
-   {
-   _id: new ObjectId("639b51b74ef1e953b884ca5b"),
-   name: 'Beachfront views',
-   summary: 'From your bedroom to the beach, no shoes required',
-   property_type: 'Condo',
-   beds: 1
-   }
-   ```
+1. Run `node main.js`.
+
+This should output something like the following if everything is working correctly.
+
+```js
+{
+_id: new ObjectId("639b51b74ef1e953b884ca5b"),
+name: 'Beachfront views',
+summary: 'From your bedroom to the beach, no shoes required',
+property_type: 'Condo',
+beds: 1
+}
+```
 
 # ☑ Assignment
 
-Set up your MongoDB Atlas database service.
+Set up your MongoDB Atlas database service. Run the example program for testing that you have things set up correctly.
 
 When you are done submit the hostname of your Atlas database cluster, along with a comment about something you found interesting, to the Canvas assignment.
