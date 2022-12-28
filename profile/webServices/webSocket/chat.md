@@ -38,7 +38,7 @@ The HTML for the client provides an input for the user's name, an input for crea
 </html>
 ```
 
-The JavaScript for the application provides the interaction with the DOM for creating and displaying messages, and manages the WebSockets to connect, send, and receive messages.
+The JavaScript for the application provides the interaction with the DOM for creating and displaying messages, and manages the WebSockets in order to connect, send, and receive messages.
 
 ### DOM interaction
 
@@ -91,7 +91,7 @@ function sendMessage() {
 
 ### WebSocket connection
 
-Now we can set up our WebSocket. We want to be able to support both secure and non-secure WebSocket connections. To do this we look at the protocol that is currently being used as represented by the `window.location.protocol` variable. If it is non-secure 'http' then we set our WebSocket protocol to be non-secure WebSocket (`ws`). Otherwise we use secure WebSocket (`wss`). We use that to then connect the WebSocket to the same location that we loaded the HTML from by referencing the `window.location.host` variable.
+Now we can set up our WebSocket. We want to be able to support both secure and non-secure WebSocket connections. To do this we look at the protocol that is currently being used as represented by the `window.location.protocol` variable. If it is non-secure HTTP then we set our WebSocket protocol to be non-secure WebSocket (`ws`). Otherwise we use secure WebSocket (`wss`). We use that to then connect the WebSocket to the same location that we loaded the HTML from by referencing the `window.location.host` variable.
 
 We can notify the user that chat is ready to go by listening to the `onopen` event and appending some text to the display using the `appendMsg` function we created earlier.
 
@@ -165,7 +165,7 @@ server.on('upgrade', (request, socket, head) => {
 
 ### Forwarding messages
 
-Using the WebSocket server we can use the `connection`, `message`, and `close` events to forward messages between peers. On connection we insert an object represent the connection into a list of all connections from the chat peers. Then when a message is received we loop through the peer connections and forward it on to everyone except the peer who initiated the request. Finally we remove a connection from the peer connection list when it is closed.
+With the WebSocket server we can use the `connection`, `message`, and `close` events to forward messages between peers. On connection we insert an object representing the connection into a list of all connections from the chat peers. Then when a message is received we loop through the peer connections and forward it on to everyone except the peer who initiated the request. Finally we remove a connection from the peer connection list when it is closed.
 
 ```js
 // Keep track of all the connections so we can forward messages
@@ -200,7 +200,7 @@ wss.on('connection', (ws) => {
 
 A WebSocket connection will eventually close automatically if no data is sent across it. In order to prevent that from happening the WebSocket protocol supports the ability to send a `ping` message to see if the peer is still there and receive `pong` responses to indicate the affirmative.
 
-It make this work we use `setInterval` to send out a ping every 10 seconds to each of our peer connections and clean up any connections that did not response to our last previous ping.
+It make this work we use `setInterval` to send out a ping every 10 seconds to each of our peer connections and clean up any connections that did not response to our previous ping.
 
 ```js
 setInterval(() => {

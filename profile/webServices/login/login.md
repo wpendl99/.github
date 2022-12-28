@@ -1,10 +1,10 @@
 # Account creation and login
 
-The first step towards supporting authentication in your web application is providing a way for users to uniquely identify themselves. This usually requires two service endpoints. One to initially `create` an authentication credential, and a second to authenticate, or `login`, on future visits. Once a user is authenticated we can use to to control access to other endpoints. For example, web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this endpoint to demonstrate that authentication is actually working correctly.
+The first step towards supporting authentication in your web application is providing a way for users to uniquely identify themselves. This usually requires two service endpoints. One to initially `create` an authentication credential, and a second to authenticate, or `login`, on future visits. Once a user is authenticated we can control access to other endpoints. For example, web services often have a `getMe` endpoint that gives information about the currently authenticated user. We will implement this endpoint to demonstrate that authentication is actually working correctly.
 
 ## Endpoint design
 
-Using HTTP we can map out the design of our each of our endpoints.
+Using HTTP we can map out the design of each of our endpoints.
 
 ### Create authentication endpoint
 
@@ -96,10 +96,10 @@ app.listen(port, function () {
 });
 ```
 
-Follow along by doing the following steps, and then adding in the code form the sections that follow. There is a copy of the final version of the example at the end of this instruction. If you get lost, or things are working as expected then refer to the final version.
+Follow these steps, and then add in the code from the sections that follow. There is a copy of the final version of the example at the end of this instruction. If you get lost, or things are not working as expected, refer to the final version.
 
 1. Create a directory called `authTest` that we will work in.
-1. Save the above content to a file named `main.js` to get started with a working web service.
+1. Save the above content to a file named `main.js`. This is our starting web service.
 1. Run `npm init -y` to initial the project to work with node.js.
 1. Run `npm install express cookie-parser mongodb uuid bcrypt` to install all of the packages we are going to use.
 1. Run `node main.js` or press `F5` in VS Code to start up the web service.
@@ -113,7 +113,7 @@ Follow along by doing the following steps, and then adding in the code form the 
 
 ## Handling requests
 
-With our basic service created, we can now implement the create authentication endpoint. The first step is to read the credentials from the body of the HTTP request. Since the body is designed to contain JSON we need to tell Express that it should parse HTTP requests with a content type of `application/json` automatically into a JavaScript object. We do this by using the `express.json` middleware. We can then read the email and password directly out of the `req.body` object. We can test that this is working by temporarily including them in the response.
+With our basic service created, we can now implement the create authentication endpoint. The first step is to read the credentials from the body of the HTTP request. Since the body is designed to contain JSON we need to tell Express that it should parse HTTP requests, with a content type of `application/json`, automatically into a JavaScript object. We do this by using the `express.json` middleware. We can then read the email and password directly out of the `req.body` object. We can test that this is working by temporarily including them in the response.
 
 ```js
 app.use(express.json());
@@ -133,7 +133,7 @@ app.post('/auth/create', (req, res) => {
 {"id":"user@id.com","email":"marta@id.com","password":"toomanysecrets"}
 ```
 
-Now that we have proven that we can parse the request bodies correctly, we can change the code to add a check to see if we already have a user with that email address. If we do then we immediately return a 409 (conflict) status code. Otherwise we create a new user and return the user ID.
+Now that we have proven that we can parse the request bodies correctly, we can change the code to add a check to see if we already have a user with that email address. If we do, then we immediately return a 409 (conflict) status code. Otherwise we create a new user and return the user ID.
 
 ```js
 app.post('/auth/create', async (req, res) => {
@@ -150,7 +150,7 @@ app.post('/auth/create', async (req, res) => {
 
 ## Using the database
 
-We want to persistently store our users in Mongo and so we need to set up our code to connect to and use the database. This is all covered in the instruction on data services if you want to review what it is doing.
+We want to persistently store our users in Mongo and so we need to set up our code to connect to and use the database. This code is explained in the instruction on data services if you want to review what it is doing.
 
 ```js
 const { MongoClient } = require('mongodb');
@@ -181,7 +181,7 @@ async function createUser(email, password) {
 }
 ```
 
-But, we are missing a couple of things. We need to a real authentication token, and we cannot simply store a password in our database.
+But, we are missing a couple of things. We need to a real authentication token, and we cannot simply store a clear text password in our database.
 
 ## Generating authentication tokens
 
@@ -195,7 +195,7 @@ token: uuid.v4();
 
 ## Securing passwords
 
-Next we need to not store our passwords. Doing so is a major security concern. If, and it has happened to many major organizations and companies, a hacker is able to access the database, they will have the passwords for all of your users. This may not seem like a big deal if your application is not very valuable, but users often reuse passwords. That means you will also provide the hacker with the means to attack the user on many other websites.
+Next we need to securely store our passwords. Failing to do so is a major security concern. If, and it has happened to many major companies, a hacker is able to access the database, they will have the passwords for all of your users. This may not seem like a big deal if your application is not very valuable, but users often reuse passwords. That means you will also provide the hacker with the means to attack the user on many other websites.
 
 So instead of storing the password directly, we want to cryptographically hash the password so that we never store the actual password. When we want to validate a password during login, we can hash the login password and compare it to our stored hash of the password.
 
@@ -221,7 +221,7 @@ async function createUser(email, password) {
 
 We now need to pass our generated authentication token to the browser when the login endpoint is called, and get it back on subsequent requests. To do this we use HTTP cookies. The `cookie-parser` package provides middleware for cookies and so we will leverage that.
 
-We import the `cookieParser` object and then tell our app to use it. When a user is successfully created, or logs in, we set the cookie header. Since we are storing an authentication token in the cookie we want to make it as secure as possible, and so we use the httpOnly, secure, and sameSite options.
+We import the `cookieParser` object and then tell our app to use it. When a user is successfully created, or logs in, we set the cookie header. Since we are storing an authentication token in the cookie we want to make it as secure as possible, and so we use the `httpOnly`, `secure`, and `sameSite` options.
 
 - `httpOnly` tells the browser to not allow JavaScript running on the browser to read the cookie.
 - `secure` requires HTTPS to be used when sending the cookie back to the server.
@@ -259,7 +259,7 @@ function setAuthCookie(res, authToken) {
 
 ## Login endpoint
 
-The login authorization endpoint needs to get the hashed password from the database, compare it to the provided password using `bcrypt.compare`, and if successful set the authentication token in the cookie. If the password does not match or there is no user with the given email the endpoint returns status 401 (unauthorized).
+The login authorization endpoint needs to get the hashed password from the database, compare it to the provided password using `bcrypt.compare`, and if successful set the authentication token in the cookie. If the password does not match, or there is no user with the given email, the endpoint returns status 401 (unauthorized).
 
 ```js
 app.post('/auth/login', async (req, res) => {
@@ -277,7 +277,7 @@ app.post('/auth/login', async (req, res) => {
 
 ## GetMe endpoint
 
-With everything in place to create credentials and login using the credentials, we can now implement the `getMe` endpoint to demonstrate that it all actually works. To implement this get get the user object from the database by querying on the authentication token. If there is not authentication token or there is no user with that token we return status 401 (unauthorized).
+With everything in place to create credentials and login using the credentials, we can now implement the `getMe` endpoint to demonstrate that it all actually works. To implement this we get the user object from the database by querying on the authentication token. If there is not an authentication token, or there is no user with that token, we return status 401 (unauthorized).
 
 ```js
 app.get('/user/me', async (req, res) => {
@@ -383,7 +383,7 @@ app.listen(port, function () {
 
 ## Testing it out
 
-With everything implemented we can use curl to try everything out. First start up the web service from VS Code by pressing `F5` and selecting `node.js` as the debugger if you have not already done that. You can set break points on all of the different endpoints to see what they do and inspect the different variables. Then open a console window and run the following curl commands. You should see similar results. Note that the `-c` and `-b` parameters tell curl to store and use cookies with the given file.
+With everything implemented we can use curl to try it out. First start up the web service from VS Code by pressing `F5` and selecting `node.js` as the debugger if you have not already done that. You can set breakpoints on all of the different endpoints to see what they do and inspect the different variables. Then open a console window and run the following curl commands. You should see similar results as what is shown below. Note that the `-c` and `-b` parameters tell curl to store and use cookies with the given file.
 
 ```sh
 ➜  curl -X POST localhost:8080/auth/create -H 'Content-Type:application/json' -d '{"email":"지안@id.com", "password":"toomanysecrets"}'
@@ -403,6 +403,6 @@ With everything implemented we can use curl to try everything out. First start u
 
 # ☑ Assignment
 
-Get a web service running in your development environment by running the code above. You do not need to implement anything new. You should just use this as an opportunity to learn how basic authentication works so that you can implement it with your Simon and Start Up projects.
+Get a web service that supports authentication running in your development environment by running the code above. You do not need to implement anything new. You should just use this as an opportunity to learn how basic authentication works so that you can implement it with your Simon and Start Up projects.
 
 When you have it working, run the curl commands from the `testing it out` section and copy the results, along with a comment about something you found interesting, to the Canvas assignment.

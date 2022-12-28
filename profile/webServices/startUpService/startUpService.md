@@ -1,6 +1,6 @@
 # Start up deliverable - Service
 
-Now that you have learned how to use and create services, it is time to add significant functionality to your start up application. The main things you should focus on in this deliverable include calling third party services, providing your own service endpoints, persistently storing data using MongoDB as a data service, securely authenticating a user and storing their credentials, and enabling peer to peer communication using webSockets. This is a significant upgrade to your previous deliverable and it will take a significant amount of time to provide all of this functionality.
+Now that you have learned how to use and create services, it is time to add significant functionality to your start up application. The main things you should focus on in this deliverable include calling third party services, providing your own service endpoints, persistently storing data using MongoDB as a data service, securely authenticating a user and storing their credentials, and enabling peer to peer communication using webSockets. This is a big upgrade to your previous deliverable and it will take a significant amount of time to provide all of this functionality.
 
 You must use the same start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML, CSS, and JavaScript commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
 
@@ -22,7 +22,7 @@ Doing this will make this deliverable of your start up available from `https://s
 
 ### Update your website's home page
 
-You should also update your website's home page with a link to your project so that you can access everything you have done for this class from the home page. This will make a great portfolio of all your work in this class. You can easily do this by modifying the index.html file that is part of the website-html repository that you created in the earlier instruction and deploying it using the script found in that repository. Make sure you run this script from a console where your working directory is the website-html repository and not your start up repository.
+You should also update your website's home page with a link to your project so that you can access everything you have done for this class from the home page. This will make a great portfolio of all your work in this class. You can easily do this by modifying the index.html file that is part of the website-html repository, that you created in the earlier instruction, and deploying it using the script found in that repository. Make sure you run this script from a console in the website-html repository and not your start up repository.
 
 ```sh
 ./deployWebsite.sh  -k <yourpemkey> -h <yourdomain>
@@ -30,7 +30,13 @@ You should also update your website's home page with a link to your project so t
 
 ## ☑ Assignment
 
-1. Add significant user of JavaScript to your start up project. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
+1. Convert your start up project into a web service.
+1. Provide endpoints for your service.
+1. Call third party endpoints from your service.
+1. Persist data in MongoDB.
+1. Authenticate users.
+1. Use WebSockets.
+1. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
 1. Periodically commit and push your code to GitHub.
 1. Periodically update your start up repository's README.md file to reflect what you have learned and want to remember.
 1. Push your final version of your project to GitHub.

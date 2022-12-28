@@ -123,9 +123,9 @@ It is expected that you will start at the top of the list and work your way down
 - Security
   - OWASP top 10
   - Gruyere
-- ☑ Start up deliverable - Final
 - TypeScript
 - Performance monitoring
+- ☑ Start up deliverable - Final
 - Search Engine Optimization
 - [Device features](webFrameworks/device/device.md)
 - Demo day

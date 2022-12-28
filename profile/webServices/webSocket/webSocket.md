@@ -10,7 +10,7 @@ Finally, in 2011 the communication protocol WebSocket was created to solve this 
 
 ![WebSocket Upgrade](webServicesWebSocketUpgrade.jpg)
 
-WebSocket connections are still only between two parties. So if you want to facilitate a conversation between a group of users the server must act as the intermediary. Each peer first connects to the server, and then the server forwards messages between amongst the peers.
+WebSocket connections are still only between two parties. So if you want to facilitate a conversation between a group of users the server must act as the intermediary. Each peer first connects to the server, and then the server forwards messages amongst the peers.
 
 ![WebSocket Peers](webServicesWebSocketPeers.jpg)
 
