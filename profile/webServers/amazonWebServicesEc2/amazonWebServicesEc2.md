@@ -37,11 +37,11 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSName.jpg)
 
-1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Node.js, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0badcce4ae7d504a1`) into the search box and press enter.
+1. We have created an Amazon Machine Image (AMI) for you to use as the base for your server. It has Ubuntu, Node.js, Caddy Server, and PM2 built right in so that you do not have to install them. Paste this AMI ID (`ami-0bba6d6fb515baeba`) into the search box and press enter.
 
    ![AWS Instance name](webServerAWSAmi.jpg)
 
-   This should display the information about the class AMI. If the AMI ID matches `ami-0badcce4ae7d504a1` select it.
+   This should display the information about the class AMI. If the AMI ID matches `ami-0bba6d6fb515baeba` select it.
 
    ![AWS class AMI](webServerAWS260Ami.jpg)
 
@@ -67,7 +67,13 @@ Once you have an AWS account it is time to create your web server.
 
 It will take a few minutes for the instance to start up, but once it is marked as `running` it is good to go. Look at the properties for the instance and copy the public IP address.
 
-Open your browser and paste the public IP address for your server in the location bar. You should see the following.
+Open your browser and paste the public IP address for your server in the location bar along with the prefix `http://`. For example:
+
+```sh
+http://3.134.77.37/
+```
+
+You should see the following.
 
 ![Web Server](webServerAWSBrowserResult.png)
 
@@ -142,14 +148,14 @@ Assigning an elastic IP address will change the IP address for your server, but 
 
 Note that your elastic IP address is allocated until your release it, not until you terminate your instance. So make sure you release it when you no longer need it. Otherwise you will get a nasty $3 bill every month.
 
-## What size of server should you rent?
+## What size of server should you use?
 
 The `t3.nano` instance size has just enough memory and CPU to meet the requirements of this course if you are careful. However, if you find that your server is running slowly or erratically, you should consider upgrading to a larger instance size. If you have an elastic IP address you can change your instance size whenever you would like and you won't loose your public IP address. You can even stop your server when no one is using it. This is useful because you don't get charged for your server when it is stopped.
 
 ## ☑ Assignment
 
 1. Create your AWS account.
-1. Create an EC2 instance using the class AMI (`ami-0badcce4ae7d504a1`).
+1. Create an EC2 instance using the class AMI (`ami-0bba6d6fb515baeba`).
 1. Assign an elastic IP address (highly suggested).
 1. Test that you can see the default class web page from a browser using the server's public IP address.
 

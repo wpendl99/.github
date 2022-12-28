@@ -86,30 +86,44 @@ For our work we are using the web service Caddy to act as a gateway to our diffe
 1. Edit Caddy's configuration (`Caddyfile`) file found in the ubuntu user's home directory. Note that since this file is owned by the root user you need to use `sudo` to elevate your user to have the rights to change the file.
 
    ```sh
+   ➜  cd ~
    ➜  sudo vi Caddyfile
    ```
 
-1. Modify the Caddy rule for handling requests to port 80 (HTTP), to instead handle request for your domain name. By not specifying a port the rule will serve up files using port 443 (HTTPS), and any request to port 80 will automatically redirect the browser to port 443.
+1. Modify the Caddy rule for handling requests to port 80 (HTTP), to instead handle request for your domain name. By not specifying a port the rule will serve up files using port 443 (HTTPS), and any request to port 80 will automatically redirect the browser to port 443. Replace `:80` with your domain name (e.g. `myfunkychickens.click`).
 
-   Change
+1. Modify the Caddy rules that route the traffic for the two web applications that we will build. To do this replace the two places where `yourdomain` appears with your domain name (e.g. `myfunkychickens.click`).
+
+1. Review the Caddyfile to make sure it looks right. If your domain name was `myfunkychickens.click` it would look like the following.
 
    ```sh
-   :80 {
-       root * /usr/share/caddy
-       file_server
+   myfunkychickens.click {
+      root * /usr/share/caddy
+      file_server
+      header Cache-Control no-store
+      header -etag
+      header -server
+      }
+
+
+   startup.myfunkychickens.click {
+      reverse_proxy * localhost:4000
+      header Cache-Control no-store
+      header -server
+      header -etag
+      header Access-Control-Allow-Origin *
+   }
+
+   simon.myfunkychickens.click {
+      reverse_proxy * localhost:3000
+      header Cache-Control no-store
+      header -server
+      header -etag
+      header Access-Control-Allow-Origin *
    }
    ```
 
-   To be the following with your domain name (e.g. `myfunkychickens.click`) replacing `yourdomainnamehere`
-
-   ```sh
-   yourdomainnamehere {
-       root * /usr/share/caddy
-       file_server
-   }
-   ```
-
-   Save the file and exit VI (`:wq`)
+1. Save the file and exit VI (`:wq`)
 
 1. Restart Caddy so that your changes take effect.
 

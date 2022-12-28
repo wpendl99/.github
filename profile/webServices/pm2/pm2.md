@@ -8,16 +8,17 @@ PM2 is already installed on your production server as part of the AWS AMI that y
 
 Feel free to SSH into your server and try them out.
 
-| Command                                                    | Purpose                                            |
-| ---------------------------------------------------------- | -------------------------------------------------- |
-| **pm2 ls**                                                 | List all of the hosted node processes              |
-| **pm2 monit**                                              | Visual monitor                                     |
-| **pm2 start index.js -n simon**                            | Add a new process with an explicit name            |
-| **pm2 stop simon**                                         | Stop a process                                     |
-| **pm2 restart simon**                                      | Restart a process                                  |
-| **pm2 delete simon**                                       | Delete a process from being hosted                 |
-| **pm2 delete all**                                         | Delete all processes                               |
-| **pm2 save**                                               | Save the current processes across reboot           |
-| **pm2 restart all**                                        | Reload all of the processes                        |
-| **pm2 update**                                             | Reload pm2                                         |
-| **pm2 start env.js --watch --ignore-watch="node_modules"** | Automatically reload service when index.js changes |
+| Command                                                    | Purpose                                                    |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| **pm2 ls**                                                 | List all of the hosted node processes                      |
+| **pm2 monit**                                              | Visual monitor                                             |
+| **pm2 start index.js -n simon**                            | Add a new process with an explicit name                    |
+| **pm2 start index.js -n startup -- 4000**                  | Add a new process with an explicit name and port parameter |
+| **pm2 stop simon**                                         | Stop a process                                             |
+| **pm2 restart simon**                                      | Restart a process                                          |
+| **pm2 delete simon**                                       | Delete a process from being hosted                         |
+| **pm2 delete all**                                         | Delete all processes                                       |
+| **pm2 save**                                               | Save the current processes across reboot                   |
+| **pm2 restart all**                                        | Reload all of the processes                                |
+| **pm2 update**                                             | Reload pm2                                                 |
+| **pm2 start env.js --watch --ignore-watch="node_modules"** | Automatically reload service when index.js changes         |
