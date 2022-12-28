@@ -1,24 +1,22 @@
 # Components
 
-📖 **Required reading**: [Reactjs.org - Components and Props](https://reactjs.org/docs/components-and-props.html)
+📖 **Recommended reading**: [Reactjs.org - Components and Props](https://reactjs.org/docs/components-and-props.html)
 
-React components allow you to modularize the functionality of your application. This is useful to logical pieces and for enabling code reuse.
+React components allow you to modularize the functionality of your application. This allows the underlying code to directly represent the components that a user interacts with. It also enables code reuse as common application component often show up repeatedly.
 
 ## The render function
 
 One of the primary purposes of a component is to generate user interface. This is done with the components `render` function. Whatever is returned from the render function is inserted into the component HTML element.
 
-As a simple example, a JSX file containing a React component element named `Demo` whould cause React to load the `Demo` component, call the render function, and insert the result into the place of the `Demo` element.
+As a simple example, a JSX file containing a React component element named `Demo` would cause React to load the `Demo` component, call the render function, and insert the result into the place of the `Demo` element.
 
 **JSX**
 
 ```jsx
-<div>
- Component: <Demo />
-<div>
+<div>Component: <Demo /><div>
 ```
 
-Notice that `Demo` is not a valid HTML element.
+Notice that `Demo` is not a valid HTML element. The transpiler will replace this tag with the resulting rendered HTML.
 
 **React component**
 
@@ -33,10 +31,7 @@ class demo extends React.Component {
 **Resulting HTML**
 
 ```html
-<div>
-  Component: <b>Hello</b>
-  <div></div>
-</div>
+<div>Component: <b>Hello</b></div>
 ```
 
 ## Properties
@@ -46,12 +41,8 @@ React components also allow you to pass information to them in the form of eleme
 **JSX**
 
 ```jsx
-<div>
- Component: <Demo who="world" />
-<div>
+<div>Component: <Demo who="world" /><div>
 ```
-
-Notice that `Demo` is not a valid HTML element.
 
 **React component**
 
@@ -66,10 +57,7 @@ class demo extends React.Component {
 **Resulting HTML**
 
 ```html
-<div>
-  Component: <b>Hello world</b>
-  <div></div>
-</div>
+<div>Component: <b>Hello world</b></div>
 ```
 
 ## State
@@ -97,13 +85,10 @@ class Demo extends React.Component {
 **Resulting HTML**
 
 ```html
-<div>
-  Component: <b>Hello beautiful world</b>
-  <div></div>
-</div>
+<div>Component: <b>Hello beautiful world</b></div>
 ```
 
-You can manipulate state by creating functions on the component that are called by a user clicking on a button.
+You can manipulate state by creating functions on the component. We can demonstrate this with a function that is called by a user clicks on a button.
 
 ```jsx
 class Demo extends React.Component {
@@ -123,7 +108,7 @@ class Demo extends React.Component {
       <b>
         Hello {this.state.outlook} {this.props.who}
         <br />
-        <button onClick={() => this.changeOutlook()}>change</button>
+        <button onclick={() => this.changeOutlook()}>change</button>
       </b>
     );
   }
@@ -132,7 +117,7 @@ class Demo extends React.Component {
 
 ## Function Components
 
-In addition to the class style components demonstrated above, React also supports function style components. The return value of the function is the equivalent of a class component's render function.
+In addition to the `class style` components demonstrated above, React also supports `function style` components. The return value of the function is the equivalent of a class component's render function.
 
 ```jsx
 const Hello = () => {
@@ -158,7 +143,7 @@ const Hello = (props) => {
 ReactDOM.render(<Hello prefix='Goodbye' />, document.getElementById('root'));
 ```
 
-You can also store state with hook functions. The `React.useState` function returns a variable that contains the current state and a function to update the state. The following example sets the state to 'yes' when the paragraph text is clicked.
+When using function style, you store state with hook functions. The `React.useState` function returns a variable that contains the current state and a function to update the state. The following example sets the state to 'yes' when the paragraph text is clicked.
 
 ```jsx
 const Hello = (props) => {

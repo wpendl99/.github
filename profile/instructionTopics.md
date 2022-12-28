@@ -110,13 +110,13 @@ It is expected that you will start at the top of the list and work your way down
 ## Web frameworks, mobile, and security
 
 - [Web frameworks](webFrameworks/introduction/introduction.md)
-- [React](webFrameworks/react/react.md)
-  - ☑ [Components](webFrameworks/react/components.md)
-  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe.md)
-  - ☑ [Reactivity](webFrameworks/react/reactivity.md)
-  - [Toolchains](webFrameworks/toolChains/toolChains.md)
-  - ☑ [React CLI](webFrameworks/react/reactCli.md)
-  - ☑ [Router](webFrameworks/react/reactRouter.md)
+- [React](webFrameworks/react/introduction/introduction.md)
+  - ☑ [Components](webFrameworks/react/components/components.md)
+  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md)
+  - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md)
+  - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
+  - ☑ [React CLI](webFrameworks/react/cli/cli.md)
+  - ☑ [Router](webFrameworks/react/router/router.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
 - Progressive web applications
   - ☑ Simon PWA
