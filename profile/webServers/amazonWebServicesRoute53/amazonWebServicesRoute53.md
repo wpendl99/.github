@@ -39,7 +39,7 @@ You will need the public IP address for your server. You can get the public IP a
 1. Select the `Hosted zones` option from the menu on the left.
 1. You should see your domain name listed here. If it doesn't then the registration did not complete, or it is still pending. In that case go review the information found under `Domains > Pending requests`.
 1. Click on your domain name to view the details. This should display existing DNS records with types such as `NS`, and `SOA`.
-1. First we will create our root domain DNS record. This will associate your domain name with your server's IP address and make it so you can use your hostname in the browser to navigate to your server.
+1. First we will create our root domain DNS record. This will associate your domain name with your server's IP address and make it so you can use your domain name in the browser to navigate to your server.
    1. Press the `Create record` button.
    1. In the Value box enter the public IP address of your server.
    1. Press `Create records`
@@ -55,9 +55,15 @@ Your DNS records should look similar to the following when you are done.
 
 ![AWS DNS records](webServerAWSDnsRecords.png)
 
-By defining both a record for your root domain and a wildcard record for any subdomain of your root domain you can now navigate to your server with either your domain name or a subdomain. For example, if you purchased the domain name `myfunkychickens.click` you could reach your server by navigating your browser to `myfunkychickens.click`, `feeding.myfunkychickens.click`, or `raising.myfunkychickens.click`.
+By defining both a record for your root domain and a wildcard record for any subdomain of your root domain you can now navigate to your server with either your domain name or a subdomain. For example, if you purchased the domain name `myfunkychickens.click` you could reach your server by navigating your browser to `myfunkychickens.click`, `simon.myfunkychickens.click`, or `startup.myfunkychickens.click`.
 
-You can now open your browser to your hostname, or any subdomain, and see your web server default page.
+Open your browser and paste your domain in the location bar along with the prefix `http://`. For example:
+
+```sh
+http://myfunkychickens.click
+```
+
+This should show your web server's default page just like it did when you used the IP address.
 
 ![Browsing to hostname](webServerWithHostname.png)
 

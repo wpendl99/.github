@@ -1,6 +1,6 @@
 # Amazon Web Services - EC2
 
-Now that you know all about web servers, it is time for you to rent your own. In theory you could contact your ISP and lease an IP address that you would associate with your laptop. You could then use your laptop as a web server. But this has the downside of requiring your laptop to always be available, have enough bandwidth to support your millions of fans, and creates a significant security risk for your laptop. Instead we want to use a cloud provider that can give you an inexpensive small computer that you can experiment with and throw away any time that you would like. This is actually exactly what many web companies do with their core business and so it should work fine for you.
+Now that you know all about web servers, it is time for you to rent your own. In theory you could contact your ISP and lease an IP address that you would then associate with your laptop. This would make your laptop into a web server, but this has the downside of requiring your laptop to always be available, have enough bandwidth to support your millions of fans, and creates a significant security risk for your laptop. Instead we want to use a cloud provider that can give you an inexpensive small computer that you can experiment with and throw away any time that you would like. This is actually exactly what many web companies do with their core business and so it should work fine for you.
 
 We are going to use Amazon Web Services (AWS) for your work with in this course. There are lots of other great vendors out there, but AWS is by far the leader in the space and so it is good for you to get experience with them. This will require you to have an [account with AWS](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/). When you create your account make sure you remember your account ID so that you can use it when you log in to the AWS browser console.
 
@@ -65,15 +65,15 @@ Once you have an AWS account it is time to create your web server.
 
 1. Select the option to `Launch instance`.
 
-It will take a few minutes for the instance to start up, but once it is marked as `running` it is good to go. Look at the properties for the instance and copy the public IP address.
+It will take a couple minutes for the instance to start up, but once it is marked as `running` it is close to being ready. Look at the properties for the instance and copy the public IP address.
 
 Open your browser and paste the public IP address for your server in the location bar along with the prefix `http://`. For example:
 
 ```sh
-http://3.134.77.37/
+http://3.22.63.37
 ```
 
-You should see the following.
+If the server has started up then you should see the following. Otherwise wait a little bit and refresh your browser again. If the server is marked as running and it has been longer than 5 minutes then there is a problem.
 
 ![Web Server](webServerAWSBrowserResult.png)
 
@@ -81,7 +81,7 @@ If that is what you see then congratulations. You are now running your very own 
 
 ## SSH into your server
 
-New let's remote shell into your server and see what is under the hood. Go to your console window and use SSH to shell into the server. You will need to supply the public IP address (copied from the EC2 instance details) and the location of your key pair file that you created/used when you launched your instance. _Hopefully you saved that off to a safe location in your development environment, otherwise you will need to terminate your instance and create a new one, with a new key._
+New let's remote shell into your server and see what is under the hood. Go to your console window and use SSH to shell into the server. You will need to supply the public IP address (copied from the EC2 instance details) and the location of your key pair file that you created/used when you launched your instance. Hopefully you saved that off to a safe location in your development environment, otherwise you will need to terminate your instance and create a new one, with a new key.
 
 ```sh
 ➜  ssh -i [key pair file] ubuntu@[ip address]
