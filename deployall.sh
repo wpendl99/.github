@@ -25,6 +25,6 @@ cd ../simon-db && ./deployService.sh -k ${key} -h ${hostname} -s simon-db -p 300
 cd ../simon-react && ./deployReact.sh -k ${key} -h ${hostname} -s simon-react -p 3003
 
 # Deploy the lastest to simon.{hostname} on port 3000
-cd ../simon-react && ./deployReact.sh -k ${key} -h ${hostname} -s simon -p 3000
+cd ../simon-react && ./deployReact.sh -k ${key} -h ${hostname} -s simon
 
 echo cd ../webprogramming260
