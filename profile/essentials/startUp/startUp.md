@@ -34,6 +34,14 @@ Some ideas for possible projects include:
 - Group calendaring
 - Fitness tracking
 
+## Example
+
+Here is an [example startup application](https://startup.cs260.click) that demonstrates the level of complexity that you application should represent.
+
+![Voter startup](voterStartup.jpg)
+
+## Demo day
+
 At the end of class we will conduct a demo day for the best projects. Those selected for the demo day will be awarded additional credit for the exceptional work. The top presenters will be given the coveted Ghirardelli award.
 
 ![Ghiradelli](ghirardelli.png)
