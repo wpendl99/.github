@@ -8,7 +8,9 @@ The Simon application is meant to give you an example for how to build your star
 
 Immediately start thinking about what you would like to build. What you do for your start up application is completely up to you. So make it something that is interesting to you. It doesn't have to be complex. In fact **simple is usually better**. Dream big, but pick a very small minimal viable product for your start up application.
 
-You will turn in five milestone versions of your start up application.
+## Deliverables
+
+You will turn in five deliverable versions of your start up application.
 
 1. Design
 1. HTML and CSS
@@ -19,6 +21,8 @@ You will turn in five milestone versions of your start up application.
 Grab a class peer and join forces using pair programming techniques. Your creative energy will help motivate each other when the nights get long.
 
 You can change your project as the class progresses, but each milestone submission must includes all the functionality defined by the previous milestones. For that reason, it is suggested that you do not change your project, and carefully consider your project from the beginning, as the longer you go, the more expensive it will be to repeat your previous work.
+
+## Ideas
 
 Some ideas for possible projects include:
 
@@ -33,6 +37,8 @@ Some ideas for possible projects include:
 - Group voting
 - Group calendaring
 - Fitness tracking
+
+Creativity is usually more important than complexity, and basic implementations of each of the course technologies is sufficient to demonstrate your mastery.
 
 ## Example
 
