@@ -37,3 +37,9 @@ Hick's Law
 ## Performance
 
 Real and perceived
+
+## Accessibility
+
+## Legal
+
+## Internationalization
