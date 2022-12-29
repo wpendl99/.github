@@ -36,7 +36,7 @@ Some ideas for possible projects include:
 
 ## Example
 
-Here is an [example startup application](https://startup.cs260.click) that demonstrates the level of complexity that you application should represent.
+Here is an [example startup application](https://startup.cs260.click) that demonstrates the level of complexity that your application should represent.
 
 ![Voter startup](voterStartup.jpg)
 
