@@ -30,13 +30,13 @@ You should also update your website's home page with a link to your project so t
 
 ## ☑ Assignment
 
-1. Create the HTML and CSS deliverable of your start up project. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
+1. Create the HTML and CSS deliverable of your start up application. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
 1. Periodically commit and push your code to GitHub.
 1. Periodically update your start up repository's README.md file to reflect what you have learned and want to remember.
 1. Push your final version of your project to GitHub.
 1. Deploy your start up application to your production environment (your server).
 1. Make sure your application is available from your production environment.
-1. Upload the URL to your start up project to the Canvas assignment.
+1. Upload the URL to your start up application to the Canvas assignment.
 
 ## Grading Rubric
 

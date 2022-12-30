@@ -125,7 +125,7 @@ It is expected that you will start at the top of the list and work your way down
   - Gruyere
 - TypeScript
 - Performance monitoring
-- ☑ Start up deliverable - Final
+- ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
 - Search Engine Optimization
 - [Device features](webFrameworks/device/device.md)
 - Demo day

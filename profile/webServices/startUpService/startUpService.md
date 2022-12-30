@@ -6,16 +6,16 @@ You must use the same start up GitHub repository that you created in the earlier
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS and JavaScript. You can also debug your service JavaScript running on Node.js using the built in VS Code debugger.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployService.sh` script from the [Simon Service repository](https://github.com/webprogramming260/simon-service/blob/main/deployService.sh) and use `startup` for the service parameter (`-s`) and 4000 for the port (`-p`) parameter.
+Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployService.sh` script from the [Simon Service repository](https://github.com/webprogramming260/simon-service/blob/main/deployService.sh) and use `startup` for the service parameter (`-s`).
 
 ```sh
-./deployService.sh -k <yourpemkey> -h <yourdomain> -s startup -p 4000
+./deployService.sh -k <yourpemkey> -h <yourdomain> -s startup
 ```
 
 For example,
 
 ```sh
-./deployService.sh -k ~/keys/production.pem -h yourdomain.click -s startup -p 4000
+./deployService.sh -k ~/keys/production.pem -h yourdomain.click -s startup
 ```
 
 Doing this will make this deliverable of your start up available from `https://startup.yourdomainname`.
@@ -30,7 +30,7 @@ You should also update your website's home page with a link to your project so t
 
 ## ☑ Assignment
 
-1. Convert your start up project into a web service.
+1. Convert your start up application into a web service.
 1. Provide endpoints for your service.
 1. Call third party endpoints from your service.
 1. Persist data in MongoDB.
@@ -42,7 +42,7 @@ You should also update your website's home page with a link to your project so t
 1. Push your final version of your project to GitHub.
 1. Deploy your start up application to your production environment (your server).
 1. Make sure your application is available from your production environment.
-1. Upload the URL to your start up project to the Canvas assignment.
+1. Upload the URL to your start up application to the Canvas assignment.
 
 ## Grading Rubric
 

@@ -61,7 +61,7 @@ The following demonstrates console commands for making a change to the README.md
 ```sh
 ➜  printf "\nChange from my development environment!\n" >> README.md
 
-➜  git commit -am "update(notes) thoughts about start up projects"
+➜  git commit -am "update(notes) thoughts about start up applications"
 
 ➜  git push
 ```
@@ -123,7 +123,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 We now need to resolve the merge conflict that it says has happened with our `README.md` file. If you are using VS Code with the GitLens extension installed it will visually walk you through this process. However, so you can understand what is going on, we will do this using the console. The first step is to open up `README.md` in an editor. You will see that git has injected lines that highlight where the conflict is. Both your local change and the change made on GitHub are included.
 
 ```diff
-An example start up project
+An example start up application
 
 Change from my development environment!
 
@@ -141,7 +141,7 @@ We resolve the conflict by modifying the file to remove the textual conflict del
 ```md
 # startup-example
 
-An example start up project
+An example start up application
 
 Change from my development environment and from GitHub
 ```
@@ -170,7 +170,7 @@ In this class, if you notice something in the instruction that needs to be enhan
 Do the following steps to set up your `Start up application repository` in GitHub and clone it to your development environment.
 
 1. Create a GitHub account if you do not already have one.
-1. Create a repository, named `startup`, for your start up project. Your project must be public. Select the option for a default README.md file. This is where you will also keep all of your notes for things that you learn and want to remember.
+1. Create a repository, named `startup`, for your start up application. Your project must be public. Select the option for a default README.md file. This is where you will also keep all of your notes for things that you learn and want to remember.
 1. Clone the repository to your development environment, by getting the repository's URL, and using `git clone`.
 1. Open up the repository directory in VS Code and modify the README.md file.
 1. Use the Git functionality of VS Code to commit your changes and push them to GitHub.

@@ -403,6 +403,6 @@ With everything implemented we can use curl to try it out. First start up the we
 
 # ☑ Assignment
 
-Get a web service that supports authentication running in your development environment by running the code above. You do not need to implement anything new. You should just use this as an opportunity to learn how basic authentication works so that you can implement it with your Simon and Start Up projects.
+Get a web service that supports authentication running in your development environment by running the code above. You do not need to implement anything new. You should just use this as an opportunity to learn how basic authentication works so that you can implement it with your Simon and start up applications.
 
 When you have it working, run the curl commands from the `testing it out` section and copy the results, along with a comment about something you found interesting, to the Canvas assignment.
