@@ -53,7 +53,7 @@ It is expected that you will start at the top of the list and work your way down
   - [Debugging CSS](css/debuggingCss/debuggingCss.md)
   - ☑ [CSS frameworks](css/frameworks/frameworks.md)
   - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
-- ☑ [UI design](uidesign/uidesign.md)
+- 🚧 ☑ [UI design](uidesign/uidesign.md)
 - ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss/startUpHtmlCss.md)
 
 ## JavaScript
@@ -93,18 +93,18 @@ It is expected that you will start at the top of the list and work your way down
 - [Debugging Node.js](webServices/debuggingNode/debuggingNode.md)
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - ☑ [UI testing](webServices/uiTesting/uiTesting.md)
-- Endpoint testing
+- 🚧 Endpoint testing
 - ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
 - [Storage services](webServices/storageServices/storageServices.md)
 - ☑ [Data services](webServices/dataServices/dataServices.md)
   - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
 - [Authorization services](webServices/authorizationServices/authorizationServices.md)
   - ☑ [Account creation and login](webServices/login/login.md)
-  - ☑ Simon Login
+  - 🚧 ☑ Simon Login
 - [WebSocket](webServices/webSocket/webSocket.md)
   - [Debugging WebSocket](webServices/webSocket/debugging.md)
   - ☑ [WebSocket chat](webServices/webSocket/chat.md)
-  - ☑ Simon WebSocket
+  - 🚧 ☑ Simon WebSocket
 - ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md)
 
 ## Web frameworks, mobile, and security
@@ -115,20 +115,20 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md)
   - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md)
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
-  - ☑ [React CLI](webFrameworks/react/cli/cli.md)
+  - 🚧 ☑ [React CLI](webFrameworks/react/cli/cli.md)
   - ☑ [Router](webFrameworks/react/router/router.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
 - Progressive web applications
-  - ☑ Simon PWA
-- Security
-  - OWASP top 10
-  - Gruyere
-- TypeScript
-- Performance monitoring
+  - 🚧 ☑ Simon PWA
+- 🚧 Security
+  - 🚧 OWASP top 10
+  - 🚧 Gruyere
+- 🚧 TypeScript
+- 🚧 Performance monitoring
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
-- Search Engine Optimization
-- [Device features](webFrameworks/device/device.md)
-- Demo day
+- 🚧 Search Engine Optimization
+- 🚧 [Device features](webFrameworks/device/device.md)
+- 🚧 Demo day
 
 ## Legend
 
@@ -137,3 +137,4 @@ It is expected that you will start at the top of the list and work your way down
 | ⚠    | Important concepts, or pitfalls, to note                     |
 | ☑    | Assignments that you must complete for mastery certification |
 | 📖   | Required or suggesting reading                               |
+| 🚧   | Under construction                                           |

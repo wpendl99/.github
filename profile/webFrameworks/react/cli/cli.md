@@ -1,6 +1,6 @@
 # React CLI
 
-!!TODO!!
+🚧
 
 📖 **Required reading**: [Create React App Getting Started](https://create-react-app.dev/docs/getting-started)
 
