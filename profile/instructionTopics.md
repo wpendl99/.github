@@ -27,8 +27,8 @@ It is expected that you will start at the top of the list and work your way down
 
 - [The internet](webServers/internet/internet.md)
 - [Web servers](webServers/webServers/webServers.md)
-- [Domain names](webServers/domainNames/domainNames.md)
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md)
+- [Domain names](webServers/domainNames/domainNames.md)
 - ☑ [Amazon Web Services - Route 53](webServers/amazonWebServicesRoute53/amazonWebServicesRoute53.md)
 - [Caddy](webServers/caddy/caddy.md)
 - ☑ [HTTPS, TLS, and certificates](webServers/https/https.md)
@@ -92,7 +92,7 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Express](webServices/express/express.md)
 - [Debugging Node.js](webServices/debuggingNode/debuggingNode.md)
 - [Service daemons - PM2](webServices/pm2/pm2.md)
-- ☑ [UI testing](webServices/uiTesting/uiTesting.md)
+- [UI testing](webServices/uiTesting/uiTesting.md)
 - 🚧 Endpoint testing
 - ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
 - [Storage services](webServices/storageServices/storageServices.md)
