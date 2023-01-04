@@ -118,7 +118,7 @@ It is expected that you will start at the top of the list and work your way down
   - 🚧 ☑ [React CLI](webFrameworks/react/cli/cli.md)
   - ☑ [Router](webFrameworks/react/router/router.md)
   - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
-- 🚧 Progressive web applications
+- 🚧 [Progressive web applications](webFrameworks/pwa/pwa.md)
   - 🚧 ☑ [Simon PWA](https://github.com/webprogramming260/simon-pwa#readme)
 - 🚧 Security
   - 🚧 OWASP top 10

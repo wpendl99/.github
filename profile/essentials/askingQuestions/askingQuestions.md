@@ -4,11 +4,9 @@
 
 ## Contact information
 
-🚧 - Add office.
-
 - Use this [invitation link](https://discord.gg/VnuQ6HGS) to join class Discord server
 - Consult this [document](https://docs.google.com/spreadsheets/d/1g1AMtgvyfSwMgp85QcwHuy0mVR-nN3bIGI6XNEJWB1U/edit?usp=sharing) to view the TA schedule
-- Office hours and location
+- Professor Jensen office hours: 2264 TCMB, MWF 2-3 PM
 
 | Who        | How                 | Where                  | When                            |
 | ---------- | ------------------- | ---------------------- | ------------------------------- |
