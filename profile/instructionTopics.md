@@ -11,8 +11,8 @@ It is expected that you will start at the top of the list and work your way down
 - [History of the web](essentials/history/history.md)
 - [Asking questions](essentials/askingQuestions/askingQuestions.md)
 - ☑ [Discord](essentials/discord/discord.md)
-- [Let's play Simon](essentials/simon/simon.md)
 - [Start up application](essentials/startUp/startUp.md)
+- [Let's play Simon](essentials/simon/simon.md)
 - [Pair programming](essentials/pairProgramming/pairProgramming.md)
 - [Technology stack](essentials/techStack/techStack.md)
 - [Development and production environments](essentials/devAndProd/devAndProd.md)
@@ -128,7 +128,7 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
 - 🚧 Search Engine Optimization
 - 🚧 [Device features](webFrameworks/device/device.md)
-- 🚧 Demo day
+- [Demo day](webFrameworks/demoDay/demoDay.md)
 
 ## Legend
 

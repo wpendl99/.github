@@ -1,6 +1,6 @@
 # Start up application
 
-The focus of this course is to help understand the technologies necessary to launch a web application start up. Towards this goal you will build your very own start up web application. The actual application you build is entirely up to you, but it must successfully demonstrate the technologies we focus on.
+The focus of this course is to help you understand the technologies necessary to launch a web application start up. Towards this goal you will build your very own `start up` application. The actual application you build is entirely up to you, but it must successfully demonstrate the technologies we focus on.
 
 The course is divided into distinct milestones. At each milestone you will evolve your start up application to take on more and more functionality. You start with a conceptual design document and then build a structural shell for the application using HTML. Next comes styling with CSS, interactivity with JavaScript, using third party web services, hosting your own web service, database connectivity for persistent storage, converting to a web framework with React, peer to peer communication with WebSockets, and finally a full mobile application using Progressing Web Application (PWA).
 
@@ -44,7 +44,7 @@ Creativity is usually more important than complexity, and basic implementations 
 
 Here is an [example startup application](https://startup.cs260.click) that demonstrates the level of complexity that your application should represent.
 
-![Voter startup](voterStartup.jpg)
+![Voter startup](startupExampleVoter.gif)
 
 ## Demo day
 
