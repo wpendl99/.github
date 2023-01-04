@@ -6,7 +6,7 @@ We use the peer chat service [Discord](https://discord.com/) to ask and answer q
 
 Use the following invite to join our discussion server:
 
-> [https://discord.gg/VnuQ6HGS](https://discord.gg/VnuQ6HGS)
+> [https://discord.gg/x2WMN8y5XQ](https://discord.gg/x2WMN8y5XQ)
 
 From a desktop computer you can use Discord from your browser. From your phone you will need to install the application from the app store.
 

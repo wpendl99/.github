@@ -59,6 +59,10 @@ That's every thing we need to do. However, let's made one more addition. It woul
 
 ![CSS animation](cssAnimation.gif)
 
-You can see it working with this [CodePen](https://codepen.io/leesjensen/pen/LYrJEwX).
+You can see this animation working with this [CodePen](https://codepen.io/leesjensen/pen/LYrJEwX).
 
-CodePen has a lot of CSS animation examples that you can experiment with. Here is a simple one with [floating clouds](https://codepen.io/leesjensen/pen/wvXEaRq) that I found interesting. If you find an interesting one share it with us.
+Animation is not just for pushing buttons or making text float around. Here is an example of [animating a watch](https://codepen.io/leesjensen/pen/MWBjXNq) using only HTML and CSS.
+
+![Watch animation](cssAnimationWatch.gif)
+
+CodePen has a lot of CSS animation examples that you can experiment with. Here is a simple one with [floating clouds](https://codepen.io/leesjensen/pen/wvXEaRq) that I found interesting. If you find an interesting one share it with us on Discord.
