@@ -12,11 +12,11 @@ There are many console applications that you can chose from. All operating syste
 
 ## Make sure you have a console application
 
-In order for you to successfully use the console for web programming it must be [POSIX](https://en.wikipedia.org/wiki/POSIX) compliant. POSIX compliance means that it supports a standard set of console commands. Both Mac and Linix support POSIX. That means any necessary console commands will work on those operating systems. On Microsoft Windows, you can get a reasonable approximation of a POSIX compliant console by installing [Git for Windows](https://gitforwindows.org/).
+In order for you to successfully use the console for web programming it must be [POSIX](https://en.wikipedia.org/wiki/POSIX) compliant. POSIX compliance means that it supports a standard set of console commands. Both Mac and Linix support POSIX. That means any necessary console commands will work on those operating systems. On Microsoft Windows, you can get a reasonable approximation of a POSIX compliant console by installing [Git Bash](https://git-scm.com/download/win).
 
-⚠ If you are using Windows and do not already have a POSIX compliant console application installed (Powershell will not work), then install [Git for Windows](https://gitforwindows.org/) before continuing.
+⚠ If you are using Windows and do not already have a POSIX compliant console application installed, then install [Git Bash](https://git-scm.com/download/win) before continuing. When installing use all the default settings.
 
-Open your console application and make sure you can run a simple POSIX compliant command such as `ps` (process status). If this displays the processes running on your computer then you are on the right track.
+Open your console application and make sure you can run a simple POSIX compliant command such as `printf hello`. If this displays hello then you are on the right track.
 
 ## Viewing the file system
 
