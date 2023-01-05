@@ -15,11 +15,11 @@ It is expected that you will start at the top of the list and work your way down
 - [Let's play Simon](essentials/simon/simon.md)
 - [Pair programming](essentials/pairProgramming/pairProgramming.md)
 - [Technology stack](essentials/techStack/techStack.md)
-- [Development and production environments](essentials/devAndProd/devAndProd.md)
 - ☑ [The Console](essentials/console/console.md)
 - [Editors](essentials/editors/editors.md)
 - [Git](essentials/git/git.md)
 - ☑ [GitHub](essentials/gitHub/gitHub.md)
+- [Development and production environments](essentials/devAndProd/devAndProd.md)
 - ☑ [CodePen](essentials/codePen/codepen.md)
 - ☑ [Start up deliverable - Specification](essentials/startUpSpec/startUpSpec.md)
 

@@ -6,7 +6,7 @@ One of the objectives of this course is to improve your social skills. Working w
 
 > “for a … cost of about 15%, pair programming improves design quality, reduces defects, reduces staffing risk, enhances technical skills, improves team communications and is considered more enjoyable at statistically significant levels.”
 >
-> — Douglas Crockford
+> — Alistair Cockburn
 
 It is important to understand that pair programming is not simply working together, and it is **definitely not** division of labour. It is not a time saving technique. Both parties must be present whenever work is done. Pair programming follows a very specific process where one member of the pair is the driver and the other is the navigator. The Navigator researches and outlines the overall design. The driver handles the keyboard and controls the tactical implementation details. After a reasonable milestone is achieved, or time period (~30 minutes) is exceeded, the driver and navigator switch. It is also important to celebrate milestones together. Cookies work great as motivational rewards.
 
