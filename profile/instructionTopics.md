@@ -80,6 +80,10 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript/startUpJavascript.md)
 
+## Midterm
+
+⚠ Make sure you take the midterm in Canvas during the open period. There will be an in person review that everyone is invited to.
+
 ## Web services
 
 - [URL](webServices/url/url.md)
@@ -128,7 +132,12 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
 - 🚧 Search Engine Optimization
 - 🚧 [Device features](webFrameworks/device/device.md)
-- [Demo day](webFrameworks/demoDay/demoDay.md)
+- ☑ [Demo day](webFrameworks/demoDay/demoDay.md)
+- ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md)
+
+## Final
+
+⚠ Make sure you take the final in Canvas during the open period. There will be an in person review that everyone is invited to.
 
 ## Legend
 
