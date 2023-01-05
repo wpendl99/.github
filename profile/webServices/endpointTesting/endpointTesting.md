@@ -114,7 +114,7 @@ With that in place we can run the `test` command and our test will execute. Noti
 Tests:       1 failed, 1 total
 ```
 
-We can then fix our test by rewriting so that the expected value matches the provided value.
+We can then fix our test by rewriting it so that the expected value matches the provided value.
 
 **store.test.js**
 
@@ -206,4 +206,4 @@ test("getStore returns the desired store", (done) => {
 });
 ```
 
-The great thing about test driven development (TDD) is that you can actually write your test first and then write your code based upon the design represented by the test. When your test passes you know your code is complete. Additionally, when you make later modifications to your code you can simply run your test again. If they pass then you can be confident that your code is still working without having to manually test everything yourself. With systems that have hundreds of endpoints and hundreds of thousands of lines of code, TDD becomes an indispensible part of the development process.
+The great thing about test driven development (TDD) is that you can actually write your tests first and then write your code based upon the design represented by the tests. When your tests pass you know your code is complete. Additionally, when you make later modifications to your code you can simply run your tests again. If they pass then you can be confident that your code is still working without having to manually test everything yourself. With systems that have hundreds of endpoints and hundreds of thousands of lines of code, TDD becomes an indispensible part of the development process.
