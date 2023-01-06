@@ -196,6 +196,10 @@ This [video tutorial](https://www.youtube.com/watch?v=daIH4o75KE8) will step you
 1. Copy the connection string and use the information in your code.
 1. Save the connection and credential information in your production and development environments as instructed above.
 
+You can always find the connection string to your Atlas cluster by pressing the `Connect` button from your Database > DataServices view.
+
+![Atlas connection string](webServicesMongoConnection.gif)
+
 With that all done, you should be good to use Atlas from both your development and production environments. You can test that things are working correctly with the following example.
 
 ```js
@@ -260,4 +264,12 @@ beds: 1
 
 Set up your MongoDB Atlas database service. Run the example program for testing that you have things set up correctly.
 
-When you are done submit the hostname of your Atlas database cluster, along with a comment about something you found interesting, to the Canvas assignment.
+When you are done submit the connection string for your Atlas database cluster, along with a comment about something you found interesting, to the Canvas assignment.
+
+Here is an example connection string:
+
+```
+mongodb+srv://<user>:<password>@cs260.xiu1cqz.mongodb.net/
+```
+
+⚠ Do not include the user or password for your cluster in the connection string. (Unless you want some extra special data added to your applications 😉.)
