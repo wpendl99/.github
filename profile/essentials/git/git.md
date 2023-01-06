@@ -23,7 +23,7 @@ If you do not see something like that, then you need to follow these [instructio
 
 ## What is Git?
 
-Git provides two valuable functions. First, it allows you to track versions of a file. Second, it allows you to clone all of those versions to a different location, usually to a different computer. We are going to focus on tracking versions in this instruction and cover cloning repositories when we talk later about GitHub.
+Git provides two valuable functions. First, it allows you to track versions of files in a directory. Second, it allows you to clone all of those versions to a different location, usually to a different computer. We are going to focus on tracking versions in this instruction and cover cloning repositories when we talk later about GitHub.
 
 You can track file versions of any files in a directory by initializing Git for that directory. You can do this right now by creating a new directory in a console window and initializing it as a Git repository.
 
@@ -144,6 +144,10 @@ goodbye world
 
 Now we are back to our latest version.
 
+The following diagram shows how your commits move from your working directory, to staging them for a commit, and then committing them to a repository.
+
+![Git stage](essentialsGitStage.jpg)
+
 A commit is a full snapshot of what was staged from your directory at the time of the commit. That means all of the files contained in the commit were reverted when you executed the checkout command. Since we only had one file in our commit, it looks like we are only flipping that file around, but basically you can think of it as a time machine for the entire directory.
 
 ## Diff
@@ -165,6 +169,14 @@ index 3b18e51..eeee2af 100644
 ```
 
 You can see that we made a change to `hello.txt` by removing `hello world` and adding `goodbye world`.
+
+## Branches
+
+Git supports the ability to branch your code. This allows you to work on variations of the code while still allowing progress on the main branch. For example, if you wanted to work on a new feature named `A` without interrupting work on the master branch, you would use the `git branch A` command and start working on the `A` branch with the `git checkout A` command. Now commits can be down to both the master and the `A` branch. When you want to combine the work done on both branches you us checkout the master branch and execute `git merge A`. If you decide you want to abandon the new feature then you just don't ever merge it back into the master branch.
+
+Here is a demonstration of this working on the visualization tool provided by [git-school.github.io](https://git-school.github.io/visualizing-git/).
+
+![Branches](essentialsBranching.gif)
 
 ## Commit often
 

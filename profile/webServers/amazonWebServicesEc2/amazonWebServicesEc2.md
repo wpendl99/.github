@@ -45,7 +45,7 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS class AMI](webServerAWS260Ami.jpg)
 
-1. Select t3.nano for the instance type. You can always change this later if your server is running slow and needs more power.
+1. Select t3.nano or t3.micro for the instance type. You can always change this later if your server is running slow and needs more power.
 
    ![AWS Instance name](webServerAWSType.jpg)
 
