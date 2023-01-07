@@ -202,6 +202,8 @@ So instead of storing the password directly, we want to cryptographically hash t
 To hash our passwords we will use the `bcrypt` package. This creates a very secure one way hash of the password. If you are interested in understanding how [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) works, it is definitely worth the time.
 
 ```js
+const bcrypt = require('bcrypt');
+
 async function createUser(email, password) {
   // Hash the password before we insert it into the database
   const passwordHash = await bcrypt.hash(password, 10);
