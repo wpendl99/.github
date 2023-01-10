@@ -39,7 +39,7 @@ You should use the channel that is most appropriate for your discussion. Do not 
 
 ### Getting help
 
-When you want to talk with a TA either online or in-person you will use Discord to get into the queue. Under the voice channels you will see the TA chat rooms. When a TA is working (check the schedule for hours) and available you will see them here. Start by joining the `TA Help Queue`. When a TA becomes available they will move you into one of the breakout rooms if you are online, or move you to their discussion area if you are in-person.
+When you want to talk with a TA either online or in-person you will use Discord to get into the queue. Under the voice channels you will see the TA chat rooms. When a TA is working (check the [schedule](https://docs.google.com/spreadsheets/d/1g1AMtgvyfSwMgp85QcwHuy0mVR-nN3bIGI6XNEJWB1U/edit?usp=sharing) for hours) and available you will see them here. Start by joining the `TA Help Queue`. When a TA becomes available they will move you into one of the breakout rooms if you are online, or move you to their discussion area if you are in-person.
 
 ![Discord](essentialsDiscordHelpQueue.jpg)
 
