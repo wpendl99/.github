@@ -8,7 +8,7 @@ Web programming skills evolve very quickly. There are some fundamental concepts 
 
 ## Learning philosophy
 
-The key to learning how to be an exceptional web programmer rests in you ability to continually improve in four areas.
+The key to learning how to be an exceptional web programmer rests in your ability to continually improve in four areas.
 
 ![learning](essentialsLearning.png)
 
