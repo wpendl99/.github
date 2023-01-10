@@ -4,7 +4,7 @@
 
 ## Contact information
 
-- Use this [invitation link](https://discord.gg/x2WMN8y5XQ) to join class Discord server
+- Use this [invitation link](https://discord.gg/PZ4fZbducn) to join class Discord server
 - Consult this [document](https://docs.google.com/spreadsheets/d/1g1AMtgvyfSwMgp85QcwHuy0mVR-nN3bIGI6XNEJWB1U/edit?usp=sharing) to view the TA schedule
 - In-person TAs are located in 1066 TMCB cube #4
 - Professor Jensen office hours: 2264 TMCB, MWF 2:00-2:45 PM
