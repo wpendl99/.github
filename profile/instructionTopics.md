@@ -104,11 +104,11 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
 - [Authorization services](webServices/authorizationServices/authorizationServices.md)
   - ☑ [Account creation and login](webServices/login/login.md)
-  - ☑ [Simon Login](https://github.com/webprogramming260/simon-login#readme)
+  - ☑ [Simon Login](simon/simon-login/simon-login.md)
 - [WebSocket](webServices/webSocket/webSocket.md)
   - [Debugging WebSocket](webServices/webSocket/debugging.md)
   - ☑ [WebSocket chat](webServices/webSocket/chat.md)
-  - 🚧 ☑ [Simon WebSocket](https://github.com/webprogramming260/simon-websocket#readme)
+  - ☑ [Simon WebSocket](simon/simon-webSocket/simon-webSocket.md)
 - ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md)
 
 ## Web frameworks, mobile, and security
