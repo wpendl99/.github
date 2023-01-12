@@ -39,8 +39,8 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Structure](html/structure/structure.md)
   - ☑ [Input](html/input/input.md)
   - ☑ [Media](html/media/media.md)
-  - ☑ [HTML website](https://github.com/webprogramming260/website-html#readme)
-  - ☑ [Simon HTML](https://github.com/webprogramming260/simon-html#readme)
+  - ☑ [HTML website](html/website/website.md)
+  - ☑ [Simon HTML](simon/simon-html/simon-html.md)
 - [CSS introduction](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
   - [Declarations](css/declarations/declarations.md)
@@ -52,7 +52,7 @@ It is expected that you will start at the top of the list and work your way down
     - ☑ [Flex](css/flexbox/flexbox.md)
   - [Debugging CSS](css/debuggingCss/debuggingCss.md)
   - ☑ [CSS frameworks](css/frameworks/frameworks.md)
-  - ☑ [Simon CSS](https://github.com/webprogramming260/simon-css#readme)
+  - ☑ [Simon CSS](simon/simon-css/simon-css.md)
 - ☑ [UX design](uxdesign/uxdesign.md)
 - ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss/startUpHtmlCss.md)
 
@@ -77,7 +77,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Promises](javascript/promises/promises.md)
   - ☑ [Async/await](javascript/asyncAwait/asyncAwait.md)
   - [Debugging JavaScript](javascript/debuggingJavascript/debuggingJavascript.md)
-  - ☑ [Simon JavaScript](https://github.com/webprogramming260/simon-javascript#readme)
+  - ☑ [Simon JavaScript](simon/simon-javascript/simon-javascript.md)
 - ☑ [Start up deliverable - JavaScript](javascript/startUpJavascript/startUpJavascript.md)
 
 ## Midterm
@@ -98,10 +98,10 @@ It is expected that you will start at the top of the list and work your way down
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - [UI testing](webServices/uiTesting/uiTesting.md)
 - [Endpoint testing](webServices/endpointTesting/endpointTesting.md)
-- ☑ [Simon service](https://github.com/webprogramming260/simon-service#readme)
+- ☑ [Simon service](simon/simon-service/simon-service.md)
 - [Storage services](webServices/storageServices/storageServices.md)
 - ☑ [Data services](webServices/dataServices/dataServices.md)
-  - ☑ [Simon DB](https://github.com/webprogramming260/simon-db#readme)
+  - ☑ [Simon DB](simon/simon-db/simon-db.md)
 - [Authorization services](webServices/authorizationServices/authorizationServices.md)
   - ☑ [Account creation and login](webServices/login/login.md)
   - ☑ [Simon Login](simon/simon-login/simon-login.md)
@@ -121,9 +121,9 @@ It is expected that you will start at the top of the list and work your way down
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
   - 🚧 ☑ [React CLI](webFrameworks/react/cli/cli.md)
   - ☑ [Router](webFrameworks/react/router/router.md)
-  - ☑ [Simon React](https://github.com/webprogramming260/simon-react#readme)
+  - ☑ [Simon React](simon/simon-react/simon-react.md)
 - 🚧 [Progressive web applications](webFrameworks/pwa/pwa.md)
-  - 🚧 ☑ [Simon PWA](https://github.com/webprogramming260/simon-pwa#readme)
+  - 🚧 ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md)
 - 🚧 Security
   - 🚧 OWASP top 10
   - 🚧 Gruyere
