@@ -1,6 +1,6 @@
 # Debugging WebSocket
 
-You can debug both sides of the WebSocket communication use VS Code to debug the server, and Chrome to debug the client. When you do this you will notice that Chrome's debugger has support specifically for working with WebSocket communication.
+You can debug both sides of the WebSocket communication with VS Code to debug the server, and Chrome to debug the client. When you do this you will notice that Chrome's debugger has support specifically for working with WebSocket communication.
 
 ![WebSocket debugger](webServicesWebSocketDebugger.jpg)
 
