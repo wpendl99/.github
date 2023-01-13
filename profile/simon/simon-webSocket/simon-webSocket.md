@@ -2,20 +2,21 @@
 
 ![Simon](../simon.png)
 
-This deliverable demonstrates peer to peer communication using WebSocket.
-
-- install ws
-- Move http/express app into httpService
-- Make httpService a class
-- Create peerProxy
-- load peerProxy from index.js
-- implemented websocket in peerProxy
-- Added generation and receiving of game events
-- Display game events for all users
-
-PUT SOME STUFF HERE
+This deliverable demonstrates peer to peer communication using WebSocket. The functionality that Simon provides for peer communication is intentionally limited to display notifications between users. This was done so that the application would clearly demonstrate how WebSocket works rather than clutter the application with functionality that uses WebSockets.
 
 You can view this application running here: [Example Simon WebSocket](https://simon-websocket.cs260.click)
+
+## Handling WebSocket requests
+
+After installing the `ws` NPM package the next step is to attach a WebSocket listener to the HTTP server that was created in an earlier deliverable. This work is all done in the PeerProxy class implemented in the `peerProxy.js` file. The PeerProxy class contains the protocol upgrade from HTTP to WebSocket, tracks new WebSocket connections, passes (or proxies) requests between connections, and implements ping/pong to keep connections alive.
+
+## Displaying and generating WebSocket messages
+
+The `public/play.js` file contains the functions for connecting, broadcasting, receiving, and displaying events using WebSocket.
+
+![Simon WebSocket](simonWebSocket.jpg)
+
+Leveraging the concepts demonstrated in this deliverable, you can implement addition functionality that uses peer to peer interactions. For example, you could make it so each connected peer has to complete one of the Simon patterns in turn.
 
 ## Study this code
 
