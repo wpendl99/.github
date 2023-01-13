@@ -1,5 +1,7 @@
 # Simon Service
 
+![Simon](../simon.png)
+
 This deliverable demonstrates converting the JavaScript application into a web application by implementing a web service that listens on a network port for HTTP requests. The web service provide endpoints for getting and updating the scores. The application also uses a couple third party endpoints to display inspirational quotes on the about page and show a random header image.
 
 We will use Node.js and Express to create our HTTP service.

@@ -1,5 +1,7 @@
 # simon-websocket
 
+![Simon](../simon.png)
+
 This deliverable demonstrates peer to peer communication using WebSocket.
 
 - install ws

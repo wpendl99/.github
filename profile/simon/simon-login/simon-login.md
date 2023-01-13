@@ -1,5 +1,7 @@
 # simon-login
 
+![Simon](../simon.png)
+
 This deliverable demonstrates authenticating users and storing credentials and authentication tokens in MongoDB.
 
 You can view this application running here: [Example Simon Login](https://simon-login.cs260.click)

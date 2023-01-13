@@ -1,5 +1,7 @@
 # Simon JavaScript
 
+![Simon](../simon.png)
+
 This deliverable demonstrates the use of basic JavaScript for interactivity. This addition makes the application completely functional. The application has a login (home), game play, high scores, and about page. Each page contains a header that provides navigation between the pages, and a footer that references the source repository.
 
 ## Adding JavaScript
