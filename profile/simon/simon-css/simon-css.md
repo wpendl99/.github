@@ -6,9 +6,17 @@ This application deliverable demonstrates the use of basic CSS for styling and a
 
 The addition of CSS makes our application visually appealing and adds intuitive user interface elements, but it is still not functional due to the lack of interactivity. We will add that in the next deliverable when we introduce JavaScript.
 
-The application has a login (home), game play, high scores, and about page. Each page contains a header that provides navigation between the pages, and a footer that references the source repository. The bootstrap CSS framework is used for the navigation header.
+This deliverable adds a single CSS file (`main.css`) that contains the CSS for the entire application. Each of the HTML files references the CSS file using the `link` element.
+
+```html
+<link rel="stylesheet" href="main.css" />
+```
+
+As the application gets more complicated we will break up the CSS into individual files that correspond to the component they style.
 
 You can view this application running here: [Example Simon CSS](https://simon-css.cs260.click)
+
+![Simon CSS](simonCss.jpg)
 
 ## Study this code
 

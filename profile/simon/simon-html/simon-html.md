@@ -10,6 +10,8 @@ The application has a login (home), game play, high scores, and about page. Each
 
 You can view this application running here: [Example Simon HTML](https://simon-html.cs260.click)
 
+![Simon HTML](simonWebHtml.jpg)
+
 ## Study this code
 
 Get familiar with what the example code teaches.

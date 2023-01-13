@@ -8,6 +8,8 @@ We will use Node.js and Express to create our HTTP service.
 
 You can view this application running here: [Example Simon Service](https://simon-service.cs260.click)
 
+![Simon Service](simonService.jpg)
+
 ## Service endpoint definitions
 
 Here is our design, documented using curl commands, for the two endpoints that the Simon web service provides.
