@@ -7,30 +7,30 @@
 
 Security should always be on your mind when you are working with the web. The ability to provide services to a global audience makes the information on the web very valuable, and therefore an attractive target for nefarious parties. When website architecture and browser clients were still in their infancy they allowed JavaScript to make requests from one domain while displaying a website from a different domain. These are called cross-origin requests.
 
-Consider the following example. An attacker sends out an email with a link to a hacker website (`welsfargo.com`) that is similar to the real banking website. Notice the missing `l`. If the hacker website could request anything from the real website then it could make itself appear and act just like the real banking website. All it would have to do is request images, html, and login endpoints from the banking website and display the results as if it were the hacker website. This would give the hacker access to everything the user did.
+Consider the following example. An attacker sends out an email with a link to a hacker website (`byu.iinstructure.com`) that is similar to the real course website. Notice the additional `i`. If the hacker website could request anything from the real website then it could make itself appear and act just like the real education website. All it would have to do is request images, html, and login endpoints from the course's website and display the results on the hacker website. This would give the hacker access to everything the user did.
 
-To combat this problem the `Same Origin Policy` (SOP) was created. Simply stated SOP only allows JavaScript to make requests to a domain if it is the same domain that the user is currently viewing. A request from `welsfargo.com` for service endpoints that are made to `wellsfargo.com` would fail because the domains do not match. This provides significant security, but it also introduces complications when building web applications. For example, if you want build a service that any web application can use it would also violate the SOP and fail. In order to address this, the concept of Cross Origin Resource Sharing (CORS) was invented.
+To combat this problem the `Same Origin Policy` (SOP) was created. Simply stated SOP only allows JavaScript to make requests to a domain if it is the same domain that the user is currently viewing. A request from `byu.iinstructure.com` for service endpoints that are made to `byu.instructure.com` would fail because the domains do not match. This provides significant security, but it also introduces complications when building web applications. For example, if you want build a service that any web application can use it would also violate the SOP and fail. In order to address this, the concept of Cross Origin Resource Sharing (CORS) was invented.
 
 CORS allows the client (e.g. browser) to specify the origin of a request and then let the server respond with what origins are allowed. The server may say that all origins are allowed, for example if they are a general purpose image provider, or only a specific origin is allowed, for example if they are a bank's authentication service. If the server doesn't specify what origin is allowed then the browser assumes that it must be the same origin.
 
-Going back to our hacker example, the HTTP request from the hacker site (`welsfargo.com`) to the bank's authentication service (`wellsfargo.com`) would look like the following.
+Going back to our hacker example, the HTTP request from the hacker site (`byu.iinstructure.com`) to the course's authentication service (`byu.instructure.com`) would look like the following.
 
 ```http
 GET /api/auth/login HTTP/2
-Host: wellsfargo.com
-Origin: https://welsfargo.com
+Host: byu.instructure.com
+Origin: https://byu.iinstructure.com
 ```
 
 In response the banking website would return:
 
 ```http
 HTTP/2 200 OK
-Access-Control-Allow-Origin: https://wellsfargo.com
+Access-Control-Allow-Origin: https://byu.instructure.com
 ```
 
 The browser would then see that the actual origin of the request does not match the allowed origin and so the browser blocks the response and generates an error.
 
-Notice that with CORS it is the browser that is protecting the user from accessing the banking website's authentication endpoint from the wrong origin. CORS is only meant to alert the user that something nefarious is being attempted. A hacker can still proxy requests through their own server to the banking website and completely ignore the `Access-Control-Allow-Origin` header. Therefore the banking website needs to implement its own precautions to stop a hacker for using its services inappropriately.
+Notice that with CORS, it is the browser that is protecting the user from accessing the banking website's authentication endpoint from the wrong origin. CORS is only meant to alert the user that something nefarious is being attempted. A hacker can still proxy requests through their own server to the banking website and completely ignore the `Access-Control-Allow-Origin` header. Therefore the banking website needs to implement its own precautions to stop a hacker for using its services inappropriately.
 
 ## Using third party services
 
