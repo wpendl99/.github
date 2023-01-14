@@ -75,6 +75,16 @@ This is the pattern that you want to make a reflexive part of your development p
 
 ⚠ Note: The first time you make a push request to a repository Git will ask you how you want to identify yourself and what credential (e.g. password) to use in order to authenticate with GitHub. You will need to create a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and provide that as your password.
 
+```sh
+*** Please tell me who you are
+
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your name"
+```
+
+Make sure you use the email that you provided for your GitHub account.
+
 After pushing changes GitHub, you then view the changes on GitHub with your browser. In the example above, you would see the changes to the `README.md` file. You can also edit and commit changes directly from GitHub. When looking at a repository file on GitHub you will see a little pencil in the top right hand corner of the file. If you press that you will enter edit mode. You use that to modify the file and then commit the changes with an appropriate comment.
 
 ![GitHub edit](essentialsGitHubEdit.jpg)
