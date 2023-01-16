@@ -128,7 +128,7 @@ It is expected that you will start at the top of the list and work your way down
   - 🚧 OWASP top 10
   - 🚧 Gruyere
 - 🚧 TypeScript
-- 🚧 Performance monitoring
+- [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
 - 🚧 Search Engine Optimization
 - 🚧 [Device features](webFrameworks/device/device.md)
