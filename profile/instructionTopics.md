@@ -130,7 +130,7 @@ It is expected that you will start at the top of the list and work your way down
 - 🚧 TypeScript
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
-- 🚧 Search Engine Optimization
+- [Search Engine Optimization](webFrameworks/seo/seo.md)
 - 🚧 [Device features](webFrameworks/device/device.md)
 - ☑ [Demo day](webFrameworks/demoDay/demoDay.md)
 - ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md)
