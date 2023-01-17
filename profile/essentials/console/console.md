@@ -16,7 +16,11 @@ In order for you to successfully use the console for web programming it must be 
 
 ⚠ If you are using Windows and do not already have a POSIX compliant console application installed, then install [Git Bash](https://git-scm.com/download/win) before continuing. When installing use all the default settings.
 
-Open your console application and make sure you can run a simple POSIX compliant command such as `printf hello`. If this displays hello then you are on the right track.
+Open your console application and make sure you can run a simple POSIX compliant command such as `printf 'hello\n'`.
+
+![Console printf](consolePrintf.jpg)
+
+If this displays `hello` then you are on the right track. If that doesn't work then you are using a console application that is not POSIX compliant. For example, Windows Powershell will not work.
 
 ## Viewing the file system
 
