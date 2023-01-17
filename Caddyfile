@@ -1,112 +1,69 @@
-// AMI
-
-:80 {
-  root * /usr/share/caddy
-  file_server
-  header Cache-Control no-store
-  header -etag
-  header -server
-}
-
-
-startup.yourdomain {
-  reverse_proxy * localhost:4000
-  header Cache-Control no-store
-  header -server
-  header -etag
-  header Access-Control-Allow-Origin *
-}
-
-simon.yourdomain {
-  reverse_proxy * localhost:3000
-  header Cache-Control no-store
-  header -server
-  header -etag
-  header Access-Control-Allow-Origin *
-}
-
-
-// cs260
-
 cs260.click {
   root * /usr/share/caddy
   file_server
-  @font {
-    path /fonts/*
-  }
-  header @font Content-Type font/woff2
-  header Access-Control-Allow-Origin *
-  header Cache-Control no-store
-  header -etag
-  header -server
+	@font {
+		path /fonts/*
+	}
+	header @font Content-Type font/woff2
+	header Access-Control-Allow-Origin *
+	header -etag
+	header -server
 }
 
 startup.cs260.click {
   reverse_proxy * localhost:4000
-  header Cache-Control no-store
+  header Cache-Control none
   header -server
-  header -etag
-  header Access-Control-Allow-Origin *
 }
 
 simon.cs260.click {
   reverse_proxy * localhost:3000
-  header Cache-Control no-store
+  header Cache-Control none
   header -server
-  header -etag
   header Access-Control-Allow-Origin *
 }
 
 simon-html.cs260.click {
-  root * /usr/share/caddy/simon-html
-  file_server
-  header Cache-Control no-store
-  header -server
-  header -etag
+	root * /usr/share/caddy/simon-html
+	file_server
 }
 
 simon-css.cs260.click {
-  root * /usr/share/caddy/simon-css
-  file_server
-  header Cache-Control no-store
-  header -server
-  header -etag
+	root * /usr/share/caddy/simon-css
+	file_server
 }
 
 simon-javascript.cs260.click {
-  root * /usr/share/caddy/simon-javascript
-  file_server
-  header Cache-Control no-store
-  header -server
-  header -etag
+	root * /usr/share/caddy/simon-javascript
+	file_server
 }
 
 simon-fetch.cs260.click {
   root * /usr/share/caddy/simon-fetch
   file_server
-  header Cache-Control no-store
-  header -server
-  header -etag
+}
+
+simon-service.cs260.click {
+	reverse_proxy * localhost:3001
+	header Cache-Control none
 }
 
 simon-db.cs260.click {
   reverse_proxy * localhost:3002
-  header Cache-Control no-store
-  header -server
-  header -etag
+  header Cache-Control none
 }
 
 simon-react.cs260.click {
   reverse_proxy * localhost:3003
-  header Cache-Control no-store
-  header -server
-  header -etag
+  header Cache-Control none
 }
 
+simon-login.cs260.click {
+  reverse_proxy * localhost:3004
+  header Cache-Control none
+}
 
-simon-service.cs260.click {
-  reverse_proxy * localhost:3001
-  header Cache-Control no-store
-  header -server
-  header -etag
+simon-websocket.cs260.click {
+  reverse_proxy * localhost:3005
+  header Cache-Control none
 }
