@@ -1,11 +1,15 @@
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - XCode Command Line Developer Tools. This was initiated by typing `git` from the default terminal. This caused git to be installed.
 - [Warp Console](https://app.warp.dev/get_warp)
-- Created .zshrc and added alias
+- Created `.zshrc` Add alias and disable printing % at the end of commands that don't output a newline.
+
   ```sh
   alias c=code
   alias ll='ls -lh'
+
+  set +o prompt_cr +o prompt_sp
   ```
+
 - Configured git
   ```sh
   git config --global user.email "your email"
@@ -22,7 +26,8 @@
   - Prettier
   - ESLint
   - Code Spell Checker
-- Installed NVM, Node, NPM by installing NVM first and then the LTS version of Node.
+  - GitLens
+- Installed NVM, Node, NPM by installing NVM first and then the LTS version of Node. This was v18.13.
 
   ```sh
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -42,6 +47,8 @@
   1. For Menu Title, you'll need the exact wording used in the menu.
      - Move Window to Left Side of Screen
      - Move Window to Right Side of Screen
+- Disable system setting to have `F11` show command control
+- Disable system setting mapping `F` keys to device actions
 - Installed Homebrew
 - Used `brew install ffmpeg`
 - Changed VS Code setting to format on file save.
