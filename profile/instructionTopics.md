@@ -26,7 +26,7 @@ It is expected that you will start at the top of the list and work your way down
 ## Web servers
 
 - [The internet](webServers/internet/internet.md)
-- [Web servers](webServers/webServers/webServers.md)3
+- [Web servers](webServers/webServers/webServers.md)
 - ☑ [Amazon Web Services - EC2](webServers/amazonWebServicesEc2/amazonWebServicesEc2.md) (due 1/30)
 - [Domain names](webServers/domainNames/domainNames.md)
 - ☑ [Amazon Web Services - Route 53](webServers/amazonWebServicesRoute53/amazonWebServicesRoute53.md) (due 2/1)
@@ -119,7 +119,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md) (due 3/31)
   - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md) (due 3/31)
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
-  - 🚧 ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
+  - ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
   - ☑ [Router](webFrameworks/react/router/router.md) (due 4/5)
   - ☑ 🚧 [Simon React](simon/simon-react/simon-react.md) (due 4/5)
 - 🚧 [Progressive web applications](webFrameworks/pwa/pwa.md)
