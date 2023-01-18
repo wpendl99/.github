@@ -17,7 +17,7 @@ Our deployment scripts change with each new technology that we have to deploy. I
 You run a deployment script from a console window in your development environment with a command like the following.
 
 ```sh
-./deploy.sh -k ~/prod.pem -h yourdomain.click -s simon
+./deployService.sh -k ~/prod.pem -h yourdomain.click -s simon
 ```
 
 The `-k` parameter provide the credential file necessary to access your production environment. The `-h` parameter is the domain name of your production environment. The `-s` parameter represents the name of the application you are deploying (either `simon` or `startup`).
