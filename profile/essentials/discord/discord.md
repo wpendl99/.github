@@ -32,6 +32,7 @@ Our server contains the following channels for asking and answering questions.
 - react
 - mongo
 - general
+- start up
 
 You should use the channel that is most appropriate for your discussion. Do not ask questions in multiple channels. Only use `general` if it really is not specific to another channel.
 
