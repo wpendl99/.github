@@ -1,12 +1,29 @@
 # Security Overview
 ## BLACK HOODIE HACKER IMAGE OR MAYBE A DANGER SYMBOL
-The internet is a dangerous place. To prove it, look at the ```/var/log/auth.log``` file on your EC2 instance using ```sudo cat /var/log/auth.log```. This shows any attempts to ssh into your instance. Notice all of the random usernames and IP Addresses with recent time stamps? That's attackers trying to break into your computer as we speak!
+📖 **Suggested reading**: [Database of publicized software vulnerabilities](https://cve.mitre.org/)
 
-(HERE'S AN INTERESTING STORY: I purposefully set up a user named ```admin``` with password ```password``` on my DigitalOcean instance from when I took this class in Winter 2022. Within 15 minutes, someone had gotten into it, bypassed all the restrictions I know at the time to put in, and started using it to bruteforce ssh passwords elsewhere on the internet.)
+📖 **Suggested reading**: [SQL Injection](https://portswigger.net/web-security/sql-injection)
 
-Cybersecurity, computer security, or information security is the discipline of ensuring the confidentiality, availability, and integrity of information. This information can be anything from nuclear secrets, youtube videos, emails with sensitive content, or your instagram feed.
 
-![CIA Triad](CIATriad.png)
+
+The internet is a dangerous place. To prove it, look at the ```/var/log/auth.log``` file on your server using 
+```bash
+sudo cat /var/log/auth.log
+```
+This shows any attempts to ssh into your instance. Notice all of the random usernames and IP Addresses with recent time stamps? That's attackers trying to break into your computer as we speak!
+
+An interesting story from one of our TAs: "I purposefully set up a user named ```admin``` with password ```password``` on my DigitalOcean instance from when I took this class in Winter 2022. Within 15 minutes, someone had gotten into it, bypassed all the restrictions I knew at the time to put in, and started using it to guess ssh passwords elsewhere on the internet."
+
+You can see if your password has ever been leaked by inputting your email address into [haveibeenpwned.com](https://haveibeenpwned.com/). The older the email, the more likely it is that your password has been published on the internet.
+
+Some of the key words you should know:
+- *Hacking*: The process of making a system do something it's not supposed to do.
+- *Attack Vector*: The method that a hacker employs to hack a computer.
+- *Attack Surface*: The total amount of points an attacker can attempt to exploit a system. In the context of this course, this is your web-server and your API endpoints.
+- *Exploit*: Code or input that takes advantage of a programming or configuration flaw.
+- *Input sanitization*: "Cleaning" any input of potentially malicious data.
+- *Payload*: The actual piece of data that a hacker uses to hack a system.
+- *Penetration Tester*: a professional hacker who a company pays to hack their website and reveal security vulnerabilities.
 
 Attackers can hack into a system using any number of methods to achieve any number of goals including:
 - Bring down your IT Infrastructure (Denial of Service or DoS)
@@ -15,45 +32,48 @@ Attackers can hack into a system using any number of methods to achieve any numb
 - Mine crypto using your hardware and electricity (Cryptomalware)
 - Carry out other attacks using your infrastructure (Botnet)
 
-Application security is a subset of cybersecurity that specifically focuses on preventing security vulnerabilities within end-user applications. In the context of CS260, this means securing both the code running on your customer's browser and your server. We will demonstrate some of the exploits an attacker can pull off on an unsecured website.
+Web application security, (often called application security or AppSec) is a subset of cybersecurity that specifically focuses on preventing security vulnerabilities within end-user applications. In the context of this course, this means securing both the code running on your customer's browser and your own server.
 
-## Why do I, a programmer, care?
-This is a valid question, especially considering Cybersecurity is more closely related to IT than Computer Science. Why do I have to worry about security when my job is to create products, not implement systems?
-
-The days of exposing insecure code to your customers are long gone. Instead of giving a list of possible consequences, here's a list of recent events that could've been prevented with secure programming within the last few years:
+## Security is part of programming
+Instead of giving a list of hypothetical scenarios, here's a list of recent events that could've been prevented with secure programming within the last few years:
 - [$100 million dollars stolen from insider trading using SQL injection vulnerability](https://www.theverge.com/2018/8/22/17716622/sec-business-wire-hack-stolen-press-release-fraud-ukraine)
 - [Log4Shell remote code execution vulnerability, 93% of cloud vulnerable at time of discovery, dubbed "the most severe vulnerability ever"](https://en.wikipedia.org/wiki/Log4Shell)
 - [Russian hackers install backdoor on 18,000 government and Fortune 500 computers](https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack)
 - [State-sponsored hackers infect 20+ Texas towns' computers with ransomware](https://www.usnews.com/news/national-news/articles/2019-08-20/hackers-hold-computers-of-23-texas-towns-for-ransom)
 
-A company's finances, public opinion, investor relations, and ability to make new contracts can be harmed by writing insecure code.
+The technology industry has learned the hard way what happens when security isn't taken seriously. Modern companies have realized that building a website that looks good is a lot less important than building a website that both works and is secure.
 
-There are even restrictions to participating in certain industries without following defined security protocols (PROBABLY NOT NECESSARY FOR OUR PURPOSES, BUT GOOD TO BRING UP, ALSO SOMEHOW SQUEEZE NIST INTO HERE):
+## Common hacking techniques
+There are a few techniques that web programmers should be aware of:
 
-- Healthcare: [Health Insurance Portability Accountability Act (HIPAA)](https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html)
-- Contracting for US Department of Defense: [Defense Federal Acquisition Regulation Supplement (DFARS)](https://www.nist.gov/mep/cybersecurity-resources-manufacturers/compliance-cybersecurity-and-privacy-laws-and-regulations)
-- Financial services: [Gramm-Leach-Bliley Act (GLBA)](https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act)
+**SQL/NoSQL Injection**: When a user interacts with a database on the backend, a programmer will often take their input and concatenate it directly into a search query. If implemented incorrectly a hacker can use a specially crafted query to make the database reveal hidden information or delete it's contents. Using a *sanitization* library is the best way to combat this threat.
 
-When you hear **"compliance"** used as a buzzword, they are talking about complying to a specific cybersecurity standard.
+**Cross-Site Scripting (XSS)**: A very broad category of attacks where an attacker can make malicious javascript execute on a different user's browser. If successful, an attacker can turn a website a user trusts into one that can steal passwords and hijack a user's account.
+
+**Denial of Service**: Any attack where the main goal is to render any service inaccessible. This can be done by deleting a database using an SQL injection, by sending a specially-crafted HTTP request that brings down a poorly configured web server with a buffer overflow, or exploiting any number of software vulnerabilities.
+
+**Distributed Denial of Service (DDos)**: An advanced form of Denial of Service where a hacker group uses multiple computers to flood a server with network traffic. With enough volume, the software and hardware can't keep up and shut down. This can be mitigated by implementing rate limits for network requests in the back end.
+
+**Credential Stuffing**: People have a tendency to reuse passwords or variations of passwords on different websites. If a hackers has a user's credentials from a previous data breach on a website, there's a good chance that they can try those credentials on a different website to successfully log in. 
 
 ## What can I do about it?
-Unfortunately, it is impossible to completely secure an application. You're smart, but attackers are smarter, but all hope is not lost. Taking effort to learn new attack vectors and their defenses can save you and your company a lot of headaches, and even set you apart from less security-conscious developers. We will go over some of the most common attacks in a web application context, but be aware that attack vectors cover every field of computer science including [AI](https://cset.georgetown.edu/publication/hacking-ai/), [CPU microarchitecture](https://mdsattacks.com/files/ridl.pdf), and [networking](https://nvd.nist.gov/vuln/detail/CVE-2022-3602).
+Unfortunately, it is impossible to completely secure an application, but all hope is not lost. Taking effort to learn new attack methods and their defenses can save you and your company a lot of headaches, and even set you apart from less security-conscious developers in the field. You will learn more about common attacks in the web field, but be aware that attack vectors cover every field of computer science including [AI](https://www.technologyreview.com/2019/03/25/1216/emtech-digital-dawn-song-adversarial-machine-learning/), [CPU microarchitecture](https://mdsattacks.com/), and [networking](https://access.redhat.com/security/cve/cve-2022-3602).
 
-As a web developer this most import thing you can do is:
+As a web developer the most important thing you can do is **ALWAYS ASSUME BROWSERS ARE SENDING MALICIOUS DATA**
 
-## **DO NOT TRUST YOUR CUSTOMER**
-This is a bold claim to make, especially since we struggle to get a browser to tell you the correct information in the first place, but an important concept to remember while discussing web security is that while you have complete control over your server, you don't have control over the client's browser.
+Malicious data can be found in
+- Blog posts
+- Hyperlinks
+- File uploads
+- Search queries
+- Anything provided by a client's browser, including cookies
 
-SOMETHING ABOUT THE BEST WAY TO LOCKDOWN YOUR COMPANIES INFRASTRUCTURE IS NOT BY MESSING AROUND WITH THE FRONT END, BECAUSE ATTACKERS CAN CRAFT CUSTOM HTTP REQUESTS, RATHER BY MAKING SURE YOUR BACK END IS SECURE.
+While you have complete control over your server, you don't control the client's browser, and they can make the code running on there do whatever they want. Often, they can sidestep the browser and attack your backend directly. You can lower the chance of getting hacked by making sure to *sanitize* any user input. 
 
-Being wary of any information provided by an end-user, be it seemingly legitimate form input, HTTP requests, or cookies is THE most important concept when learning application security. You have no way of knowing if a user's form input data is meant to look up information, or delete your entire database using SQL injection.
+When you do the ```Gruyere``` activity, you'll notice that almost all of the exploits resulted from the programmer mishandling user-provided data. 
 
-NOTES:
+Notes: 
 
-I want to include something about the sheer quantity of resources and man-power a state can throw at breaking into a system. It's a pretty good scare tactic.
+Should I include CVE? I think it would be an excellent scare tactic and a great resource, but most CVE's are IT/Networking, or aren't related to web programming.
 
-Want to talk about CVE and NVD, and how governments are a major player in this space, contrasted with CS and it's FAANG (or whatever the modern equivalent)
-
-Do we define Integrity vs Availability vs Confidentiality?
-
-I gotta throw in a plug for the cybersecurity major at some point.
+I think we remove either the 1st or 2nd paragraph, they both illustrate the same point. I like the 2nd better, with the story.
