@@ -183,7 +183,8 @@ For your development environment add the same environment variables. Depending o
 | ---------------- | ---------------------- |
 | `Linux`          | Modify /etc/evironment |
 | `Mac` (Zsh)      | Modify ~/.zprofile     |
-| `Windows`        |                        |
+
+**`Windows`**
 
 1. From the Start Menu search for "system environment variables" in the search bar
 1. Go to the Advanced Tab
