@@ -10,7 +10,7 @@ When Berners-Lee wrote his first web server it only served up static HTML files.
 
 ## Combining web and application services
 
-Today, most modern programming languages include libraries that provide the ability to make connections and serve up HTTP. For example, here is a simple Go language program that is a fully functioning web service.
+Today, most modern programming languages include libraries that provide the ability to make connections and serve up HTTP. For example, here is a simple Go language program that is a fully functioning web service. Later on in the course we will show how this is done with JavaScript.
 
 ```go
 package main

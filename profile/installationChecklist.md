@@ -27,6 +27,7 @@
   - ESLint
   - Code Spell Checker
   - GitLens
+- Set VSCode prettier line length to 120 from default 80
 - Installed NVM, Node, NPM by installing NVM first and then the LTS version of Node. This was v18.13.
 
   ```sh
