@@ -175,7 +175,24 @@ export MONGOPASSWORD=<yourmongodbpassword>
 export MONGOHOSTNAME=<yourmongodbhostname>
 ```
 
-For your development environment add the same export commands to your shell's profile file. Depending on what console you are using the location of your shell profile will be different. For example, on a Mac you typically are using Zsh and you will add the export commands to the `.zprofile` file found in your user directory. Consult the documentation for the operating system you are using for how to create environment variables.
+### Setting variables for your development environment
+
+For your development environment add the same environment variables. Depending on what operating system and console you are using, how you add the variables will be different.
+
+| Operating System | Directions             |
+| ---------------- | ---------------------- |
+| `Linux`          | Modify /etc/evironment |
+| `Mac` (Zsh)      | Modify ~/.zprofile     |
+| `Windows`        |                        |
+
+1. From the Start Menu search for "system environment variables" in the search bar
+1. Go to the Advanced Tab
+1. Click on Environment Variables
+1. Under SYSTEM variables click on NEW
+1. Add the variables information and click APPLY and OK
+1. Restart program needing the variables
+
+If necessary consult the documentation for the operating system, or console shell, you are using for the details on how to set environment variables.
 
 ## Managed services
 
