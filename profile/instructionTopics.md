@@ -4,6 +4,8 @@ The course covers a full stack of technologies including HTML, CSS, JavaScript, 
 
 It is expected that you will start at the top of the list and work your way down. However, work through the instruction in the way that is best for you. Just make sure that you complete every assignment (marked with the ☑ icon) and submit the result in Canvas so that you can receive credit for what you have mastered.
 
+[Slides for in person discussions](slides/slides.md)
+
 ## Development essentials
 
 - [Introduction](essentials/introduction/introduction.md)
