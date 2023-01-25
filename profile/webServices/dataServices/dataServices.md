@@ -179,10 +179,13 @@ export MONGOHOSTNAME=<yourmongodbhostname>
 
 For your development environment add the same environment variables. Depending on what operating system and console you are using, how you add the variables will be different.
 
-| Operating System | Directions             |
-| ---------------- | ---------------------- |
-| `Linux`          | Modify /etc/evironment |
-| `Mac` (Zsh)      | Modify ~/.zprofile     |
+**`Linux`**
+
+1. Modify /etc/evironment
+
+**`Mac` (Zsh)**
+
+1. Modify ~/.zprofile
 
 **`Windows`**
 
