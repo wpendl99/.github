@@ -58,6 +58,10 @@ That all changed when two Mozilla employees created a non-profit called `Let's E
 
 Now using a service like `Let's Encrypt`, and the IETF standard [ACME protocol](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) that they pioneered, anyone who owns a domain name, can dynamically generate and renew a certificate for free. This incredible contribution of critical web technology has made the web safer, and more reliable, for everyone.
 
+Caddy uses Let's Encrypt to generate a web certificate every time an HTTPS request is made for a domain name that Caddy doesn't have a web certificate for. When this happens Caddy asks Let's Encrypt to verify that the domain for the requested certificate is actually owned by the requester. Let's Encrypt does that by telling the requester to return a specific digitally signed response for a temporary URL when an HTTP request to the domain is made. Let's Encrypt then makes the HTTP request, and if successful, issues the certificate to the requester.
+
+![Let's Encrypt cert generation](letsencryptCertIssue.jpg)
+
 If you are interested, you can learn about how the Let's Encrypt generates certificate from their [documentation](https://letsencrypt.org/how-it-works/).
 
 ## Enabling HTTPS
