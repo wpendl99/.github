@@ -58,6 +58,8 @@ That all changed when two Mozilla employees created a non-profit called `Let's E
 
 Now using a service like `Let's Encrypt`, and the IETF standard [ACME protocol](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) that they pioneered, anyone who owns a domain name, can dynamically generate and renew a certificate for free. This incredible contribution of critical web technology has made the web safer, and more reliable, for everyone.
 
+If you are interested, you can learn about how the Let's Encrypt generates certificate from their [documentation](https://letsencrypt.org/how-it-works/).
+
 ## Enabling HTTPS
 
 Modern browsers now expect web servers to exclusively use HTTPS for all communication. In fact, the next version of HTTP (v3) only supports secure connections. For this reason, you should always support HTTPS for any web application that you build.
