@@ -123,7 +123,7 @@ It is expected that you will start at the top of the list and work your way down
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
   - ☑ [Router](webFrameworks/react/router/router.md) (due 4/5)
-  - ☑ 🚧 [Simon React](simon/simon-react/simon-react.md) (due 4/5)
+  - ☑ [Simon React](simon/simon-react/simon-react.md) (due 4/5)
 - 🚧 [Progressive web applications](webFrameworks/pwa/pwa.md)
   - 🚧 ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
 - 🚧 Security
