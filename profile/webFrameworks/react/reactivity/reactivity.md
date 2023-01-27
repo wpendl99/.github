@@ -1,6 +1,6 @@
 # Reactivity
 
-Making the UI react to changes in user input or data is one of the architectural foundations of React. React enables reactivity with three major pieces of a React component: `props`, `state`, and `render`.
+Making the UI react to changes in user input or data, is one of the architectural foundations of React. React enables reactivity with three major pieces of a React component: `props`, `state`, and `render`.
 
 When a component's JSX is rendered, React parses the JSX creates a list of any references to the component's `state` or `prop` objects. React then monitors those objects and if it detects that they have changed it will call the component's `render` function so that the impact of the change is visualized.
 
@@ -59,21 +59,11 @@ class Question extends React.Component {
       <div>
         <span>Do you like this</span>
         <span style={{ color: this.props.color }}> color</span>?<label>
-          <input
-            type='radio'
-            name='answer'
-            value='yes'
-            onChange={(e) => this.onChange(e)}
-          />
+          <input type='radio' name='answer' value='yes' onChange={(e) => this.onChange(e)} />
           Yes
         </label>
         <label>
-          <input
-            type='radio'
-            name='answer'
-            value='no'
-            onChange={(e) => this.onChange(e)}
-          />
+          <input type='radio' name='answer' value='no' onChange={(e) => this.onChange(e)} />
           No
         </label>
         <p>Your answer: {this.state.answer}</p>

@@ -120,6 +120,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Components](webFrameworks/react/components/components.md) (due 3/31)
   - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md) (due 3/31)
   - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md) (due 3/31)
+  - [Hooks](webFrameworks/react/hooks/hooks.md)
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
   - ☑ [Router](webFrameworks/react/router/router.md) (due 4/5)

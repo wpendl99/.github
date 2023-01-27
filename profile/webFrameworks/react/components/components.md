@@ -135,7 +135,7 @@ const Hello = (props) => {
 
   return (
     <p>
-      {props.prefix} {name}x
+      {props.prefix} {name}
     </p>
   );
 };
@@ -175,7 +175,7 @@ ReactDOM.render(hello, document.getElementById('root'));
 
 ## Reactivity
 
-A component's properties and state are used by the React framework to determine the reactivity of the interface. Whenever a component's state or properties change the render function for the component and all of its dependent component render functions are called.
+A component's properties and state are used by the React framework to determine the reactivity of the interface. Whenever a component's state or properties change, the render function for the component and all of its dependent component render functions are called.
 
 ## ☑ Assignment
 
