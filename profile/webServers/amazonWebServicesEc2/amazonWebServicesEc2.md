@@ -60,7 +60,7 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS Instance name](webServerAWSNetwork.jpg)
 
-1. In the `Advanced details`, change the `Credit specification` to `Unlimited`. This allows your `T class` (throttled class) server to keep using CPU even though it has exceeded its current credit limit. You do incur a minimal charge for when this happens, but the alternative is to always spend more for a larger instance, or to have your server lock up when it hits the limit. For the minimal use that your server will see, you should not normally exceed your limit, but it is nice to not have your server die if you do. Even if you do temporarily exceed the limit, the charges will be mere pennies per hour.
+1. If you are using a T3 class server you can take an advantage of the unlimited credit specification. If you are not using at T3 class instance you can ignore this step. In the `Advanced details`, change the `Credit specification` to `Unlimited`. This allows your `T class` (throttled class) server to keep using CPU running normally even though it has exceeded its current credit limit. You do incur a minimal charge for when this happens, but the alternative is to always spend more for a larger instance, or to have your server lock up when it hits the limit. For the minimal use that your server will see, you should not normally exceed your limit, but it is nice to not have your server die if you do. Even if you do temporarily exceed the limit, the charges will be mere pennies per hour.
 
    ![Web Server](webServerAWSUnlimited.jpg)
 
