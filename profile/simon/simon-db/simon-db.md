@@ -35,33 +35,7 @@ Before you can start writing your own code you need to get a MongoDB Atlas accou
 
 ## Handling credentials
 
-You now have credentials for accessing the database service. You need to protect those credentials. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can read them from a secure location when your application executes. For this project we will read them from environment variables. The JavaScript `process.env` object provides access the environment.
-
-```Javascript
-const userName = process.env.MONGOUSER;
-const password = process.env.MONGOPASSWORD;
-const hostname = process.env.MONGOHOSTNAME;
-
-if (!userName) {
-  throw Error("Database not configured. Set environment variables");
-}
-```
-
-This will require you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file
-
-```
-sudo vi /etc/environment
-```
-
-and adding the following environment exports.
-
-```
-export MONGOUSER=<yourmongodbusername>
-export MONGOPASSWORD=<yourmongodbpassword>
-export MONGOHOSTNAME=<yourmongodbhostname>
-```
-
-For your development environment add the same export commands to your shell's profile file. Depending on what console you are using the location for your shell profile will be different. For example, on a Mac you typically are using Zsh and you will add the export commands to the `.zprofile` file found in your user directory.
+Make sure you follow the instruction given previously about providing and protecting your MongoDB credentials using environment variables.
 
 ## Working with the database
 

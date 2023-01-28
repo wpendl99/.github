@@ -161,21 +161,39 @@ if (!userName) {
 }
 ```
 
-Following this pattern requires you to set these variables in your development and production environments before you can successfully execute. For your production environment, you can add your credentials for all users by modifying the `/etc/environment` file.
+Following this pattern requires you to set these variables in your development and production environments before you can successfully execute.
+
+### Setting environment variables for your **production** environment
+
+For your production environment, you will add your MongoDB Atlas credentials by using SSH to access your production server and modifying the `/etc/environment` file.
 
 ```
 sudo vi /etc/environment
 ```
 
-and adding the following environment exports.
+In the environment file will find that the credentials are already set to access the class demo MongoDB server. You want to replace those values with your own values so that your data will be stored in your server.
 
-```
+```sh
 export MONGOUSER=<yourmongodbusername>
 export MONGOPASSWORD=<yourmongodbpassword>
 export MONGOHOSTNAME=<yourmongodbhostname>
 ```
 
-### Setting variables for your development environment
+When you are done modifying the `/etc/environment` with your MongoDB username, password, and hostname, save the file. It will look something like the following.
+
+```sh
+export MONGOUSER=cs260mongo
+export MONGOPASSWORD=toomanysecrets
+export MONGOHOSTNAME=cs260.nan123cs.mongodb.net
+```
+
+You then need to tell your Simon and Start Up services to use the new values found in the environment file. To do this you need to tell our service service daemon, PM2, to reload its stored environment for all services that it manages. Run this command from a SSH session on your production server.
+
+```sh
+pm2 restart all --update-env
+```
+
+### Setting environment variables for your **development** environment
 
 For your development environment add the same environment variables. Depending on what operating system and console you are using, how you add the variables will be different.
 
