@@ -20,7 +20,7 @@ There is no cost to create an account with AWS, you only pay for what you use, a
 | Route 53       | DNS records                          | $0.50 a month for each root domain                                                                                     |
 |                |                                      | Estimated total: `$15` - `$50` for the course. Much cheaper than a textbook.                                           |
 
-As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t3.micro server instance.
+As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t2.micro server instance.
 
 ## Creating an AWS server instance
 
@@ -30,7 +30,7 @@ Once you have an AWS account it is time to create your web server.
 
 1. Open the AWS console in your browser and log in.
 1. Navigate to the EC2 service.
-1. Change your region (top right corner) to `US East (Ohio) - us-east-2`
+1. Change your region (top right corner) to `US East (Ohio) - us-east-2`. Changing your region to Ohio will make it so that your server is located there. ⚠ This is crucial because the Amazon Machine Image (AMI) you will designate in a moment is only available in Ohio.
 1. Select the option to `Launch instance`.
 1. Give your instance a meaningful name. Perhaps use a convention such as [owner]-[purpose]-[version].
 
@@ -44,7 +44,7 @@ Once you have an AWS account it is time to create your web server.
 
    ![AWS class AMI](webServerAWS260Ami.jpg)
 
-1. Select t3.nano or t3.micro for the instance type. You can always change this later if your server is running slow and needs more power.
+1. Select t3.nano, t3.micro, or t2.micro for the instance type depending on how much power you want, how much you want to spend, or if you qualify for a free usage tier. If you qualify for a free usage tier then pick that that instance type, otherwise choose the cheapest one. You can always change this later if your server is running slow and needs more power.
 
    ![AWS Instance name](webServerAWSType.jpg)
 
