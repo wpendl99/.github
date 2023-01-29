@@ -48,4 +48,4 @@ When you want to talk with a TA either online or in-person you will use Discord 
 
 ## ☑ Assignment
 
-Get on the Discord server and review each of the channels and the TA area. Then spend some time looking at the course instruction until you find something that you have a question about. In the proper discord channel ask your question. When you are done submit what you found interesting with Discord and make a suggestion about how we could use it better to the Canvas assignment.
+Get on the Discord server and review each of the channels and the TA area. Then spend some time looking at the course instruction until you find something that you have a question about. In the proper discord channel ask your question. Alternatively, you can answer someone else's question. When you are done submit what you found interesting with Discord and make a suggestion about how we could use it better to the Canvas assignment.
