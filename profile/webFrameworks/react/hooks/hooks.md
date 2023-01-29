@@ -52,7 +52,7 @@ This is useful when you want to create side effects for things such as tracking 
 
 ## Hook dependencies
 
-You can also control what triggers a `useEffect` hook by specifying its dependencies. In the following example we have two state variables, but we only want the `useEffect` hook to be called when the component is initially called and when the first variable is clicked. To accomplish this you pass an array of dependencies as a second parameter to the `useEffect` call.
+You can control what triggers a `useEffect` hook by specifying its dependencies. In the following example we have two state variables, but we only want the `useEffect` hook to be called when the component is initially called and when the first variable is clicked. To accomplish this you pass an array of dependencies as a second parameter to the `useEffect` call.
 
 ```jsx
 function UseEffectHookDemo() {
@@ -73,5 +73,7 @@ function UseEffectHookDemo() {
 
 ReactDOM.render(<UseEffectHookDemo />, document.getElementById('root'));
 ```
+
+If you specify and empty array `[]` as the hook dependency then it is only called when the component is first rendered.
 
 Note that hooks can only be used in function style components and must be called at the top scope of the function. That means a hook cannot be called inside of a loop or conditional. This restriction ensures that hooks are always called in the same order when a component is rendered.

@@ -134,7 +134,7 @@ It is expected that you will start at the top of the list and work your way down
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 3/14)
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
-- 🚧 [Device features](webFrameworks/device/device.md)
+- 🚧 [Device APIs](webFrameworks/device/device.md)
 - ☑ [Demo day](webFrameworks/demoDay/demoDay.md) (optional 4/13)
 - ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md) (optional 4/20)
 
