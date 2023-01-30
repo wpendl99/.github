@@ -199,7 +199,7 @@ For your development environment add the same environment variables. Depending o
 
 **`Linux`**
 
-1. Modify /etc/evironment
+1. Modify /etc/environment
 
 **`Mac` (Zsh)**
 
