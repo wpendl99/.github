@@ -130,7 +130,7 @@ Your first elastic IP address is free. However, the catch is that it is only fre
 
 We would suggest that you do both options. Keep your server running and associate an elastic IP. That way if you do need to reboot it for some reason, you will still keep the same IP address, and it doesn't cost you anything more either way.
 
-Here is how you [assign an elastic IP address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html0) to your server instance.
+Here is how you [assign an elastic IP address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) to your server instance.
 
 1. Open the AWS console in your browser and log in.
 1. Navigate to the EC2 service.
