@@ -137,14 +137,14 @@ You can include comments in your HTML files by starting the comment with `<!--` 
 
 HTML uses several reserved characters for defining its file format. If you want to use those characters in your content then you need to escape them using the `entity` syntax. For example, to display a less than symbol (`<`) you would instead use the less than entity (`&lt;`). You can also use the entity syntax to represent any unicode character.
 
-| Character | Entity        |
-| --------- | ------------- |
-| &amp;     | &amp;amp;     |
-| <         | &amp;lt;      |
-| >         | &amp;gt;      |
-| "         | &quot;        |
-| '         | &apos;        |
-| &#128512; | &amp;#128512; |
+| Character | Entity      |
+| --------- | ----------- |
+| &amp;     | `&amp;`     |
+| <         | `&lt;`      |
+| >         | `&gt;`      |
+| "         | `&quot;`    |
+| '         | `&apos;`    |
+| &#128512; | `&#128512;` |
 
 ## HTML Versions
 
