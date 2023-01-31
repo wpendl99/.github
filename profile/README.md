@@ -21,10 +21,13 @@ The course covers a full stack of web programming technologies and topics.
 - Web Services
 - Web Frameworks focusing on React
 - Data Services demonstrated with MongoDB
-- Progressive Web Applications
+- Mobile devices with Progressive Web Applications
+- Realtime peer to peer interaction with WebSocket
 - Security
 - UI Testing
 - Web design
+
+![Technologies](technologies.png)
 
 ⚠ Get started by visiting the course [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) topics.
 
