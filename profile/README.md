@@ -41,4 +41,4 @@ Much appreciation goes to [CodePen](https://codepen.io) for hosting many of the 
 
 [Amazon Web Services](https://aws.amazon.com) made it possible to experiment with DNS, create web servers, and host the project content
 
-The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Hasbro. Our use of the name and the game is for non-profit educational use only. No part of the Simon code program should be used outside of that definition.
+The demonstration application `Simon` is based on the game by Milton-Bradley. Simon is a registered trademark of Hasbro. Our use of the name and the game is for non-profit educational use only. No part of the Simon code should be used outside of that definition.
