@@ -1,6 +1,6 @@
 # BYU **Web Programming** `cs260`
 
-![cover](https://github.com/webprogramming260/.github/blob/08a41f59572d5a48fbc54d4c0bf28e698b35d634/profile/webprogrammingcover.jpg?raw=true)
+![cover](https://github.com/webprogramming260/.github/blob/main/profile/webprogrammingcover.jpg?raw=true)
 
 Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application. The content of the course is open for you to browse the [instruction topics](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) and [example projects](https://github.com/webprogramming260/.github/blob/main/profile/essentials/simon/simon.md). Assignments, quizzes, and tests are submitted through Canvas.
 
@@ -9,6 +9,8 @@ You can also view the [course slides](https://github.com/webprogramming260/.gith
 # Technologies and Instruction
 
 The course covers a full stack of web programming technologies and topics.
+
+![Technologies](https://github.com/webprogramming260/.github/blob/main/profile/technologies.png?raw=true)
 
 - Command console
 - HTML
@@ -26,8 +28,6 @@ The course covers a full stack of web programming technologies and topics.
 - Security
 - UI Testing
 - Web design
-
-![Technologies](technologies.png)
 
 ⚠ Get started by visiting the course [instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme) topics.
 
