@@ -130,7 +130,7 @@ It is expected that you will start at the top of the list and work your way down
 - 🚧 Security
   - 🚧 OWASP top 10
   - 🚧 Gruyere
-- 🚧 [TypeScript](webFrameworks/staticTypeChecking/staticTypeChecking.md)
+- [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 3/14)
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
