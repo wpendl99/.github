@@ -4,7 +4,7 @@ The following slide decks are used for in person discussion of the instruction t
 
 [![Introduction slide](slidesIntroduction.jpg)](https://docs.google.com/presentation/d/1tYFgMQMo8JrevxDkEpkE8s-E8jxgi1P_JX1LUacQlfo/edit?usp=sharing)
 
-⚠ Note that these slides are always a work in progress If you want to capture what they are currently showing, make sure you create a copy.
+⚠ Note that these slides are always a work in progress. If you want to capture what they are currently showing, make sure you create a copy.
 
 ## Essentials
 
