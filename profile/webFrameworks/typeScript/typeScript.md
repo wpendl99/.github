@@ -1,8 +1,8 @@
-# Static type checking
+# TypeScript
 
 📖 **Suggested reading**: [Typescript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 
-TypeScript adds type checking to JavaScript. This provides compile time checking to make sure that you are not doing things like using a string when a number is expected. Consider the following simplistic JavaScript code example.
+TypeScript adds static type checking to JavaScript. This provides type checking while you are writing the code to prevent mistakes like using a string when a number is expected. Consider the following simplistic JavaScript code example.
 
 ```js
 function increment(value) {
@@ -26,11 +26,11 @@ let count: number = 'one';
 console.log(increment(count));
 ```
 
-Now VS Code will run TypeScript to analyze the code and give you an error about the invalid type conversion.
+With TypeScript enabled, VS Code will analyze the code and give you an error about the invalid type conversion.
 
 ![TypeScript bad assignment](typescriptBadAssignment.jpg)
 
-In addition to defining types for function parameters, you can define the types of object properties. For example, when defining the state for a React class style component you can specify the types of all the state values.
+In addition to defining types for function parameters, you can define the types of object properties. For example, when defining the state for a React class style component, you can specify the types of all the state values.
 
 ```ts
 export class About extends React.Component {
@@ -40,7 +40,7 @@ export class About extends React.Component {
     quoteAuthor: string;
   };
 
-  constructor(props: any) {
+  constructor(props: object) {
     super(props);
 
     this.state = {
@@ -153,6 +153,10 @@ console.log(arrayCat(['fish', 'cow'])); // Outputs: fish, cow
 ```
 
 ## Using TypeScript
+
+If you would like to experiment with TypeScript you can use [CodePen](https://codepen.io), or the official [TypeScript playground](https://www.typescriptlang.org/play). The TypeScript playground has the advantage of showing you inline errors and what the resulting JavaScript will be.
+
+![typescript playground](typescriptPlayground.jpg)
 
 To use TypeScript in your web application you can create your project using the `create-react-app` CLI and specifying the `--template typescript` switch. This will configure the template application to use TypeScript.
 
