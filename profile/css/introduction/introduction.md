@@ -8,6 +8,8 @@ Cascading Style Sheets (CSS) converts the structure and content of HTML into a v
 
 Functionally, CSS is primarily concerned with defining `rulesets`, or simply a `rules`. A rule is comprised of a `selector` that selects the elements to apply the rule to, and one or more `declarations` that represent the `property` to style with the given `property value`.
 
+![CSS definitions](cssDefinitions.jpg)
+
 For example, consider the following rule.
 
 ```css

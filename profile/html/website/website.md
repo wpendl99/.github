@@ -4,9 +4,11 @@ Now that you know how HTML works it is time to put it to use and create your fir
 
 1. Verify that you server is still running and that the default web programming 260 page is being displayed. If it is not then you need to complete, or review, the steps for setting your server.
 
+   ![Default website](htmlDefaultWebpage.jpg)
+
    ⚠ Do not continue until this works.
 
-1. [Fork this repository](https://github.com/webprogramming260/website-html/fork) and clone it to your development environment. For information about how to fork a GitHub repository read [this documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+1. [Fork this repository](https://github.com/webprogramming260/website-html/fork) and clone it to your development environment. For information about how to fork a GitHub repository read [this documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo). For information about cloning a repository refer back to the instruction on GitHub.
 1. The repository contains four important files, `index.html`, `index.css`, `profile.png` and `deployWebsite.sh`. `index.html` contains a template HTML document. `deployWebsite.sh` contains a console shell script for deploying a new home page for your. Open up and review these files.
 1. Modify `index.html` to personalize it to yourself. Don't worry about making it look pretty at this point. You are only trying to get the content and structure right. You can come back later and style it with CSS and make it interactive with JavaScript.
 1. Give a brief profile description about yourself.
@@ -27,7 +29,10 @@ Now that you know how HTML works it is time to put it to use and create your fir
 
    ⚠ Make sure you run the script in the project directory where the script resides.
 
-1. Open a browser window and verify that your new home page is showing up for your domain.
+1. Open a browser window and verify that your new home page is showing up for your domain. The following is an example of what your website might look like.
+
+   ![Example website](htmlExampleWebsite.jpg)
+
 1. Submit the URL for your website to the Canvas assignment along with something you found interesting about this assignment.
 
-Now, whenever you add a new project to your website you can just update the files contained in this repository and run the deployment script again. This way you can keep your website up to date with your progress through the instruction.
+Now, whenever you add a new project to your website you can just update the files contained in this repository and run the deployment script again. This way you can keep your website up to date with your progress through the instruction. If you do this throughout the class you will end up with a great portfolio that you can demonstrate to others.
