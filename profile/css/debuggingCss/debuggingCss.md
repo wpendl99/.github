@@ -2,7 +2,7 @@
 
 📖 **Suggested reading**: [MDN Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
 
-CSS is extremely powerful, but sometimes is can be very frustrating to figure out why your page is not rendering the way that you expect. To help you understand why things are rendering the way that are you can use the browser's developer tool to inspect the CSS properties and visualize the HTML layout. Using the Google Chrome debugger you can access the developer tools by right click on the HTML page element that you want to debug and select the `inspect` option. We will demonstrate this by creating a directory that contains HTML (`index.html`) with a paragraph of text, and a CSS file (`index.css`) that uses flex to center the text in the CSS.
+CSS is extremely powerful, but sometimes is can be very frustrating to figure out why your page is not rendering the way that you expect. To help you understand why things are rendering the way that are you can use the browser's developer tool to inspect the CSS properties and visualize the HTML layout. Using the Google Chrome debugger you can access the developer tools by right click on the HTML page element that you want to debug and select the `inspect` option. You can experience this by creating a directory that contains the following content is an HTML (`index.html`) and CSS file (`index.css`). This simple example has one paragraph of text and uses flex to center the text.
 
 ```html
 <!DOCTYPE html>
@@ -22,7 +22,6 @@ CSS is extremely powerful, but sometimes is can be very frustrating to figure ou
   border: thick solid blue;
   box-sizing: border-box;
   padding: 0.2em;
-  margin: 0;
   font-size: 24px;
   font-family: Arial;
 }
@@ -57,5 +56,11 @@ You can change any of the CSS properties, and even add new properties, directly 
 This example has a small problem. Each element has with a blue border and some padding. But the body element does not render any padding at the bottom. Inspecting the body element and looking at the CSS box reveals that the default margin for the elements is pushing the body element down so that the padding overflows into its parent element. We can fix this by setting the margin for elements to be zero.
 
 ![Debugging CSS demo](debuggingCssExample.gif)
+
+Now, notice that if you make resize the browser so that it is wider the centered text will appear left justified.
+
+![Debugging CSS centered text](debuggingCssCenteredText.jpg)
+
+See if you can figure out what the problem is, and then correct the CSS so that the text always appears centered in the box.
 
 Experiment with debugging and altering the CSS. Note that you can open up any website and use the debugger to see how they implemented their design and even do temporary alterations to the CSS properties to see how that impacts the display. Debugging other people's code is a great way to learn how to improve your CSS skills.

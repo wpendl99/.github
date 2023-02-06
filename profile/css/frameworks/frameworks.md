@@ -10,14 +10,13 @@ Today, there are lots of different open source CSS frameworks available to choos
 
 ## Tailwind
 
-A new rising contender in the CSS framework space is [Tailwind CSS](https://tailwindcss.com/) and its associated component library [Tailwind UI](https://tailwindui.com/). In the last StateOfCSS poll, Tailwind gained an impressive 40% general usage ranking, all within the last three years. Tailwind takes a different approach than traditional CSS frameworks. Instead of using large, rich, CSS rulesets to compartmentalize styling and functionality, it uses smaller definitions that are applied specifically to individual HTML elements. This moves much of the CSS representation out of the CSS file and directly into the HTML.
+A new rising contender in the CSS framework space is [Tailwind CSS](https://tailwindcss.com/) and its associated component library [Tailwind UI](https://tailwindui.com/). In the 2022 StateOfCSS poll, Tailwind gained an impressive 46% general usage ranking with a retention rating of 78%, all within the last four years.
+
+Tailwind takes a different approach than traditional CSS frameworks. Instead of using large, rich, CSS rulesets to compartmentalize styling and functionality, it uses smaller definitions that are applied specifically to individual HTML elements. This moves much of the CSS representation out of the CSS file and directly into the HTML.
 
 ```html
 <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-  <img
-    class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-    src="profile.png"
-  />
+  <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="profile.png" />
   <p class="text-lg font-medium">“Tailwind CSS”</p>
 </div>
 ```
@@ -77,8 +76,7 @@ npm install bootstrap@5.2.3
 Once you have Bootstrap linked in your HTML files you can begin using the components it provides. Let's start with a simple button. When we use the Bootstrap `btn` CSS class, the button gets a nice looking rounded appearance. The Bootstrap `btn-primary` CSS class shades the button with the current primary color for the application, which by default is blue. The following demonstrates the difference between a Bootstrap style button and a plain vanilla button. Functionally they both work exactly the same. The Bootstrap button is just a lot easier on the eyes.
 
 ```html
-<button type="button" class="btn btn-primary">Bootstrap</button>
-<button type="button">Plain</button>
+<button type="button" class="btn btn-primary">Bootstrap</button> <button type="button">Plain</button>
 ```
 
 ![CSS Bootstrap button](cssBootstrapBtn.png)
