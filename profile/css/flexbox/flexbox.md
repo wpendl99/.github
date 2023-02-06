@@ -108,6 +108,10 @@ Here is what the finished application looks like.
 
 You can experiment with this on [CodePen](https://codepen.io/leesjensen/pen/MWOVYpZ).
 
+## Flexbox Froggy
+
+[Flexbox Froggy](https://flexboxfroggy.com/) is an interactive tutorial where you use Flexbox css properties to move a frog onto a lilly pad. If you would like to understand Flex better, you might want to check it out.
+
 ## ☑ Assignment
 
 Now it is your turn to build a fully responsive application. You can use Grid and/or Flexbox along with media queries to build something that stretches you. After you are done experimenting with the above example, take some time to sketch out your design. Once you are done coding, submit your CodePen URL, along with a comment about something you found interesting, to the Canvas assignment.
