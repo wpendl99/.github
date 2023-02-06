@@ -1,6 +1,10 @@
 # CSS Flexbox
 
-**Recommend reading**: [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+**Recommend reading**:
+
+- [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+- [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Flexbox Froggy](https://flexboxfroggy.com/)
 
 The `flex` display layout is useful when you want to partition your application into areas that responsively move around as the window resizes or the orientation changes. In order to demonstrate the power of flex we will build an application that has a header, footer, and a main content area that is split into two sections, with controls of the left and content on the right.
 
@@ -107,10 +111,6 @@ Here is what the finished application looks like.
 ![CSS flex](cssFlex.gif)
 
 You can experiment with this on [CodePen](https://codepen.io/leesjensen/pen/MWOVYpZ).
-
-## Flexbox Froggy
-
-[Flexbox Froggy](https://flexboxfroggy.com/) is an interactive tutorial where you use Flexbox css properties to move a frog onto a lilly pad. If you would like to understand Flex better, you might want to check it out.
 
 ## ☑ Assignment
 
