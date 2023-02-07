@@ -148,3 +148,11 @@ Secure your web server communication by configuring Caddy to request a certifica
 Submit a URL for web server's hostname, along with a comment about something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.
+
+## Common problems
+
+| Symptom                                                           | Reason                                                                                                                                                                                      |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The browser doesn't display by website                            | Check that the browser hasn't inserted a `www` subdomain prefix. Some browsers will hide this. You must actually click on the domain name in the address bar to see what it is really using |
+| My root domain works, but not the `simon` or `startup` subdomains | Your Caddy file is not configured properly. Check for typos. Also make sure you removed the `:` from the start of the Caddy rule.                                                           |
+| My `simon` or `start` up subdomains work, but not my root domain  | Your Caddy file is not configured properly. Check for typos.                                                                                                                                |

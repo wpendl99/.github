@@ -85,3 +85,12 @@ The start of authority (`SOA`) record provides contact information about the own
 Submit a URL for web server's domain name, along with a comment about something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.
+
+## Common problems
+
+| Symptom                                                                     | Reason                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| I leased my domain name and set up DNS, but I can't hit it with the browser | Give it some time. Perhaps 10 minutes. Use `dig` or `nslookup` to see if the DNS records are publicly available. Check to see if the IP address is correct. Make sure the DNS records are correct.                                        |
+| The browser doesn't display my website                                      | Check that you are not trying to use `https`. Check that the browser hasn't inserted a `www` subdomain prefix. Some browsers will hide this. You must actually click on the domain name in the address bar to see what it is really using |
+| My root domain works, but not the `simon` or `startup` subdomains           | Check your DNS records. Make sure you created a wildcard `*.yourdomain` record.                                                                                                                                                           |
+| My `simon` or `start` up subdomains work, but not my root domain            | Check your DNS records. Make sure you have a root record.                                                                                                                                                                                 |

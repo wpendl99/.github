@@ -163,3 +163,11 @@ The `t3.nano` instance size has just enough memory and CPU to meet the requireme
 Submit a URL using your web server's public IP address, along with a comment about something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember. This might include the IP address of your server and the command to remote shell into your server. Do not include the contents of your PEM file, passwords, or keys in your notes.
+
+## Common problems
+
+| Symptom                                                                       | Reason                                                                                                             |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| You can SSH into the server, but you can't use HTTP                           | Check that your security group exposes SSH, HTTP, and HTTPS.                                                       |
+| Using the browser to hit my server using my IP was working but now it doesn't | Check that your IP address hasn't changed. Perhaps due to assigning an elastic IP address or stopping your server. |
+| My server doesn't come up in the browser                                      | Check that you are not trying to use `https`.                                                                      |
