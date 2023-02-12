@@ -5,7 +5,7 @@
 - [MDN PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 - [web.dev PWA](https://web.dev/learn/pwa/)
 
-The idea of creating a single application that works both on desktop and mobile devices is not a new concept. When Steve Jobs introduced the iPhone in 2007 he had exactly that vision.
+The idea of creating a single application that works both on desktop and mobile devices is not a new concept. You can trace its origins to Microsoft's introduction of the XMLHttpRequest (XHR) in 1999. XHR allowed web pages to make HTTP requests directly from JavaScript. This evolved into the idea of a web application that could run on any device that supported a web browser. Steve Jobs actually championed the idea of a universal web application when he introduced the iPhone in 2007.
 
 > "you can write amazing Web 2.0 and Ajax apps that look exactly and behave exactly like apps on the iPhone. And these apps can integrate perfectly with iPhone services. And guess what?
 > There’s no SDK that you need! You’ve got everything you need if you know how to write apps using the most modern web standards to write amazing apps for the iPhone today.
@@ -13,31 +13,31 @@ The idea of creating a single application that works both on desktop and mobile 
 >
 > — Steve Jobs, (**Source**: [2007 MacWorld keynote](https://youtu.be/VQKMoT-6XSg))
 
-Unfortunately for the world, Apple quickly realized the incredibly lucrative market that existed if they created a closed application space that they controlled. And so in the same year that the iPhone was released, the Apple App Store was born and software companies started paying Apple 30% of all transactions made on the iPhone.
+Unfortunately for the world, Apple quickly realized the incredibly lucrative market that existed if they created a closed application space that they controlled. And so in the same year that the iPhone was released, the Apple App Store was born, and software companies were forced to pay Apple 30% of all transactions made on the iPhone.
 
-While the tax on app store participate was unfortunate, the focus on device native application was worse. This moved the software industry away from the universal application platform that web technologies enabled, to one where developers are forced to create completely different design, functionality, and code for each device. One for iPhone, one for Android, one for XBox, one for Samsung TVs, one for the desktop, and so forth. While this is great for the employability of software engineers, it is terrible for software companies and users.
+While the tax on app store participation was unfortunate, the focus on device native applications was even worse. Native apps moved the software industry away from the idea of a universal application platform, to one where developers are forced to create completely different design, functionality, and code for each device. One for iPhone, one for Android, one for each game console, one for each TV vendor, one for the desktop, and so forth. While this is great for the employability of software engineers, it is terrible for software companies and users in general.
 
-When companies, such as Microsoft and Google realized the negative impact that native applications were having on the industry, they began to evangelize a return to standard web technologies that would work on any device. They introduced browser APIs, defined standards, and created frameworks that made it easier to build universal web applications. This technology was eventually branded as `Progressive Web Applications` or PWA.
+When companies, such as Microsoft and Google realized the negative impact that native applications were having on the industry, they began to evangelize a return to standard web technologies that would work on any device. They introduced browser APIs, defined standards, and created frameworks that made it easy to build universal web applications. This technology was eventually branded as `Progressive Web Application` or PWA.
 
 ## Advantages of PWA
 
-While PWA builds on the standard core of HTML, CSS, and JavaScript, along with the delivery of content and software updates over HTTP, it takes web applications to the next level with the following benefits.
+While PWA builds on the standard core of HTML, CSS, and JavaScript, along with the delivery of content and software updates over HTTP, it takes web applications to the next level, by providing the following benefits.
 
-1. **Works offline** - Using the browser's Service Worker API, a PWA can control the caching of files locally on browser and make it so that the application can run when completely disconnected from the internet. This means that your app will still work when networks are spotty while riding the subway, or rappelling down a back country slot canyon.
-1. **Fast mobile installation to home screen** - A user no longer has to navigate an app store to find and completely download a native application. Instead they click on a single button in their browser and the PWA will instantly be placed on their home screen. If the app is meant to function offline, it can incrementally cache the necessary files while the user is actually using the application.
-1. **No app store tax** - As companies like [Epic](https://en.wikipedia.org/wiki/Epic_Games_v._Apple) learned through expensive experience and litigation, if you want to be in the app store you will pay a significant price. App stores play a heavy hand in the submission, approval, and update process required to be listed in an the store. For those companies that are [denied inclusion](https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust) in the app store, there is no recourse. They simply cannot capture that market share. PWA technology removes the app store broker from the equation, and allows the software company to deal directly with the consumer.
-1. **Instant updates** - When a PWA needs to push out security of feature updates, it does not require the app store's approval, and does not force the user to go through a complicated update process. Instead they just update their web application and push it to production. The next time the user accesses the application they will see the changes.
-1. **Performance** - Because the PWA completely controls the level of browser caching, it can provides high levels of performance that are no longer dependent on network connectivity constraints.
+1. **Works offline** - Using the browser's Service Worker API, a PWA can control the caching of files locally on browser and make it so that the application can run when completely disconnected from the internet. This means that your app will still work when networks are spotty, such as while riding the subway, or when your user is rappelling down a back country slot canyon.
+1. **Fast mobile installation to home screen** - A user no longer has to navigate an app store to find and download a native application. Instead they click on a single button on their device and the PWA will instantly be placed on their home screen. If the app is designed to function offline, it can incrementally cache the necessary files while the user is actually using the application.
+1. **No app store tax** - As companies like [Epic](https://en.wikipedia.org/wiki/Epic_Games_v._Apple) learned through expensive litigation, you must pay if you want to play, in the app store. App stores also use a heavy hand in the submission, approval, and update process. For those companies that are [denied inclusion](https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust) in the app store, there is no recourse. They simply are excluded from that marketplace. PWA technology removes the app store broker from the equation, and allows the software company to deal directly with the consumer.
+1. **Instant updates** - When a PWA needs to push out security fixes, or feature updates, it does not need the app store's approval. The user is also relieved from the complicated and annoying process of keeping dozens of app store installed applications updated. Instead they software provider just update by pushing a new version into production. The next time the user accesses the application they will see the changes.
+1. **Performance** - Because the PWA completely controls the level of browser caching, it can provide high levels of performance that is not dependent on network connectivity constraints. The application instantly reloads on subsequent visits and all the vital resources are already on the user's device.
 1. **Same code base for all devices** - Freed from the overhead of developing and maintaining multiple platforms, software companies can now redeploy their resources to providing functionality that actually benefits the user.
-1. **Better SEO score** - Starting in 2018 Google announced that mobile friendly applications, with PWAs specifically recognized, will have a significantly higher placement is Google search results. This means that if your web application is not a PWA then it will need to spend more on marketing in order to catch up with competitors.
+1. **Better SEO score** - Starting in 2018 Google announced that mobile friendly applications, with PWAs specifically recognized, will have a significantly higher placement is Google search results. If your web application is a native app, then its content is completely excluded from search results. This means that if your application is not a PWA then it will need to spend more on marketing in order to catch up with competitors.
 
-Finally, PWA technology enables small software companies to successfully compete in the mobile market. According to research provided by Statista, mobile devices generate almost 60% of internet traffic. Those numbers are even higher for Africa (75%) and Asia (69%).
+Finally, PWA technology enables small software companies to successfully compete in the mobile market. According to research provided by Statista (2022), mobile devices generate almost 60% of internet traffic. Those numbers are even higher for Africa (75%) and Asia (69%).
 
 ![Mobile usage statistics](mobileUsageStatistics.jpg)
 
 > Source: _[statista](https://www.statista.com/statistics/306528/share-of-mobile-internet-traffic-in-global-regions/)_
 
-With a PWA, a small software company can easily reach mobile device customers, and even provide offline web applications where network coverage is spotty or only sometimes available. This is important even for mature markets such as the United States there are still significant portions of the population that do not have reliable broadband access.
+With a PWA, a small software company can easily reach mobile device customers, and even provide offline web applications where network coverage is spotty or only sometimes available. This is important even for mature markets, such as the United States, where there are still significant portions of the population that do not have reliable broadband access.
 
 ![Broadband availability US](broadbandAvailabilityUS.jpg)
 
@@ -47,56 +47,79 @@ With a PWA, a small software company can easily reach mobile device customers, a
 
 With all of the advantages of PWAs, there are some situations where a native application is necessary.
 
-1. **Apple incompatibility** - While much of PWA technology works fine with iOS and Safari, Apple is slow to give up their strategic economic advantages. Therefore, some technologies do not yet work as well on the iPhone as they do on other devices. For example, iOS does not support standard push notification. Additionally, you must use Safari in order to install a PWA to the home screen when using an iPhone. Hopefully, in the near future, Apple will give in to increasing community pressure and enable a better experience for their customers by removing these inconvenient incompatibilities.
-1. **Advanced device features** - A PWA can access a devices location, storage, haptic feedback, contacts, camera, battery, shortcuts, device orientation, fingerprint sensor, and even Bluetooth through the [browser supported APIs](https://developer.mozilla.org/en-US/docs/Web/API). However, if an application requires the use of specific device features such as the flashlight or atmospheric pressure sensor then you might be forced to build a device native application.
+1. **Apple incompatibility** - While much of PWA technology works fine with iOS and Safari, Apple is slow to give up their strategic economic advantages. Therefore, some technologies do not yet work as well on the iPhone as they do on other devices. For example, iOS does not support standard push notifications. Additionally, you must use Safari in order to install a PWA to the home screen when using an iPhone. Hopefully, in the near future, Apple will give in to increasing community pressure and enable a better experience for their customers by removing these inconvenient incompatibilities.
+1. **Advanced device features** - A PWA can access a device's location, storage, haptic feedback, contacts, camera, battery, shortcuts, device orientation, fingerprint sensor, and even Bluetooth through [browser supported APIs](https://developer.mozilla.org/en-US/docs/Web/API). However, if an application requires the use of specific device features such as the flashlight or an atmospheric pressure sensor then you might be forced to build a device native application.
 
-# Example PWAs
+## Example PWAs
 
-https://www.simicart.com/blog/progressive-web-apps-examples/
+There are lots of [examples](https://www.simicart.com/blog/progressive-web-apps-examples/) of companies deploying PWAs. This includes brands such as Uber, Pinterest, Rakuten 24, Debenhams, Spotify, Google, BMW, Starbucks, and Flipboard.
+
+### BMW
+
+The results for moving to PWA are impressive. For example, BMW reported the following results after to a PWA:
+
+> - 4X increase in people clicking from BMW.com to a BMW sales site
+> - Up to 4X faster site load times
+> - 50% growth in mobile users
+> - 49% more site visits from search engines
+>
+> **Source** - [Think With Google](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/bmws-journey-fast-smooth-and-reliable-mobile-website/)
+
+![PWA BMW](pwaDemoBmw.jpg)
+
+### Spotify
+
+Spotify decided to move to a PWA in order to avoid Apple's 30% commission. However, they soon discovered additional benefits from their PWA.
+
+> - Free-to-paid conversions increased 26.6% in 2015, 46% in 2019, and 58.4% in 2021
+> - 30% increase of monthly active users
+> - The number of desktop users rose by 45%
+> - 40% increase of average listening hours per month
+> - UX research reported a more visually appealing, responsive, and adaptable application
+
+When you visit Spotify on a mobile device you are immediately invited to install the PWA to your home screen.
 
 ![Spotify install](pwaSpotifyInstall.jpg)
 
-![Spotify service worker](pwaSpotifyServiceWorker.jpg)
+Once added to the home screen, the PWA acts just like a native device application.
 
 ![Spotify app](pwaSpotifyMobileApp.jpg)
+
+Additionally, the PWA makes it so that desktop users can install, and have a native application experience. Here is an example of Spotify installed on a MacBook. Notice the lack of the browser's interface, and the inclusion of Spotify's branding in the operating system's controls.
 
 ![Spotify app](pwaSpotifyDesktopApp.jpg)
 
 # Steps to make PWA
 
-1. Manifest and icons
-1. Service worker for caching
-1. Offline fallbacks
+One of the best things about PWA technology is that it doesn't require a significant amount of overhead to make your application a PWA. If you have built your application using responsive design techniques (@media, viewport meta, flex, grid, ...) and you have fallback functionality when disconnected, then you only have to take two additional steps. First, you need to provide a manifest that provides the details about how to display your application on the device. Next, you need to write some JavaScript that implements the service worker API in order to cache files for performance and offline ability.
 
 ## Manifest and icons
 
-Used https://favicon.io/favicon-converter/ to generate the proper icon files from our icon.
+📖 **Suggested reading**: [MDN Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
-Added the references for the different icons to public/index.html
+A PWA manifest is a JSON file that by convention is usually named `manifest.json`. You link the manifest to your application by including a reference in your `index.html` file. When the browser sees the manifest link, it recognizes the application as a PWA.
 
 ```html
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="manifest.json" />
 ```
 
-copied over fav icons from generator.
+There are a lot of possible settings you can specify in the manifest. This includes properties such as the application's functional categorize (e.g. education, entertainment, travel), how to display the application (e.g. fullscreen, standalone, minimal-ui), scope (where to load the application from), icons, colors, descriptions, and screenshots for installation.
 
-created a maskable icon using https://maskable.app/editor
+A minimal manifest might look like the following.
 
-Modified manifest.json to contain all the proper icons.
-
-```js
+```json
+{
+  "short_name": "Simon",
+  "name": "Simon",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
     },
     {
       "src": "/android-chrome-512x512.png",
@@ -109,121 +132,58 @@ Modified manifest.json to contain all the proper icons.
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
+  ]
+}
 ```
 
-## Service Worker
+This manifest specifies some basic branding information that tells the browser how to display the application when creating a home screen icon, and what splash screen to generate as the application starts up.
 
-copy over into /src
+The icons section contains a variety of icons that the device will select from depending upon the context that the application is used in. In order to get full support for icons on iOS devices you also need to include a `apple-touch-icon` link in your `index.html`.
 
-service-worker.js
-serviceWorkerRegistration.js
+```html
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+```
 
-Add to index.jsx
+## Service workers
+
+📖 **Suggested reading**: [MDN Service worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+
+The final step for converting your application into a progressive web application involves implementing the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Services workers, while not specific to PWAs, allow a web application to do background processing that is not directly associated with the rendering and interaction of a web application. One of the most common uses for a Service Worker is to enabling the browser caching of files for performance reasons. This also makes it so that the PWA can run when it is disconnected from the internet.
+
+To register a service worker, you call the `navigator.serviceWorker` API with the URL to a JavaScript file containing your service worker code.
 
 ```js
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-serviceWorkerRegistration.register();
+navigator.serviceWorker.register('service-worker.js');
 ```
 
-ran to install Google work-box service worker support
+The browser will then load and execute the service worker JavaScript. This gives the service worker a chance to register for event handling and specify what files the browser should cache for the application.
+
+You can view the state of your application's service worker using the Chrome dev tools and selecting the `Application` tab.
+
+![Spotify service worker](pwaSpotifyServiceWorker.jpg)
+
+The `Application` tab allows you to remove the service work, install a new version, generate events, and view cached files.
+
+### The service worker lifecycle
+
+When a service worker is first registered, the browser will immediately load it. This causes your application to be cached on the browser so that it can run offline and not have to load over the network on the user's next use. Since the application is served from the browser's cache, a user will not immediately see new application versions as they are deployed. Instead, they are loaded and put in a waiting state. The service worker remains in the waiting state until all of the browser tabs displaying the application are closed. Then, the next time the user opens the application, they will experience the new version.
+
+You can use the Service Worker settings on the `Application` dev tools tab to skip the waiting period and force the new application version to load immediately.
+
+Your application can also detect that a new version is available and then ask the user if they would like to automatically upgrade to the new version. The browser does that by simply refreshing the browser window.
+
+## Experimenting with PWA
+
+If you would like to see a simple PWA in action, you can use `create-react-app` to generate an template PWA application. From your console window run:
 
 ```sh
-npm install workbox-core workbox-expiration workbox-precaching workbox-routing workbox-strategies
-```
-
-Deployed to production
-
-Ran LightHouse to text PWA compatibility
-
-![Lighthouse report](serviceWorkerLighthouseReport.jpg)
-
-Installed on my android phone and desktop
-
-## Offline fallbacks
-
-(authenticated.jsx) Remove user name from local storage so that we don't try and run in offline if we have logged out.
-
-```jsx
-function logout() {
-  fetch(`/api/auth/logout`, {
-    method: 'delete',
-  }).then(() => {
-    localStorage.removeItem('userName');
-    props.onLogout();
-  });
-}
-```
-
-(app.jsx) removed check to server to see if we are authenticated. Just assume we are if we have a username.
-
-```jsx
-// Use the presence of the 'userName' in local storage to determine if we previously authenticated.
-const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
-const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
-const [authState, setAuthState] = React.useState(currentAuthState);
-```
-
-Display offline error if you can't login
-
-```jsx
-async function loginOrCreate(endpoint) {
-  try {
-    const response = await fetch(endpoint, {
-      method: 'post',
-      //...
-    });
-    //...
-  } catch {
-    setDisplayError(
-      `⚠ It appears that you are currently offline. You can play Simon offline, but you must be initially online to create or login to your account.`
-    );
-  }
-}
-```
-
-![Offline message](serviceWorkerLoginOffline.jpg)
-
-(about.jsx) Display default quote
-
-```jsx
-fetch('https://api.quotable.io/random')
-  .then((response) => response.json())
-  .then((data) => {
-    this.setState({ quote: data.content, quoteAuthor: data.author });
-  })
-  .catch(() => {
-    // Use offline fallback classic quote
-    this.setState({
-      quote: `Always bet on JavaScript`,
-      quoteAuthor: `Brendan Eich`,
-    });
-  });
-```
-
-## Create
-
-https://create-react-app.dev/docs/making-a-progressive-web-app/
-
-https://dev.to/alexgurr/turning-a-react-app-into-a-pwa-with-offline-detection-service-workers-and-theming-142i
-
 npx create-react-app testpwa --template cra-template-pwa
+```
 
-or
+Then open the resulting project found in the `testpwa` directory and modify `index.js` to change `serviceWorkerRegistration.unregister` to `serviceWorkerRegistration.register`. Then build the application with `npm run build` and host the resulting bundled app located in the `build` directory with the VS Code Live Server extension in order to see a minimal working PWA.
 
-npm install register-service-worker
+## Workbox
 
-add `service-worker.js` and add import in `index.jsx`.
+📖 **Suggested reading**: [Chrome workbox](https://developer.chrome.com/docs/workbox/)
 
-## Manifest
-
-manifest.json
-
-## Service worker
-
-index.js
-serviceWorkerRegistration.unregister();
-
-## Device testing
-
-![iPhone Safari](deviceTestingSafari.jpg)
+Workbox is an NPM package created by Google for using services workers. The template PWA created `create-react-app` and as the class Simon demonstration project use workbox to simplify some of the registration, routing, and caching service worker complexities.
