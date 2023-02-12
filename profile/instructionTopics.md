@@ -125,17 +125,17 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
   - ☑ [Router](webFrameworks/react/router/router.md) (due 4/5)
   - ☑ [Simon React](simon/simon-react/simon-react.md) (due 4/5)
-- 🚧 [Progressive web applications](webFrameworks/pwa/pwa.md)
-  - 🚧 ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
+- [Progressive web applications](webFrameworks/pwa/pwa.md)
+  - ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
 - 🚧 Security
   - 🚧 OWASP top 10
   - 🚧 Gruyere
 - [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
-- ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 3/14)
+- ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 4/14)
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
 - [Device APIs](webFrameworks/device/device.md)
-- ☑ [Demo day](webFrameworks/demoDay/demoDay.md) (optional 4/13)
+- ☑ [Demo day submission](webFrameworks/demoDay/demoDay.md) (optional 4/13)
 - ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md) (optional 4/20)
 
 ## Final
