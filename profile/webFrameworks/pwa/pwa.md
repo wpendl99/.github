@@ -29,7 +29,7 @@ While PWA builds on the standard core of HTML, CSS, and JavaScript, along with t
 1. **Instant updates** - When a PWA needs to push out security fixes, or feature updates, it does not need the app store's approval. The user is also relieved from the complicated and annoying process of keeping dozens of app store installed applications updated. Instead they software provider just update by pushing a new version into production. The next time the user accesses the application they will see the changes.
 1. **Performance** - Because the PWA completely controls the level of browser caching, it can provide high levels of performance that is not dependent on network connectivity constraints. The application instantly reloads on subsequent visits and all the vital resources are already on the user's device.
 1. **Same code base for all devices** - Freed from the overhead of developing and maintaining multiple platforms, software companies can now redeploy their resources to providing functionality that actually benefits the user.
-1. **Better SEO score** - Starting in 2018 Google announced that mobile friendly applications, with PWAs specifically recognized, will have a significantly higher placement is Google search results. If your web application is a native app, then its content is completely excluded from search results. This means that if your application is not a PWA then it will need to spend more on marketing in order to catch up with competitors.
+1. **Better SEO score** - Starting in 2018 Google announced that mobile friendly applications, with PWAs specifically recognized, will have a significantly higher placement is Google search results. If your web application is a native app, then its content is completely excluded from search results. This means that if your application is not a PWA, then you will need to spend more on marketing in order to catch up with competitors.
 
 Finally, PWA technology enables small software companies to successfully compete in the mobile market. According to research provided by Statista (2022), mobile devices generate almost 60% of internet traffic. Those numbers are even higher for Africa (75%) and Asia (69%).
 
@@ -56,7 +56,7 @@ There are lots of [examples](https://www.simicart.com/blog/progressive-web-apps-
 
 ### BMW
 
-The results for moving to PWA are impressive. For example, BMW reported the following results after to a PWA:
+The results for moving to PWA are impressive. For example, BMW reported the following results after moving to a PWA:
 
 > - 4X increase in people clicking from BMW.com to a BMW sales site
 > - Up to 4X faster site load times
@@ -89,9 +89,9 @@ Additionally, the PWA makes it so that desktop users can install, and have a nat
 
 ![Spotify app](pwaSpotifyDesktopApp.jpg)
 
-# Steps to make PWA
+# Steps to make a PWA
 
-One of the best things about PWA technology is that it doesn't require a significant amount of overhead to make your application a PWA. If you have built your application using responsive design techniques (@media, viewport meta, flex, grid, ...) and you have fallback functionality when disconnected, then you only have to take two additional steps. First, you need to provide a manifest that provides the details about how to display your application on the device. Next, you need to write some JavaScript that implements the service worker API in order to cache files for performance and offline ability.
+One of the best things about PWA technology is that it doesn't require a significant amount of overhead to make your application a PWA. If you have built your application using responsive design techniques (@media, viewport meta, flex, grid, ...) and you have fallback functionality when disconnected, then you only have to take two additional steps. First, you need to provide a manifest that defines the details for displaying your application. Next, you need to write some JavaScript that implements the service worker API in order to cache files for performance and offline ability.
 
 ## Manifest and icons
 
@@ -148,7 +148,7 @@ The icons section contains a variety of icons that the device will select from d
 
 📖 **Suggested reading**: [MDN Service worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
-The final step for converting your application into a progressive web application involves implementing the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Services workers, while not specific to PWAs, allow a web application to do background processing that is not directly associated with the rendering and interaction of a web application. One of the most common uses for a Service Worker is to enabling the browser caching of files for performance reasons. This also makes it so that the PWA can run when it is disconnected from the internet.
+The final step for converting your application into a progressive web application involves creating a service working by using the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Services workers, while not specific to PWAs, allow a web application to do background processing that is not directly associated with the rendering and interaction of a web application. One of the most common uses for a Service Worker is to enabling the browser caching of files for performance reasons. This also makes it so that the PWA keeps working even when it is disconnected from the internet.
 
 To register a service worker, you call the `navigator.serviceWorker` API with the URL to a JavaScript file containing your service worker code.
 
@@ -162,7 +162,7 @@ You can view the state of your application's service worker using the Chrome dev
 
 ![Spotify service worker](pwaSpotifyServiceWorker.jpg)
 
-The `Application` tab allows you to remove the service work, install a new version, generate events, and view cached files.
+The `Application` tab allows you to remove the service worker, install a new version, generate events, and view cached files.
 
 ### The service worker lifecycle
 
@@ -186,4 +186,4 @@ Then open the resulting project found in the `testpwa` directory and modify `ind
 
 📖 **Suggested reading**: [Chrome workbox](https://developer.chrome.com/docs/workbox/)
 
-Workbox is an NPM package created by Google for using services workers. The template PWA created `create-react-app` and as the class Simon demonstration project use workbox to simplify some of the registration, routing, and caching service worker complexities.
+Workbox is an NPM package created by Google for using services workers. The template PWA created `create-react-app`, and the Simon demonstration project, both use workbox to simplify some of the registration, routing, and caching service worker complexities.
