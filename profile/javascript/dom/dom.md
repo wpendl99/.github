@@ -12,15 +12,18 @@ The browser provides access to the DOM through a global variable name `document`
 ```html
 > document
 
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    ...
-  </head>
   <body>
-    ...
+    <p>text1 <span>text2</span></p>
+    <p>text3</p>
   </body>
 </html>
+```
+
+```css
+p {
+  color: red;
+}
 ```
 
 For everything in an HTML document there is a node in the DOM. This includes elements, attributes, text, comments, and whitespace. All of these nodes form a big tree, with the document node at the top.
@@ -106,7 +109,21 @@ submitDataEl.addEventListener('click', function (event) {
 });
 ```
 
-There are lots of possible events that you can add a listener to. This includes things like mouse, keyboard, scrolling, animation, video, audio, WebSocket, and clipboard events. You can see the full list on [MDN](https://developer.mozilla.org/en-US/docs/Web/Events).
+There are lots of possible events that you can add a listener to. This includes things like mouse, keyboard, scrolling, animation, video, audio, WebSocket, and clipboard events. You can see the full list on [MDN](https://developer.mozilla.org/en-US/docs/Web/Events). Here are a few of the more commonly used events.
+
+| Event          | Description           |
+| -------------- | --------------------- |
+| Clipboard      | Cut, copied, pasted   |
+| Focus          | An element gets focus |
+| Keyboard       | Keys are pressed      |
+| Mouse          | Click events          |
+| Text selection | When text is selected |
+
+You can also add event listeners directly in the HTML. For example, here is a `onclick` handler that is attached to a button.
+
+```html
+<button onclick='alert("clicked")'>click me</button>
+```
 
 ## ☑ Assignment
 

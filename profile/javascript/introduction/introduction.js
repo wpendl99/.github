@@ -7,8 +7,17 @@
 // ---------- start -------------
 function start() {
   console.log(`%c JavaScript Demo`, 'font-size:2em; color: red;');
+  debugger;
 
-  return next(equality);
+  let fn = equality;
+  while (fn) {
+    console.clear();
+    console.log('%c %s', 'font-size:1.5em; color:red;', fn.name);
+    fn = fn();
+  }
+  console.clear();
+  console.log('%c JavaScript Demo', 'font-size:1.5em; color:green;');
+  debugger;
 }
 
 // ---------- equality -------------
@@ -65,13 +74,14 @@ function variables() {
   }
   console.log(y); // 1
 
-  return weaklyTyped;
+  return types;
 }
 
-// ---------- weaklyTyped -------------
-function weaklyTyped() {
+// ---------- types -------------
+function types() {
   debugger;
 
+  // Weak typing allows for automatic conversions
   let x = 'fish';
   console.log('type changed: ', typeof x, x);
   x = 1;
@@ -87,9 +97,13 @@ function weaklyTyped() {
   x = undefined;
   console.log('type changed: ', typeof x, x);
 
+  // Automatic conversions
   console.log('rat' + [' fink']);
   console.log(1 + 'rat');
   console.log(1 * 'rat');
+  console.log([2] + [3]);
+  console.log(true + null);
+  console.log(true + undefined);
 
   return conditionals;
 }
@@ -180,6 +194,8 @@ function arrowFunctions() {
 function closures() {
   debugger;
 
+  // A function and its surrounding state.
+
   function dup(i, sep = ':') {
     let dupLimit = i;
 
@@ -210,9 +226,27 @@ function strings() {
   console.log('casefold: ', s.toUpperCase(), s.toLowerCase());
   console.log('split: ', s.split(' '));
   console.log('endsWith: ', s.endsWith('Mice'));
-  console.log('repalce: ', s.replace('Dogs', 'Puppies'));
-  console.log('replace regex: ', s.replace(/(dogs|cats)/gi, 'Puppies!'));
+  console.log('replace: ', s.replace('Dogs', 'Puppies'));
   console.log('slice: ', s.slice(3, 7));
+
+  return regex;
+}
+
+// ---------- regex -------------
+function regex() {
+  debugger;
+
+  const text = 'Both cats and dogs are pets, but not rocks.';
+
+  const objRegex = new RegExp('cat?', 'i');
+  const literalRegex = /cat?/i;
+  console.log(text.match(literalRegex));
+
+  const petRegex = /(dog)|(cat)|(bird)/gim;
+
+  console.log(text.match(petRegex));
+  console.log(text.replace(petRegex, 'animal'));
+  console.log(petRegex.test(text));
 
   return arrays;
 }
@@ -603,17 +637,4 @@ function wo(msg) {
   // Interact with the DOM
   const output = document.getElementById('output');
   output.innerText = msg;
-}
-
-// ---------- next -------------
-function next(fn) {
-  console.time('demo time');
-  while (fn) {
-    console.clear();
-    console.log('%c %s', 'font-size:1.5em; color:red;', fn.name);
-    fn = fn();
-  }
-  console.clear();
-  console.log('%c JavaScript Demo', 'font-size:1.5em; color:green;');
-  console.timeEnd('demo time');
 }

@@ -62,6 +62,7 @@ It is expected that you will start at the top of the list and work your way down
 
 - [JavaScript introduction](javascript/introduction/introduction.md)
   - [JavaScript Console](javascript/console/console.md)
+  - [Adding JavaScript to HTML](javascript/addingToHtml/addingToHtml.md)
   - ☑ [Types, operators, conditionals, and loops](javascript/typeConstruct/typeConstruct.md) (due 2/22)
   - [String](javascript/string/string.md)
   - ☑ [Functions](javascript/functions/functions.md) (due 2/24)
@@ -75,7 +76,6 @@ It is expected that you will start at the top of the list and work your way down
   - [Scope](javascript/scope/scope.md)
   - [Modules](javascript/modules/modules.md)
   - ☑ [Document object model (DOM)](javascript/dom/dom.md) (due 3/1)
-  - [Adding JavaScript to HTML](javascript/addingToHtml/addingToHtml.md)
   - ☑ [Promises](javascript/promises/promises.md) (due 3/3)
   - ☑ [Async/await](javascript/asyncAwait/asyncAwait.md) (due 3/3)
   - [Debugging JavaScript](javascript/debuggingJavascript/debuggingJavascript.md)
