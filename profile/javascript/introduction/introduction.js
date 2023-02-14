@@ -78,6 +78,10 @@ function weaklyTyped() {
   console.log('type changed: ', typeof x, x);
   x = [1, 2];
   console.log('type changed: ', typeof x, x);
+  x = {};
+  console.log('type changed: ', typeof x, x);
+  x = { v: 2, z: 'fish' };
+  console.log('type changed: ', typeof x, x);
   x = null;
   console.log('type changed: ', typeof x, x);
   x = undefined;
