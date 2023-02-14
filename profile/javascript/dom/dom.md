@@ -111,7 +111,7 @@ submitDataEl.addEventListener('click', function (event) {
 
 There are lots of possible events that you can add a listener to. This includes things like mouse, keyboard, scrolling, animation, video, audio, WebSocket, and clipboard events. You can see the full list on [MDN](https://developer.mozilla.org/en-US/docs/Web/Events). Here are a few of the more commonly used events.
 
-| Event          | Description           |
+| Event Category | Description           |
 | -------------- | --------------------- |
 | Clipboard      | Cut, copied, pasted   |
 | Focus          | An element gets focus |
