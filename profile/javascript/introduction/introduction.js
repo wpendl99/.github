@@ -17,12 +17,10 @@ function equality() {
 
   // loose equality, does type conversion and unobvious equality rules
   1 == '1'; // true
-  1 != '2'; // true
+  [1, 2] == '1,2'; // true
   null == undefined; // true
 
-  // strict equality
-  // 1. doesn't do type conversion
-  // 2. falsy (0, -0, '', NaN, null, undefined)
+  // strict equality compares values without conversion
   1 === '1'; // false
   null === undefined; // false
 
@@ -96,11 +94,14 @@ function weaklyTyped() {
 function conditionals() {
   debugger;
 
+  // falsy (0, -0, '', NaN, null, undefined)
+  // truthy = !falsy
+
   if (true) {
     console.log('true');
   }
 
-  if ((!false && false) || (true && !false)) {
+  if ((!false && undefined) || (true && !0)) {
     console.log('true');
   }
 
