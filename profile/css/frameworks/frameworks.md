@@ -76,7 +76,11 @@ npm install bootstrap@5.2.3
 Once you have Bootstrap linked in your HTML files you can begin using the components it provides. Let's start with a simple button. When we use the Bootstrap `btn` CSS class, the button gets a nice looking rounded appearance. The Bootstrap `btn-primary` CSS class shades the button with the current primary color for the application, which by default is blue. The following demonstrates the difference between a Bootstrap style button and a plain vanilla button. Functionally they both work exactly the same. The Bootstrap button is just a lot easier on the eyes.
 
 ```html
-<button type="button" class="btn btn-primary">Bootstrap</button> <button type="button">Plain</button>
+// Bootstrap styled button
+<button type="button" class="btn btn-primary">Bootstrap</button>
+
+// Default browser styled button
+<button type="button">Plain</button>
 ```
 
 ![CSS Bootstrap button](cssBootstrapBtn.png)
