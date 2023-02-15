@@ -57,7 +57,7 @@ console.log(cow());
 // OUTPUT: moo
 ```
 
-If we designate the function to be asynchronous then the return value becomes a promise that is immediately resolved and have a value that is the return value of the function.
+If we designate the function to be asynchronous then the return value becomes a promise that is immediately resolved and has a value that is the return value of the function.
 
 ```js
 async function cow() {
