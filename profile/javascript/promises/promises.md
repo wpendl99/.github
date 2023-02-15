@@ -98,7 +98,7 @@ We then chain the `then`, `catch` and `finally` functions to the coinToss object
 ```js
 coinToss
   .then((result) => console.log(`Coin toss result: ${result}`))
-  .catch((err) => console.log(`Error: ${result}`))
+  .catch((err) => console.log(`Error: ${err}`))
   .finally(() => console.log('Toss completed'));
 
 // OUTPUT:

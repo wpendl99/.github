@@ -31,3 +31,12 @@ The following slide decks are used for in person discussion of the instruction t
 - [3.5 Responsive, grid, flex](https://docs.google.com/presentation/d/1GkWkkHjtb_HMrrE6lbf9E0ByB5y7WdMuwvV5-JDu-D8/edit?usp=share_link)
 - [3.6 CSS debugging, frameworks, Simon CSS](https://docs.google.com/presentation/d/1Ilu3fL0XWaf3ufnXgWqD0C7sBYcOO843NHWke2dw03Y/edit?usp=share_link)
 - [3.7 UX design](https://docs.google.com/presentation/d/1MPtHwjvcOdW-PbGjYcRVH-peYQzJmcihrtxmyeMywcs/edit?usp=share_link)
+
+## JavaScript
+
+- [4.1 Types, operators, conditionals, loops](https://docs.google.com/presentation/d/1w4-k2CjqUyOMRNpSuumbSakOlyoiI-ddhpU4cZLYUV0/edit?usp=sharing)
+- [4.2 Functions, objects, classes](https://docs.google.com/presentation/d/1Whmovzfhce1djN-YT8PqI1k7JvvfnSveMcz7LNTodVQ/edit?usp=sharing)
+- [4.3 Regex, rest/spread, destructure, exception](https://docs.google.com/presentation/d/1c2_7wC3Bfyec9-3L8SKXxJ415c5W0siUfeKeuVaRErw/edit?usp=sharing)
+- [4.4 Scope, modules, DOM](https://docs.google.com/presentation/d/1SWq0kLCWW3mBKnCeL5cdhNyUobOoji9apZ9QXPCMtn4/edit?usp=sharing)
+- [4.5 Promises, async/await](https://docs.google.com/presentation/d/1_RKk91Px_UJdgroZPNqFkJI_MA_Xsul1ocp66qljET4/edit?usp=sharing)
+- [4.6 Debugging, Simon JS, Start up JS](https://docs.google.com/presentation/d/1ptSWxXFXzhJ-KUqvmzjir1ZtWXTMBH-pS2H9aXGwdLs/edit?usp=sharing)

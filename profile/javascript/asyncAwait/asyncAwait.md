@@ -5,7 +5,7 @@
 JavaScript Promise objects are great for asynchronous execution, but as developers began build large systems with promises they started wanting a more concise representation. This was provided with the introduction of the `async/await` syntax. The `await` keyword wraps the execution of a promise and removed the need to chain functions. The `await` expression will block until the promise state moves to `fulfilled`, or throws an exception if the state moves to `rejected`. For example, if we have a function that returns a coin toss promise.
 
 ```js
-const tossCoin = () => {
+const coinToss = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Math.random() > 0.1) {
@@ -23,23 +23,22 @@ We can create equivalent executions with either a promise `then/catch` chain, or
 **then/catch chain version**
 
 ```js
-tossCoin()
-  .then((result) => {
-    console.log(result);
-  })
-  .catch(() => {
-    console.error('failure');
-  });
+coinToss()
+  .then((result) => console.log(`Toss result ${result}`))
+  .catch((err) => console.error(`Error: ${err}`))
+  .finally(() => console.log(`Toss completed`));
 ```
 
 **async, try/catch version**
 
 ```js
 try {
-  const result = await tossCoin();
-  console.log(result);
-} catch {
-  console.error('failure');
+  const result = await coinToss();
+  console.log(`Toss result ${result}`);
+} catch (err) {
+  console.error(`Error: ${err}`);
+} finally {
+  console.log(`Toss completed`);
 }
 ```
 
