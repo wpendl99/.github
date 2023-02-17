@@ -69,6 +69,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Arrow functions](javascript/arrow/arrow.md) (due 2/24)
   - ☑ [Arrays](javascript/array/array.md) (due 2/24)
   - ☑ [Objects and classes](javascript/objectClasses/objectClasses.md) (due 2/24)
+  - [JSON](javascript/json/json.md)
   - ☑ [Regular expressions](javascript/regularExpressions/regularExpressions.md) (due 2/27)
   - ☑ [Rest and spread](javascript/restSpread/restSpread.md) (due 2/27)
   - ☑ [Destructuring](javascript/destructuring/destructuring.md) (due 2/27)
