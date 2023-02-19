@@ -94,7 +94,7 @@ Here is a fun example of JavaScript's type conversion. Execute the following in 
 
 ## Conditionals
 
-JavaScript support many common programming language conditional constructs. This includes `if`, `else`, and `if else`. Here are some examples.
+JavaScript supports many common programming language conditional constructs. This includes `if`, `else`, and `if else`. Here are some examples.
 
 ```js
 if (a === 1) {
