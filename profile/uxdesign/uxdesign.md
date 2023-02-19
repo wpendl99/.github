@@ -232,7 +232,7 @@ Interaction makes the application come alive and invests the user in the result 
 
 ## Images
 
-It is often said that a picture can save a thousand words. Including images in your application can convey deeper understanding, make it more visually appealing, and draw a user into the application. The following example, helps the user know exactly what a product looks like and what it might look like when they user it. The contrast of colors in the image helps the product to pop and further suggest its value.
+It is often said that a picture can save a thousand words. Including images in your application can convey deeper understanding, make it more visually appealing, and draw a user into the application. The following example, helps the user know exactly what a product looks like and what it might look like when they use it. The contrast of colors in the image helps the product to pop and further suggest its value.
 
 ![Value image](designImageValue.jpg)
 
@@ -405,7 +405,7 @@ Security walls occur when you have to interact with the user in order to authent
 
 You need to consider both the frequency and complexity of your security wall. If the user feels that the security wall is too onerous for the value that the application is providing, they will find another solution. Likewise if the user feels that there is not enough security then they will not trust you with their data.
 
-Here is an example of an application for learning how to code. They need a user's email so that they can store course progress, but they don't even ask for a password because the email address is enough to uniquely identify the user. Authentication occurs when the user provides the security code that is emailed to the address that they provided. From then one the application remembers the email address. If the user accesses the application on a different device then the user just needs to do another once-per-device authentication.
+Here is an example of an application for learning how to code. They need a user's email so that they can store course progress, but they don't even ask for a password because the email address is enough to uniquely identify the user. Authentication occurs when the user provides the security code that is emailed to the address that they provided. From then on the application remembers the email address. If the user accesses the application on a different device then the user just needs to do another once-per-device authentication.
 
 ![Registration wall](designWallsRegistration.png)
 
