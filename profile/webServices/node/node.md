@@ -26,6 +26,7 @@ In the console application install the long term support (LTS) version of Node.
 
 ```sh
 ➜ nvm install lts
+➜ nvm use lts
 ```
 
 ### Installing on Linux or MacOS
