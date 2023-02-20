@@ -16,7 +16,21 @@ Browser run JavaScript using a JavaScript interpreter and execution engine. For 
 
 ## Installing NVM and Node.js
 
-Your production environment web server comes with Node.js already install. However, you will need to install Node.js in your development environment if you have not already. The easiest way to install Node.js is to install the `Node Version Manager` (NVM) and use it to install, and manage, whatever version of Node.js we want. You can install NVM with the following console commands.
+Your production environment web server comes with Node.js already install. However, you will need to install Node.js in your development environment if you have not already. The easiest way to install Node.js is to first install the `Node Version Manager` (NVM) and use it to install, and manage, Node.js.
+
+### Installing on Windows
+
+If you are using Windows, then follow the installation instructions from the [windows-nvm](https://github.com/coreybutler/nvm-windows#installation--upgrades) repository. Click on `latest installer` and then scroll down to the `Assets` and download and execute nvm-setup.exe. Once the installation is complete, you will need to open a new console window so that it gets the updated path that includes NVM.
+
+In the console application install the long term support (LTS) version of Node.
+
+```sh
+➜ nvm install lts
+```
+
+### Installing on Linux or MacOS
+
+If you are using Linux or MacOS then you can install NVM with the following console commands.
 
 ```sh
 ➜ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -24,13 +38,15 @@ Your production environment web server comes with Node.js already install. Howev
 ➜ . ~/.nvm/nvm.sh
 ```
 
-With NVM installed you can now use it to install different versions of Node.js. We will install the latest long term supported (LTS) version represented by the version name `lts`.
+In the console application install the long term support (LTS) version of Node.
 
 ```sh
 ➜ nvm install --lts
 ```
 
-The node.js console application is simply called `node`. You can verify that node is working correctly by running node with the `-v` parameter. Note that your version might be different than what is shown here.
+## Checking that Node is installed
+
+The node.js console application is simply called `node`. You can verify that Node is working correctly by running node with the `-v` parameter. Note that your version might be different than what is shown here.
 
 ```sh
 ➜ node -v
