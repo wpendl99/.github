@@ -1,6 +1,6 @@
 # React CLI
 
-📖 **Required reading**: [Create React App Getting Started](https://create-react-app.dev/docs/getting-started)
+🔑 **Required reading**: [Create React App Getting Started](https://create-react-app.dev/docs/getting-started)
 
 Now that we have covered the basics of React, we want to extend our usage to include a full web framework toolchain that allows us to use JSX, minification, polyfills, and bundling for our Simon and start up applications. One common way for configuring your project to take advantage of these technologies is to use a Command Line Interface (CLI) to initially set up a React based project.
 
@@ -110,10 +110,7 @@ When `react-scripts` builds the application it converts the React JSX files to v
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
@@ -136,10 +133,7 @@ If you start the application, and use the browser's debugger to look at the actu
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
     <title>React App</title>
@@ -162,19 +156,9 @@ If you start the application, and use the browser's debugger to look at the actu
       <!-- Application component JSX transpiled and inserted -->
       <div class="App">
         <header class="App-header">
-          <img
-            src="/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg"
-            class="App-logo"
-            alt="logo"
-          />
+          <img src="/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" class="App-logo" alt="logo" />
           <p>Edit <code>src/App.js</code> and save to reload.</p>
-          <a
-            class="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Learn React</a
-          >
+          <a class="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
         </header>
       </div>
     </div>

@@ -130,7 +130,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
 - 🚧 Security
   - 🚧 OWASP top 10
-  - 🚧 Gruyere
+  - 🚧 [Practice](webFrameworks/security/practice/practice.md)
 - [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 4/14)
@@ -149,5 +149,6 @@ It is expected that you will start at the top of the list and work your way down
 | ---- | ------------------------------------------------------------ |
 | ⚠    | Important concepts, or pitfalls, to note                     |
 | ☑    | Assignments that you must complete for mastery certification |
-| 📖   | Required or suggesting reading                               |
+| 🔑   | Required reading                                             |
+| 📖   | Suggesting reading                                           |
 | 🚧   | Under construction                                           |

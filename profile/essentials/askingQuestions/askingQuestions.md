@@ -1,6 +1,6 @@
 # Asking questions
 
-📖 **Required reading**: [Stack Overflow - How to ask a good question](https://stackoverflow.com/help/how-to-ask)
+🔑 **Required reading**: [Stack Overflow - How to ask a good question](https://stackoverflow.com/help/how-to-ask)
 
 ## Contact information
 

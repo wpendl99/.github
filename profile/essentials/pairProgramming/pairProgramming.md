@@ -1,6 +1,6 @@
 # Pair Programming
 
-📖 **Required reading**: [MartinFowler.com](https://martinfowler.com/articles/on-pair-programming.html)
+🔑 **Required reading**: [MartinFowler.com](https://martinfowler.com/articles/on-pair-programming.html)
 
 One of the objectives of this course is to improve your social skills. Working with peers is a great way to do that. You are encouraged to work on your start up application with a classmate as you practice what is known as `pair programming`. Pair programming gained popularity over twenty years ago and is commonly practiced in the industry.
 
