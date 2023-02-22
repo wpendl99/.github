@@ -42,7 +42,7 @@ You can also include significant amounts of content. You just need to keep thing
 
 ![Simplicity](designSimplicityPinterest.jpg)
 
-## Consistent
+## Consistency
 
 There is a tension that exists with web applications between being consistent with how other applications work and being unique so that your experience stands out. What you want to avoid is being so different that a user has to think hard in order to use your application. This is usually avoided by using the standard conventions that a user expects to find on a web application. The following image describes the `standard layout` and navigation controls of an application.
 
