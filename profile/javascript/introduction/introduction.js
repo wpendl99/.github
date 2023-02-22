@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 // noDeclartion = 3;
 // var undefined = 3;
 // function bad(a, a, b) {}
@@ -24,27 +24,14 @@ function start() {
 function equality() {
   debugger;
 
-  // loose equality, does type conversion and unobvious equality rules
-  1 == '1'; // true
-  [1, 2] == '1,2'; // true
-  null == undefined; // true
-
-  // strict equality compares values without conversion
-  1 === '1'; // false
-  null === undefined; // false
-
-  // all true for loose, all false for strict
-  0 == false;
-  '' == false;
-  '' == 0;
-  '0' == 0;
-  '17' == 17;
-  [1, 2] == '1,2';
-  null == undefined;
-
-  // Always use strict. truthy and falsy
-  null === undefined; // false
-  null !== undefined; // true
+  // Always use strict equality
+  console.log(0 === false);
+  console.log('' === false);
+  console.log('' === 0);
+  console.log('0' === 0);
+  console.log('17' === 17);
+  console.log([1, 2] === '1,2');
+  console.log(null === undefined);
 
   return variables;
 }
@@ -57,22 +44,6 @@ function variables() {
   var x = 1; // deprecated
   let y = 1;
   const z = 'tacos';
-
-  console.log(g, x, y, z);
-
-  // This is why 'var' is deprecated
-  {
-    var x = 2; // same variable!
-    var g = 2;
-    console.log(x, g); // 2, 2
-  }
-  console.log(x, g); // 2, 2
-
-  {
-    let y = 2; // different variable
-    console.log(y); // 2
-  }
-  console.log(y); // 1
 
   return types;
 }
@@ -100,6 +71,7 @@ function types() {
   // Automatic conversions
   console.log('rat' + [' fink']);
   console.log(1 + 'rat');
+  console.log('rat' + 1);
   console.log(1 * 'rat');
   console.log([2] + [3]);
   console.log(true + null);
@@ -121,6 +93,14 @@ function conditionals() {
 
   if ((!false && undefined) || (true && !0)) {
     console.log('true');
+  }
+
+  if (false) {
+    console.log('if');
+  } else if (false) {
+    console.log('else if');
+  } else {
+    console.log('else');
   }
 
   for (let i = 1; i < 3; i++) {
@@ -628,6 +608,56 @@ function classes() {
   for (let beach of beaches) {
     console.log(`${beach.weather} weather at ${beach.name} beach on the ${beach.location} shore`);
   }
+
+  return compatibility;
+}
+
+// ---------- compatibility  -------------
+function compatibility() {
+  debugger;
+
+  // loose equality, does type conversion and unobvious equality rules
+  1 == '1'; // true
+  [1, 2] == '1,2'; // true
+  null == undefined; // true
+
+  // strict equality compares values without conversion
+  1 === '1'; // false
+  null === undefined; // false
+
+  // all true for loose, all false for strict
+  0 == false;
+  '' == false;
+  '' == 0;
+  '0' == 0;
+  '17' == 17;
+  [1, 2] == '1,2';
+  null == undefined;
+
+  // Always use strict. truthy and falsy
+  null === undefined; // false
+  null !== undefined; // true
+
+  // Var, let, const
+  var x = 1; // deprecated
+  let y = 1;
+  const z = 'tacos';
+
+  console.log(g, x, y, z);
+
+  // This is why 'var' is deprecated
+  {
+    var x = 2; // same variable!
+    var g = 2;
+    console.log(x, g); // 2, 2
+  }
+  console.log(x, g); // 2, 2
+
+  {
+    let y = 2; // different variable
+    console.log(y); // 2
+  }
+  console.log(y); // 1
 
   return undefined;
 }
