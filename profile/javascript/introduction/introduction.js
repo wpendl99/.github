@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 // noDeclartion = 3;
 // var undefined = 3;
 // function bad(a, a, b) {}
