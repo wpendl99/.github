@@ -14,12 +14,12 @@ The following two invocations of sort are equivalent.
 const a = [1, 2, 3, 4];
 
 // standard function syntax
-a.sort(function (a, b) {
-  return a - b;
+a.sort(function (v1, v2) {
+  return v1 - v2;
 });
 
 // arrow function syntax
-a.sort((a, b) => a - b);
+a.sort((v1, v2) => v1 - v2);
 ```
 
 Besides being compact, the `arrow` function syntax has some important semantic differences from the standard function syntax. This includes restrictions that arrow functions cannot be used for constructors or iterator generators.
