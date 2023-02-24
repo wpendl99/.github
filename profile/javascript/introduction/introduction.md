@@ -80,3 +80,7 @@ Before we go any further we need a way for you to write and run JavaScript yours
 1. Use your browser's debugger. For example, if you open Chrome and press `F12` the debugger will display. Select the `Console` menu option. This will display a JavaScript interpreter where you can write and execute your code.
 
    ![Browser Debugger](browserDebugger.png)
+   
+## Examples
+
+You can see an example of all the JavaScript we talk about in this instruction with this [HTML page](introduction.html).
