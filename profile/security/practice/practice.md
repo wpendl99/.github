@@ -56,8 +56,34 @@ If you create another snippet with the above example, open up the network tab in
 
 OWASP provides a security training application called [Juice Shop](https://github.com/juice-shop/juice-shop#-owasp-juice-shop). Unlike Gruyere, You need to download the code for Juice Shop and run it from your own computer, but the advantage is that you have complete control over Juice Shop and it is a really good practice application.
 
-If you are at all interested in improving your security skills, you should take the time to install and explore Juice Shop.
+If you are at all interested in improving your security skills, you should take the time to install and explore Juice Shop. Otherwise what you have done with Gruyere should be enough to give you a feel for what security practice applications have to offer.
 
 ### Installing Juice Shop
 
-git clone https://github.com/juice-shop/juice-shop.git --depth 1
+1. Clone the Juice Shop repository to your development environment and install the required NPM packages.
+
+   ```sh
+   git clone https://github.com/juice-shop/juice-shop.git --depth 1
+
+   cd juice-shop
+
+   npm install
+   ```
+
+1. Run the application. This should start Juice Shop on port 3000.
+   ```sh
+   npm start
+   ```
+1. You can now open your browser to `localhost:3000`. This will display the Juice Shop application.
+
+![JuiceShop Home](juiceShopHome.jpg)
+
+The idea with Juice Shop is that you are suppose to learn by digging in and experimenting. For a person that is new to security hacking this can be a bit daunting, and so here is a hint to get you started.
+
+You can solve the first hacking challenge by discovering the hidden score board view that shows you all of the possible challenges to solve and exposes the available tutorials. You can discover where the score board is by examining the contents of the `main.js` file in Dev Tools and seeing that it references a path named `score-board`. So if you change the url to be `localhost:3000/#score-board` you will see the following view.
+
+![JuiceShop Home](juiceShopScoreBoard.jpg)
+
+You can then find a challenge that looks interesting and try to solve it. Challenges that have a tutorial icon will step you through the challenge and explain how it works. You can then use that knowledge to solve challenges that don't have a tutorial.
+
+To get started it is suggested that you do the `DOM XSS` tutorial. This will show you how to do a XXS attack using the application search input.
