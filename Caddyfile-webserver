@@ -34,32 +34,22 @@ simon-html.cs260.click {
 }
 
 simon-css.cs260.click {
-	root * /usr/share/caddy/simon-css
-	file_server
+  root * /usr/share/caddy/simon-css
+  file_server
 }
 
 simon-javascript.cs260.click {
-	root * /usr/share/caddy/simon-javascript
-	file_server
-}
-
-simon-fetch.cs260.click {
-  root * /usr/share/caddy/simon-fetch
+  root * /usr/share/caddy/simon-javascript
   file_server
 }
 
 simon-service.cs260.click {
-	reverse_proxy * localhost:3001
-	header Cache-Control none
+  reverse_proxy * localhost:3001
+  header Cache-Control none
 }
 
 simon-db.cs260.click {
   reverse_proxy * localhost:3002
-  header Cache-Control none
-}
-
-simon-react.cs260.click {
-  reverse_proxy * localhost:3003
   header Cache-Control none
 }
 
@@ -70,5 +60,15 @@ simon-login.cs260.click {
 
 simon-websocket.cs260.click {
   reverse_proxy * localhost:3005
+  header Cache-Control none
+}
+
+simon-react.cs260.click {
+  reverse_proxy * localhost:3003
+  header Cache-Control none
+}
+
+simon-pwa.cs260.click {
+  reverse_proxy * localhost:3006
   header Cache-Control none
 }

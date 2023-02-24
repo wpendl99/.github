@@ -30,4 +30,4 @@ The following are the different technologies we are going to demonstrate with ou
 | Simon Login                       | [code](https://github.com/webprogramming260/simon-login#readme)      | [example](https://simon-login.cs260.click)      |
 | Simon WebSocket                   | [code](https://github.com/webprogramming260/simon-websocket#readme)  | [example](https://simon-websocket.cs260.click)  |
 | Simon React                       | [code](https://github.com/webprogramming260/simon-react#readme)      | [example](https://simon-react.cs260.click)      |
-| Simon Progressive Web Application | 🚧 code                                                              | 🚧 example                                      |
+| Simon Progressive Web Application | [code](https://github.com/webprogramming260/simon-pwa#readme)        | [example](https://simon-pwa.cs260.click)        |
