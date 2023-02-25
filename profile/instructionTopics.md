@@ -130,7 +130,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
 - [Security](security/overview/overview.md)
   - [OWASP top 10](security/owasp/owasp.md)
-  - 🚧 [Practice](security/practice/practice.md)
+  - [Practice](security/practice/practice.md)
 - [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 4/14)
