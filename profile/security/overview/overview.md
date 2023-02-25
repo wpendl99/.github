@@ -21,7 +21,7 @@ Feb 23 16:26:54 systemd-logind[480]: New session 1350 of user ubuntu.
 Feb 23 16:26:54 systemd: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by (uid=0)
 ```
 
-However, you will see lots of other attempts with specific user names associated with common exploits. These all should be failing to connect, but if your server is not configured properly then an unauthorized access is possible. The sample of attempts below show attacker's IP address as well as the user name that they attempted to use.
+However, you will see lots of other attempts with specific user names associated with common exploits. These all should be failing to connect, but if your server is not configured properly then an unauthorized access is possible. The sample of attempts below show the IP addresses of the attacker, as well as the user name that they used. Using the `whois` utility we can see that these attacks are originating from servers at DLive.kr in Korea, and DigitalOcean.com in the USA.
 
 ```sh
 Feb 19 02:34:28 sshd[298185]: Invalid user developer from 27.1.253.142
