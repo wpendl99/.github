@@ -67,7 +67,7 @@ let a = 22;
 [a] = [1, 2, 3];
 
 console.log(a);
-// OUTPUT: a
+// OUTPUT: 1
 ```
 
 ## ☑ Assignment
