@@ -118,18 +118,12 @@ Instead of making a call for getting a store, and then a bunch of calls for gett
 Here is an example GraphQL query.
 
 ```graphql
-query Store {
-  store {
-    order {
-      id
-      date
+query {
+  getOrder(id: "2197") {
+    orders(filter: { date: { allofterms: "20220505" } }) {
+      store
       description
-      price
-    }
-    employee {
-      name
-      hireDate
-      photo
+      orderedBy
     }
   }
 }

@@ -34,7 +34,7 @@ In the console application install the long term support (LTS) version of Node.
 If you are using Linux or MacOS then you can install NVM with the following console commands.
 
 ```sh
-➜ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+➜ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
 ➜ . ~/.nvm/nvm.sh
 ```
@@ -47,11 +47,11 @@ In the console application install the long term support (LTS) version of Node.
 
 ## Checking that Node is installed
 
-The node.js console application is simply called `node`. You can verify that Node is working correctly by running node with the `-v` parameter. Note that your version might be different than what is shown here.
+The node.js console application is simply called `node`. You can verify that Node is working correctly by running node with the `-v` parameter. Note that your version might be different than what is shown here. As long as it is a LTS version you should be fine.
 
 ```sh
 ➜ node -v
-v16.15.1
+v18.13.0
 ```
 
 ## Running programs
