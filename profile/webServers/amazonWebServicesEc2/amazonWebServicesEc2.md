@@ -20,7 +20,7 @@ There is no cost to create an account with AWS, you only pay for what you use, a
 | Route 53       | DNS records                          | $0.50 a month for each root domain                                                                                     |
 |                |                                      | Estimated total: `$15` - `$50` for the course. Much cheaper than a textbook.                                           |
 
-As mentioned before, there are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t2.micro server instance.
+There are lots of ways to get free usage of services. For example, as of when this was written, you can get a 750 hours a month, for the first 12 months, of a Linux t2.micro server instance.
 
 ## Creating an AWS server instance
 

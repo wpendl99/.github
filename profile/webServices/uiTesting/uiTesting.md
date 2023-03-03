@@ -22,27 +22,30 @@ The market now has lots of alternatives when considering which automated browser
 
 For the purposes of this instruction, we could pick any of the top contenders. However, we are going to pick a newcomer, [Playwright](https://playwright.dev/). Playwright has some major advantages. It is backed by Microsoft, it integrates really well with VS Code, and it runs as a Node.js process. It is also considered one of the least flaky of the testing frameworks.
 
-Here is an image of Playwright running some simple tests in VS Code. You can see the listing of tests on the left and the JavaScript based test in the editor window on the right. When a test fails the editor window displays a clear description of what went wrong. You can even debug the tests as they execute just like you would any other Node.js based JavaScript execution.
-
-![Playwright](javaScriptPlaywright.png)
-
-As a example, consider the following simplified HTML file containing a button that changes the paragraph text. The button calls a JavaScript function defined in a script element located in the HTML file.
+As a demonstration of using Playwright, consider the following simplified HTML file containing a button that changes the paragraph text. The button calls a JavaScript function defined in a script element located in the HTML file.
 
 ```HTML
-  <body>
-    <p id="welcome" data-testid="msg">Hello world</p>
-    <button onclick="changeWelcome()">change welcome</button>
-
-    <script>
-      function changeWelcome() {
-        const welcomeEl = document.querySelector('#welcome');
-        welcomeEl.textContent = 'I feel welcomed';
-      }
-    </script>
-  </body>
+<body>
+  <p id="welcome" data-testid="msg">Hello world</p>
+  <button onclick="changeWelcome()">change welcome</button>
+  <script>
+    function changeWelcome() {
+      const welcomeEl = document.querySelector('#welcome');
+      welcomeEl.textContent = 'I feel welcomed';
+    }
+  </script>
+</body>
 ```
 
-A Playwright test that checks to make sure the button updates the welcome text when it is pressed, would look like the following.
+First, you need to install Playwright. In your project directory, use NPM to download the playwright packages, install the browser drivers, configure your project, and create a couple example test files.
+
+```sh
+npm init playwright@latest
+```
+
+Next, you want to install the Playwright extension for VS Code. Go to the extensions tab in VS Code and search for, and install, `Playwright Test for VSCode`.
+
+You can now write your first Playwright test. Take the following and paste it over the `tests/example.spec.js` file that the Playwright install created.
 
 ```js
 import { test, expect } from '@playwright/test';
@@ -65,6 +68,14 @@ test('testWelcomeButton', async ({ page }) => {
 ```
 
 This test makes sure you can successfully navigate to the desired page, that the page contains the desired elements, that you can press the button and the text changes as expected.
+
+To run the test in VS Code, select the `Test Explorer` tab. You should see your test listed in the explorer. Select the `example.spec.ts` test and press the play button. This will start the test, launch a browser, run the test code to interact with the browser, and display the result. In this case our test fails because it is expecting the resulting test to be `I feel not welcomed` when it actually displays `I feel welcomed`.
+
+The following image should be similar to what you see. You can see the listing of tests on the left and the JavaScript based test in the editor window on the right. When a test fails the editor window displays a clear description of what went wrong. You can even debug the tests as they execute just like you would any other Node.js based JavaScript execution.
+
+![Playwright](javaScriptPlaywright.png)
+
+You can fix the test by either changing `index.html` or `test/example.spec.js` so that the text matches. Once you have done that you can run the test again and the test explorer should display a green check box.
 
 This is just a simple example of the powerful functionality of Playwright. You are encouraged to explore its functionality and even add some tests to your projects. Once you have gained some competency with Playwright you will find that you can write your code faster and feel more confident when changing things around.
 
