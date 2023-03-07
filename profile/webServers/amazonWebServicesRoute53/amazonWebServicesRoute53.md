@@ -20,7 +20,10 @@ AWS provides extensive documentation for all their services. You can find the do
 
    ![AWS Find domain](webServerAWSFindDomain.png)
 
-1. Fill out the contact details. This information is sent to the authorized DNS registrar and is what shows up to the world for your domain name. Once registration is complete you can see this information using the console program `whois`. Make sure you fill in this information correctly. If you are using new contact information that a registry has never seen before it will require you to verify the email address. Follow the steps to verify your address.
+1. Fill out the contact details. This information is sent to the authorized DNS registrar and is what shows up to the world for your domain name. Once registration is complete you can see this information using the console program `whois`. Make sure you fill in this information correctly. Providing false information my cause the registrar to revoke your registration.
+
+   ⚠ If you are using new contact information that a registrar has never seen before it will require you to verify the email address. Usually this means you will receive an email that you must respond to within 30 days. If you fail to do this your domain name will be removed from the registry without warning. Check your spam folder if you do not receive this email.
+
 1. Press `Continue`.
 1. Review everything and press `Complete Order`
 
@@ -94,3 +97,4 @@ Don't forget to update your GitHub start up repository README.md with all of the
 | The browser doesn't display my website                                      | Check that you are not trying to use `https`. Check that the browser hasn't inserted a `www` subdomain prefix. Some browsers will hide this. You must actually click on the domain name in the address bar to see what it is really using |
 | My root domain works, but not the `simon` or `startup` subdomains           | Check your DNS records. Make sure you created a wildcard `*.yourdomain` record.                                                                                                                                                           |
 | My `simon` or `start` up subdomains work, but not my root domain            | Check your DNS records. Make sure you have a root record.                                                                                                                                                                                 |
+| My domain name was working, but after 30 days it stopped.                   | Make sure you received and responded the the email from the registrar to verify your email address. Check your spam folder if you did not receive an email.                                                                               |
