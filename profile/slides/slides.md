@@ -40,3 +40,14 @@ The following slide decks are used for in person discussion of the instruction t
 - [4.4 Scope, modules, DOM](https://docs.google.com/presentation/d/1SWq0kLCWW3mBKnCeL5cdhNyUobOoji9apZ9QXPCMtn4/edit?usp=sharing)
 - [4.5 Promises, async/await](https://docs.google.com/presentation/d/1_RKk91Px_UJdgroZPNqFkJI_MA_Xsul1ocp66qljET4/edit?usp=sharing)
 - [4.6 Debugging, Simon JS, Start up JS](https://docs.google.com/presentation/d/1ptSWxXFXzhJ-KUqvmzjir1ZtWXTMBH-pS2H9aXGwdLs/edit?usp=sharing)
+
+## Web services
+
+- [5.1 URL, ports, HTP](https://docs.google.com/presentation/d/1JP5Hyj6UI11scag7JYIkxbUDdAPHxA5_kH67DKWT0zA/edit?usp=sharing)
+- [5.2 CORS, fetch, service design](https://docs.google.com/presentation/d/16zmr_WX4J4eawcJak-0qSS0pYcYbtQ6shndo_Jdn0vg/edit?usp=sharing)
+- [5.3 Node.js](https://docs.google.com/presentation/d/18OUsoi_NUvyH0kZZfKoUgAdPtKvdHh-QrxzvmyTomos/edit?usp=sharing)
+- [5.4 Debugging node, daemons, Express](https://docs.google.com/presentation/d/1DruXFbSRNTJr_oQhyNKWqziJROfbitFkW_vB0-LUavM/edit?usp=sharing)
+- [5.5 UI & endpoint testing](https://docs.google.com/presentation/d/1VfUdlnvLz2c5btkjhrobhDE8nztgPqhxbQ8N6T2M0ho/edit?usp=sharing)
+- [5.6 Storage and data services](https://docs.google.com/presentation/d/1d47W60TuAv6ZcvWwYOo5ifjH4LV6lDdk4dmcZtq3Kh4/edit?usp=sharing)
+- [5.7 Authorization services](https://docs.google.com/presentation/d/1d_QdezA5aIKixXdiobpseGCjSGgkQYwNqu8j5jhR2OY/edit?usp=sharing)
+- [5.8 Websocket](https://docs.google.com/presentation/d/1Wl8YAc2g9Cfruu5kPyzyT2LuNMgbqx_wEVlZ6pAL_24/edit?usp=sharing)
