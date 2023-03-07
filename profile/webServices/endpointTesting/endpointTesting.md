@@ -21,17 +21,17 @@ Now create a file named `server.js` and use Express to create an application wit
 **server.js**
 
 ```js
-const express = require("express");
+const express = require('express');
 const app = express();
 
 app.use(express.json());
 
 // Endpoints
-app.get("/store/:storeName", (req, res) => {
+app.get('/store/:storeName', (req, res) => {
   res.send({ name: req.params.storeName });
 });
 
-app.put("/store/:storeName", (req, res) => {
+app.put('/store/:storeName', (req, res) => {
   req.body.updated = true;
   res.send(req.body);
 });
@@ -44,7 +44,7 @@ In order to allow Jest to start up the HTTP server when running tests, we initia
 **index.js**
 
 ```js
-const app = require("./server");
+const app = require('./server');
 
 const port = 8080;
 app.listen(port, function () {
@@ -65,7 +65,7 @@ Let's make our first test by creating a file named `store.test.js` and pasting i
 **store.test.js**
 
 ```js
-test("that equal values are equal", () => {
+test('that equal values are equal', () => {
   expect(false).toBe(true);
 });
 ```
@@ -119,7 +119,7 @@ We can then fix our test by rewriting it so that the expected value matches the 
 **store.test.js**
 
 ```js
-test("that equal values are equal", () => {
+test('that equal values are equal', () => {
   expect(true).toBe(true);
 });
 ```
@@ -147,6 +147,8 @@ npm install supertest -D
 
 We can then alter `store.test.js` to import our Express service and also the request function from supertest that we will use to make HTTP requests.
 
+![Jest endpoint requests](endpointTestingJest.jpg)
+
 To make an HTTP request you pass the Express app to the supertest request function and then chain on the HTTP verb function that you want to call, along with the endpoint path. You can then chain on as many `expect` functions as you would like. In the following example we will expect an HTTP status code of 200 (OK), and that the body of the response contains the object that we expect the endpoint to return.
 
 If something goes wrong, the `end` function will contain an error and we pass the error along to the `done` function. Otherwise we just call `done` without the error.
@@ -154,14 +156,14 @@ If something goes wrong, the `end` function will contain an error and we pass th
 **store.test.js**
 
 ```js
-const request = require("supertest");
-const app = require("./server");
+const request = require('supertest');
+const app = require('./server');
 
-test("getStore returns the desired store", (done) => {
+test('getStore returns the desired store', (done) => {
   request(app)
-    .get("/store/provo")
+    .get('/store/provo')
     .expect(200)
-    .expect({ name: "provo" })
+    .expect({ name: 'provo' })
     .end((err) => (err ? done(err) : done()));
 });
 ```
@@ -185,23 +187,23 @@ You can change the test to expect a status code of 500 (Server Error) if you wan
 Now We can add a test for the updateStore endpoint. To do this we can copy the getStore endpoint, change the description, change the HTTP function verb to `put`, and send the body of the put request using the chained `send` function.
 
 ```js
-const request = require("supertest");
-const app = require("./server");
+const request = require('supertest');
+const app = require('./server');
 
-test("updateStore saves the correct values", (done) => {
+test('updateStore saves the correct values', (done) => {
   request(app)
-    .put("/store/provo")
-    .send({ items: ["fish", "milk"] })
+    .put('/store/provo')
+    .send({ items: ['fish', 'milk'] })
     .expect(200)
-    .expect({ items: ["fish", "milk"], updated: true })
+    .expect({ items: ['fish', 'milk'], updated: true })
     .end((err) => (err ? done(err) : done()));
 });
 
-test("getStore returns the desired store", (done) => {
+test('getStore returns the desired store', (done) => {
   request(app)
-    .get("/store/provo")
+    .get('/store/provo')
     .expect(200)
-    .expect({ name: "provo" })
+    .expect({ name: 'provo' })
     .end((err) => (err ? done(err) : done()));
 });
 ```
