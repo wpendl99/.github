@@ -2,7 +2,7 @@
 
 <img src="esLogo.png" width=70/>
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ECMA specification](https://tc39.es/ecma262/) - This official specification is only for reference
@@ -80,7 +80,7 @@ Before we go any further we need a way for you to write and run JavaScript yours
 1. Use your browser's debugger. For example, if you open Chrome and press `F12` the debugger will display. Select the `Console` menu option. This will display a JavaScript interpreter where you can write and execute your code.
 
    ![Browser Debugger](browserDebugger.png)
-   
+
 ## Examples
 
 You can see an example of all the JavaScript we talk about in this instruction with this [HTML page](https://htmlpreview.github.io/?https://github.com/webprogramming260/.github/blob/main/profile/javascript/introduction/introduction.html).

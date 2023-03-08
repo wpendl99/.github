@@ -1,6 +1,6 @@
 # Security overview
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [Database of publicized software vulnerabilities](https://cve.mitre.org/)
 - [SQL Injection](https://portswigger.net/web-security/sql-injection)

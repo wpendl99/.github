@@ -1,6 +1,6 @@
 # Document Object Model
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - [W3C DOM specification](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) - This official specification is only for reference

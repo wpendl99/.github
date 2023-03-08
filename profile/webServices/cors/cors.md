@@ -1,6 +1,6 @@
 # SOP and CORS
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN Same origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 - [MDN Cross origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

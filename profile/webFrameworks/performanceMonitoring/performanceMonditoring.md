@@ -53,7 +53,7 @@ You want to reduce the latency of your endpoints as much as possible. Ideally yo
 
 ## Performance tools
 
-📖 **Suggested reading**: [Chrome performance tools](https://developer.chrome.com/docs/devtools/performance/)
+📖 **Deeper dive reading**: [Chrome performance tools](https://developer.chrome.com/docs/devtools/performance/)
 
 ### Chrome network tab
 

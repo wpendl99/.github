@@ -1,6 +1,6 @@
 # The internet
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 - [YouTube The Internet in 5 Minutes](https://youtu.be/7_LPdttKXPc)

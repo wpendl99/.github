@@ -1,6 +1,6 @@
 # Promises
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

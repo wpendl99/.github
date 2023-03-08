@@ -1,6 +1,6 @@
 # Progressive web application
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 - [web.dev PWA](https://web.dev/learn/pwa/)
@@ -95,7 +95,7 @@ One of the best things about PWA technology is that it doesn't require a signifi
 
 ## Manifest and icons
 
-📖 **Suggested reading**: [MDN Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+📖 **Deeper dive reading**: [MDN Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
 A PWA manifest is a JSON file that by convention is usually named `manifest.json`. You link the manifest to your application by including a reference in your `index.html` file. When the browser sees the manifest link, it recognizes the application as a PWA.
 
@@ -146,7 +146,7 @@ The icons section contains a variety of icons that the device will select from d
 
 ## Service workers
 
-📖 **Suggested reading**: [MDN Service worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+📖 **Deeper dive reading**: [MDN Service worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
 The final step for converting your application into a progressive web application involves creating a service working by using the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Services workers, while not specific to PWAs, allow a web application to do background processing that is not directly associated with the rendering and interaction of a web application. One of the most common uses for a Service Worker is to enabling the browser caching of files for performance reasons. This also makes it so that the PWA keeps working even when it is disconnected from the internet.
 
@@ -184,6 +184,6 @@ Then open the resulting project found in the `testpwa` directory and modify `ind
 
 ## Workbox
 
-📖 **Suggested reading**: [Chrome workbox](https://developer.chrome.com/docs/workbox/)
+📖 **Deeper dive reading**: [Chrome workbox](https://developer.chrome.com/docs/workbox/)
 
 Workbox is an NPM package created by Google for using services workers. The template PWA created `create-react-app`, and the Simon demonstration project, both use workbox to simplify some of the registration, routing, and caching service worker complexities.

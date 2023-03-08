@@ -1,6 +1,6 @@
 # Debugging JavaScript
 
-📖 **Suggested reading**: [MDN Console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+📖 **Deeper dive reading**: [MDN Console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
 
 It is inevitable that your code is going to have problems, or bugs, at some point. That may be while you are originally authoring it, working on other code that changes assumed dependencies, or while enhancing the code with new functionality.
 
@@ -8,7 +8,7 @@ Learning how to quickly discover, and resolve, bugs will greatly increase your v
 
 ## Console debugging
 
-📖 **Suggested reading**: [MDN Console](https://developer.mozilla.org/en-US/docs/Web/API/console)
+📖 **Deeper dive reading**: [MDN Console](https://developer.mozilla.org/en-US/docs/Web/API/console)
 
 One of the simplest ways to debug your JavaScript code is to insert `console.log` functions that output the state of the code as it executes. For example, we can create a simple web application that has an HTML and JavaScript file that demonstrates the difference between `let` and `var`. By inserting `console.log` statements into the code, we can see what the value of each variable is as the code executes.
 

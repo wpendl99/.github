@@ -68,7 +68,7 @@ db.house.find({ summary: /(modern|beach)/i });
 
 ### Using MongoDB in your application
 
-📖 **Suggested reading**: [MongoDB tutorial](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/)
+📖 **Deeper dive reading**: [MongoDB tutorial](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/)
 
 The first step to using Mongo in your application is to install the `mongodb` package using NPM.
 

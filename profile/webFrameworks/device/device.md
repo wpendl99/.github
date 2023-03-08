@@ -8,7 +8,7 @@ Most device APIs require the user to consent to your application's use of the AP
 
 ## Notification API
 
-📖 **Suggested reading**: [MDN Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
+📖 **Deeper dive reading**: [MDN Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
 
 As an example of integrating your web application with the device, let's look at the Notification API.
 
@@ -57,7 +57,7 @@ Here is what the code looks like in action.
 
 ## Location API
 
-📖 **Suggested reading**: [MDN Location API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
+📖 **Deeper dive reading**: [MDN Location API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
 
 The location API provides the GPS location of the device. Like the notification API, the user will be prompted for permission to access their location. After permission is granted then the `navigator.geolocation` API will return the user's location. The rest of the code simply renders a map of where the device is.
 

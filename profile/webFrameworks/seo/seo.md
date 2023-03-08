@@ -1,6 +1,6 @@
 # Search engine optimization
 
-📖 **Suggested reading**: [Google Search Central](https://developers.google.com/search)
+📖 **Deeper dive reading**: [Google Search Central](https://developers.google.com/search)
 
 Once Google became the de facto search engine for the internet, a new industry was created to help websites get the top search result spots. Modifying your application for search results is called search engine optimization (SEO). While SEO has nothing to do with the functionality of your application, it has everything to do with its success. You can save millions of dollars in marketing if your application appears in the top search ranking for common user searches.
 
@@ -41,10 +41,7 @@ HTML defines several elements and attributes that search crawlers specifically t
 If you were creating a description for Simon, you would include something like the following description meta element on the home page of your application.
 
 ```html
-<meta
-  name="description"
-  content="Game play, news, rankings, tips, and instruction for Simon."
-/>
+<meta name="description" content="Game play, news, rankings, tips, and instruction for Simon." />
 ```
 
 The robots meta element instructs the crawler how to specifically index a given page. The image alt attribute tells the crawler the keywords for a given image.
@@ -53,10 +50,7 @@ The open graph (`og`) meta tags are used by social media websites to give a prev
 
 ```html
 <meta property="og:title" content="Play Simon online" />
-<meta
-  property="og:description"
-  content="News, rankings, instruction, and competitive online play for Simon."
-/>
+<meta property="og:description" content="News, rankings, instruction, and competitive online play for Simon." />
 <meta property="og:image" content="https://simon.cs260.click/simon.png" />
 ```
 

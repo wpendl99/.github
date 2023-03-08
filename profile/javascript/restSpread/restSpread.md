@@ -1,6 +1,6 @@
 # JavaScript rest and spread
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN Rest](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 - [MDN Spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)

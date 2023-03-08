@@ -1,6 +1,6 @@
 # HTML input elements
 
-📖 **Suggested reading**: [MDN Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+📖 **Deeper dive reading**: [MDN Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 From the very early days of HTML it contained elements for accepting the input of user data. These elements include the following:
 
@@ -65,8 +65,7 @@ The input element represents many different input types. You set the type of inp
 In order to create an input you specify the desired `type` attribute along with any other attribute associated with that specific input. Here is an example of a checked radio button and its associated label.
 
 ```html
-<label for="checkbox1">Check me</label>
-<input type="checkbox" name="varCheckbox" value="checkbox1" checked />
+<label for="checkbox1">Check me</label> <input type="checkbox" name="varCheckbox" value="checkbox1" checked />
 ```
 
 Most input elements share some common attributes. These include the following.

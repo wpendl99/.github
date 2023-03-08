@@ -2,7 +2,7 @@
 
 <img src="expressIcon.png" width="75px" />
 
-📖 **Suggested reading**: [MDN Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+📖 **Deeper dive reading**: [MDN Express/Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 
 In the previous instruction you saw how to use Node.js to create a simple web server. This works great for little projects where you are trying to quickly serve up some web content, but to build a production ready application you need a framework with a bit more functionality for easily implementing a full web service. This is where the Node package `Express` come in. Express provides support for:
 
@@ -72,9 +72,7 @@ The route path can also include a limited wildcard syntax or even full regular e
 
 ```js
 // Wildcard - matches /store/x and /star/y
-app.put('/st*/:storeName', (req, res) =>
-  res.send({ update: req.params.storeName })
-);
+app.put('/st*/:storeName', (req, res) => res.send({ update: req.params.storeName }));
 
 // Pure regular expression
 app.delete(/\/store\/(.+)/, (req, res) => res.send({ delete: req.params[0] }));
@@ -84,7 +82,7 @@ Notice that in these examples the `next` parameter was omitted. Since we are not
 
 ## Using middleware
 
-📖 **Suggested reading**: [Express Middleware](https://expressjs.com/en/resources/middleware.html)
+📖 **Deeper dive reading**: [Express Middleware](https://expressjs.com/en/resources/middleware.html)
 
 The standard [Mediator/Middleware](https://www.patterns.dev/posts/mediator-pattern/) design pattern has two pieces: A mediator and middleware. Middleware represents componentized pieces of functionality. The mediator loads the middleware components and determines their order of execution. When a request comes to the mediator it then passes the request around to the middleware components. Following this pattern, Express is the mediator, and middleware functions are the middleware components.
 
@@ -214,9 +212,7 @@ app.get('/store/:storeName', (req, res) => {
   res.send({ name: req.params.storeName });
 });
 
-app.put('/st*/:storeName', (req, res) =>
-  res.send({ update: req.params.storeName })
-);
+app.put('/st*/:storeName', (req, res) => res.send({ update: req.params.storeName }));
 
 app.delete(/\/store\/(.+)/, (req, res) => res.send({ delete: req.params[0] }));
 

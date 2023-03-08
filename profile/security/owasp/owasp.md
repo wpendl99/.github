@@ -2,7 +2,7 @@
 
 ![owasp](owaspLogo.png)
 
-📖 Suggested reading: [OWASP 2021](https://owasp.org/www-project-top-ten/)
+📖 **Deeper dive reading**: [OWASP 2021](https://owasp.org/www-project-top-ten/)
 
 The Open Web Application Security Project (OWASP) is a non-profit research entity that manages the _Top Ten_ list of the most important web application security risks. Understanding, and periodically reviewing, this list will help to keep your web applications secure.
 
@@ -10,7 +10,7 @@ The following is a discussion of each of the entries in the top ten list, along 
 
 ## A01 Broken Access Control
 
-📖 Suggested reading: [snyk Learn broken access control](https://learn.snyk.io/lessons/broken-access-control/javascript/)
+📖 **Deeper dive reading**: [snyk Learn broken access control](https://learn.snyk.io/lessons/broken-access-control/javascript/)
 
 Broken access control occurs when the application doesn't properly enforce permissions on users. This could mean that a non-admin user can do things that only an admin should be able to do, or admin accounts are improperly secured. While browser application code can restrict access by disabling UI for navigating to sensitive functionality, the ultimate responsibility for enforcing access control rests upon the application service.
 
@@ -39,7 +39,7 @@ Mitigations include:
 
 ## A03 Injection
 
-📖 **Suggested reading**: [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/)
+📖 **Deeper dive reading**: [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/)
 
 Injection exploits occur when an attacker is allowed to supply data that is then injected into a context where it violates the expected use of the user input. For example, consider an input field that is only expected to contain a user's password. Instead the attacker supplies a SQL database command in the password input.
 
@@ -74,7 +74,7 @@ Mitigations include:
 
 ## A04 Insecure Design
 
-📖 **Suggested reading**: [Snyk Learn insecure design](https://learn.snyk.io/lessons/insecure-design/javascript/)
+📖 **Deeper dive reading**: [Snyk Learn insecure design](https://learn.snyk.io/lessons/insecure-design/javascript/)
 
 Insecure design broadly refers to architectural flaws that are unique for individual systems, rather than implementation errors. This happens when the application team doesn't focus on security when designing a system, or doesn't continuously reevaluate the application's security.
 
@@ -103,7 +103,7 @@ Mitigations include:
 
 ## A06 Vulnerable and Outdated Components
 
-📖 **Suggested reading**: [Snyk Learn vulnerable and outdate components](https://learn.snyk.io/lessons/vulnerable-and-outdated-components/javascript/)
+📖 **Deeper dive reading**: [Snyk Learn vulnerable and outdate components](https://learn.snyk.io/lessons/vulnerable-and-outdated-components/javascript/)
 
 The longer an application has been deployed, the more likely it is that the attack surface, and corresponding exploits, of the application will increase. This is primarily due to the cost of maintaining an application and keeping it up to date in order to mitigate newly discovered exploits.
 
@@ -161,7 +161,7 @@ Mitigations include:
 
 ## A09 Security Logging and Monitoring Failures
 
-📖 **Suggested reading**: [Snyk Learn logging vulnerabilities](https://learn.snyk.io/lessons/logging-vulnerabilities/javascript/)
+📖 **Deeper dive reading**: [Snyk Learn logging vulnerabilities](https://learn.snyk.io/lessons/logging-vulnerabilities/javascript/)
 
 Proper system monitoring, logging, and alerting is critical to increasing security. One of the first things an attacker will do after penetrating your application is delete or alter any logs that might reveal the attacker's presence. A secure system will store logs that are accessible, immutable, and contain adequate information to detect an intrusion, and conduct post-mortem analysis.
 
@@ -176,7 +176,7 @@ Mitigations include:
 
 ## A10 Server Side Request Forgery (SSRF)
 
-📖 **Suggested reading**: [Snyk Learn SSRF](https://learn.snyk.io/lessons/ssrf-server-side-request-forgery/javascript/)
+📖 **Deeper dive reading**: [Snyk Learn SSRF](https://learn.snyk.io/lessons/ssrf-server-side-request-forgery/javascript/)
 
 This category of attack causes the application service to make unintended internal requests, that utilized the service's elevated privileges, in order to expose internal data or services.
 

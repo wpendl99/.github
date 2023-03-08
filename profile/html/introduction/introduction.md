@@ -2,7 +2,7 @@
 
 <img src="htmlLogo.png" width=70/>
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [W3C specification](https://html.spec.whatwg.org/multipage/) - This official specification is only for reference

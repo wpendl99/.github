@@ -1,6 +1,6 @@
 ## JSON
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - (MDN JSON)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON]
 - (Douglas Crockford: The JSON Saga)[https://www.youtube.com/watch?v=-C-JoyNuQJs]

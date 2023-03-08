@@ -150,5 +150,4 @@ It is expected that you will start at the top of the list and work your way down
 | ⚠    | Important concepts, or pitfalls, to note                     |
 | ☑    | Assignments that you must complete for mastery certification |
 | 🔑   | Required reading                                             |
-| 📖   | Suggesting reading                                           |
-| 🚧   | Under construction                                           |
+| 📖   | Deeper dive reading for when you want to learn more          |

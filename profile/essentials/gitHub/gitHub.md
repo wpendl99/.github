@@ -181,7 +181,7 @@ It would be awesome if we can increase the fork count for `Dad Jokes API` into t
 
 ## Pull requests
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [GitHub Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 - [GitHub pulls from forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)

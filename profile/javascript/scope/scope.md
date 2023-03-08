@@ -1,6 +1,6 @@
 # Scope
 
-📖 **Suggested reading**:
+📖 **Deeper dive reading**:
 
 - [MDN Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 - [MDN this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
