@@ -125,7 +125,7 @@ In `about.jsx` we return a default quote if we cannot connect to the third party
 fetch('https://api.quotable.io/random')
   .then((response) => response.json())
   .then((data) => {
-    this.setState({quote: data.content, quoteAuthor: data.author});
+    this.setState({ quote: data.content, quoteAuthor: data.author });
   })
   .catch(() => {
     // Use offline fallback classic quote
@@ -172,11 +172,8 @@ Get familiar with what the example code teaches.
 - View the code in your browser by hosting from your production server. You will later replace this with your version of Simon.
 - Make modifications to the code as desired. Experiment and see what happens.
 
-## Make your own version
+## Deploy to production
 
-- Convert your `simon` application to be a PWA. Here is the working demonstration [Simon PWA](https://simon-pwa.cs260.click) application. Remember that you do not need to create an original work. Just focus on learning the concepts that the example project provides. However, you will learn more if you type everything out, and not just copy and paste the code.
-- Set the footer link to point to your code repository. (e.g. https://github.com/yourname/simon)
-- Periodically commit and push your code to your repository as you hit different milestones. (4 commits are required for full credit.)
 - Deploy to your production environment using a copy of the `deployReact.sh` script found in the [example class application](https://github.com/webprogramming260/simon-pwa/blob/main/deployReact.sh). Take some time to understand how it works.
 
   ```sh
@@ -190,18 +187,13 @@ Get familiar with what the example code teaches.
   ```
 
 - Update your `start up` repository README.md to record and reflect on what you learned.
-- When you have completed your version. Do a final push of your code and deploy to your production environment using the `deployReact.sh` script.
 - Make sure your project is visible from your production environment (e.g. https://simon.yourdomain.click).
 - Submit the URL to your production environment for grading using the Canvas assignment page.
 
 ## Grading Rubric
 
-- 20% - Successfully created the proper icons and manifest.json entries required for a PWA
-- 20% - Successfully created and registered a service worker
-- 20% - All required files are properly cached for online use
-- 20% - All primary Simon functionality has a suitable fallback
-- 10% - At least four Git commits for the project (Initial, milestone, ..., milestone, final)
-- 10% - Notes in your start up repository README.md about what you have learned
+- 50% - Simon PWA deployed to your production environment
+- 50% - Notes in your start up repository README.md about what you have learned
 
 ## Celebrate
 

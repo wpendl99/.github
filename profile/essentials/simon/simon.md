@@ -4,13 +4,13 @@
 
 In 1978 Milton-Bradley, now Hasbro, released an electronic game named [Simon](<https://en.wikipedia.org/wiki/Simon_(game)>). It was cutting edge at the time since there were so few electronic games, and all the cool kids had one. I did not. So now I get my revenge.
 
-We are going to build a peer to peer multiplayer web application modeled after Simon. We will build it together by adding new functionality every time we learn a new technology. The example version of code and production deployment for each iteration will be available to you. Your job will be to review the example and then build your version. If it looks very much like the example that is fine. Just make sure you are learning how it works. The less you copy/paste, and the more you write it yourself, the more you will learn. This is true, even if you are just looking at the example and typing most of what you see. The goal is to make you think about every line of code. Ask, "why is it done this way?" and "Is there a better way?". You will be surprised with the detailed understanding you will get. If your version looks very different than the example that the is also fine. Just make sure the major technology is represented.
+We are going to build a peer to peer multiplayer web application modeled after Simon. We will build it together by adding new functionality every time we learn a new technology. The example version of code and production deployment for each iteration are available to you. Your job will be to review the example and then deploy it to your production environment. The goal is to make you think about every line of code. Ask, "why is it done this way?" and "Is there a better way?". You can then take what you have learned, or even portions of the Simon code, and apply it to your Start Up application.
 
 ## Learning objective
 
-If you completely understand what all the source code is doing with each of the Simon application deliverables then you have met the minimum learning mastery. You can experience the maximum learning mastery, if you only use the demonstration code as a reference while you create your own version of Simon. It is suggested that you adjust your effort according to your schedule and your desire for mastery.
+The objective with Simon is to give you an example application that demonstrates each technology concept so that you can then use that technology in your Start Up application.
 
-Using what you learn from Simon you should be able to apply the same technologies to your start up application.
+You should plan on spending 1 to 3 hours reviewing the Simon code. As you review the code take careful notes in your Start Up README.md file about what you have learned.
 
 ## Simon versions
 

@@ -12,6 +12,41 @@ You can view this application running here: [Example Simon JavaScript](https://s
 
 ![Simon JavaScript](simonJavascript.gif)
 
+### index.html and login.js
+
+The first place we used JavaScript in Simon, allows the user to provide their name. We then store that name in the Browser's local storage cache. Once in the cache we can read the value from other html pages, or even later browser sessions on the same device.
+
+Notice the inclusion of a `onclick` call to the `login` function found in the `login.js` file. We reference the `login.js` file by including an HTML `script` element.
+
+```html
+<script src="login.js"></script>
+
+//...
+
+<input type="text" id="name" placeholder="Your name here" />
+<button class="btn btn-primary" onclick="login()">Login</button>
+```
+
+In the `login.js` file we handle a click on the login button by using the document object's querySelector function to get the input element's value and store it in local storage. We then redirect the browser to display the `play.html` page.
+
+```js
+function login() {
+  const nameEl = document.querySelector('#name');
+  localStorage.setItem('userName', nameEl.value);
+  window.location.href = 'play.html';
+}
+```
+
+### scores.js
+
+The `scores.js` reads the current high scores out of local storage and injects the values into the DOM usinng `createElement` and `appendChild` calls.
+
+### play.js
+
+This is where all the game play interactions occur. There are two classes one for `Button` and one for `Game`. The Button class handles the playing of the button's audio file, along with the change in color, when a button is pressed.
+
+The Game class manages the current sequence that a user is supposed to duplicate. This is done with the `reset` function to clear out the sequence and add a new random button, and the `playSequence` function that plays the sequence for the user to duplicate.
+
 ## Study this code
 
 Get familiar with what the example code teaches.
@@ -26,13 +61,9 @@ Get familiar with what the example code teaches.
 - View the code in your browser by hosting it using the VS Code Live Server extension.
 - Make modifications to the code as desired. Experiment and see what happens.
 
-## Make your own version
+## Deploy to production
 
-- Using VS Code, open the `simon` directory for the repository you used for the last Simon assignment.
-- Modify the project to use JavaScript. Refer to the example class application repository for guidance. Remember that you do not need to create an original work. Just focus on learning the concepts that the example project provides. However, you will learn more if you type everything out, and not just copy and paste the code.
-- Set the footer link to point to your code repository. (e.g. https://github.com/yourname/simon)
-- Periodically commit and push your code to your repository as you hit different milestones. (4 commits are required for full credit.)
-- Periodically deploy to your production environment using a copy of the `deployFiles.sh` script found in the [example class application](https://github.com/webprogramming260/simon-javascript/blob/main/deployFiles.sh). Take some time to understand how it works.
+- Deploy to your production environment using a copy of the `deployFiles.sh` script found in the [example class application](https://github.com/webprogramming260/simon-javascript/blob/main/deployFiles.sh). Take some time to understand how it works.
 
   ```sh
   ./deployFiles.sh -k <yourpemkey> -h <yourdomain> -s simon
@@ -45,13 +76,10 @@ Get familiar with what the example code teaches.
   ```
 
 - Update your `start up` repository README.md to record and reflect on what you learned.
-- When you have completed your version. Do a final push of your code and deploy to your production environment using the `deployFiles.sh` script.
 - Make sure your project is visible from your production environment (e.g. https://simon.yourdomain.click).
 - Submit the URL to your production environment for grading using the Canvas assignment page.
 
 ## Grading Rubric
 
-- 60% - Valid game play
-- 20% - Capture and store username in scores
-- 10% - At least four Git commits for the project (Initial, milestone, ..., milestone, final)
-- 10% - Notes in your `start up` repository README.md about what you have learned
+- 50% - Simon JavaScript deployed to your production environment
+- 50% - Notes in your `start up` repository README.md about what you have learned
