@@ -12,13 +12,13 @@ Much of HTML and CSS is already fluid due to the fact that it responds to the br
 
 The CSS display property allows you to change how an HTML element is displayed by the browser. The common options for the display property include the following.
 
-| Value  | Meaning                                                                                                                     |
-| ------ | --------------------------------------------------------------------------------------------------------------------------- |
-| none   | Don't display this element. The element still exists, but the browser will not render it.                                   |
-| block  | Display this element with a width that fills its parent element. A `p` or `div` element has block display by default.       |
-| inline | Display this element with a width that is only as big as its content. A `b` or `span` element has block display by default. |
-| flex   | Display this element's children in a flexible orientation.                                                                  |
-| grid   | Display this element's children in a grid orientation.                                                                      |
+| Value  | Meaning                                                                                                                      |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| none   | Don't display this element. The element still exists, but the browser will not render it.                                    |
+| block  | Display this element with a width that fills its parent element. A `p` or `div` element has block display by default.        |
+| inline | Display this element with a width that is only as big as its content. A `b` or `span` element has inline display by default. |
+| flex   | Display this element's children in a flexible orientation.                                                                   |
+| grid   | Display this element's children in a grid orientation.                                                                       |
 
 We can demonstrate the different CSS display property values with the following HTML that contains a bunch of `div` elements. By default `div` elements have a display property value of `block`.
 
