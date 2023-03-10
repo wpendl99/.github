@@ -2,7 +2,15 @@
 
 ![cover](https://github.com/webprogramming260/.github/blob/main/profile/webprogrammingcover.jpg?raw=true)
 
-Welcome to Web Programming 260. The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application.
+Welcome to Web Programming 260. By the end of this instruction you will:
+
+- Understand how the internet works at a high level
+- Master the basics of front end web application development
+- Master the basics of web application services
+- Be familiar with fundamental web application technologies
+- Have created your own full stack web application
+
+The course hosts all the repositories for the instruction and assignments. This includes interacting with [CodePen](https://codepen.io) assignments, building a demonstration application, and creating and hosting your own start up web application.
 
 - [Instruction](https://github.com/webprogramming260/.github/blob/main/profile/instructionTopics.md#readme)
 - [Simon: Demonstration web application](https://github.com/webprogramming260/.github/blob/main/profile/essentials/simon/simon.md)
