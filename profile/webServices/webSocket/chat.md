@@ -226,7 +226,7 @@ ws.on('pong', () => {
 
 Any connection that did not response will remain in the not alive state and get cleaned up on the next pass.
 
-# ☑ Assignment
+# Experiment
 
 You can find the complete example described above in this [GitHub repository](https://github.com/webprogramming260/websocket-chat).
 
@@ -236,5 +236,3 @@ You can find the complete example described above in this [GitHub repository](ht
 1. Run and debug the example by pressing `F5`. You may need to select node.js as the debugger the first time you run.
 1. Open multiple browser windows and point them to http://localhost:3000 and start chatting.
 1. Use the browser's debugger to view the WebSocket communication.
-
-When you are done submit a description of something you found interesting to the Canvas assignment.
