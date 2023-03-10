@@ -1,5 +1,7 @@
 # Simon Progressive Web Application
 
+⚠ Note that this deliverable is optional and ungraded. The information provided here is meant as extended course content.
+
 ![Simon](../simon.png)
 
 This deliverable demonstrates using Progressive Web Application (PWA) technology to integrate with mobile devices.
@@ -171,30 +173,3 @@ Get familiar with what the example code teaches.
 - Review the code and get comfortable with everything it represents.
 - View the code in your browser by hosting from your production server. You will later replace this with your version of Simon.
 - Make modifications to the code as desired. Experiment and see what happens.
-
-## Deploy to production
-
-- Deploy to your production environment using a copy of the `deployReact.sh` script found in the [example class application](https://github.com/webprogramming260/simon-pwa/blob/main/deployReact.sh). Take some time to understand how it works.
-
-  ```sh
-  ./deployReact.sh -k <yourpemkey> -h <yourdomain> -s simon
-  ```
-
-  For example,
-
-  ```sh
-  ./deployReact.sh -k ~/keys/production.pem -h yourdomain.click -s simon
-  ```
-
-- Update your `start up` repository README.md to record and reflect on what you learned.
-- Make sure your project is visible from your production environment (e.g. https://simon.yourdomain.click).
-- Submit the URL to your production environment for grading using the Canvas assignment page.
-
-## Grading Rubric
-
-- 50% - Simon PWA deployed to your production environment
-- 50% - Notes in your start up repository README.md about what you have learned
-
-## Celebrate
-
-Wow! That is the last Simon deliverable. We hope that you were able to discover and master a lot of new technology by developing this game. You definitely deserve to reward yourself for all the work you have done here. I'm thinking maybe donuts. 🍩

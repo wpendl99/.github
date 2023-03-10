@@ -114,7 +114,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon WebSocket](simon/simon-webSocket/simon-webSocket.md) (due 3/29)
 - ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md) (due 4/3)
 
-## Web frameworks and mobile
+## Web frameworks
 
 - [Web frameworks](webFrameworks/introduction/introduction.md)
 - [React](webFrameworks/react/introduction/introduction.md)
@@ -126,10 +126,8 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) (due 4/3)
   - ☑ [Router](webFrameworks/react/router/router.md) (due 4/5)
   - ☑ [Simon React](simon/simon-react/simon-react.md) (due 4/5)
-- [Progressive web applications](webFrameworks/pwa/pwa.md)
-  - ☑ [Simon PWA](simon/simon-pwa/simon-pwa.md) (due 4/7)
 
-## Advanced topics
+## Assorted topics
 
 - [Security](security/overview/overview.md)
   - [OWASP top 10](security/owasp/owasp.md)
@@ -139,6 +137,8 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) (due 4/14)
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
 - [Device APIs](webFrameworks/device/device.md)
+- [Progressive web applications](webFrameworks/pwa/pwa.md) (optional)
+  - [Simon PWA](simon/simon-pwa/simon-pwa.md) (optional)
 - ☑ [Demo day submission](webFrameworks/demoDay/demoDay.md) (optional 4/13)
 - ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md) (optional 4/20)
 

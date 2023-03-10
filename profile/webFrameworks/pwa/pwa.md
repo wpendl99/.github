@@ -1,5 +1,7 @@
 # Progressive web application
 
+⚠ The information provided here is meant as extended course content. It will not be covered in class or appear on any test.
+
 📖 **Deeper dive reading**:
 
 - [MDN PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)

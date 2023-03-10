@@ -31,7 +31,6 @@ You should also update your website's home page with a link to your project so t
 ## ☑ Assignment
 
 1. Convert your start up application to use React.
-1. Implements PWA functionality.
 1. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
 1. Periodically commit and push your code to GitHub.
 1. Periodically update your start up repository's README.md file to reflect what you have learned and want to remember.
@@ -42,8 +41,7 @@ You should also update your website's home page with a link to your project so t
 
 ## Grading Rubric
 
-- 40% - Uses React
-- 20% - Implements PWA
+- 60% - Uses React
 - 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using services, node.js, mongodb, authentication, and webSockets.

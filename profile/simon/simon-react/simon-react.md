@@ -378,3 +378,7 @@ Get familiar with what the example code teaches.
 
 - 50% - Simon React deployed to your production environment
 - 50% - Notes in your start up repository README.md about what you have learned
+
+## Celebrate
+
+Wow! That is the last Simon deliverable. We hope that you were able to discover and master a lot of new technology by developing this game. You definitely deserve to reward yourself for all the work you have done here. I'm thinking maybe donuts. 🍩
