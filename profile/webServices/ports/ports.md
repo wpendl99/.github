@@ -4,7 +4,7 @@ When you connect to a device on the internet you need both an IP address and a n
 
 The internet governing body, IANA, defines the standard usage for port numbers. Ports from 0 to 1023 represent standard protocols. Generally a web service should avoid these ports unless it is providing the protocol represented by the standard. Ports from 1024 to 49151 represent ports that have been assigned to requesting entities. However, it is very common for these ports to be used by services running internally on a device. Ports from 49152 to 65535 are considered dynamic and are used to create dynamic connections to a device. [Here](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml) is the link to IANA's registry.
 
-Here is a list of common port numbers that you will might come across.
+Here is a list of common port numbers that you might come across.
 
 | Port | Protocol                                                                                           |
 | ---- | -------------------------------------------------------------------------------------------------- |
