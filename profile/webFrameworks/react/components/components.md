@@ -13,7 +13,9 @@ As a simple example, a JSX file containing a React component element named `Demo
 **JSX**
 
 ```jsx
-<div>Component: <Demo /><div>
+<div>
+  Component: <Demo />
+</div>
 ```
 
 Notice that `Demo` is not a valid HTML element. The transpiler will replace this tag with the resulting rendered HTML.
