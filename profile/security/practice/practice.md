@@ -86,4 +86,4 @@ You can solve the first hacking challenge by discovering the hidden score board 
 
 You can then find a challenge that looks interesting and try to solve it. Challenges that have a tutorial icon will step you through the challenge and explain how it works. You can then use that knowledge to solve challenges that don't have a tutorial.
 
-To begin, it is suggested that you do the `DOM XSS` tutorial. This will show you how to do a XXS attack using the application search input.
+To begin, it is suggested that you do the `DOM XSS` tutorial. This will show you how to do a XSS attack using the application search input.
