@@ -49,16 +49,24 @@ SSH into your server.
 
 Copy the section for the start up subdomain and alter it so that it represents the desired subdomain and give it a different port number that is not currently used on your server. For example:
 
+```sh
 tacos.cs260.click {
-reverse_proxy _ localhost:5000
-header Cache-Control none
-header -server
-header Access-Control-Allow-Origin _
+  reverse_proxy _ localhost:5000
+  header Cache-Control none
+  header -server
+  header Access-Control-Allow-Origin *
 }
+```
 
-This tells Caddy that when it gets a request for tacos.cs260.click it will act as a proxy for those requests and pass them on to the web service that is listening on the same machine (localhost), on port 5000. The other settings tell Caddy to return headers that disable caching, hide the fact that Caddy is the server (no reason to tell hackers anything about your server), and to allow any other origin server to make endpoint requests to this subdomain (basically disabling CORS).
+This tells Caddy that when it gets a request for tacos.cs260.click it will act as a proxy for those requests and pass them on to the web service that is listening on the same machine (localhost), on port 5000. The other settings tell Caddy to return headers that disable caching, hide the fact that Caddy is the server (no reason to tell hackers anything about your server), and to allow any other origin server to make endpoint requests to this subdomain (basically disabling CORS). Depending on what your web service does you may want different settings.
 
-Now Caddy will attempt to proxy the requests, but nobody is listening on port 5000 and so you will get an error from Caddy if you make a request to tacos.cs260.click.
+Restart Caddy to cause it to load the new settings.
+
+```sh
+sudo service caddy restart
+```
+
+Now Caddy will attempt to proxy the requests, but there is no web service listening on port 5000 and so you will get an error from Caddy if you make a request to tacos.cs260.click.
 
 ### Create the web service
 
