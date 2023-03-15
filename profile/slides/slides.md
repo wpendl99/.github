@@ -58,3 +58,10 @@ The following slide decks are used for in person discussion of the instruction t
 - [6.2 Reactivity, hooks, tic-tac-toe](https://docs.google.com/presentation/d/1WjUi0otU3Ryoo7b4LK3BxkG89gMaJJd873lWbBuRvkw/edit?usp=sharing)
 - [6.3 Toolchain, CLI, router](https://docs.google.com/presentation/d/1fUek7tV2uWRPYppo-DrhqXL1fYIwNRBQKyGtmu23jGk/edit?usp=sharing)
 - [6.4 Simon React](https://docs.google.com/presentation/d/1gNmzsbvm5DNPVfTdbGRQz_IFcvz4OkBMF_0Jfs-vBxk/edit?usp=sharing)
+
+## Assorted topics
+
+- [7.1 OWASP](https://docs.google.com/presentation/d/1qFUwZ9SbrCbJDTckmlCYoy9xMGqZZXscqMKJYkZEb_U/edit?usp=sharing)
+- [7.2 Security practice](https://docs.google.com/presentation/d/1JRNL_qD5arlae9LnvvoqUg8tBf72v_tGuTWTrVbi3C8/edit?usp=sharing)
+- [7.3 TypeScript, performance](https://docs.google.com/presentation/d/1AhPMoZjoBZnqUkPlfdC8luvtY0pC0jaGnD6Xw_XWCw0/edit?usp=sharing)
+- [7.4 SEO, device features](https://docs.google.com/presentation/d/1gU2zWCU3vPlmEwjJ7sGoqGchoeZBIl2arTDI-n3SZL0/edit?usp=sharing)
