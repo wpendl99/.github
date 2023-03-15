@@ -51,3 +51,10 @@ The following slide decks are used for in person discussion of the instruction t
 - [5.6 Simon db, Storage and data services](https://docs.google.com/presentation/d/1d47W60TuAv6ZcvWwYOo5ifjH4LV6lDdk4dmcZtq3Kh4/edit?usp=sharing)
 - [5.7 Simon login, Authorization services](https://docs.google.com/presentation/d/1d_QdezA5aIKixXdiobpseGCjSGgkQYwNqu8j5jhR2OY/edit?usp=sharing)
 - [5.8 Simon WebSocket, WebSocket](https://docs.google.com/presentation/d/1Wl8YAc2g9Cfruu5kPyzyT2LuNMgbqx_wEVlZ6pAL_24/edit?usp=sharing)
+
+## Web frameworks
+
+- [6.1 Introduction](https://docs.google.com/presentation/d/1CAsw6anyXiAjx8HbefZOysFMqqV3qyTsHpsQGnt9w0Y/edit?usp=sharing)
+- [6.2 Reactivity, hooks, tic-tac-toe](https://docs.google.com/presentation/d/1WjUi0otU3Ryoo7b4LK3BxkG89gMaJJd873lWbBuRvkw/edit?usp=sharing)
+- [6.3 Toolchain, CLI, router](https://docs.google.com/presentation/d/1fUek7tV2uWRPYppo-DrhqXL1fYIwNRBQKyGtmu23jGk/edit?usp=sharing)
+- [6.4 Simon React](https://docs.google.com/presentation/d/1gNmzsbvm5DNPVfTdbGRQz_IFcvz4OkBMF_0Jfs-vBxk/edit?usp=sharing)
