@@ -43,6 +43,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Media](html/media/media.md)
   - ☑ [HTML website](html/website/website.md)
   - ☑ [Simon HTML](simon/simon-html/simon-html.md)
+  - ☑ [Start up deliverable - HTML](html/startUpHtml/startUpHtml.md)
 - [CSS introduction](css/introduction/introduction.md)
   - [Selectors](css/selectors/selectors.md)
   - [Declarations](css/declarations/declarations.md)
