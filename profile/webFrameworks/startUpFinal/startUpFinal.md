@@ -9,13 +9,13 @@ Remember to use the the browser's debugger window to debug your CSS and JavaScri
 Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployReact.sh` script from the [Simon React repository](https://github.com/webprogramming260/simon-react/blob/main/deployReact.sh) and use `startup` for the service parameter (`-s`).
 
 ```sh
-./deployService.sh -k <yourpemkey> -h <yourdomain> -s startup
+./deployReact.sh -k <yourpemkey> -h <yourdomain> -s startup
 ```
 
 For example,
 
 ```sh
-./deployService.sh -k ~/keys/production.pem -h yourdomain.click -s startup
+./deployReact.sh -k ~/keys/production.pem -h yourdomain.click -s startup
 ```
 
 Doing this will make this deliverable of your start up available from `https://startup.yourdomainname`.
@@ -41,8 +41,7 @@ You should also update your website's home page with a link to your project so t
 
 ## Grading Rubric
 
-- 60% - Uses React
-- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
+- 80% - Convert your application to use React
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using services, node.js, mongodb, authentication, and webSockets.
 

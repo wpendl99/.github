@@ -32,10 +32,10 @@ You should also update your website's home page with a link to your project so t
 
 1. Convert your start up application into a web service.
 1. Provide endpoints for your service.
-1. Call third party endpoints from your service.
-1. Persist data in MongoDB.
-1. Authenticate users.
-1. Use WebSockets.
+1. Call third party endpoints from your service. This can be as simple as displaying a quote like Simon does.
+1. Persist data in MongoDB. Data is updated and displayed by manipulating the DOM.
+1. Authenticate and create users. Login data is stored in MongoDB.
+1. Use WebSockets to receive data from your service and render it in the DOM.
 1. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
 1. Periodically commit and push your code to GitHub.
 1. Periodically update your start up repository's README.md file to reflect what you have learned and want to remember.
@@ -48,13 +48,12 @@ You should also update your website's home page with a link to your project so t
 
 - 10% - Calls third party service endpoints
 - 20% - Provides service endpoints running under Node.js
-- 10% - Stores data in MongoDB
-- 10% - Provides authenticated login with securely stored credentials in MongoDB
+- 20% - Stores data in MongoDB
+- 20% - Provides authenticated login with securely stored credentials in MongoDB
 - 10% - Peer communication using webSockets
-- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using services, node.js, mongodb, authentication, and webSockets.
 
 ## Go celebrate
 
-You did it! This is a significant milestone. Time to grab some friends, show them what you did, and celebrate by watching a movie with popcorn.
+You did it! This is a significant milestone. Time to grab some friends, show them what you did, and celebrate by watching a movie with popcorn 🍿.
