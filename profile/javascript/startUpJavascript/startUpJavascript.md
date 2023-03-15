@@ -4,9 +4,11 @@ Now that you have learned how to make an application interactive, it is time to 
 
 You must use the same start up GitHub repository that you created with your earlier start up deliverables. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML, CSS, and JavaScript commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
 
-Remember to use the `VS Code Live Server` extension to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS and JavaScript.
+Leverage what Simon teaches in order to learn how to read login information, represent database data, and save and display data in `localstorage` between pages and browser sessions.
 
-Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployService.sh` script from the [Simon JavaScript repository](https://github.com/webprogramming260/simon-javascript/blob/main/deployFiles.sh) and use `startup` for the service parameter (`-s`)
+Remember to use the `VS Code Live Server` extension to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS and JavaScript. This will save you a lot of time if you learn how to leverage these tools.
+
+Once you have developed your application to where you want it, you need to release it to your production environment. **Replace** your previous start up deployment script with a copy of the `deployFiles.sh` script from the [Simon JavaScript repository](https://github.com/webprogramming260/simon-javascript/blob/main/deployFiles.sh) and use `startup` for the service parameter (`-s`)
 
 ```sh
 ./deployService.sh -k <yourpemkey> -h <yourdomain> -s startup
@@ -22,7 +24,14 @@ Doing this will make this deliverable of your start up available from `https://s
 
 ## ☑ Assignment
 
-1. Add significant use of JavaScript to your start up application. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
+1. Add significant use of JavaScript to your start up application.
+1. Represent each of the required technologies with JavaScript placeholders.
+   1. Have JavaScript that takes user input and adds it to the mocked database data. This should be something simple like an array or object in your JavaScript that will eventually be replaced by service endpoint database calls.
+   1. Have JavaScript that reads the login input and displays the user name.
+   1. Have JavaScript that mocks your database data and injects it into the DOM.
+   1. Use the `localstorage` API to keep data between pages and browser sessions.
+   1. Have JavaScript that mocks out the realtime data you expect to get from the server using WebSocket and inject it into the DOM.
+1. Make sure all authors of the code are attributed in the application and that there is a link to your GitHub repository.
 1. Periodically commit and push your code to GitHub.
 1. Periodically update your start up repository's README.md file to reflect what you have learned and want to remember.
 1. Push your final version of your project to GitHub.
@@ -32,11 +41,14 @@ Doing this will make this deliverable of your start up available from `https://s
 
 ## Grading Rubric
 
-- 60% - Significant use of JavaScript to create a minimally viable working application.
-- 20% - Your start up application is hosted on your web server and is accessible using a subdomain of your domain name using HTTPS.
+- Significant use of JavaScript to create a minimally viable working application.
+  - 20% JavaScript support for future login.
+  - 20% JavaScript support for future database data.
+  - 10% JavaScript support for future WebSocket.
+  - 30% JavaScript support for your application's interaction logic.
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using JavaScript.
 
 ## Go celebrate
 
-You did it! This is a significant milestone. Time to grab some friends, show them what you did, and celebrate with ice cream.
+You did it! This is a significant milestone. Time to grab some friends, show them what you did, and celebrate with ice cream 🍦.
