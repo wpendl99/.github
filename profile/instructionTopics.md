@@ -57,7 +57,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [CSS frameworks](css/frameworks/frameworks.md)
   - ☑ [Simon CSS](simon/simon-css/simon-css.md)
 - ☑ [UX design](uxdesign/uxdesign.md)
-- ☑ [Start up deliverable - HTML, CSS](css/startUpHtmlCss/startUpHtmlCss.md)
+- ☑ [Start up deliverable - CSS](css/startUpCss/startUpCss.md)
 
 ## JavaScript
 
