@@ -10,7 +10,19 @@ Then sketch out what the application looks like. You can use a tool like [NinjaM
 
 Here is an [example design](https://github.com/webprogramming260/startup-example/blob/main/README.md).
 
-### Pair programming
+## Represent all technologies
+
+Make sure that your specification represents how you will represent all of the class technologies. This includes the following:
+
+- **Authentication**: An input for your user to create an account and login. You will want to display the user's name after they login.
+- **Database data**: A rendering of application data that is stored in the database. For Simon, this is the high scores of all players.
+- **WebSocket data**: A rendering of data that is received from your server. This maybe realtime data sent from other user's (e.g. chat or scoring data), or realtime data that your service is generating (e.g. stock prices or latest high scores). For Simon, this represents every time another user creates or ends a game.
+
+## Using Markdown
+
+Take some time to properly learn how to use Markdown in your README.md. Read the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for examples on how to use Markdown. Refer to the [example design](https://github.com/webprogramming260/startup-example/blob/main/README.md) to see how to embed images. Make sure your images are in a format that browsers natively support such as JPG, GIF, or PNG.
+
+## Pair programming
 
 If you have chosen to work with a partner using the pair programming development process, then the following steps should guide your combined development efforts. Remember that it is not required to use pair programming.
 
@@ -32,6 +44,7 @@ Submit the URL for your GitHub start up repository to the Canvas assignment.
 
 ## Grading Rubric
 
-- 10% - Notes in your start up Git repository README.md that include your elevator pitch and key features
-- 45% - A concise, compelling, elevator pitch
-- 45% - One or more rough sketches of your application
+- 10% - Notes in your start up Git repository README.md that include your elevator pitch, images, and key features
+- 10% - Proper use of Markdown in README.md.
+- 40% - A concise, compelling, elevator pitch
+- 40% - One or more rough sketches of your application. Images must be embedded in your README.md.

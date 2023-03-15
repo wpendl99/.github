@@ -8,9 +8,9 @@ You will want an HTML file for each of the main components of your application. 
 
 You will want a similar layout. Make sure you have a placeholder for all the technologies that you will eventually need to represent in your application. This includes:
 
-- Login: an input for your user to create an account and login. You will want to display the user's name after they login.
-- Database data: A rendering of application data that is stored in the database. For Simon, this is the high scores of all players.
-- WebSocket data: A rendering of data that is received from your server. This maybe realtime data sent from other user's (e.g. chat or scoring data), or realtime data that your service is generating (e.g. stock prices or latest high scores). For Simon, this represents every time another user creates or ends a game.
+- **Authentication**: An input for your user to create an account and login. You will want to display the user's name after they login.
+- **Database data**: A rendering of application data that is stored in the database. For Simon, this is the high scores of all players.
+- **WebSocket data**: A rendering of data that is received from your server. This maybe realtime data sent from other user's (e.g. chat or scoring data), or realtime data that your service is generating (e.g. stock prices or latest high scores). For Simon, this represents every time another user creates or ends a game.
 
 The following is a possible layout of the main pieces that your application should have. Note that you do not have to have four HTML pages. You should create the number of pages that makes sense for your application. This maybe only one, or it could be many.
 
