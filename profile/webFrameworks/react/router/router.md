@@ -15,22 +15,14 @@ A basic implementation of the router consists of a `BrowserRouter` component tha
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // BrowserRouter component that controls what is rendered
-  // Link component captures user navigation requests
+  // NavLink component captures user navigation requests
   // Routes component defines what component is routed to
   <BrowserRouter>
     <div className='app'>
       <nav>
-        <ul>
-          <button>
-            <Link to='/'>Home</Link>
-          </button>
-          <button>
-            <Link to='/about'>About</Link>
-          </button>
-          <button>
-            <Link to='/users'>Users</Link>
-          </button>
-        </ul>
+        <NavLink to='/'>Home</Link>
+        <NavLink to='/about'>About</Link>
+        <NavLink to='/users'>Users</Link>
       </nav>
 
       <main>
@@ -38,6 +30,7 @@ root.render(
           <Route path='/' element={<Home />} exact />
           <Route path='/about' element={<About />} />
           <Route path='/users' element={<Users />} />
+          <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </main>
     </div>
