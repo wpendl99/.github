@@ -67,6 +67,16 @@ function displayQuote(data) {
 
 Converting Simon to a service involved the following steps.
 
+1. Move all the previous deliverable code files (_.html, _.js, \*.css, favicon.ico, and asserts) into a sub-directory named `public`. We will use the HTTP Node.js based service to host the front-end application files. This is done with the static file middleware that we will add our service `index.js`.
+
+   ```js
+   app.use(express.static('public'));
+   ```
+
+   When running our service the static file middleware takes care of reading the front-end code from the `public` directory and returning it to the browser. The service only directly handles the endpoint requests.
+
+   ![Simon service](../simon-react/simonProduction.jpg)
+
 1. Within the project directory run `npm init -y`. This configures the directory to work with **node.js**.
 1. Modify or create `.gitignore` to ignore `node_modules`.
 1. Install the Express package by running `npm install express`. This will write the Express package dependency in the `package.json` file and install all the Express code to the `node_modules` directory.
@@ -77,13 +87,13 @@ Converting Simon to a service involved the following steps.
    const express = require('express');
    const app = express();
 
-   // The service port. In production the application is statically hosted by the service on the same port.
+   // The service port. In production the front-end code is statically hosted by the service on the same port.
    const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
    // JSON body parsing using built-in middleware
    app.use(express.json());
 
-   // Serve up the application's static content
+   // Serve up the front-end static content hosting
    app.use(express.static('public'));
 
    // Router for service endpoints

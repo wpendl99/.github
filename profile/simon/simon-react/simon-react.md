@@ -305,11 +305,13 @@ For Simon we converted the modal dialog and button implementations to use the Re
 
 When running in production, the Simon web service running under Node.js on port 3000 serves up the Simon React application code when the browser requests `index.html`. This is the same as we did with previous Simon deliverables. The service pulls those files from the application's static HTML, CSS, and JavaScript files located in the `public` directory that we set up when we build the production distribution package.
 
+![Setting up React ports](simonProduction.jpg)
+
 However, when the application is running in debug mode on your development environment we actually need two HTTP servers running. One for the Node.js web service, so that we can debug the service endpoints, and one for the React client HTTP debugger, so that we can develop and debug the React application code.
 
 To make this work when doing development debugging, we configure the React debugger HTTP server to listen on port 3001 and leave the Node.js server to listen on port 3000.
 
-![Setting up React ports](simonDebuggingReactPorts.jpg)
+![Setting up React ports](simonDevelopmentDebugging.jpg)
 
 To configure the React HTTP debugger to listen on port 3001 when running in our local development environment, we create a file named `.env.local` in the root of the project, and insert the following text.
 
