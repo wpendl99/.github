@@ -15,7 +15,7 @@ console.log(increment(count));
 
 When this code executes the console will log `one1` because the count variable was accidentally initialized with a string instead of a number.
 
-With TypeScript you explicitly define the types, and as the JavaScript is transpiled (with something like Babel) an error will be generate long before the code in see by a user. To provide type safety for our increment function, it would look like this:
+With TypeScript you explicitly define the types, and as the JavaScript is transpiled (with something like Babel) an error will be generate long before the code is seen by a user. To provide type safety for our increment function, it would look like this:
 
 ```ts
 function increment(value: number) {
