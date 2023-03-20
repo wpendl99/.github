@@ -30,23 +30,23 @@ With TypeScript enabled, VS Code will analyze the code and give you an error abo
 
 ![TypeScript bad assignment](typescriptBadAssignment.jpg)
 
-In addition to defining types for function parameters, you can define the types of object properties. For example, when defining the state for a React class style component, you can specify the types of all the state values.
+In addition to defining types for function parameters, you can define the types of object properties. For example, when defining the state for a React class style component, you can specify the types of all the state and property values.
 
 ```ts
 export class About extends React.Component {
   state: {
     imageUrl: string;
     quote: string;
-    quoteAuthor: string;
+    price: number;
   };
 
-  constructor(props: object) {
+  constructor(props: { price: number }) {
     super(props);
 
     this.state = {
       imageUrl: '',
       quote: 'loading...',
-      quoteAuthor: 'unknown',
+      price: props.price,
     };
   }
 }
@@ -123,6 +123,8 @@ With TypeScript you can define this by declaring a new type and defining what it
 
 ```ts
 type AuthState = 'unknown' | 'authenticated' | 'unauthenticated';
+
+let auth: AuthState = 'authenticated';
 ```
 
 ### Generics
