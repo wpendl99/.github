@@ -270,7 +270,7 @@ Create a web service with Express using the following steps.
    node index.js
    ```
 
-1. Open a browser window (or use curl) and try out your web service by making requests to the endpoints
+1. Open another console window and use Curl to try out your web service by making requests to the endpoints.
 
    ```sh
    curl localhost:8080
@@ -281,5 +281,9 @@ Create a web service with Express using the following steps.
    curl -X POST -c cookies.txt localhost:8080/cookie/express/tj
    curl -b cookies.txt localhost:8080/cookie
    ```
+
+1. Develop a mental model in your head about what these commands are doing and how your service is responding. Perhaps creating a [sequence diagram](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIGVIE4DcQGMYCVIEcCukBnYAgKBIENVgB7BaAYVwXDMeYFoA+eZNSALmgBtAAoBVACoBdaAHois2pAC2JAHbVgMBCADmAC2DRqAMziIU6fuQAONgHQ3cwABQByecABUs-kSUAcuTKkG4ANAA6atAuCDhh0HEEAJTQALyciYT2BJBqACYuUQDe0Lg2+eRagnHYjuQIwQQ5NHFBIdAAvsnJANwkbOAAPEPs7DyWAtDFAETllVoz-DNKyjOdJEA) will help clarify the interaction if it is still unclear.
+
+   ![HTTP request](httpRequestSequenceDiagram.jpg)
 
 When you are done write a description of something you found interesting to the Canvas assignment.
