@@ -144,7 +144,7 @@ app.get('/cookie', (req, res, next) => {
 });
 ```
 
-It is common for middleware functions to add functionality to the `req` object so that other middleware can access their functionality. You see this happening with the cookie-parser as it adds the `cookies` object for reading and setting cookies to the `req` object.
+It is common for middleware functions to add functionality to the `res` object so that other middleware can access their functionality. You see this happening with the cookie-parser as it adds the `cookies` object for reading and setting cookies to the `res` object.
 
 ## Error handling middleware
 
