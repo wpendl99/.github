@@ -102,31 +102,31 @@ It is expected that you will start at the top of the list and work your way down
 - [Service daemons - PM2](webServices/pm2/pm2.md)
 - [UI testing](webServices/uiTesting/uiTesting.md)
 - [Endpoint testing](webServices/endpointTesting/endpointTesting.md)
-- ☑ [Simon service](simon/simon-service/simon-service.md)
+- ☑ [Simon service](simon/simon-service/simon-service.md) _(due 3/22)_
 - [Storage services](webServices/storageServices/storageServices.md)
-- ☑ [Data services](webServices/dataServices/dataServices.md)
-  - ☑ [Simon DB](simon/simon-db/simon-db.md)
+- ☑ [Data services](webServices/dataServices/dataServices.md) _(due 3/24)_
+  - ☑ [Simon DB](simon/simon-db/simon-db.md) _(due 3/24)_
 - [Authorization services](webServices/authorizationServices/authorizationServices.md)
   - [Account creation and login](webServices/login/login.md)
-  - ☑ [Simon Login](simon/simon-login/simon-login.md)
+  - ☑ [Simon Login](simon/simon-login/simon-login.md) _(due 3/27)_
 - [WebSocket](webServices/webSocket/webSocket.md)
   - [Debugging WebSocket](webServices/webSocket/debugging.md)
-  - [WebSocket chat](webServices/webSocket/chat.md)
+  - [WebSocket chat](webServices/webSocket/chat.md) _(due 3/29)_
   - ☑ [Simon WebSocket](simon/simon-webSocket/simon-webSocket.md)
-- ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md)
+- ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md) _(due 4/5)_
 
 ## Web frameworks
 
 - [Web frameworks](webFrameworks/introduction/introduction.md)
 - [React](webFrameworks/react/introduction/introduction.md)
-  - ☑ [Components](webFrameworks/react/components/components.md)
-  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md)
-  - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md)
+  - ☑ [Components](webFrameworks/react/components/components.md) _(due 3/31)_
+  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md) _(due 4/3)_
+  - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md) _(due 4/3)_
   - [Hooks](webFrameworks/react/hooks/hooks.md)
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
-  - ☑ [React CLI](webFrameworks/react/cli/cli.md)
-  - ☑ [Router](webFrameworks/react/router/router.md)
-  - ☑ [Simon React](simon/simon-react/simon-react.md)
+  - ☑ [React CLI](webFrameworks/react/cli/cli.md) _(due 4/5)_
+  - ☑ [Router](webFrameworks/react/router/router.md) _(due 4/7)_
+  - ☑ [Simon React](simon/simon-react/simon-react.md) _(due 4/7)_
 
 ## Assorted topics
 
@@ -135,13 +135,13 @@ It is expected that you will start at the top of the list and work your way down
   - [Practice](security/practice/practice.md)
 - [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
-- ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md)
+- ☑ [Start up deliverable - Final](webFrameworks/startUpFinal/startUpFinal.md) _(due 4/18)_
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
 - [Device APIs](webFrameworks/device/device.md)
 - [Progressive web applications](webFrameworks/pwa/pwa.md) (optional)
   - [Simon PWA](simon/simon-pwa/simon-pwa.md) (optional)
-- ☑ [Demo day submission](webFrameworks/demoDay/demoDay.md) (optional)
-- ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md) (optional)
+- ☑ [Demo day submission](webFrameworks/demoDay/demoDay.md) _(optional due 4/13)_
+- ☑ [Wrap up](webFrameworks/wrapUp/wrapUp.md) _(optional due 4/20)_
 
 ## Final
 
