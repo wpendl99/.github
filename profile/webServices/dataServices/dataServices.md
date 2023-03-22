@@ -201,11 +201,11 @@ For your development environment add the same environment variables. Depending o
 
 **`Linux`**
 
-1. Modify /etc/environment
+1. Modify the /etc/environment file to include the environment variables as defined above.
 
 **`Mac` (Zsh)**
 
-1. Modify ~/.zprofile
+1. Modify ~/.zprofile file to include the environment variables as defined above.
 
 **`Windows`**
 
