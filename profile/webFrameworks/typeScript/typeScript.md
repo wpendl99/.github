@@ -127,31 +127,16 @@ type AuthState = 'unknown' | 'authenticated' | 'unauthenticated';
 let auth: AuthState = 'authenticated';
 ```
 
-### Generics
-
-The ability to define an object's type allows TypeScript to create functions and classes that can provide different functionality based upon the type they are initialized with. This ability is called `Generics`. This can be used for type checking as demonstrated by this example where an error is generated when a number is used when a string is expected.
-
-![Generic type violation](typescriptGenericTypeViolation.jpg)
-
-Additionally, the function or class can actual provide different functionality based upon its type. Here is an example of an `ArrayCat` function that handles strings and numbers differently. For numbers, they are summed. For strings, then are joined into a comma separated string.
+You can also use unions to specify all of the possible types that a variable can represent.
 
 ```ts
-function arrayCat<T extends number | string>(n: Array<T>): string {
-  if (n.length > 0) {
-    if (typeof n[0] === 'string') {
-      return n.join(', ');
-    } else if (typeof n[0] === 'number') {
-      const v: Array<any> = n;
-      const sum: number = v.reduce((prev: number, curr: number) => prev + curr);
-      return sum.toString();
-    }
+function square(n: number | string) {
+  if (typeof n === 'string') {
+    console.log(`{$n}^2`);
+  } else {
+    console.log(n * n);
   }
-
-  return '';
 }
-
-console.log(arrayCat([1, 2])); // Outputs: 3
-console.log(arrayCat(['fish', 'cow'])); // Outputs: fish, cow
 ```
 
 ## Using TypeScript

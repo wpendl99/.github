@@ -52,7 +52,11 @@ app.listen(port, function () {
 });
 ```
 
-Breaking apart the definition of the service from the starting of the service allows us to start the service both when we run normally and also when using our testing framework. You can test that the service is working properly by running the service in the VS Code debugger and pressing F5 while viewing the index.js file. Then open a browser and navigate to `http://localhost:8080/store/provo`. Stop the debugging session once you have demonstrated that the service is working correctly.
+Breaking apart the definition of the service from the starting of the service allows us to start the service both when we run normally and also when using our testing framework.
+
+![Jest endpoint requests](endpointTestingJest.jpg)
+
+You can test that the service is working properly by running the service in the VS Code debugger and pressing F5 while viewing the index.js file. Then open a browser and navigate to `http://localhost:8080/store/provo`. Stop the debugging session once you have demonstrated that the service is working correctly.
 
 To launch the service using Jest we create another file that has a suffix of `.test.js`. Any file with that suffix is considered a testing file and will automatically be discovered by Jest and examined for tests to run.
 
@@ -146,8 +150,6 @@ npm install supertest -D
 ```
 
 We can then alter `store.test.js` to import our Express service and also the request function from supertest that we will use to make HTTP requests.
-
-![Jest endpoint requests](endpointTestingJest.jpg)
 
 To make an HTTP request you pass the Express app to the supertest request function and then chain on the HTTP verb function that you want to call, along with the endpoint path. You can then chain on as many `expect` functions as you would like. In the following example we will expect an HTTP status code of 200 (OK), and that the body of the response contains the object that we expect the endpoint to return.
 
