@@ -205,7 +205,7 @@ For your development environment add the same environment variables. Depending o
 
 **`Mac` (Zsh)**
 
-1. Modify ~/.zprofile file to include the environment variables as defined above.
+1. Modify the ~/.zprofile file to include the environment variables as defined above.
 
 **`Windows`**
 
