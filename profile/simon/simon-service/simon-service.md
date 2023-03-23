@@ -160,7 +160,7 @@ Get familiar with what the example code teaches.
   ./deployService.sh -k ~/keys/production.pem -h yourdomain.click -s simon
   ```
 
-  ⚠ **NOTE** - The deployment script for this project is different than pervious deployment scripts since it needs a port to assign the service to. Each of the Simon projects will use port 3000. When you use this script to deploy your start up project use port 4000 so that it does not conflict with the port used for the Simon project.
+  ⚠ **NOTE** - The deployment script for this project is different than pervious deployment scripts since it needs to set up the Node.js service for your backend code, and copy your front-end code to the `public` directory. You also want to make sure that your node.js HTTP service code for Simon is configured to listen on port 3000. When you deploy your Start Up you want to make sure that code is configured to listen on port 4000.
 
 - Update your `start up` repository README.md to record and reflect on what you learned.
 - Make sure your project is visible from your production environment (e.g. https://simon.yourdomain.click).
