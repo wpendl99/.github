@@ -189,10 +189,11 @@ export MONGOPASSWORD=toomanysecrets
 export MONGOHOSTNAME=cs260.nan123cs.mongodb.net
 ```
 
-You then need to tell your Simon and Start Up services to use the new values found in the environment file. To do this you need to tell our service service daemon, PM2, to reload its stored environment for all services that it manages. Run this command from a SSH session on your production server.
+You then need to tell your Simon and Start Up services to use the new values found in the environment file. To do this you need to tell our service service daemon, PM2, to reload its stored environment for all services that it manages. You then need to tell PM2 to save the new configuration so that it will persist when your server restarts. Run these commands from a SSH session on your production server.
 
 ```sh
 pm2 restart all --update-env
+pm2 save
 ```
 
 ### Setting environment variables for your **development** environment
