@@ -86,7 +86,9 @@ It is expected that you will start at the top of the list and work your way down
 
 ## Midterm
 
-⚠ Make sure you take the midterm in Canvas during the open period. There will be an in person review that everyone is invited to.
+⚠ Make sure you take the midterm in Canvas during the open period.
+
+- [Midterm study guide](test/midterm.md)
 
 ## Web services
 
@@ -145,7 +147,9 @@ It is expected that you will start at the top of the list and work your way down
 
 ## Final
 
-⚠ Make sure you take the final in Canvas during the open period. There will be an in person review that everyone is invited to.
+⚠ Make sure you take the final in Canvas during the open period.
+
+- [Midterm study guide](test/final.md)
 
 ## Legend
 
