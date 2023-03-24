@@ -149,6 +149,30 @@ The query matches the document that we previously inserted and so we get the sam
 
 There is a lot more functionality that MongoDB provides, but this is enough to get you started. If you are interested you can explore the tutorials on their [website](https://www.mongodb.com/docs/).
 
+## Managed services
+
+Historically each application development team would have developers that managed the data service. Those developers would acquisition hardware, install the database software, monitor the memory, cpu, and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to services that are hosted and managed by a 3rd party. This relieves the development team from much of the day to day maintenance. The team can instead focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
+
+### MongoDB Atlas
+
+All of the major cloud providers offer multiple data services. For this class we will use the data service provided by MongoDB called [Atlas](https://www.mongodb.com/atlas/database). No credit card or payment is required to setup and use Atlas, as long as you stick to the shared cluster environment.
+
+[![Mongo sign up](webServicesMongoSignUp.jpg)](https://www.mongodb.com/atlas/database)
+
+⚠ This [video tutorial](https://www.youtube.com/watch?v=daIH4o75KE8) will step you through the process of creating your account and setting up your database. You really want to watch this video. Note that some of the Atlas website interface may be slightly different, but the basic concepts should all be there is some shape or form. The main steps you need to take are:
+
+1. Create your account.
+1. Create a database cluster.
+1. Create your root database user credentials. Remember these for later use.
+1. ⚠ Set network access to your database to be available from anywhere.
+   ![Atlas IP Anywhere](webServicesMongoIpAnywhere.gif)
+1. Copy the connection string and use the information in your code.
+1. Save the connection and credential information in your production and development environments as instructed above.
+
+You can always find the connection string to your Atlas cluster by pressing the `Connect` button from your Database > DataServices view.
+
+![Atlas connection string](webServicesMongoConnection.gif)
+
 ## Keeping your keys out of your code
 
 You need to protect your credentials for connecting to your Mongo database. One common mistake is to check them into your code and then post it to a public GitHub repository. Instead you can load your credentials when the application executes. One common way to do that is to read them from environment variables. The JavaScript `process.env` object provides access to the environment.
@@ -167,7 +191,19 @@ Following this pattern requires you to set these variables in your development a
 
 ### Setting environment variables for your **production** environment
 
-For your production environment, you will add your MongoDB Atlas credentials by using SSH to access your production server and modifying the `/etc/environment` file.
+For your production environment, you will add your MongoDB Atlas credentials by using SSH to your server.
+
+```sh
+➜  ssh -i [key pair file] ubuntu@[yourdomainnamehere]
+```
+
+for example,
+
+```sh
+➜  ssh -i ~/keys/production.pem ubuntu@myfunkychickens.click
+```
+
+Then open up the global environment settings file `/etc/environment`.
 
 ```
 sudo vi /etc/environment
@@ -188,6 +224,8 @@ export MONGOUSER=cs260mongo
 export MONGOPASSWORD=toomanysecrets
 export MONGOHOSTNAME=cs260.nan123cs.mongodb.net
 ```
+
+Exit your SSH session and reconnect again so that the environment variables are active in the console window you are using.
 
 You then need to tell your Simon and Start Up services to use the new values found in the environment file. To do this you need to tell our service daemon, PM2, to reload its stored environment for all services that it manages. You then need to tell PM2 to save the new configuration so that it will persist when your server restarts. Run these commands from a SSH session on your production server.
 
@@ -214,33 +252,12 @@ For your development environment add the same environment variables. Depending o
 1. Go to the Advanced Tab
 1. Click on Environment Variables
 1. Under SYSTEM variables click on NEW
-1. Add the variables information and click APPLY and OK
+1. Add each variable individually into the variables information and click APPLY and OK
 1. Restart program needing the variables
 
 If necessary consult the documentation for the operating system, or console shell, you are using for the details on how to set environment variables.
 
-## Managed services
-
-Historically each application development team would have developers that managed the data service. Those developers would acquisition hardware, install the database software, monitor the memory, cpu, and disk space, control the data schema, and handle migrations and upgrades. Much of this work has now moved to services that are hosted and managed by a 3rd party. This relieves the development team from much of the day to day maintenance. The team can instead focus more on the application and less on the infrastructure. With a managed data service you simply supply the data and the service grows, or shrinks, to support the desired capacity and performance criteria.
-
-### MongoDB Atlas
-
-All of the major cloud providers offer multiple data services. For this class we will use the data service provided by MongoDB called [Atlas](https://www.mongodb.com/atlas/database). No credit card or payment is required to setup and use Atlas, as long as you stick to the shared cluster environment.
-
-[![Mongo sign up](webServicesMongoSignUp.jpg)](https://www.mongodb.com/atlas/database)
-
-This [video tutorial](https://www.youtube.com/watch?v=daIH4o75KE8) will step you through the process of creating your account and setting up your database. Note that some of the Atlas website interface may be slightly different, but the basic concepts should all be there is some shape or form. The main steps you need to take are:
-
-1. Create your account.
-1. Create a database cluster.
-1. Create your root database user credentials. Remember these for later use.
-1. Set network access to your database to be available from anywhere.
-1. Copy the connection string and use the information in your code.
-1. Save the connection and credential information in your production and development environments as instructed above.
-
-You can always find the connection string to your Atlas cluster by pressing the `Connect` button from your Database > DataServices view.
-
-![Atlas connection string](webServicesMongoConnection.gif)
+## Using Mongo from your code
 
 With that all done, you should be good to use Atlas from both your development and production environments. You can test that things are working correctly with the following example.
 
