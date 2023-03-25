@@ -41,7 +41,11 @@ You should also update your website's home page with a link to your project so t
 
 ## Grading Rubric
 
-- 80% - Convert your application to use React
+- Convert your application to use React
+  - 30% Multiple react components
+  - 20% React router
+  - 20% React hooks
+  - 10% Bundled using Babel
 - 10% - Multiple Git commits with meaningful comments.
 - 10% - Notes in your start up Git repository README.md file documenting what you have learned using services, node.js, mongodb, authentication, and webSockets.
 
