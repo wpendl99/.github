@@ -129,7 +129,9 @@ Try the following:
 
 When you are done submit your CodePen URL, along with a comment about something you found interesting, to the Canvas assignment.
 
-If you get stuck here is the answer:
+### 🧧 Possible solution (spoilers!)
+
+If you get stuck here is a possible solution.
 
 ```jsx
 function App() {

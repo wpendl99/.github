@@ -79,8 +79,43 @@ ReactDOM.render(<Survey />, document.getElementById('root'));
 
 ## ☑ Assignment
 
-Create a fork of this [codePen](https://codepen.io/leesjensen/pen/NWzYzXE) and experiment.
+Create a fork of this [codePen](https://codepen.io/leesjensen/pen/NWzYzXE) and experiment. Try changing the input from using the color and radio button, to using an edit box that reactively displays the text as you type.
 
 When you are done submit your CodePen URL, along with a comment about something you found interesting, to the Canvas assignment.
 
 Don't forget to update your GitHub start up repository README.md with all of the things you learned and want to remember.
+
+### 🧧 Possible solution (spoilers!)
+
+If you get stuck here is a possible solution.
+
+```jsx
+// The Survey component
+const Survey = () => {
+  const [text, updateText] = React.useState('');
+
+  const onChange = (e) => {
+    updateText(e.target.value);
+  };
+  return (
+    <div>
+      <h1>Survey</h1>
+      <Question text={text} />
+
+      <p>
+        <span>Type some text: </span>
+        <input type='text' onChange={(e) => onChange(e)} placeholder='type here' />
+      </p>
+    </div>
+  );
+};
+
+// The Question component
+const Question = ({ text }) => {
+  return (
+    <div>
+      <p>You typed: {text}</p>
+    </div>
+  );
+};
+```
