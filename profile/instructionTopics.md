@@ -122,8 +122,8 @@ It is expected that you will start at the top of the list and work your way down
 - [Web frameworks](webFrameworks/introduction/introduction.md)
 - [React](webFrameworks/react/introduction/introduction.md)
   - ☑ [Components](webFrameworks/react/components/components.md) _(due 3/31)_
-  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md) _(due 4/3)_
   - ☑ [Reactivity](webFrameworks/react/reactivity/reactivity.md) _(due 4/3)_
+  - ☑ [Tic-tac-toe tutorial](webFrameworks/react/ticTacToe/ticTacToe.md) _(due 4/3)_
   - [Hooks](webFrameworks/react/hooks/hooks.md)
   - [Toolchains](webFrameworks/react/toolChains/toolChains.md)
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) _(due 4/5)_
