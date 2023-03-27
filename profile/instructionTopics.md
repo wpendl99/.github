@@ -113,8 +113,8 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [Simon Login](simon/simon-login/simon-login.md) _(due 3/27)_
 - [WebSocket](webServices/webSocket/webSocket.md)
   - [Debugging WebSocket](webServices/webSocket/debugging.md)
-  - [WebSocket chat](webServices/webSocket/chat.md) _(due 3/29)_
-  - ☑ [Simon WebSocket](simon/simon-webSocket/simon-webSocket.md)
+  - [WebSocket chat](webServices/webSocket/chat.md)
+  - ☑ [Simon WebSocket](simon/simon-webSocket/simon-webSocket.md) _(due 3/29)_
 - ☑ [Start up deliverable - Service](webServices/startUpService/startUpService.md) _(due 4/5)_
 
 ## Web frameworks
