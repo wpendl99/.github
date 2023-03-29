@@ -22,21 +22,24 @@ Discord is organized by servers and channels. If you used the above invite link 
 
 Our server contains the following channels for asking and answering questions.
 
-- github
-- html
-- css
-- javascript
-- node and express
-- aws
-- caddy
-- react
-- mongo
-- general
-- start up
+- **general**: Only use this if it doesn't fit anywhere else
+- **announcements**: Non-questions of interest to the whole class
+- **TA/common-problems**: A place for the TAs to put answers to questions you are likely to have
+- **Technology channels**
+  - github
+  - aws
+  - start up
+  - html
+  - css
+  - javascript
+  - node and express
+  - caddy
+  - react
+  - mongo
 
-You should use the channel that is most appropriate for your discussion. Do not ask questions in multiple channels. Only use `general` if it really is not specific to another channel.
+⚠ You should use the channel that is most appropriate for your discussion. Do not ask questions in multiple channels. Only use `general` if it really is not specific to another channel.
 
-If you are replying to someone, reply in a thread and not in the channel.
+⚠ If you are replying to someone multiple times then reply in a thread and not in the channel.
 
 ⚠ Make sure you review the instruction on [asking questions](../askingQuestions/askingQuestions.md) before you start asking questions.
 
@@ -48,4 +51,6 @@ When you want to talk with a TA either online or in-person you will use Discord 
 
 ## ☑ Assignment
 
-Get on the Discord server and review each of the channels and the TA area. Then spend some time looking at the course instruction until you find something that you have a question about. In the proper discord channel ask your question. Alternatively, you can answer someone else's question. When you are done submit what you found interesting with Discord and make a suggestion about how we could use it better to the Canvas assignment.
+Get on the Discord server and review each of the channels and the TA area. Review the previous instruction on asking question. Give some thought about proper forum etiquette.
+
+Figure out who your is your assigned TA by reviewing the [TA schedule](https://docs.google.com/spreadsheets/d/1g1AMtgvyfSwMgp85QcwHuy0mVR-nN3bIGI6XNEJWB1U/edit?usp=sharing). Using their Discord ID open Discord to send them a direct message to introduce yourself.

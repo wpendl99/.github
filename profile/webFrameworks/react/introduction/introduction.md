@@ -1,6 +1,9 @@
 # React
 
-📖 **Recommended reading**: - [MDN React Introduction Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+📖 **Recommended reading**:
+
+- [MDN React Introduction Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+- [React Quick Start](https://react.dev/learn#components)
 
 <img src="reactLogo.png" width="75" />
 

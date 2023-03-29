@@ -240,11 +240,11 @@ For your development environment add the same environment variables. Depending o
 
 **`Linux`**
 
-1. Modify the /etc/environment file to include the environment variables as defined above.
+1. Modify the /etc/environment file to include the three environment variable export statements as defined above.
 
-**`Mac` (Zsh)**
+**`Mac`**
 
-1. Modify the ~/.zprofile file to include the environment variables as defined above.
+1. Modify your shell resource file to include three environment variable export statements defined above. If you are using Zsh then the file is: `~/.zshrc`. If you are using Bash then the file is: `~/.bashrc`.
 
 **`Windows`**
 
@@ -321,7 +321,7 @@ beds: 1
 
 # ☑ Assignment
 
-Set up your MongoDB Atlas database service. Run the example program for testing that you have things set up correctly.
+First, set up your MongoDB Atlas database service. Then use the instructions aboveRun the example program for testing that you have things set up correctly.
 
 When you are done submit the connection string for your Atlas database cluster, along with a comment about something you found interesting, to the Canvas assignment.
 
