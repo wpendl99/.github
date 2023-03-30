@@ -16,8 +16,8 @@ Generally the functions provided by a web service are called `endpoints`, or som
 
 ![Back End](backEnd.png)
 
-The back-end web service can also use `fetch` to make requests to other web services. For example, in the image below the front-end uses fetch to request the user from the back-end web service. The back-end then uses fetch to call two other web services, one to get the user data from the database, and another one to request subway routes that are near the user's home. That data is then combined together by the back-end web service and returned to the front-end.
+The back-end web service can also use `fetch` to make requests to other web services. For example, in the image below the front-end uses fetch to request the user's data from the back-end web service. The back-end then uses fetch to call two other web services, one to get the user's data from the database, and another one to request subway routes that are near the user's home. That data is then combined together by the back-end web service and returned to the front-end for display in the browser.
 
 ![Back End](backEndFetch.png)
 
-In following instruction we will discuss, how to use fetch, HTTP, URLs, and create a web service using the Node.js application. With all of this in place your application will be a full stack application comprised of both a front-end and a back-end.
+In following instruction we will discuss, how to use fetch, HTTP, URLs, and build a web service using the Node.js application. With all of this in place your application will be a full stack application comprised of both a front-end and a back-end.
