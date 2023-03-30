@@ -1,6 +1,6 @@
 # Web services introduction
 
-Up to this point everything your entire application loads from your web server and then runs on the user's browser. It starts when your browser requests the `index.html` file from the web server. The `index.html`, in turn reference other HTML, CSS, JavaScript, or image files. All of these files, that are running on the browser, comprise the `front-end` of your application.
+Up to this point, your entire application is loaded from your web server and ran on the user's browser. It starts when the browser requests the `index.html` file from the web server. The `index.html`, in turn references other HTML, CSS, JavaScript, or image files. All of these files, that are running on the browser, comprise the `front-end` of your application.
 
 Notice that when the front-end requests the application files from the web server it is using the HTTPS protocol. All web programming requests between devices use HTTPS to exchange data.
 
