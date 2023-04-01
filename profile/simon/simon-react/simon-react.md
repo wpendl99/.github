@@ -329,7 +329,7 @@ Next, we modify the `package.json` file to include the field `"proxy": "http://l
 }
 ```
 
-We also need to change the WebSocket initialization to explicitly use the service port (3000) instead of the React HTTP debugger port (3001). This is done by checking the dynamically injected node process variable that is set when webpack creates the application bundle.
+We also need to change the front-end WebSocket initialization found in the `gameNotifier.js` constructor to explicitly use the service port (3000) instead of the React HTTP debugger port (3001). Without this the front-end will send the webSocket messages to the React debug HTTP server listening on port 3001 and unlike HTTP traffic, it will not forward them onto port 3000 automatically. To explicitly send webSocket requests to port 3000 we use the dynamically injected process environment variable that is set when webpack creates the application bundle.
 
 ```js
 let port = window.location.port;
@@ -342,16 +342,18 @@ This is a bit of annoying configuration, but without it you won't be able to deb
 
 ## Test as you go
 
-That was a lot of changes and it is easy to make a mistake during the process. It is easier if you start with the working app that `create-react-app` builds and then make sure it runs (using `npm run start`) without error. Make sure you understand everything it is doing before it gets more complex. Then make a small change, and test that it works. That way you can see where things get broken before it gets out of hand.
+That was a lot of changes and it is easy to make a mistake during the process. When you do this with your start up application you will find it easier if you start with the working app that `create-react-app` builds and then test that it runs (using `npm run start`) without error. Then make sure you understand everything it is doing before it gets more complex. After that, make a small change, and test that it still works. If it does, commit that change to Git. That way you can see where things get broken before it gets out of hand.
 
 ## Study this code
 
 Get familiar with what the example code teaches.
 
 - Clone the repository to your development environment.
+
   ```sh
   git clone https://github.com/webprogramming260/simon-react.git
   ```
+
 - Review the code and get comfortable with everything it represents.
 - View the code in your browser by hosting it from a VS Code debug session.
 - Make modifications to the code as desired. Experiment and see what happens.
@@ -378,8 +380,12 @@ Get familiar with what the example code teaches.
 
 ## Grading Rubric
 
-- 50% - Simon React deployed to your production environment
-- 50% - Notes in your start up repository README.md about what you have learned
+- 10% - Used `create-react-app` to build a template React application
+- 20% - Successfully converted the header and footer to the App component
+- 30% - Successfully converted to React components
+- 20% - Successfully implemented the React router
+- 10% - At least four Git commits for the project (Initial, milestone, ..., milestone, final)
+- 10% - Notes in your start up repository README.md about what you have learned
 
 ## Celebrate
 
