@@ -1,6 +1,6 @@
 # Start up deliverable - Final
 
-It is time to create the final version of your start up application. The main things you should focus on in this deliverable include converting the application to use React and supporting Progressive Web Application (PWA)functionality.
+It is time to create the final version of your start up application. This deliverable converts your application to use the web application framework, React.
 
 You must use the same start up GitHub repository that you created in the earlier instruction. Update the README.md file with things that you learn as you work on your start up. As you make changes to your application, commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
 
