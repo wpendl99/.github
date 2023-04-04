@@ -18,7 +18,7 @@ The following is a possible layout of the main pieces that your application shou
 
 At this point your application will look rather strange because it doesn't have any styling to make it look right. That is fine. You are just focusing on structure and content placeholders in this deliverable.
 
-You must use the same start up GitHub repository that you created for the previous deliverable. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
+You must use the same start up GitHub repository that you created for the previous deliverable. Update the README.md file with things that you learn as you work on your start up. As you make changes to your HTML commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that.
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your HTML.
 

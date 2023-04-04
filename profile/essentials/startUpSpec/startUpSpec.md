@@ -22,18 +22,6 @@ Make sure that your specification represents how you will represent all of the c
 
 Take some time to properly learn how to use Markdown in your README.md. Read the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for examples on how to use Markdown. Refer to the [example design](https://github.com/webprogramming260/startup-example/blob/main/README.md) to see how to embed images. Make sure your images are in a format that browsers natively support such as JPG, GIF, or PNG.
 
-## Pair programming
-
-If you have chosen to work with a partner using the pair programming development process, then the following steps should guide your combined development efforts. Remember that it is not required to use pair programming.
-
-- You should share a repository for all your work on the startup application. Host the repo in one of the pair participant's GitHub account and then give the other pair participant rights to the repo.
-- The design deliverable should be created together and submitted from your shared start up repository. Include a note specifying that you have a programming pair.
-- Alternate commits to the start up repository. The driver should be doing the commits and their name should be associated with each commit. This means you will need to switch who is logged in when you do a commit.
-- All work must be done **together** with one pair acting as the driver and the other acting as the navigator.
-- Make sure you represent both pairs in the footer of your application.
-- Each pair participant has a section in the start up application repository README.md where they record what they have learned.
-- Each pair participant deploys the application to their individual production environments and submits the URL to their server when they submit each deliverable in Canvas.
-
 ## ☑ Assignment
 
 Update the README.md file for your start up GitHub repository that you created in the earlier instruction to include your elevator pitch. Include the pitch paragraph, key features, and images.

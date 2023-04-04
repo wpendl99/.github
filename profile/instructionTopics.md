@@ -15,7 +15,6 @@ It is expected that you will start at the top of the list and work your way down
 - ☑ [Discord](essentials/discord/discord.md)
 - [Start up application](essentials/startUp/startUp.md)
 - [Let's play Simon](essentials/simon/simon.md)
-- [Pair programming](essentials/pairProgramming/pairProgramming.md)
 - [Technology stack](essentials/techStack/techStack.md)
 - ☑ [The Console](essentials/console/console.md)
 - [Editors](essentials/editors/editors.md)

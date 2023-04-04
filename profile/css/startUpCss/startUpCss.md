@@ -2,7 +2,7 @@
 
 Now that you have learned the basics of CSS, is time to style your startup application. The application doesn't have to do anything, but it should appear basically like what you expect your final application to look like. In the next deliverable you will add JavaScript to make your application functional.
 
-You must use the same start up GitHub repository that you created for the previous deliverable. Update the README.md file with things that you learn as you work on your start up. As you make changes to your CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that. If you are using pair programming then your commit history should reflect contributions from all contributing peers.
+You must use the same start up GitHub repository that you created for the previous deliverable. Update the README.md file with things that you learn as you work on your start up. As you make changes to your CSS commit those changes and push them to GitHub. You will need at least four commits to get full credit, but in reality you should have many more than that.
 
 Remember to use the `Live Server VS Code extension` to see what your code looks like in the browser. Also use the browser's debugger window to debug your CSS.
 
