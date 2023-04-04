@@ -34,3 +34,9 @@ Whenever you approach something new, approach it with the attitude that you will
 ## Welcome to `Start Up 260`!
 
 The class should have the energy of a start up. We are on the cutting edge of technology. We are building applications to change the world. We even have no funding and will work long hours. Sounds like a start up to me. I will do my best to bring all my energy to our time together, and hope you will do likewise. Together, as a team, we are going to have a lot of fun.
+
+## ☑ Assignment
+
+We often send out critical notifications for the course using the Canvas email announcements. Log into the Canvas course and check to make sure you have the correct email address and notification setting associated with your user.
+
+Once you have done that, go over to the assignment settings and submit that you have completed this.
