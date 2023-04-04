@@ -129,6 +129,7 @@ It is expected that you will start at the top of the list and work your way down
   - ☑ [React CLI](webFrameworks/react/cli/cli.md) _(due 4/5)_
   - ☑ [Router](webFrameworks/react/router/router.md) _(due 4/7)_
   - ☑ [Simon React](simon/simon-react/simon-react.md) _(due 4/7)_
+- ☑ [Start up deliverable - React](webFrameworks/startUpReact/startUpReact.md) _(due 4/18)_
 
 ## Assorted topics
 
@@ -137,7 +138,6 @@ It is expected that you will start at the top of the list and work your way down
   - [Practice](security/practice/practice.md)
 - [TypeScript](webFrameworks/typeScript/typeScript.md)
 - [Performance monitoring](webFrameworks/performanceMonitoring/performanceMonditoring.md)
-- ☑ [Start up deliverable - React](webFrameworks/startUpReact/startUpReact.md) _(due 4/18)_
 - [Search Engine Optimization](webFrameworks/seo/seo.md)
 - [Device APIs](webFrameworks/device/device.md)
 - [Progressive web applications](webFrameworks/pwa/pwa.md) (optional)

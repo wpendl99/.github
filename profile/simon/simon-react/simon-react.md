@@ -380,12 +380,8 @@ Get familiar with what the example code teaches.
 
 ## Grading Rubric
 
-- 10% - Used `create-react-app` to build a template React application
-- 20% - Successfully converted the header and footer to the App component
-- 30% - Successfully converted to React components
-- 20% - Successfully implemented the React router
-- 10% - At least four Git commits for the project (Initial, milestone, ..., milestone, final)
-- 10% - Notes in your start up repository README.md about what you have learned
+- 50% - Simon React deployed to your production environment
+- 50% - Notes in your start up repository README.md about what you have learned
 
 ## Celebrate
 
