@@ -179,7 +179,7 @@ There is nothing that `create-react-app` does that you should consider off limit
 
 As an example of more extension modifications, we can remove the testing and performance packages that `create-react-app` included in the template. You might do this because you are trying to simplify the project for demonstration purposes, or because you want to replace it with a different testing framework such as Playwright.
 
-To make this change, we first use NPM to **uninstall** the `@testing-library` packages. This removes the packages from `package.json` so that they are no longer installed in `node_modules` when your run `npm install`.
+To make this change, we first use NPM to **uninstall** the `@testing-library` packages. This removes the packages from `package.json` so that they are no longer installed in `node_modules` when you run `npm install`.
 
 ```sh
 npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event
