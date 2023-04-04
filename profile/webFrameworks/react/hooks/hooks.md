@@ -15,7 +15,7 @@ ReactDOM.render(<Clicker initialCount={3} />, document.getElementById('root'));
 
 ## useEffect hook
 
-The `useEffect` hook allows you to represent lifecycle events. For example, if you want run a function every time the component completes rendering, you could do the following.
+The `useEffect` hook allows you to represent lifecycle events. For example, if you want to run a function every time the component completes rendering, you could do the following.
 
 ```jsx
 function UseEffectHookDemo() {
