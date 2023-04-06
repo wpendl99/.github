@@ -27,12 +27,13 @@ Here is a complete list of all the steps involved to convert Simon to a React ap
    1. Rename `js` JSX files have `jsx` extension
    1. Replace the `favicon.ico` with the Simon icon
    1. Update `manifest.json` to represent Simon
+   1. Clean up the `index.html` file to have the proper fields for Simon
 1. ⭐ **Move template files to Simon**
+1. ⭐ **Convert to React Bootstrap**
 1. ⭐ **Populate App.jsx**
 1. ⭐ **Create view components**
 1. ⭐ **Create the router**
 1. ⭐ **Convert to React components**
-1. ⭐ **Convert to React Bootstrap**
 1. ⭐ **Set up to debug**
 1. Refactor play.jsx into simonGame.jsx, simonButton.jsx, and players.jsx
 1. Refactor components to take advantage of React specific functionality and to create sub-components
@@ -59,6 +60,27 @@ Next, we want to put the existing UI code in a temporary place where we can then
 ## Move template files to Simon
 
 Copy over the generated files from the `template-react` directory to the `simon` repository directory. You can now delete the template `template-react` directory. All steps from this point on are done in the `simon` repository directory. Run `npm install` in the root of the `simon` directory to get all of the NPM packages that React uses.
+
+## Convert to React Bootstrap
+
+There is an NPM package called [React Bootstrap](https://react-bootstrap.github.io/) that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets such as Button and Modal as a React component instead of just imported CSS and JavaScript.
+
+To use the React version of Bootstrap import the NPM package.
+
+```sh
+npm install bootstrap react-bootstrap
+```
+
+Now, in the components where you want to refer to the Bootstrap styles, you can import the css from the
+imported NPM package just like you would other CSS files.
+
+```jsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+For example, you can add that import to the `app.jsx` component in order to enable bootstrap.
+
+For Simon we converted the modal dialog and button implementations to use the React Bootstrap components.
 
 ## Populate App.jsx
 
@@ -117,9 +139,9 @@ In order for the styling to show up, move the `main.css` content into a file nam
 import `./app.css`
 ```
 
-Next, we want to disable the ability to access the play and scores if the user is not authenticated. We do this with a React `useEffect` hook that will run whenever the user name changes. The hook will call out to the simon `getUser` endpoint and set a state variable based on the result. The state is then used to show or hide the play and scores NavLinks.
-
 ### Checking the authentication state
+
+Next, we want to disable the ability to access the play and scores if the user is not authenticated. We do this with a React `useEffect` hook that will run whenever the user name changes. The hook will call out to the simon `getUser` endpoint and set a state variable based on the result. The state is then used to show or hide the play and scores NavLinks.
 
 ```jsx
 const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
@@ -281,25 +303,6 @@ The basic steps for converting the component include the following.
 - Replaced DOM query selectors with React state variables.
 - Move state up to parent components as necessary. For example, authentication state, or user name state.
 - Create child components as necessary. For example, a SimonGame and SimonButton component.
-
-## Convert to React Bootstrap
-
-There is an NPM package called [React Bootstrap](https://react-bootstrap.github.io/) that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets such as Button and Modal as a React component instead of just imported CSS and JavaScript.
-
-To use the React version of Bootstrap remove the CDN links from `index.html` and import the NPM package.
-
-```sh
-npm install bootstrap react-bootstrap
-```
-
-In components where you still want to refer to the Bootstrap styles you can import the css from the
-imported NPM package just like you would other CSS files.
-
-```jsx
-import 'bootstrap/dist/css/bootstrap.min.css';
-```
-
-For Simon we converted the modal dialog and button implementations to use the React Bootstrap components.
 
 ## Setup to debug
 
