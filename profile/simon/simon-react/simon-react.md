@@ -226,7 +226,7 @@ In the App component, we replace `a` elements with the router's `NavLink` compon
 
 // to
 
-<NavLink className='nav-link' to='/play'>Play</NavLink>
+<NavLink className='nav-link' to='play'>Play</NavLink>
 ```
 
 The nav bar now looks like the following.
